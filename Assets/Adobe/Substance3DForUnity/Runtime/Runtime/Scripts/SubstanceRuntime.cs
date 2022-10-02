@@ -53,6 +53,7 @@ namespace Adobe.Substance.Runtime
             if (_isInitialized)
                 return;
 
+            PluginPipelines.GetCurrentPipelineInUse();
             var enginePath = PlatformUtils.GetEnginePath();
             var pluginPath = PlatformUtils.GetPluginPath();
             Engine.Initialize(pluginPath, enginePath);

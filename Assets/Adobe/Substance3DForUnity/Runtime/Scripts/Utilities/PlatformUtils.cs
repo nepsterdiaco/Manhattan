@@ -87,7 +87,7 @@ namespace Adobe.Substance
             else if (Application.platform == RuntimePlatform.OSXEditor
                     || Application.platform == RuntimePlatform.OSXPlayer)
             {
-                return "libsubstance_ogl3_blend.dylib";
+                return "libsubstance_mtl_blend.dylib";
             }
             else if (Application.platform == RuntimePlatform.WindowsEditor
                     || Application.platform == RuntimePlatform.WindowsPlayer)

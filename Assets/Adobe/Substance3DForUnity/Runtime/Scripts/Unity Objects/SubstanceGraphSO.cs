@@ -7,11 +7,6 @@ using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using UnityEngine;
 
-#if UNITY_EDITOR
-
-using Unity.Collections.LowLevel.Unsafe;
-
-#endif
 
 namespace Adobe.Substance
 {
