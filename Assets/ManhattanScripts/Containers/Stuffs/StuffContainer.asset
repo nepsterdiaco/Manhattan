@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3157b32582a186d40a3228e2fcd3bc28, type: 3}
+  m_Name: StuffContainer
+  m_EditorClassIdentifier: 
+  stuffs:
+  - group: TV_0
+    name: SamsungCurve2036
+    prefab: {fileID: 1937687812641396914, guid: a138b64dbbebef24f8670e86cabbae6a,
+      type: 3}
+    materials: []
+  - group: TV_0
+    name: Samsungflame1020
+    prefab: {fileID: 3031883049553971151, guid: 7e163e7f4dac997458c29af42f034aa2,
+      type: 3}
+    materials: []
+  - group: TV_0
+    name: SamsungG730
+    prefab: {fileID: 3275164510312036827, guid: 0f4884d0d6586144aa92c1231c98ac37,
+      type: 3}
+    materials: []
+  - group: TV_0
+    name: SamsungV890
+    prefab: {fileID: 5512613748230350017, guid: 9e785f2bc5dd0224bb1df5029f7576dc,
+      type: 3}
+    materials: []
+  - group: TV_0
+    name: SamsungX50
+    prefab: {fileID: 3362873232745998949, guid: 6fe6b837a0293d141841c30391a37cef,
+      type: 3}
+    materials: []
+  - group: Sofa_0
+    name: Sofa_R120
+    prefab: {fileID: 1298523637678142246, guid: 5158c16bb6fb47047acca6e535ac20ab,
+      type: 3}
+    materials: []
+  - group: Sofa_0
+    name: Sofa_R130
+    prefab: {fileID: 3574464194476438775, guid: 99a9270a6c5efbc4f96b5b3aef311ec2,
+      type: 3}
+    materials: []
+  - group: Sofa_0
+    name: Sofa_R140
+    prefab: {fileID: 2231292268968707539, guid: 6bb0218a32c91e340ac73c344ce05c1b,
+      type: 3}
+    materials: []
+  - group: Sofa_0
+    name: Sofa_R150
+    prefab: {fileID: 726655013228396083, guid: 7f45494b327939647ada7b4314cd95e6, type: 3}
+    materials: []
+  - group: Sofa_0
+    name: Sofa_R160
+    prefab: {fileID: 5738940798581273795, guid: f0382af9aca4bc549a94267c11ec86f8,
+      type: 3}
+    materials: []
+  - group: Refrigerator_0
+    name: Refrigerator_ER7
+    prefab: {fileID: 6001085680133277773, guid: 8217a2531ee7b8d48bef1f54490cb022,
+      type: 3}
+    materials: []
+  - group: Refrigerator_0
+    name: Refrigerator_G0025
+    prefab: {fileID: 4035631584947340691, guid: 0b62f38762cce364aa1d96ef09e7d1c9,
+      type: 3}
+    materials: []
+  - group: Refrigerator_0
+    name: Refrigerator_G532
+    prefab: {fileID: 8380602354559666855, guid: d557543e21a721e48944027dd84c3dbc,
+      type: 3}
+    materials: []
+  - group: Refrigerator_0
+    name: Refrigerator_G9880
+    prefab: {fileID: 5600429284219047441, guid: 2f0f15ee97c811b4e8245db6d8e895e6,
+      type: 3}
+    materials: []
+  - group: Refrigerator_0
+    name: Refrigerator_X021
+    prefab: {fileID: 95191460750124092, guid: 5151dbaa84500664381b7064fcadd68f, type: 3}
+    materials: []
