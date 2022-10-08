@@ -7,8 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: BL
+    second: {fileID: 2100000, guid: a41dbb8d76442104288366ac43862a6b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Mate
     second: {fileID: 2100000, guid: cd54696740c506c4db69da11827534d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 76123231
+    second: {fileID: 2100000, guid: f493d6e26a8dcd64998c4033eecf48f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 98
+    second: {fileID: 2100000, guid: a692f80ecbe6b694a8e621e3660a498a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -24,6 +39,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: feultfe
     second: {fileID: 2100000, guid: e01f2fe338b64474dac5dc2475723e31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fsadfas
+    second: {fileID: 2100000, guid: a990f0d86bee0b7428a826b35962ba96, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

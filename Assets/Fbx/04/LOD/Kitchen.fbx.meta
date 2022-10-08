@@ -7,8 +7,53 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: AM134_07_black_plastic
+    second: {fileID: 2100000, guid: ff7f68ceafdcb0746beaa885c1963f66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AM134_07_black_shiny
+    second: {fileID: 2100000, guid: eaff26a6f47612448a4a61214d933822, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AM134_07_brush01
+    second: {fileID: 2100000, guid: 9a5cc4596cac2b44b8cf5e1feecd5fc8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AM134_07_chrome
+    second: {fileID: 2100000, guid: 260aaf4f79140e248b8df10e2758f2c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AM134_07_glass_jar
+    second: {fileID: 2100000, guid: 01e19b5a9f485364c87ddbd81d33efaa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Mate
     second: {fileID: 2100000, guid: cd54696740c506c4db69da11827534d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 152
+    second: {fileID: 2100000, guid: 733f36b6b37aeb44fb1c158dab7422f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 2146024312
+    second: {fileID: 2100000, guid: ec7af72cff6fdcc45a9fc0ef0bad1e40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 2_001
+    second: {fileID: 2100000, guid: 334540d3d499b5f4bb720d65b370b1b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 76234
+    second: {fileID: 2100000, guid: de563cf81bca9e948b6bcded4ead4bd2, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -27,8 +72,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: mat_02 - Default24324
+    second: {fileID: 2100000, guid: 94ff96b206d0203449fe2b93e72653a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_03 - Default_001
+    second: {fileID: 2100000, guid: cf7a4f21f91f8154d8cff9e8b3db6172, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: mat_04 - Default_002
     second: {fileID: 2100000, guid: db1969bfc5874dc45a7425b8ca5ec2ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_05 - Default
+    second: {fileID: 2100000, guid: c698111393e93e4489d2ae602e58b294, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -39,6 +99,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: mat_13 - Defaultss
     second: {fileID: 2100000, guid: d0829d84829111a4cad30186d8169bfb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_234lt123234
+    second: {fileID: 2100000, guid: 0b566daad9eb6774cb03895a31872f4a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 1

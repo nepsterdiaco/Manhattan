@@ -7,8 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Mat2146023137123123213_001
+    second: {fileID: 2100000, guid: a50017475bdd3a24e8b017c431980573, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Mate
     second: {fileID: 2100000, guid: cd54696740c506c4db69da11827534d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 76123231
+    second: {fileID: 2100000, guid: f493d6e26a8dcd64998c4033eecf48f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: QWEE3
+    second: {fileID: 2100000, guid: 12ba27ed87fcb7f45986d07ab71160b4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

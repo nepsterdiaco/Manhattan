@@ -7,6 +7,21 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: ASAS13
+    second: {fileID: 2100000, guid: 11f75b442260ba74da524bae8f9757d9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ASAS15
+    second: {fileID: 2100000, guid: 19b163d3e60c4e04d8fe441a675b9b45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M0830
+    second: {fileID: 2100000, guid: fc4a809b88080a74c8702ff64617f861, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Mate
     second: {fileID: 2100000, guid: cd54696740c506c4db69da11827534d8, type: 2}
   - first:
@@ -27,6 +42,21 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: mat_
+    second: {fileID: 2100000, guid: 02b09cb2dff309846be96f568873434e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_01
+    second: {fileID: 2100000, guid: 0e2cf3a1191943446b3664c82d86690f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_02
+    second: {fileID: 2100000, guid: ec315801abcfbe9419054a64224a59c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: mat_04 - Default_002
     second: {fileID: 2100000, guid: db1969bfc5874dc45a7425b8ca5ec2ee, type: 2}
   - first:
@@ -37,8 +67,68 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: mat_0827
+    second: {fileID: 2100000, guid: ac26cd59244906942906a41942c3bd59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_0905
+    second: {fileID: 2100000, guid: 8db2457dc9533ca43a8ecf0f6c9a2861, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_12 - Default234
+    second: {fileID: 2100000, guid: 0218dfcd3c405a54b9e831835f35c4e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: mat_13 - Defaultss
     second: {fileID: 2100000, guid: d0829d84829111a4cad30186d8169bfb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_2_001
+    second: {fileID: 2100000, guid: 8ac0abab473f4394fb4c28e528621d8c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_2_002
+    second: {fileID: 2100000, guid: 1e5bc0f2adedb004c8be54481920d3a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_2_003
+    second: {fileID: 2100000, guid: 4fb479279dd263049b63cf28eb23d58f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_2wtrtyrst23_001
+    second: {fileID: 2100000, guid: d41d063b7a8aa4e4f9798bb06fe47cc8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_3
+    second: {fileID: 2100000, guid: d794d028a886a6c4b9e4397d85d84ef0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_53453
+    second: {fileID: 2100000, guid: 75f165f789ed0c546a4623e5472b3801, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat__008
+    second: {fileID: 2100000, guid: be0f48936ce269f49a863c6e04632689, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: px
+    second: {fileID: 2100000, guid: 7f989ebd399c9fe488847d2dbe58c919, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sefsfa_001
+    second: {fileID: 2100000, guid: cfeb636ac584a6445ba071def34182bf, type: 2}
   materials:
     materialImportMode: 2
     materialName: 1

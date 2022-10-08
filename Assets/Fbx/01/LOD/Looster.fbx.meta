@@ -3,7 +3,22 @@ guid: c9381630efe25334eb6a8b797508f6af
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 214356745233
+    second: {fileID: 2100000, guid: 88ced0e88eb58484fb484595b807aed5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tom_Dixon_THE_SPOT_FAMILY_med
+    second: {fileID: 2100000, guid: 8cc1d8104dd12dd49922e543f8e32d79, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: silver_3
+    second: {fileID: 2100000, guid: 8e83285ec05d4bc4e814a0e42add31a1, type: 2}
   materials:
     materialImportMode: 2
     materialName: 1

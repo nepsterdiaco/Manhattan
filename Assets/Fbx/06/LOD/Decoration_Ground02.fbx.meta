@@ -7,8 +7,58 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Legs_Glosswusa
+    second: {fileID: 2100000, guid: 82c92d3f457da624a917c038dffad698, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Mate
     second: {fileID: 2100000, guid: cd54696740c506c4db69da11827534d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 124
+    second: {fileID: 2100000, guid: eb13d27c806168040a5b736d651e3c45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 181
+    second: {fileID: 2100000, guid: e9cbb33292b2415479cdcf25fd0338e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 194
+    second: {fileID: 2100000, guid: 9a5513073bc32164eb7e95e2d91b15c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 196
+    second: {fileID: 2100000, guid: b8537c09b41daa64792212f625acf384, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 198
+    second: {fileID: 2100000, guid: da39695d807683442b0d72c1a37244c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 200
+    second: {fileID: 2100000, guid: 7e2e012628aed14478df08b3400106c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 202
+    second: {fileID: 2100000, guid: 9ae5d6b77a1f20f4c941ab410e2b6059, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 2146024697
+    second: {fileID: 2100000, guid: 2cd302e33151da443bd8a963c696785e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: a
+    second: {fileID: 2100000, guid: 6d0277393e7fc654f947aa7ac00f9dd5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -24,6 +74,46 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: feultfe
     second: {fileID: 2100000, guid: e01f2fe338b64474dac5dc2475723e31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_01 - Default_015
+    second: {fileID: 2100000, guid: f1682c99f086ef84c87bbad497600762, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_01 - Defaultws
+    second: {fileID: 2100000, guid: 6d9f17a272c7ced478c91214dac3fa14, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_01 - Defaultwsw
+    second: {fileID: 2100000, guid: 0e4c45508305615418814ac4b5b9124a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_01 - Defaultwswwe
+    second: {fileID: 2100000, guid: fbdcf712801bc9d41b1f5753ff16621b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_02 - Default
+    second: {fileID: 2100000, guid: eee98ea51dd6c2242a42f41718bb5f25, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_02 - Default_001
+    second: {fileID: 2100000, guid: 02194a763bd83b843944a08b3b383868, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_02 - Default_002
+    second: {fileID: 2100000, guid: 183c01ab3fa45cd4d9c602f2d5d2dae5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_02 - Defaultwe
+    second: {fileID: 2100000, guid: bdad198b63f4e6f4d8a5167a530b5732, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

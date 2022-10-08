@@ -7,8 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: BonzeOld
+    second: {fileID: 2100000, guid: ac87787bf5b59e04cb032f03e016247c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Mate
     second: {fileID: 2100000, guid: cd54696740c506c4db69da11827534d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VRayMtl_15thu
+    second: {fileID: 2100000, guid: 7c7e0e464fd64444281b44e81a306c2b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -27,6 +37,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: jdj
+    second: {fileID: 2100000, guid: 9b5c19f5eadb42e4ca753bb6079e39a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_02 - Default
+    second: {fileID: 2100000, guid: eee98ea51dd6c2242a42f41718bb5f25, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: mat_04 - Default_002
     second: {fileID: 2100000, guid: db1969bfc5874dc45a7425b8ca5ec2ee, type: 2}
   - first:
@@ -39,6 +59,26 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: mat_13 - Defaultss
     second: {fileID: 2100000, guid: d0829d84829111a4cad30186d8169bfb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat__009
+    second: {fileID: 2100000, guid: 21b2ebaa1f4f579478904232b2ff5f96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plastic_black
+    second: {fileID: 2100000, guid: a9ac94ee939dd6146bf95df4944fb3c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xiadele_02 - Default
+    second: {fileID: 2100000, guid: 02a5e6302a0968f4da4a0f7408d3973d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xiadele_05 - Default13213
+    second: {fileID: 2100000, guid: a8c359a479c320c46b48dc7d84d6193f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 1

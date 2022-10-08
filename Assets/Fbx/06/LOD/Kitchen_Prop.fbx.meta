@@ -7,6 +7,21 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Arch137_035_mat_026
+    second: {fileID: 2100000, guid: bb7c27196caf17b4d810ab0f596bd96e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Arch137_035_mat_047
+    second: {fileID: 2100000, guid: 5d4a63bea216d3a4290ec3cb8dd9d246, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Arch137_035_mat_048
+    second: {fileID: 2100000, guid: f54aecea8a7bde44884a6eac61f20287, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Mate
     second: {fileID: 2100000, guid: cd54696740c506c4db69da11827534d8, type: 2}
   - first:

@@ -12,6 +12,31 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Material 2146020509
+    second: {fileID: 2100000, guid: e0a0b70a1ba23b44d9728d5d09ced878, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 2146930364
+    second: {fileID: 2100000, guid: 90fd71f62e55a2f448092dd9a95f1a0f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 2146932923
+    second: {fileID: 2100000, guid: 0190a6c1b273c2848bbfdfb24dad26a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_electronics_02_01
+    second: {fileID: 2100000, guid: ee1d048bc057a5941a9353efb693c7bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_electronics_02_03
+    second: {fileID: 2100000, guid: ce8aed0778e80f84d8bda44ad28bbc17, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: dd
     second: {fileID: 2100000, guid: d1743740e0ea00842a0b17eedf983ebb, type: 2}
   - first:

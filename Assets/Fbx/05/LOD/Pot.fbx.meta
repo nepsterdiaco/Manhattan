@@ -17,6 +17,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: ddddddd
+    second: {fileID: 2100000, guid: ad14b97f94b0bdb43ac43a54816541a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eeeeeeee
+    second: {fileID: 2100000, guid: a72dc5e1db212034bb082d8a45a16ffe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: feuldfr
     second: {fileID: 2100000, guid: f02a6933292261a45ab1569b29a0a6f7, type: 2}
   - first:
@@ -39,6 +49,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: mat_13 - Defaultss
     second: {fileID: 2100000, guid: d0829d84829111a4cad30186d8169bfb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_444444
+    second: {fileID: 2100000, guid: 35c1c12b5ac32d948b78406c777070fc, type: 2}
   materials:
     materialImportMode: 2
     materialName: 1

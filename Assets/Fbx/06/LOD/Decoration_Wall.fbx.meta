@@ -12,6 +12,21 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Material 8
+    second: {fileID: 2100000, guid: 3cd532a7207ba4d4ea50f85243214dad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VRayMtl_ci1
+    second: {fileID: 2100000, guid: 2132f775e7686004486c4f7128557fe3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ___
+    second: {fileID: 2100000, guid: defe3f0542e72bc4aa87b9e14bb6c5a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: dd
     second: {fileID: 2100000, guid: d1743740e0ea00842a0b17eedf983ebb, type: 2}
   - first:
@@ -27,8 +42,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: mat_03 - Default_003
+    second: {fileID: 2100000, guid: 49601ff8595e2954d9caab0eab221121, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: mat_04 - Default_002
     second: {fileID: 2100000, guid: db1969bfc5874dc45a7425b8ca5ec2ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_04 - Defaultdd_001
+    second: {fileID: 2100000, guid: 567d03d879521c04faf576e8884df157, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -39,6 +64,21 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: mat_13 - Defaultss
     second: {fileID: 2100000, guid: d0829d84829111a4cad30186d8169bfb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rw11
+    second: {fileID: 2100000, guid: afe00a93121d3ec48ad93a16f43d0b8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rwhc
+    second: {fileID: 2100000, guid: 079dda60eebfc564d8a4a580e343eac2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wd2
+    second: {fileID: 2100000, guid: 35254ae35af990e41a876e0bdb7be33b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 1

@@ -27,6 +27,21 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: mat_033_belt
+    second: {fileID: 2100000, guid: a062e3b2582a6cc4ebd784a74ab7024b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_033_greyhound
+    second: {fileID: 2100000, guid: f0e188d8ed4e74049956595de010a53b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_033_metal
+    second: {fileID: 2100000, guid: 15ac32b11cde9b04c98f98e0132abafe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: mat_04 - Default_002
     second: {fileID: 2100000, guid: db1969bfc5874dc45a7425b8ca5ec2ee, type: 2}
   - first:

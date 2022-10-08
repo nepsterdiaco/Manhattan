@@ -12,6 +12,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Material 2146932547
+    second: {fileID: 2100000, guid: 2875d812309ed804c9c41bab421703aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TULLE_01
+    second: {fileID: 2100000, guid: 2f8528b0e085f9549aba66a54d413f26, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: dd
     second: {fileID: 2100000, guid: d1743740e0ea00842a0b17eedf983ebb, type: 2}
   - first:
@@ -39,6 +49,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: mat_13 - Defaultss
     second: {fileID: 2100000, guid: d0829d84829111a4cad30186d8169bfb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: qwcz15_001
+    second: {fileID: 2100000, guid: d42b8bcf6d7f0554b93c05d76ff19e2c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: qwcz23
+    second: {fileID: 2100000, guid: 31e8d9017415d1041929a0be992c13f3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 1

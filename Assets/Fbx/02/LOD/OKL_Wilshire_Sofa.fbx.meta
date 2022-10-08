@@ -12,6 +12,21 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: OKL_Wilshire_Sofa_Fabric_body
+    second: {fileID: 2100000, guid: 92bd4e21860d3b34087e65c27cfbb920, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OKL_Wilshire_Sofa_Fabric_pillows
+    second: {fileID: 2100000, guid: 4f77797405b3521479a87a34952cf27d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OKL_Wilshire_Sofa_wood_frame
+    second: {fileID: 2100000, guid: a5de07250f7e81048964340b234c6a46, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: dd
     second: {fileID: 2100000, guid: d1743740e0ea00842a0b17eedf983ebb, type: 2}
   - first:

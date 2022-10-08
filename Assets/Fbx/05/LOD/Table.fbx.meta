@@ -7,6 +7,31 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: -d
+    second: {fileID: 2100000, guid: 77a79bfeb5968d843b0f525065adb094, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat3d66-386134-6-877
+    second: {fileID: 2100000, guid: b77df53bd6e0939429c539b3e6bf93be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat3d66-386134-6-877_001
+    second: {fileID: 2100000, guid: 99380c9f83e410041b87752312dc6506, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat3d66-386134-7-991
+    second: {fileID: 2100000, guid: fad6e2d93e0bc8c4e84b9aabc24575e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat3d66-386134-7-991_001
+    second: {fileID: 2100000, guid: a0986ac73d6c2fd4ba91f8c4b9c8d976, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Mate
     second: {fileID: 2100000, guid: cd54696740c506c4db69da11827534d8, type: 2}
   - first:
@@ -27,6 +52,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: flower1
+    second: {fileID: 2100000, guid: 7c913b848259b744ea186992d1ff189d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: mat_04 - Default_002
     second: {fileID: 2100000, guid: db1969bfc5874dc45a7425b8ca5ec2ee, type: 2}
   - first:
@@ -39,6 +69,36 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: mat_13 - Defaultss
     second: {fileID: 2100000, guid: d0829d84829111a4cad30186d8169bfb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_15 - Default
+    second: {fileID: 2100000, guid: 1e3b6863136b5a14489e53b0ccb1078d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_2_002
+    second: {fileID: 2100000, guid: 1e5bc0f2adedb004c8be54481920d3a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sefsfa2332sdfsf_001
+    second: {fileID: 2100000, guid: 561c10070b44a374eb640af47a1e60f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sefsfa346_001
+    second: {fileID: 2100000, guid: edeb5800dd5e644458193d9f481e586b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sefsfa_001
+    second: {fileID: 2100000, guid: cfeb636ac584a6445ba071def34182bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: trunk1
+    second: {fileID: 2100000, guid: 3a87d93d73f371a4991a498f1d5e6ab1, type: 2}
   materials:
     materialImportMode: 2
     materialName: 1

@@ -7,8 +7,33 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: ALLURE_lighting_Material 1
+    second: {fileID: 2100000, guid: 267ee1c12591ccf409c42c9eac62554f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ALLURE_lighting_Material 2
+    second: {fileID: 2100000, guid: 5867992198d9f474796c2667c0b03bb1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ALLURE_lighting_Material 3
+    second: {fileID: 2100000, guid: 53325ff298d7b2f4f9ac0e3e2a4c9585, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DEN234
+    second: {fileID: 2100000, guid: cf86893a6b18ec34f920ea727d1e1a75, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Mate
     second: {fileID: 2100000, guid: cd54696740c506c4db69da11827534d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: QWEE3234234
+    second: {fileID: 2100000, guid: ef392b6dcd236e242b698ebed236e740, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

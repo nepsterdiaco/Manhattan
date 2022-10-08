@@ -12,6 +12,21 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Material 76123231
+    second: {fileID: 2100000, guid: f493d6e26a8dcd64998c4033eecf48f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: baifault
+    second: {fileID: 2100000, guid: e115ed7a0dd63614593787e5a679f768, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: baood
+    second: {fileID: 2100000, guid: fcb53aa181affdd43b3ad55c6b5a9760, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: dd
     second: {fileID: 2100000, guid: d1743740e0ea00842a0b17eedf983ebb, type: 2}
   - first:

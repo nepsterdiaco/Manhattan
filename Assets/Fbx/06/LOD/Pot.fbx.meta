@@ -12,6 +12,21 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Material 4
+    second: {fileID: 2100000, guid: e7c0f581a2a9cd54d867a5620df13a6a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 501
+    second: {fileID: 2100000, guid: 354060cbbb9e77442bd65c6f86f17154, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 502
+    second: {fileID: 2100000, guid: 78dfdbe5e20e9e747bbaefc93d9a5c35, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: dd
     second: {fileID: 2100000, guid: d1743740e0ea00842a0b17eedf983ebb, type: 2}
   - first:
@@ -39,6 +54,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: mat_13 - Defaultss
     second: {fileID: 2100000, guid: d0829d84829111a4cad30186d8169bfb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sj1
+    second: {fileID: 2100000, guid: c14eeeeec026814499726d0a65456f94, type: 2}
   materials:
     materialImportMode: 2
     materialName: 1
