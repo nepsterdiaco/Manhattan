@@ -1,0 +1,511 @@
+fileFormatVersion: 2
+guid: bc5e8214e2a12ec4e81870f5ef14d9ef
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Chair
+    second: {fileID: 2100000, guid: 76f7c22cb05d51740baff714625f4203, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Chair_Diffuse
+    second: {fileID: 2800000, guid: 61ff7b7d5da71de4a83ff1577a12a388, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Chair_Glossiness
+    second: {fileID: 2800000, guid: a569473a01819604582d68efe001c671, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Chair_Reflection
+    second: {fileID: 2800000, guid: ce03f7c9177da7f41bcbe0efdc70b77d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Chair_bump
+    second: {fileID: 2800000, guid: e2d3e5e583e414745b63bcb9d32f780c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Clock_Diffuse
+    second: {fileID: 2800000, guid: dce77e443cf171644938276ac6e79b37, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Clock_Glossiness
+    second: {fileID: 2800000, guid: 726f4211949acf842a6a4222e5bec6b0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Clock_Reflection
+    second: {fileID: 2800000, guid: 096ca92505a758e4c89d6ba332e7cde1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Clock_bump
+    second: {fileID: 2800000, guid: 749547c61316d1e4da79f350fda064be, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Floor_GresV01_Diffuse
+    second: {fileID: 2800000, guid: 25769598b9b4ece4fb033e34f59bd31f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Floor_GresV01_Glossiness
+    second: {fileID: 2800000, guid: 09c24825bb217a148a3af185d282b500, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Floor_GresV01_Reflection
+    second: {fileID: 2800000, guid: 227435f7a44f9b94ca7f17c639b86be7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Floor_GresV02_Diffuse
+    second: {fileID: 2800000, guid: 1c341b3d95a5b704b8fd363e851bf252, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Floor_GresV02_Glossiness
+    second: {fileID: 2800000, guid: 38283a7086058314c9407c1a1585c347, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Floor_GresV02_Reflection
+    second: {fileID: 2800000, guid: 98b308c7b0da8a044a2c5b956b967cd6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Floor_GresV03_Diffuse
+    second: {fileID: 2800000, guid: d904f6793e973f94fa075a34ab3e9535, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Floor_GresV03_Glossiness
+    second: {fileID: 2800000, guid: 478adf94959b8e040b14dfcabe85ee06, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Floor_GresV03_Reflection
+    second: {fileID: 2800000, guid: f6a659f37df4cce40a7818b63a11f1e9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Floor_GresV04_Diffuse
+    second: {fileID: 2800000, guid: 8821ae1b2c1679e4a8a6ef366ee0d59f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Floor_GresV04_Glossiness
+    second: {fileID: 2800000, guid: fbea3ce612e829b49bdc873259b46da8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Floor_GresV04_Reflection
+    second: {fileID: 2800000, guid: 78c3a2f4db0f2a54b9dad9604f225763, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Floor_GresV05_Diffuse
+    second: {fileID: 2800000, guid: 97c398c3838862f4e998b3d680806969, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Floor_GresV05_Glossiness
+    second: {fileID: 2800000, guid: b31da92d83da6fb4ea13a71a477cf9be, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Floor_GresV05_Reflection
+    second: {fileID: 2800000, guid: a6cf0390d295a6744ba074aec8ae499e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Floor_GresV06_Diffuse
+    second: {fileID: 2800000, guid: f162bc8b76fa9e84b91f92e4a85701b5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Floor_GresV06_Glossiness
+    second: {fileID: 2800000, guid: e4e4fe953c81dca43887b2d218cf9fb2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Floor_GresV06_Reflection
+    second: {fileID: 2800000, guid: e9334d6c3529e0643b056a526c679390, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Flower_Little_V1_Diffuse
+    second: {fileID: 2800000, guid: 986dc0ef27276014abb5c4e61e1b354c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Flower_Little_V1_Glossiness
+    second: {fileID: 2800000, guid: ae7346e0d3b67cc429afd6819b298edf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Flower_Little_V1_Leaf_Diffuse
+    second: {fileID: 2800000, guid: 26660a901aa686b4c92d1bff7b384626, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Flower_Little_V1_Leaf_Glossiness
+    second: {fileID: 2800000, guid: 21e85e03343a0ec4f87050fd95d45c41, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Flower_Little_V1_Leaf_Reflection
+    second: {fileID: 2800000, guid: 04e828af4a93e6247bbff6dd68b6405f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Flower_Little_V1_Leaf_bump
+    second: {fileID: 2800000, guid: c6d7a782b455ea14b8f5b4feb235202f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Flower_Little_V1_Pot_Diffuse
+    second: {fileID: 2800000, guid: 7a05e93eea598634997ee7a80c1fd1cc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Flower_Little_V1_Pot_Glossiness
+    second: {fileID: 2800000, guid: e73d81b38714ea44ebd9454d3e4f6cdd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Flower_Little_V1_Pot_Reflection
+    second: {fileID: 2800000, guid: a25606a1e9475f049b99f0b90ae51955, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Flower_Little_V1_Pot_bump
+    second: {fileID: 2800000, guid: f4b1c3de309712942958e2b10169e882, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Flower_Little_V1_Reflection
+    second: {fileID: 2800000, guid: 85b376a7c5f3d2c4b963ea5ee2cfe74a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Flower_Little_V1_Steam_Diffuse
+    second: {fileID: 2800000, guid: 883b42bf253ce9548b366d07056e97d5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Flower_Little_V1_Steam_Glossiness
+    second: {fileID: 2800000, guid: 5594b7dae6bdd3b4b96663f49c0d475d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Flower_Little_V1_Steam_Reflection
+    second: {fileID: 2800000, guid: 016c447a8bfa01b48850b6d0b1a40729, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Flower_Little_V1_Steam_bump
+    second: {fileID: 2800000, guid: da40bde374f9d2a4bbda1ff0d88f20b2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Flower_Little_V1_bump
+    second: {fileID: 2800000, guid: e2d1b7a9ac53f8f4fa75c1aa3272e19d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Glasses_Diffuse
+    second: {fileID: 2800000, guid: 74d16de78a74ec543864621d194cec42, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Glasses_Glossiness
+    second: {fileID: 2800000, guid: 5b8f971137f5a8040aff73469fbcfb5f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Glasses_Opacity
+    second: {fileID: 2800000, guid: c3f38945a402c2d43a2d98b57d67e9f0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Glasses_Reflection
+    second: {fileID: 2800000, guid: 16d17c1cd6d62bf4da73b323469ec44f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Glasses_bump
+    second: {fileID: 2800000, guid: 0763f18892942a34598f058cd1d935e8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Napkins_Diffuse
+    second: {fileID: 2800000, guid: 8657e379f5655144ba66e72c98a935dc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Napkins_Glossiness
+    second: {fileID: 2800000, guid: 713f14a8c5e985546867e5591bb2a071, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Napkins_Reflection
+    second: {fileID: 2800000, guid: 72e981a73458935479f520239fd549e0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Napkins_bump
+    second: {fileID: 2800000, guid: 61af9adb588e6754cb1947d099101393, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Sofa_1_Leather_Diffuse
+    second: {fileID: 2800000, guid: 88e372d9f36eaf34f92759eb5e06e7c6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Sofa_1_Leather_Glossiness
+    second: {fileID: 2800000, guid: 1aa356c5c7e23ec4a93e0cdb7a36a49e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Sofa_1_Leather_Reflection
+    second: {fileID: 2800000, guid: 808b3c9e7d3ac4a42831a63d21a20ce1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Sofa_1_Marble_Glossiness
+    second: {fileID: 2800000, guid: 81afc3f13de8d944b92525de848ec083, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Sofa_1_Marble_Reflection
+    second: {fileID: 2800000, guid: 1d81fd027d1a4b14fb33357c388906fb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Sofa_1_Wood_1_Diffuse
+    second: {fileID: 2800000, guid: a108d47cc2c93e7419216765b0713d1f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Sofa_1_Wood_1_Glossiness
+    second: {fileID: 2800000, guid: ff34af24b1470d244a9f9561b513c60d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Sofa_1_Wood_1_Reflection
+    second: {fileID: 2800000, guid: 2dfe781848f38df4cb0a115575034059, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Sofa_1_Wood_2_Diffuse
+    second: {fileID: 2800000, guid: 6555bb1d7b297e645add5fcba4df15ba, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Sofa_1_Wood_2_Glossiness
+    second: {fileID: 2800000, guid: 83d235a346b8e02418d9a34638f2a5c8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Sofa_1_Wood_2_Reflection
+    second: {fileID: 2800000, guid: 6964aa0b1ce68de499d7bde7839daa68, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Table_SET_001_Diffuse
+    second: {fileID: 2800000, guid: 1b315043cf7c6c74cac270fcbcec57f2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Table_SET_001_Glossiness
+    second: {fileID: 2800000, guid: 0439e11be1f5f4d42b7e32ea1ba6be6f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Table_SET_001_Reflection
+    second: {fileID: 2800000, guid: 54b0858d1e73c6c44910ddbacbd5af9c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Table_V1_Diffuse
+    second: {fileID: 2800000, guid: e57756a89c30d784d9fe01844018b1b9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Table_V1_Glossiness
+    second: {fileID: 2800000, guid: 4dd01617d45caed4f9f9539e112e6e8e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Table_V1_Reflection
+    second: {fileID: 2800000, guid: d30d8e3948882d142b86ba8330ec12da, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Table_V1_bump
+    second: {fileID: 2800000, guid: f58d6366ac7d2f6479e33926092c6227, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: mat_AI52_004_Floor_GresV01_bump
+    second: {fileID: 2800000, guid: 5eda9a60c8caf334da5fd3d35336ab67, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: mat_AI52_004_Floor_GresV02_bump
+    second: {fileID: 2800000, guid: f44c61b1881f8614fa66d2ca357b6400, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: mat_AI52_004_Floor_GresV03_bump
+    second: {fileID: 2800000, guid: c474210cb1d7bf941bc74b194d699762, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: mat_AI52_004_Floor_GresV04_bump
+    second: {fileID: 2800000, guid: f029c09be151a9c4f83e1392bfa9e55f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: mat_AI52_004_Floor_GresV05_bump
+    second: {fileID: 2800000, guid: 04d512ce58071d6418862b975b6303d2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: mat_AI52_004_Floor_GresV06_bump
+    second: {fileID: 2800000, guid: 0a93da52c99f24a41a38451658474954, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: mat_AI52_004_Sofa_1_Leather_bump
+    second: {fileID: 2800000, guid: 25f4deb56c6d3164f8cfb85498989ec8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: mat_AI52_004_Sofa_1_Marble_bump
+    second: {fileID: 2800000, guid: 3df980045b4b1ee48891d101adf3c101, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: mat_AI52_004_Sofa_1_Wood_1_bump
+    second: {fileID: 2800000, guid: 20c688ff1da4a6843a1b6928bd4bcbd7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: mat_AI52_004_Sofa_1_Wood_2_bump
+    second: {fileID: 2800000, guid: 6d0d8af73679440479343d9e713c93e1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: mat_AI52_004_Table_SET_001_bump
+    second: {fileID: 2800000, guid: 05389e63d54dac040a8cc72cb355432f, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
