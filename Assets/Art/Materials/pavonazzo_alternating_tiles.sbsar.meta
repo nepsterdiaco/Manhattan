@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 374e01f2829c7aa4fa40140c2f3d7cdb
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: 337236265e43ff84f8dc350ab31f06e5, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Art/Materials/pavonazzo_alternating_tiles.sbsar

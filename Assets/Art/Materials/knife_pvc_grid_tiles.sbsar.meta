@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: fd45f2b01ed02454d91da918481c1b20
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: b9daa11d69f139c4e9f01c87e01cac1c, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Art/Materials/knife_pvc_grid_tiles.sbsar

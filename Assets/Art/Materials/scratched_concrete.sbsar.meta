@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e5e40d1aa8400a94f9882ab101df9a69
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: e68ee8c2de9da9c498f9ac4b524aef14, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Art/Materials/scratched_concrete.sbsar

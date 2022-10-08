@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d961b3451617da543bcd1c268bed7520
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: 7e9ca98e45cfd1d48a8b08966b5aedd2, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Art/Materials/stylized_aged_gold.sbsar
