@@ -224,7 +224,14 @@ MonoBehaviour:
   HasThumbnail: 0
   CurrentStatePreset: " <sbspreset pkgurl=\"pkg://pavonazzo_alternating_tiles\" label=\"\"
     >\n  <presetinput identifier=\"$outputsize\" uid=\"2907922701\" type=\"8\" value=\"10,10\"
-    />\n </sbspreset>\n"
+    />\n  <presetinput identifier=\"alternating_style\" uid=\"3345128260\" type=\"4\"
+    value=\"0\" />\n  <presetinput identifier=\"marble_color\" uid=\"3333277137\"
+    type=\"2\" value=\"0.679245,0.679245,0.679245\" />\n  <presetinput identifier=\"marble_roughness\"
+    uid=\"3339183928\" type=\"0\" value=\"1\" />\n  <presetinput identifier=\"veins_color\"
+    uid=\"3339142576\" type=\"2\" value=\"0.716981,0.716981,0.716981\" />\n  <presetinput
+    identifier=\"veins_random_color\" uid=\"3339128729\" type=\"2\" value=\"0.443396,0.443396,0.443396\"
+    />\n  <presetinput identifier=\"gap_roughness\" uid=\"3343763386\" type=\"0\"
+    value=\"0.642\" />\n </sbspreset>\n"
   IsRuntimeOnly: 0
   GenerateAllOutputs: 0
   GenerateAllMipmaps: 1
@@ -293,7 +300,7 @@ MonoBehaviour:
           GuiDescription: 
           Type: 4
           WidgetType: 5
-        Data: 2
+        Data: 0
         NumericalDescription:
           DefaultValue: 2
           MinValue: 0
@@ -345,7 +352,7 @@ MonoBehaviour:
           GuiDescription: 
           Type: 2
           WidgetType: 3
-        Data: {x: 0.712418, y: 0.679282, z: 0.592301}
+        Data: {x: 0.6792453, y: 0.6792453, z: 0.6792453}
         NumericalDescription:
           DefaultValue: {x: 0.712418, y: 0.679282, z: 0.592301}
           MinValue: {x: 0, y: 0, z: 0}
@@ -387,7 +394,7 @@ MonoBehaviour:
           GuiDescription: 
           Type: 0
           WidgetType: 1
-        Data: 0.08
+        Data: 1
         NumericalDescription:
           DefaultValue: 0.08
           MinValue: 0
@@ -450,7 +457,7 @@ MonoBehaviour:
           GuiDescription: 
           Type: 2
           WidgetType: 3
-        Data: {x: 0.588235, y: 0.47826, z: 0.451436}
+        Data: {x: 0.7169812, y: 0.7169812, z: 0.7169812}
         NumericalDescription:
           DefaultValue: {x: 0.588235, y: 0.47826, z: 0.451436}
           MinValue: {x: 0, y: 0, z: 0}
@@ -555,7 +562,7 @@ MonoBehaviour:
           GuiDescription: 
           Type: 2
           WidgetType: 3
-        Data: {x: 0.379085, y: 0.260243, z: 0.136647}
+        Data: {x: 0.4433962, y: 0.4433962, z: 0.4433962}
         NumericalDescription:
           DefaultValue: {x: 0.379085, y: 0.260243, z: 0.136647}
           MinValue: {x: 0, y: 0, z: 0}
@@ -786,7 +793,7 @@ MonoBehaviour:
           GuiDescription: 
           Type: 0
           WidgetType: 1
-        Data: 0.57
+        Data: 0.642
         NumericalDescription:
           DefaultValue: 0.57
           MinValue: 0
