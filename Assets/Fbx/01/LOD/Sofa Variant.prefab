@@ -199,3 +199,24 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e8cffe4b53bd244e9c7f63e360d23c6, type: 3}
+--- !u!1 &1737796416993302959 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7e8cffe4b53bd244e9c7f63e360d23c6, type: 3}
+  m_PrefabInstance: {fileID: 1503231903561950462}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6661747233183663755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737796416993302959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 742dca23750d7044e8ed6aec09154e6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    group: Sofa_0
+    name: Sofa_Blue_0
+    materials: []

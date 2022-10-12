@@ -54,8 +54,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f75aaa4a2298bea4ab5a5314a15c9c1d, type: 3}
       propertyPath: m_Name
-      value: Apartment01
+      value: Apartment01 Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: f75aaa4a2298bea4ab5a5314a15c9c1d, type: 3}
+--- !u!1 &5850656941663852926 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f75aaa4a2298bea4ab5a5314a15c9c1d, type: 3}
+  m_PrefabInstance: {fileID: 6769152872882971695}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &766248090630837645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5850656941663852926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12a238d0ebd0b754fab217a98062beb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

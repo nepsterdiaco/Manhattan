@@ -7,7 +7,7 @@ using Sirenix.OdinInspector;
 
 
 public enum _RoomGroup { Royal_0 = 0 , Royal_1 = 1, Royal_2 = 2 }
-public enum _StuffGroup { TV_0 = 0, Sofa_0 = 2, Refrigerator_0 = 3 }
+public enum _StuffGroup { TV_0 = 0, Sofa_0 = 2, Refrigerator_0 = 3, Bed_0 = 4 }
 namespace Diaco.Manhatan.Structs
 {
     

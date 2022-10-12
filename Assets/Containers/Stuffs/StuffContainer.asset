@@ -12,85 +12,89 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3157b32582a186d40a3228e2fcd3bc28, type: 3}
   m_Name: StuffContainer
   m_EditorClassIdentifier: 
-  Group: 2
-  Name: 
-  Prefab: {fileID: 0}
+  Prefabs: []
   stuffs:
+  - group: Decoration_0
+    name: Mirror_Stand_0
+    prefab: {fileID: 3865174119897038558, guid: dfb28fb607537b04db80da0eed6204cd, type: 3}
+    materials: []
+  - group: Toilet_0
+    name: Toilet_Simple_Blue_0
+    prefab: {fileID: 3011925676140966644, guid: cb4b4be22c72d9c4bab78675ded6b324, type: 3}
+    materials: []
+  - group: Bed_0
+    name: Bed_Simple_Blue_0
+    prefab: {fileID: 5615301106777416423, guid: ad5d9ef471af7034394430c4cd02b352, type: 3}
+    materials: []
+  - group: Door_0
+    name: Door_Simple_Blue_0
+    prefab: {fileID: 1319522559305502565, guid: 5dae543726281914c9f290bc0ccabecc, type: 3}
+    materials: []
+  - group: Decoration_0
+    name: Wall_Decoration_0
+    prefab: {fileID: 7149603450676236302, guid: 789bcede9df0f094880c595ffb402738, type: 3}
+    materials: []
+  - group: Kitchen_0
+    name: Kitchen_Simple_Blue_0
+    prefab: {fileID: 210128285453517640, guid: ba72664bf04dccc428dd7bc84cbf38aa, type: 3}
+    materials: []
+  - group: Looster_0
+    name: Looster_Simple_Blue_0
+    prefab: {fileID: 2148076065657815768, guid: a6c97190dfdf2a34d9480667c1af0d7c, type: 3}
+    materials: []
+  - group: Looster_0
+    name: Looster_Simple_Blue_1
+    prefab: {fileID: 309290276405357637, guid: 89852f441f3ace94baf89a546ac563ac, type: 3}
+    materials: []
+  - group: Living_Room_Table_0
+    name: Table_Simple_Blue_0
+    prefab: {fileID: 151880957436599283, guid: ff52ce27acc98a345b9c2b6aa4fe9ba4, type: 3}
+    materials: []
+  - group: Dining_Table_0
+    name: Dining_Table_Blue_0
+    prefab: {fileID: 8290854018789886901, guid: 02c70066114fef940810e2810f31af19, type: 3}
+    materials: []
+  - group: Sofa_0
+    name: Sofa_Blue_0
+    prefab: {fileID: 1737796416993302959, guid: d1e0b687533faa1418ff5db0064bc1bc, type: 3}
+    materials: []
+  - group: Sign_0
+    name: Sign_Blue_0
+    prefab: {fileID: 958964130142354088, guid: ab81ecde5d47edc47b64f85b91d37fe1, type: 3}
+    materials: []
+  - group: Sign_0
+    name: Sign_Blue_1
+    prefab: {fileID: 7319161716498965628, guid: fe63d286ae207144b9069c25c0c2683f, type: 3}
+    materials: []
+  - group: Sign_0
+    name: Sign_Blue_2
+    prefab: {fileID: 9085682389813146641, guid: 5165507d7ba60304689590a9e0604901, type: 3}
+    materials: []
+  - group: Decoration_0
+    name: Lamp_0
+    prefab: {fileID: 3243916035413174725, guid: b42d1ef95ac27974291bf894bbe4a4f9, type: 3}
+    materials: []
+  - group: Decoration_0
+    name: Pot_0
+    prefab: {fileID: 3797649510280276667, guid: 543423a742019e74b887b9270a88b9a6, type: 3}
+    materials: []
+  - group: Decoration_0
+    name: Wall_Decoration_1
+    prefab: {fileID: 684453670888435414, guid: aabbeeea862e0ab44ade3ef4b102a17b, type: 3}
+    materials: []
+  - group: Decoration_0
+    name: Wall_Decoration_2
+    prefab: {fileID: 3555364060067872809, guid: 50d4cd1109b93a24a873a14e5ae5177c, type: 3}
+    materials: []
   - group: TV_0
-    name: SamsungCurve2036
-    prefab: {fileID: 1937687812641396914, guid: a138b64dbbebef24f8670e86cabbae6a,
-      type: 3}
+    name: TV_Simple_Blue
+    prefab: {fileID: 6896846173355311310, guid: 33ced59cc4a655342b518a0b9bed04d7, type: 3}
     materials: []
-  - group: TV_0
-    name: Samsungflame1020
-    prefab: {fileID: 3031883049553971151, guid: 7e163e7f4dac997458c29af42f034aa2,
-      type: 3}
+  - group: TV_Stand_0
+    name: TV_Stand_Blue_0
+    prefab: {fileID: 3640361547946650524, guid: 051e925c1e980b046a579a57c1834ec7, type: 3}
     materials: []
-  - group: TV_0
-    name: SamsungG730
-    prefab: {fileID: 3275164510312036827, guid: 0f4884d0d6586144aa92c1231c98ac37,
-      type: 3}
-    materials: []
-  - group: TV_0
-    name: SamsungV890
-    prefab: {fileID: 5512613748230350017, guid: 9e785f2bc5dd0224bb1df5029f7576dc,
-      type: 3}
-    materials: []
-  - group: TV_0
-    name: SamsungX50
-    prefab: {fileID: 3362873232745998949, guid: 6fe6b837a0293d141841c30391a37cef,
-      type: 3}
-    materials: []
-  - group: Sofa_0
-    name: Sofa_R120
-    prefab: {fileID: 1298523637678142246, guid: 5158c16bb6fb47047acca6e535ac20ab,
-      type: 3}
-    materials: []
-  - group: Sofa_0
-    name: Sofa_R130
-    prefab: {fileID: 3574464194476438775, guid: 99a9270a6c5efbc4f96b5b3aef311ec2,
-      type: 3}
-    materials: []
-  - group: Sofa_0
-    name: Sofa_R140
-    prefab: {fileID: 2231292268968707539, guid: 6bb0218a32c91e340ac73c344ce05c1b,
-      type: 3}
-    materials: []
-  - group: Sofa_0
-    name: Sofa_R150
-    prefab: {fileID: 726655013228396083, guid: 7f45494b327939647ada7b4314cd95e6, type: 3}
-    materials: []
-  - group: Sofa_0
-    name: Sofa_R160
-    prefab: {fileID: 5738940798581273795, guid: f0382af9aca4bc549a94267c11ec86f8,
-      type: 3}
-    materials: []
-  - group: Refrigerator_0
-    name: Refrigerator_ER7
-    prefab: {fileID: 6001085680133277773, guid: 8217a2531ee7b8d48bef1f54490cb022,
-      type: 3}
-    materials: []
-  - group: Refrigerator_0
-    name: Refrigerator_G0025
-    prefab: {fileID: 4035631584947340691, guid: 0b62f38762cce364aa1d96ef09e7d1c9,
-      type: 3}
-    materials: []
-  - group: Refrigerator_0
-    name: Refrigerator_G532
-    prefab: {fileID: 8380602354559666855, guid: d557543e21a721e48944027dd84c3dbc,
-      type: 3}
-    materials: []
-  - group: Refrigerator_0
-    name: Refrigerator_G9880
-    prefab: {fileID: 5600429284219047441, guid: 2f0f15ee97c811b4e8245db6d8e895e6,
-      type: 3}
-    materials: []
-  - group: Refrigerator_0
-    name: Refrigerator_X021
-    prefab: {fileID: 95191460750124092, guid: 5151dbaa84500664381b7064fcadd68f, type: 3}
-    materials: []
-  - group: Sofa_0
-    name: OMID007
-    prefab: {fileID: 3031883049553971151, guid: 7e163e7f4dac997458c29af42f034aa2,
-      type: 3}
+  - group: Decoration_0
+    name: Wall_Decoration_3
+    prefab: {fileID: 8810632678107746214, guid: 6e81c601426bd364f920679771b9f2ae, type: 3}
     materials: []

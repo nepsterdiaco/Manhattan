@@ -54,8 +54,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 745b7d0105cddc848a041a59bf26df7b, type: 3}
       propertyPath: m_Name
-      value: Tazin02
+      value: Tazin02 Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 745b7d0105cddc848a041a59bf26df7b, type: 3}
+--- !u!1 &3797649510280276667 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 745b7d0105cddc848a041a59bf26df7b, type: 3}
+  m_PrefabInstance: {fileID: 4067489104436926442}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-4013795395081537073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3797649510280276667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 742dca23750d7044e8ed6aec09154e6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    group: Decoration_0
+    name: Pot_0
+    materials: []

@@ -54,8 +54,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: adb00467cf0a19f42a1b9426d1a7d329, type: 3}
       propertyPath: m_Name
-      value: WallDecor
+      value: WallDecor Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: adb00467cf0a19f42a1b9426d1a7d329, type: 3}
+--- !u!1 &8810632678107746214 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: adb00467cf0a19f42a1b9426d1a7d329, type: 3}
+  m_PrefabInstance: {fileID: 8540177759153074935}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1014922275812725957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8810632678107746214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 742dca23750d7044e8ed6aec09154e6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    group: Decoration_0
+    name: Wall_Decoration_3
+    materials: []

@@ -43,3 +43,24 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 02b7a09db9f69524ebce19ee1754e99c, type: 3}
+--- !u!1 &8290854018789886901 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 02b7a09db9f69524ebce19ee1754e99c, type: 3}
+  m_PrefabInstance: {fileID: 9209419355741910756}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-8774348323860926957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8290854018789886901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 742dca23750d7044e8ed6aec09154e6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    group: Dining_Table_0
+    name: Dining_Table_Blue_0
+    materials: []
