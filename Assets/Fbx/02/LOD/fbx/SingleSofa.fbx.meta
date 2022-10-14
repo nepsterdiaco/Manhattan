@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eb343aad343a8d849af8cd201eab76fa
+guid: 02708883dfeafac4da64cff57bb9394f
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
@@ -19,16 +19,6 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Mate
     second: {fileID: 2100000, guid: cd54696740c506c4db69da11827534d8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Orange
-    second: {fileID: 2100000, guid: 2d21b3de58320dc468d6e5895adec9f1, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Orange1
-    second: {fileID: 2100000, guid: bd18980cc6b7256409a59ff5ea7ae564, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -90,7 +80,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -144,7 +134,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.001
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
