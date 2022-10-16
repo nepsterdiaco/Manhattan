@@ -54,8 +54,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1786fcaa79186144b82315283875461d, type: 3}
       propertyPath: m_Name
-      value: Ritchie_3_Seater_Sofa
+      value: Ritchie_3_Seater_Sofa Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 1786fcaa79186144b82315283875461d, type: 3}
+--- !u!1 &6514148564146993894 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1786fcaa79186144b82315283875461d, type: 3}
+  m_PrefabInstance: {fileID: 6244115860745029559}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-4938561603486959496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6514148564146993894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 742dca23750d7044e8ed6aec09154e6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    group: 
+    name: 
+    materials: []

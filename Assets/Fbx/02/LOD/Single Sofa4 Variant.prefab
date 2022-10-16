@@ -54,8 +54,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 330c561ab41bb4e45b744ff292b83fde, type: 3}
       propertyPath: m_Name
-      value: Single Sofa4
+      value: Single Sofa4 Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 330c561ab41bb4e45b744ff292b83fde, type: 3}
+--- !u!1 &8856267329207693612 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 330c561ab41bb4e45b744ff292b83fde, type: 3}
+  m_PrefabInstance: {fileID: 8513670160263892093}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-3923965630183989984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8856267329207693612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 742dca23750d7044e8ed6aec09154e6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    group: 
+    name: 
+    materials: []
