@@ -15,7 +15,7 @@ MonoBehaviour:
   stuffs:
   - group: Bed_0
     name: Bed_Simple_Blue_0
-    prefab: {fileID: 5615301106777416423, guid: ad5d9ef471af7034394430c4cd02b352, type: 3}
+    prefab: {fileID: 6030051321890081251, guid: 9593cce2013e475458abd285671ff984, type: 3}
     materials: []
   - group: Carpet
     name: Carpet_0
@@ -159,66 +159,62 @@ MonoBehaviour:
     materials: []
   - group: Sofa_0
     name: Sofa_Blue_0
-    prefab: {fileID: 1737796416993302959, guid: d1e0b687533faa1418ff5db0064bc1bc, type: 3}
+    prefab: {fileID: 6030051321890081251, guid: 983016d87c805aa478469a613139ed4f, type: 3}
     materials: []
   - group: Sign_0
     name: Sign_Blue_0
-    prefab: {fileID: 958964130142354088, guid: ab81ecde5d47edc47b64f85b91d37fe1, type: 3}
+    prefab: {fileID: 6030051321890081251, guid: 299c5f40666fd3e4b9ce57d48436be5a, type: 3}
     materials: []
   - group: Sign_0
     name: Sign_Blue_1
-    prefab: {fileID: 7319161716498965628, guid: fe63d286ae207144b9069c25c0c2683f, type: 3}
+    prefab: {fileID: 6030051321890081251, guid: 7e52eb0d1853e0f4c8c558a1f7490ce8, type: 3}
     materials: []
   - group: Sign_0
     name: Sign_Blue_2
-    prefab: {fileID: 9085682389813146641, guid: 5165507d7ba60304689590a9e0604901, type: 3}
+    prefab: {fileID: 6030051321890081251, guid: f4ba822324bd8654a8a8c6a2e6eb04b3, type: 3}
     materials: []
   - group: TV_0
     name: TV_Simple_Blue
-    prefab: {fileID: 6896846173355311310, guid: 33ced59cc4a655342b518a0b9bed04d7, type: 3}
+    prefab: {fileID: 6030051321890081251, guid: a73db06a82cda404c934e30368ceeb3a, type: 3}
     materials: []
   - group: TV_0
     name: TV_Simple_Blue01
     prefab: {fileID: 499588282660746206, guid: 45af358444648b64a8d4e66a4b283bba, type: 3}
     materials: []
   - group: Decoration_0
-    name: Mirror_Stand_0
-    prefab: {fileID: 3865174119897038558, guid: dfb28fb607537b04db80da0eed6204cd, type: 3}
-    materials: []
-  - group: Decoration_0
     name: Wall_Decoration_3
-    prefab: {fileID: 8810632678107746214, guid: 6e81c601426bd364f920679771b9f2ae, type: 3}
+    prefab: {fileID: 6030051321890081251, guid: 6bc956df06f43094c927c818fd7caf2c, type: 3}
     materials: []
   - group: Dining_Table_0
     name: Dining_Table_Blue_0
-    prefab: {fileID: 8290854018789886901, guid: 02c70066114fef940810e2810f31af19, type: 3}
+    prefab: {fileID: 6030051321890081251, guid: da905d8c83b068b4d9b82e80d23436b4, type: 3}
     materials: []
   - group: Living_Room_Table_0
     name: Table_Simple_Blue_0
-    prefab: {fileID: 151880957436599283, guid: ff52ce27acc98a345b9c2b6aa4fe9ba4, type: 3}
+    prefab: {fileID: 6030051321890081251, guid: ba50cc8e3c129a74ab2d3af74f82ae67, type: 3}
     materials: []
   - group: TV_Stand_0
     name: TV_Stand_Blue_0
-    prefab: {fileID: 3640361547946650524, guid: 051e925c1e980b046a579a57c1834ec7, type: 3}
-    materials: []
-  - group: Looster_0
-    name: Looster_Simple_Blue_1
-    prefab: {fileID: 309290276405357637, guid: 89852f441f3ace94baf89a546ac563ac, type: 3}
+    prefab: {fileID: 6030051321890081251, guid: f20a39e7649860249928814d69a529e1, type: 3}
     materials: []
   - group: Looster_0
     name: Looster_Simple_Blue_0
-    prefab: {fileID: 2148076065657815768, guid: a6c97190dfdf2a34d9480667c1af0d7c, type: 3}
+    prefab: {fileID: 6030051321890081251, guid: 15fdea02ce3edc8449ac0c17e25dcc02, type: 3}
     materials: []
-  - group: 
-    name: 
-    prefab: {fileID: 5269301486442375516, guid: 5e4d91cf3eb638c4881a472012fb12e9, type: 3}
+  - group: Looster_0
+    name: Looster_Simple_Blue_1
+    prefab: {fileID: 6030051321890081251, guid: f08095c1eda1556408e2bbf0a053a9b4, type: 3}
+    materials: []
+  - group: SingleSofa
+    name: SingleSofa_01
+    prefab: {fileID: 6030051321890081251, guid: 40b57ac93a4c2d348ba98251ac883e0e, type: 3}
     materials: []
   - group: Kitchen_0
     name: Kitchen_Simple_Blue_0
-    prefab: {fileID: 210128285453517640, guid: ba72664bf04dccc428dd7bc84cbf38aa, type: 3}
+    prefab: {fileID: 6030051321890081251, guid: 4a224e4759b6d6e4a96e3e6f56db7e2b, type: 3}
     materials: []
   beds:
-  - {fileID: 5615301106777416423, guid: ad5d9ef471af7034394430c4cd02b352, type: 3}
+  - {fileID: 6030051321890081251, guid: 9593cce2013e475458abd285671ff984, type: 3}
   carpets:
   - {fileID: 4731716754793165809, guid: be1b26c9cc2556043aa1a42e246ab669, type: 3}
   - {fileID: 4731716754793165809, guid: 09af7864ce75a27489393296a6596497, type: 3}
@@ -256,27 +252,26 @@ MonoBehaviour:
   - {fileID: 4731716754793165809, guid: b5069ac2288bd0e47a8764120860a929, type: 3}
   - {fileID: 4731716754793165809, guid: 1db0d578b1c69da479954d647b1051e4, type: 3}
   sofas:
-  - {fileID: 1737796416993302959, guid: d1e0b687533faa1418ff5db0064bc1bc, type: 3}
+  - {fileID: 6030051321890081251, guid: 983016d87c805aa478469a613139ed4f, type: 3}
   smallSofa:
-  - {fileID: 5269301486442375516, guid: 5e4d91cf3eb638c4881a472012fb12e9, type: 3}
+  - {fileID: 6030051321890081251, guid: 40b57ac93a4c2d348ba98251ac883e0e, type: 3}
   signs:
-  - {fileID: 958964130142354088, guid: ab81ecde5d47edc47b64f85b91d37fe1, type: 3}
-  - {fileID: 7319161716498965628, guid: fe63d286ae207144b9069c25c0c2683f, type: 3}
-  - {fileID: 9085682389813146641, guid: 5165507d7ba60304689590a9e0604901, type: 3}
+  - {fileID: 6030051321890081251, guid: 299c5f40666fd3e4b9ce57d48436be5a, type: 3}
+  - {fileID: 6030051321890081251, guid: 7e52eb0d1853e0f4c8c558a1f7490ce8, type: 3}
+  - {fileID: 6030051321890081251, guid: f4ba822324bd8654a8a8c6a2e6eb04b3, type: 3}
   tv:
-  - {fileID: 6896846173355311310, guid: 33ced59cc4a655342b518a0b9bed04d7, type: 3}
+  - {fileID: 6030051321890081251, guid: a73db06a82cda404c934e30368ceeb3a, type: 3}
   - {fileID: 499588282660746206, guid: 45af358444648b64a8d4e66a4b283bba, type: 3}
   wallDecor:
-  - {fileID: 3865174119897038558, guid: dfb28fb607537b04db80da0eed6204cd, type: 3}
-  - {fileID: 8810632678107746214, guid: 6e81c601426bd364f920679771b9f2ae, type: 3}
+  - {fileID: 6030051321890081251, guid: 6bc956df06f43094c927c818fd7caf2c, type: 3}
   diningTable:
-  - {fileID: 8290854018789886901, guid: 02c70066114fef940810e2810f31af19, type: 3}
+  - {fileID: 6030051321890081251, guid: da905d8c83b068b4d9b82e80d23436b4, type: 3}
   hallTable:
-  - {fileID: 151880957436599283, guid: ff52ce27acc98a345b9c2b6aa4fe9ba4, type: 3}
+  - {fileID: 6030051321890081251, guid: ba50cc8e3c129a74ab2d3af74f82ae67, type: 3}
   tvDesk:
-  - {fileID: 3640361547946650524, guid: 051e925c1e980b046a579a57c1834ec7, type: 3}
+  - {fileID: 6030051321890081251, guid: f20a39e7649860249928814d69a529e1, type: 3}
   looster:
-  - {fileID: 309290276405357637, guid: 89852f441f3ace94baf89a546ac563ac, type: 3}
-  - {fileID: 2148076065657815768, guid: a6c97190dfdf2a34d9480667c1af0d7c, type: 3}
+  - {fileID: 6030051321890081251, guid: 15fdea02ce3edc8449ac0c17e25dcc02, type: 3}
+  - {fileID: 6030051321890081251, guid: f08095c1eda1556408e2bbf0a053a9b4, type: 3}
   kitchen:
-  - {fileID: 210128285453517640, guid: ba72664bf04dccc428dd7bc84cbf38aa, type: 3}
+  - {fileID: 6030051321890081251, guid: 4a224e4759b6d6e4a96e3e6f56db7e2b, type: 3}
