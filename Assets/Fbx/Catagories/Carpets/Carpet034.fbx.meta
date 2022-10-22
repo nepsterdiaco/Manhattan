@@ -1,0 +1,288 @@
+fileFormatVersion: 2
+guid: 89951599cbcc2c045b4b17cadd52be9a
+ModelImporter:
+  serializedVersion: 22103
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat
+    second: {fileID: 2100000, guid: 2d5b90010e4c5bd438548e34c656a5b3, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ADUM1
+    second: {fileID: 2800000, guid: 60f4100afaef94446b53dc88649e2508, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ALRUM
+    second: {fileID: 2800000, guid: 0e64038f7e2cab24ba40f96e2dfe656b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AVSIKTLIG
+    second: {fileID: 2800000, guid: 40bccd6b366a4754591d2c67f3095978, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "BR\xD6NDEN"
+    second: {fileID: 2800000, guid: e470567d69ef54c45afb194a86c14be9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FOULUM
+    second: {fileID: 2800000, guid: ba2d6db1e128cdb49b4b06f0dde98c0a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FOULUM2
+    second: {fileID: 2800000, guid: 37bf8de10b18bcb40a4863c9e1e00cb3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "G\xD6RL\xD6SE"
+    second: {fileID: 2800000, guid: 0ebadc3e87729ef40bcf0a21f8217dd6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HILLESTED
+    second: {fileID: 2800000, guid: bec4c02966cec244381260b9a950e3c4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HODDE
+    second: {fileID: 2800000, guid: 5f6687f4e15d29647b589b0701fc9b3a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HOVSLUND
+    second: {fileID: 2800000, guid: 6f2684e877b0c924aa2296dd718e22e1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "H\xD6JET"
+    second: {fileID: 2800000, guid: cf745442ea6585143b0a5ed8c2eee0be, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: KATTRUP
+    second: {fileID: 2800000, guid: 86b0945cf44486a4ab8b3e0a5277f13d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "KR\xD6NGE"
+    second: {fileID: 2800000, guid: bf29fd9abff0b44428cfc2de2aa8fc29, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LAPPLJUNG RUTA
+    second: {fileID: 2800000, guid: 3b6e5f89ac52b2d4dbb71020354648a6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LINDELSE
+    second: {fileID: 2800000, guid: 8f09d81b2f0172749926325d4e8f9644, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "LOBB\xC4K"
+    second: {fileID: 2800000, guid: 83ec37bf8eaeff34ba5d1c75f7d0ec7e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MASK
+    second: {fileID: 2800000, guid: b2e025af0c4a975428766f44f5bcb399, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "N\xD6DEBO"
+    second: {fileID: 2800000, guid: 28a4076e24306e045984125672cedfb9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ROSKILDE
+    second: {fileID: 2800000, guid: 9464125ba0eb9ee4cb745b90ef3f6dbe, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SILKEBORG2
+    second: {fileID: 2800000, guid: 75ac968216c979e4ba5bcc6f9975511e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: STENLILLE
+    second: {fileID: 2800000, guid: a63d5e628aacd04409afc965252a020e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "STILLEB\xC4K"
+    second: {fileID: 2800000, guid: 756909d2fb909204ebe797e44f42a30c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "STILLEB\xC4K2"
+    second: {fileID: 2800000, guid: 2b8765ccee974164f8d16eabf3d625d6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: STOCKHOLM
+    second: {fileID: 2800000, guid: 3549036dc9c5bac4ea41991563a0f415, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: STOCKHOLM 2017
+    second: {fileID: 2800000, guid: 09f8e477d387ac14b9ec322f8c91b4e2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: STOCKHOLM 20172
+    second: {fileID: 2800000, guid: b8b659b039c40eb43b63a87095f2cad4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: STOCKHOLM black
+    second: {fileID: 2800000, guid: 41400c5ab08ba104ab445bea4790ec22, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: STOCKHOLM2
+    second: {fileID: 2800000, guid: aa305598f9b241d4c85b127bb9d79a9c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "S\xD6NDER\xD6D"
+    second: {fileID: 2800000, guid: 69a45347a78ebcb478ad9ecb36a906ce, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TORRILD
+    second: {fileID: 2800000, guid: 5fd49ec87ff0ffb428af0cac4a40ab62, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "T\xC5RB\xC4K"
+    second: {fileID: 2800000, guid: b47334b03c862ce43b82922ccc48f533, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "VIDEB\xC4K"
+    second: {fileID: 2800000, guid: 16302bf5889ae0f4c8362a1cb08d7e99, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: carpet bump 022
+    second: {fileID: 2800000, guid: 0bfdaeeeebee3104284317310a71212c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: rug_b
+    second: {fileID: 2800000, guid: dc25ebda518abf74d8f98ec308cb33fa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\xC5DUM"
+    second: {fileID: 2800000, guid: d9f54fd39a13e154fbe88fddcb7f0911, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.001
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
