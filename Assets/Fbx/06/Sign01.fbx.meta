@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f84328c8ba8ee7c4092c24d8460dc8f0
+guid: 726fbecb48701ae40b66f86edabfd467
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
@@ -7,63 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Display
-    second: {fileID: 2100000, guid: 195569e031e963e428103bc956d86360, type: 2}
+      name: hk1
+    second: {fileID: 2100000, guid: 7edaffdeae35eeb49b675bef911a0449, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Fasad_1
-    second: {fileID: 2100000, guid: 2658ad002a9150c4db2234f191f5a6cd, type: 2}
+      name: hk2
+    second: {fileID: 2100000, guid: 12186a318dfdd404db6603e64aaa7a77, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Samsung_RSH7ZNRS_03 - Default
-    second: {fileID: 2100000, guid: 3ecb1a18c432a5c40af3e571c1b28daf, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Samsung_RSH7ZNRS_20 - Default
-    second: {fileID: 2100000, guid: 87d5c2071fe00f74ba51e73a50890f90, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Samsung_RSH7ZNRS_Bukvu_Water_Ice
-    second: {fileID: 2100000, guid: faf44c47671256747b33a40b9bf8b431, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Samsung_RSH7ZNRS_Knopka
-    second: {fileID: 2100000, guid: 67acffd4a95c73249915c95932a924a4, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Samsung_RSH7ZNRS_Knopka1
-    second: {fileID: 2100000, guid: 930886a6773953f44ade2c395ac2405e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Samsung_RSH7ZNRS_Osnovanie1
-    second: {fileID: 2100000, guid: 6cb1577e52c43d14395a186b15b98098, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Samsung_RSH7ZNRS_Osnovanie2
-    second: {fileID: 2100000, guid: a93a6d7c3e5ec9b4f91e4a584e9eaa1a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Samsung_RSH7ZNRS_Paneli_2
-    second: {fileID: 2100000, guid: d97fb263ee788bd49aa218266ed46f37, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Sumsung
-    second: {fileID: 2100000, guid: b58b18871ab279e49bd69c516cfbf902, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Sumsung2
-    second: {fileID: 2100000, guid: fcf573b047e00a2478c20c2913863f72, type: 2}
+      name: hua331
+    second: {fileID: 2100000, guid: 61e2592a2343733418d2bc542ea7a18e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -95,7 +50,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.19
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -149,7 +104,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.0018999999
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

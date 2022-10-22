@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 08a2fde891ce1f0498088de63db54df6
+guid: f84328c8ba8ee7c4092c24d8460dc8f0
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
@@ -7,57 +7,67 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Arch137_035_mat_026
-    second: {fileID: 2100000, guid: bb7c27196caf17b4d810ab0f596bd96e, type: 2}
+      name: Display
+    second: {fileID: 2100000, guid: 195569e031e963e428103bc956d86360, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Arch137_035_mat_047
-    second: {fileID: 2100000, guid: 5d4a63bea216d3a4290ec3cb8dd9d246, type: 2}
+      name: Fasad_1
+    second: {fileID: 2100000, guid: 2658ad002a9150c4db2234f191f5a6cd, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Arch137_035_mat_048
-    second: {fileID: 2100000, guid: f54aecea8a7bde44884a6eac61f20287, type: 2}
+      name: Samsung_RSH7ZNRS_03 - Default
+    second: {fileID: 2100000, guid: 3ecb1a18c432a5c40af3e571c1b28daf, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Mate
-    second: {fileID: 2100000, guid: cd54696740c506c4db69da11827534d8, type: 2}
+      name: Samsung_RSH7ZNRS_20 - Default
+    second: {fileID: 2100000, guid: 87d5c2071fe00f74ba51e73a50890f90, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: dd
-    second: {fileID: 2100000, guid: d1743740e0ea00842a0b17eedf983ebb, type: 2}
+      name: Samsung_RSH7ZNRS_Bukvu_Water_Ice
+    second: {fileID: 2100000, guid: faf44c47671256747b33a40b9bf8b431, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: feuldfr
-    second: {fileID: 2100000, guid: f02a6933292261a45ab1569b29a0a6f7, type: 2}
+      name: Samsung_RSH7ZNRS_Knopka
+    second: {fileID: 2100000, guid: 67acffd4a95c73249915c95932a924a4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: feultfe
-    second: {fileID: 2100000, guid: e01f2fe338b64474dac5dc2475723e31, type: 2}
+      name: Samsung_RSH7ZNRS_Knopka1
+    second: {fileID: 2100000, guid: 930886a6773953f44ade2c395ac2405e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: mat_04 - Default_002
-    second: {fileID: 2100000, guid: db1969bfc5874dc45a7425b8ca5ec2ee, type: 2}
+      name: Samsung_RSH7ZNRS_Osnovanie1
+    second: {fileID: 2100000, guid: 6cb1577e52c43d14395a186b15b98098, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: mat_08 - Defaulteee
-    second: {fileID: 2100000, guid: 64da93b481fbf8b47988f7a7be09d7e0, type: 2}
+      name: Samsung_RSH7ZNRS_Osnovanie2
+    second: {fileID: 2100000, guid: a93a6d7c3e5ec9b4f91e4a584e9eaa1a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: mat_13 - Defaultss
-    second: {fileID: 2100000, guid: d0829d84829111a4cad30186d8169bfb, type: 2}
+      name: Samsung_RSH7ZNRS_Paneli_2
+    second: {fileID: 2100000, guid: d97fb263ee788bd49aa218266ed46f37, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sumsung
+    second: {fileID: 2100000, guid: b58b18871ab279e49bd69c516cfbf902, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sumsung2
+    second: {fileID: 2100000, guid: fcf573b047e00a2478c20c2913863f72, type: 2}
   materials:
     materialImportMode: 2
-    materialName: 1
-    materialSearch: 2
+    materialName: 0
+    materialSearch: 1
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
@@ -85,7 +95,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.19
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -139,7 +149,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.0018999999
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

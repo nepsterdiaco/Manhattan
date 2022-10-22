@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 493522a13ec110e47a8e828e3d65babc
+guid: c744ee69b9bf3c24fa85983905a45867
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
@@ -7,82 +7,17 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Mate
-    second: {fileID: 2100000, guid: cd54696740c506c4db69da11827534d8, type: 2}
+      name: mat_03323432423
+    second: {fileID: 2100000, guid: 0b26077435cfc184daa62595cce00134, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material 8
-    second: {fileID: 2100000, guid: 3cd532a7207ba4d4ea50f85243214dad, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: VRayMtl_ci1
-    second: {fileID: 2100000, guid: 2132f775e7686004486c4f7128557fe3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: ___
-    second: {fileID: 2100000, guid: defe3f0542e72bc4aa87b9e14bb6c5a8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: dd
-    second: {fileID: 2100000, guid: d1743740e0ea00842a0b17eedf983ebb, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: feuldfr
-    second: {fileID: 2100000, guid: f02a6933292261a45ab1569b29a0a6f7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: feultfe
-    second: {fileID: 2100000, guid: e01f2fe338b64474dac5dc2475723e31, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_03 - Default_003
-    second: {fileID: 2100000, guid: 49601ff8595e2954d9caab0eab221121, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_04 - Default_002
-    second: {fileID: 2100000, guid: db1969bfc5874dc45a7425b8ca5ec2ee, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_04 - Defaultdd_001
-    second: {fileID: 2100000, guid: 567d03d879521c04faf576e8884df157, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_08 - Defaulteee
-    second: {fileID: 2100000, guid: 64da93b481fbf8b47988f7a7be09d7e0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_13 - Defaultss
-    second: {fileID: 2100000, guid: d0829d84829111a4cad30186d8169bfb, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: rw11
-    second: {fileID: 2100000, guid: afe00a93121d3ec48ad93a16f43d0b8a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: rwhc
-    second: {fileID: 2100000, guid: 079dda60eebfc564d8a4a580e343eac2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: wd2
-    second: {fileID: 2100000, guid: 35254ae35af990e41a876e0bdb7be33b, type: 2}
+      name: mat_123234123234
+    second: {fileID: 2100000, guid: 720ca47868897554c893d8f8bbf6c49b, type: 2}
   materials:
     materialImportMode: 2
-    materialName: 1
-    materialSearch: 2
+    materialName: 0
+    materialSearch: 1
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
@@ -110,7 +45,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.19
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -164,7 +99,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.0018999999
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

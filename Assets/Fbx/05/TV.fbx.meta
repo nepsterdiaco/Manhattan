@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c744ee69b9bf3c24fa85983905a45867
+guid: 89d4a6974f979da47ab649ba352b3cf4
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
@@ -7,17 +7,67 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: mat_03323432423
-    second: {fileID: 2100000, guid: 0b26077435cfc184daa62595cce00134, type: 2}
+      name: Mate
+    second: {fileID: 2100000, guid: cd54696740c506c4db69da11827534d8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: mat_123234123234
-    second: {fileID: 2100000, guid: 720ca47868897554c893d8f8bbf6c49b, type: 2}
+      name: Material 2146020509
+    second: {fileID: 2100000, guid: e0a0b70a1ba23b44d9728d5d09ced878, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 2146930364
+    second: {fileID: 2100000, guid: 90fd71f62e55a2f448092dd9a95f1a0f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 2146932923
+    second: {fileID: 2100000, guid: 0190a6c1b273c2848bbfdfb24dad26a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_electronics_02_01
+    second: {fileID: 2100000, guid: ee1d048bc057a5941a9353efb693c7bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_electronics_02_03
+    second: {fileID: 2100000, guid: ce8aed0778e80f84d8bda44ad28bbc17, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dd
+    second: {fileID: 2100000, guid: d1743740e0ea00842a0b17eedf983ebb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: feuldfr
+    second: {fileID: 2100000, guid: f02a6933292261a45ab1569b29a0a6f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: feultfe
+    second: {fileID: 2100000, guid: e01f2fe338b64474dac5dc2475723e31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_04 - Default_002
+    second: {fileID: 2100000, guid: db1969bfc5874dc45a7425b8ca5ec2ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_08 - Defaulteee
+    second: {fileID: 2100000, guid: 64da93b481fbf8b47988f7a7be09d7e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_13 - Defaultss
+    second: {fileID: 2100000, guid: d0829d84829111a4cad30186d8169bfb, type: 2}
   materials:
     materialImportMode: 2
-    materialName: 0
-    materialSearch: 1
+    materialName: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
@@ -45,7 +95,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.125
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -99,7 +149,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.00125
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

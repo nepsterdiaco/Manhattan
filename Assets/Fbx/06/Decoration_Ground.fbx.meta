@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4fd7b9e89ee837e4692c8e1f13a89dc2
+guid: 71a3a15475808e44285d34962ad507e0
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
@@ -17,16 +17,6 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: ddddddd
-    second: {fileID: 2100000, guid: ad14b97f94b0bdb43ac43a54816541a2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: eeeeeeee
-    second: {fileID: 2100000, guid: a72dc5e1db212034bb082d8a45a16ffe, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: feuldfr
     second: {fileID: 2100000, guid: f02a6933292261a45ab1569b29a0a6f7, type: 2}
   - first:
@@ -34,6 +24,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: feultfe
     second: {fileID: 2100000, guid: e01f2fe338b64474dac5dc2475723e31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gold_2SA
+    second: {fileID: 2100000, guid: 8e9ca550e60e9c44b82ae2f56526dac0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -52,8 +47,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: mat_444444
-    second: {fileID: 2100000, guid: 35c1c12b5ac32d948b78406c777070fc, type: 2}
+      name: mat_3762832W80
+    second: {fileID: 2100000, guid: f15eb835086d8314981d78b303660d4d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 1
@@ -85,7 +80,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.19
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -139,7 +134,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.0018999999
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
