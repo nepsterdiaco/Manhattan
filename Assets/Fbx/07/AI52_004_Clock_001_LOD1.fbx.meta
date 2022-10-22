@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6688d83673dff844aaa82c87708df1f1
+guid: efbc865ce91388a42bf941f2ee3a6696
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: AI52_004_Flower_BIG_V1
-    second: {fileID: 2100000, guid: b2cee72c7da09d1479143f9ab34f028e, type: 2}
+      name: AI52_004_Clock
+    second: {fileID: 2100000, guid: 13d25fc9b7609b34688ad8f5b62829d2, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -75,7 +75,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.5
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -129,7 +129,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.005
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 1b5384be43762af4799075ff1cfdea13
+guid: fa01bfb66ab12c44b8cf1ff18807db06
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
   externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AI52_004_Chair
+    second: {fileID: 2100000, guid: 76f7c22cb05d51740baff714625f4203, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -39,36 +44,6 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: mat_13 - Defaultss
     second: {fileID: 2100000, guid: d0829d84829111a4cad30186d8169bfb, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_AI52_004_Floor_GresV01
-    second: {fileID: 2100000, guid: 92e0390cdcf71ed40b38118e69b5acef, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_AI52_004_Floor_GresV02
-    second: {fileID: 2100000, guid: 699a2bb16b1bac3428d558faf83ab55b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_AI52_004_Floor_GresV03
-    second: {fileID: 2100000, guid: 93616e203220436488bd57bae443f87b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_AI52_004_Floor_GresV04
-    second: {fileID: 2100000, guid: 2316c688d4a1f474393c4019958a2813, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_AI52_004_Floor_GresV05
-    second: {fileID: 2100000, guid: a4d83511c5d6eb14a915f3d5c7f37d3b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_AI52_004_Floor_GresV06
-    second: {fileID: 2100000, guid: 44a7053c7e684e744b340783840752b9, type: 2}
   materials:
     materialImportMode: 2
     materialName: 1
@@ -154,7 +129,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.01
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
