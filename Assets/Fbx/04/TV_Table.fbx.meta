@@ -1,9 +1,39 @@
 fileFormatVersion: 2
-guid: 65118a8500d41da438b9d232a849a245
+guid: 3b3c4cab14308df4f9b8af1db057fea9
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
   externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AA-
+    second: {fileID: 2100000, guid: 8d9a11146743a7a41a167afcf65b130d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AA--EA_002
+    second: {fileID: 2100000, guid: 2278a8ee1612c4a40b72498fa3882ed7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AA--_001
+    second: {fileID: 2100000, guid: 2afc2fb27af62984d8997cfb514f20bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AA-_001
+    second: {fileID: 2100000, guid: d18c4d24211038f42a177e58e49905fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M24360228712341
+    second: {fileID: 2100000, guid: 79b1b02057fe15e4697d8a90ff6efb60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MM--
+    second: {fileID: 2100000, guid: 731da4ed97fe9084d920fdd05f4750dc, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -12,8 +42,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material 2146024528
-    second: {fileID: 2100000, guid: 825c7868e58631f4aa25714a38c78670, type: 2}
+      name: Material 2097628050
+    second: {fileID: 2100000, guid: ce3ee27b179f58f47b42d7e184b886e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 2146023701
+    second: {fileID: 2100000, guid: 9f42d3180ef0e9043b7ec966548c6d28, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -22,8 +57,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material 2146930473
-    second: {fileID: 2100000, guid: f9b7d223ca1c7674882bd46a11c6ebfa, type: 2}
+      name: Material 2147436075
+    second: {fileID: 2100000, guid: 796fc5ac6e19aa642a4acc7ff4068e32, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 32
+    second: {fileID: 2100000, guid: 2057b066010991547b7fb280200ad1d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: archmodels66_033_002
+    second: {fileID: 2100000, guid: 335365c834ba65840a33b9f2f7cd91bd, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -54,6 +99,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: mat_13 - Defaultss
     second: {fileID: 2100000, guid: d0829d84829111a4cad30186d8169bfb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_19 - Default1
+    second: {fileID: 2100000, guid: c487fce24d2353d4e8ac871c2f6b43b1, type: 2}
   materials:
     materialImportMode: 2
     materialName: 1
@@ -85,7 +135,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.125
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -139,7 +189,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.00125
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

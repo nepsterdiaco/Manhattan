@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3ded9cd0b02bbf349be2f13329074451
+guid: bf94fd0faf02ff547ad4dbc7ba1239ad
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
@@ -7,82 +7,27 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: BonzeOld
-    second: {fileID: 2100000, guid: ac87787bf5b59e04cb032f03e016247c, type: 2}
+      name: Material 0
+    second: {fileID: 2100000, guid: bb32727fb66dc8a4e92b643ef76382f4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Mate
-    second: {fileID: 2100000, guid: cd54696740c506c4db69da11827534d8, type: 2}
+      name: Material 2100440923dfgqw
+    second: {fileID: 2100000, guid: ecfa3de38f4cb0946a25f81acbe3d07c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: VRayMtl_15thu
-    second: {fileID: 2100000, guid: 7c7e0e464fd64444281b44e81a306c2b, type: 2}
+      name: mat_01 - eqtr
+    second: {fileID: 2100000, guid: f6d46b996a2ceb541a1a64f24d669f1a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: dd
-    second: {fileID: 2100000, guid: d1743740e0ea00842a0b17eedf983ebb, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: feuldfr
-    second: {fileID: 2100000, guid: f02a6933292261a45ab1569b29a0a6f7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: feultfe
-    second: {fileID: 2100000, guid: e01f2fe338b64474dac5dc2475723e31, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: jdj
-    second: {fileID: 2100000, guid: 9b5c19f5eadb42e4ca753bb6079e39a3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_02 - Default
-    second: {fileID: 2100000, guid: eee98ea51dd6c2242a42f41718bb5f25, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_04 - Default_002
-    second: {fileID: 2100000, guid: db1969bfc5874dc45a7425b8ca5ec2ee, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_08 - Defaulteee
-    second: {fileID: 2100000, guid: 64da93b481fbf8b47988f7a7be09d7e0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_13 - Defaultss
-    second: {fileID: 2100000, guid: d0829d84829111a4cad30186d8169bfb, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat__009
-    second: {fileID: 2100000, guid: 21b2ebaa1f4f579478904232b2ff5f96, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: plastic_black
-    second: {fileID: 2100000, guid: a9ac94ee939dd6146bf95df4944fb3c1, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: xiadele_02 - Default
-    second: {fileID: 2100000, guid: 02a5e6302a0968f4da4a0f7408d3973d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: xiadele_05 - Default13213
-    second: {fileID: 2100000, guid: a8c359a479c320c46b48dc7d84d6193f, type: 2}
+      name: mat_02 - Default24324
+    second: {fileID: 2100000, guid: 4b00e0765cd856d4ab0697cfdedcde5f, type: 2}
   materials:
     materialImportMode: 2
-    materialName: 1
-    materialSearch: 2
+    materialName: 0
+    materialSearch: 1
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
@@ -110,7 +55,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.125
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -164,7 +109,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.00125
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

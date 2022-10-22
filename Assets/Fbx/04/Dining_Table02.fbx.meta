@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 648d7145c5a4aeb4ead804c7f4ec1864
+guid: 21331ecccf3b8d745b61fbddf2277dc8
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
   externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat3d66-392616-3-824
+    second: {fileID: 2100000, guid: ad743bf2245008342b7252d3d1ffeb0a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -12,58 +17,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material 19
-    second: {fileID: 2100000, guid: f4000f596466e0d4db65acc699ea3f8a, type: 2}
+      name: Material 2146930366
+    second: {fileID: 2100000, guid: f66ad24cf152a304ba3a3ee40a13482d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Q42333301117
-    second: {fileID: 2100000, guid: ad52d9799e7e0974cb725242cae39720, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: QWWW19
-    second: {fileID: 2100000, guid: 9e93662ff9accec4e9fedad6e1806704, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: QWWW20
-    second: {fileID: 2100000, guid: 41bde452ecf0de94c8edf62ed085f071, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: QWWW25
-    second: {fileID: 2100000, guid: 8523d0b2e6298bb448d3e735d0fb248f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: QWWW3
-    second: {fileID: 2100000, guid: b87f7fba6af309e40b6526830ad6052c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: QWWW35
-    second: {fileID: 2100000, guid: 2af98bad058d9784d8e49b403019f81f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: QWWW38
-    second: {fileID: 2100000, guid: 436c8d37751fea041811641150b6db1b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: QWWW39
-    second: {fileID: 2100000, guid: b55d1725dafaa2f49be0c9560509369c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: QWWW4
-    second: {fileID: 2100000, guid: 13dad39ef069d0d48872cdc4f96f0e61, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: QWWW40
-    second: {fileID: 2100000, guid: 26ae383123620514c815c329d763532d, type: 2}
+      name: Materialsdzf fwesfwedf0zd
+    second: {fileID: 2100000, guid: c8150c8fc17c2ef41b00b06f22839683, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -82,8 +42,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: mat_02 - Default24324
-    second: {fileID: 2100000, guid: 94ff96b206d0203449fe2b93e72653a5, type: 2}
+      name: mat_02 - fqwerDefawerqqufwelt
+    second: {fileID: 2100000, guid: e3ae5c6073def3f4ea937a541fba6bda, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_02 - fqwerDefawerqqufwelt_001
+    second: {fileID: 2100000, guid: 82cec2933ff6f584d85f155170476034, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_03 - Default
+    second: {fileID: 2100000, guid: b3d880c72a0e1484e9e135544e5b59f3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -97,8 +67,53 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: mat_08 - DefawexfgauasdflsdftAfweFfweWEZSZfewwefwer
+    second: {fileID: 2100000, guid: a6bcf80853cb83e4a9cb99ed11fa0020, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_08 - DefawexfgauasdflsdftAfweFfweWEZfewSZwefwer
+    second: {fileID: 2100000, guid: 8f84ff977c0c64644852597c1b3f6760, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_08 - DefawexfgauasdflsdftAfweFfweWfewEZSZfewwefwer
+    second: {fileID: 2100000, guid: cacde1f87607efb41a7423b2e8ee18ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_08 - Defawexfgauasdflsdftzzzwefwer
+    second: {fileID: 2100000, guid: 342f6a6c931076f45b16cfec6bf73a5b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_08 - Defawexfgauasdfsdweflsfwewefwedftwefwer
+    second: {fileID: 2100000, guid: 7537b62cfbb9b86458cf4a2a9734b365, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_08 - Defawexfgauasdfsdweflsfwewefwefwedftwefwer
+    second: {fileID: 2100000, guid: 1d15c2958ff576d42a59c6748f032e56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_08 - dd
+    second: {fileID: 2100000, guid: 9318034895f81b0458bd6b9607889ae6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: mat_13 - Defaultss
     second: {fileID: 2100000, guid: d0829d84829111a4cad30186d8169bfb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_1tre - Defaultsdf
+    second: {fileID: 2100000, guid: 1b2cde508355df346a6595946b0777fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: reey
+    second: {fileID: 2100000, guid: 256f6c2692f840144a68be906974f285, type: 2}
   materials:
     materialImportMode: 2
     materialName: 1
@@ -130,7 +145,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.125
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -184,7 +199,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.00125
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

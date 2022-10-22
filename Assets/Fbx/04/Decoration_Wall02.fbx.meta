@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a3c22c4b63e4fc349a5540105860b2e2
+guid: 3ded9cd0b02bbf349be2f13329074451
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
@@ -7,8 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: BonzeOld
+    second: {fileID: 2100000, guid: ac87787bf5b59e04cb032f03e016247c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Mate
     second: {fileID: 2100000, guid: cd54696740c506c4db69da11827534d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VRayMtl_15thu
+    second: {fileID: 2100000, guid: 7c7e0e464fd64444281b44e81a306c2b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -27,8 +37,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: js12
-    second: {fileID: 2100000, guid: 328c6e1b4efdcc2429d7136791af080c, type: 2}
+      name: jdj
+    second: {fileID: 2100000, guid: 9b5c19f5eadb42e4ca753bb6079e39a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_02 - Default
+    second: {fileID: 2100000, guid: eee98ea51dd6c2242a42f41718bb5f25, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -47,18 +62,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: mat_22 -gqgq
-    second: {fileID: 2100000, guid: 94e58624e0866704e96eac71f91b9e06, type: 2}
+      name: mat__009
+    second: {fileID: 2100000, guid: 21b2ebaa1f4f579478904232b2ff5f96, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: st
-    second: {fileID: 2100000, guid: a2f11b1ff830cad459985b727d68bb84, type: 2}
+      name: plastic_black
+    second: {fileID: 2100000, guid: a9ac94ee939dd6146bf95df4944fb3c1, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: syhh_001
-    second: {fileID: 2100000, guid: 51bb3a2949ce8a644a3ea5e3bdd7ce5f, type: 2}
+      name: xiadele_02 - Default
+    second: {fileID: 2100000, guid: 02a5e6302a0968f4da4a0f7408d3973d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xiadele_05 - Default13213
+    second: {fileID: 2100000, guid: a8c359a479c320c46b48dc7d84d6193f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 1
@@ -90,7 +110,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.125
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -144,7 +164,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.00125
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

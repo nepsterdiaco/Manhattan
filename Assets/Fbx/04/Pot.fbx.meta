@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 069ec1784fc595e469d0e1bd2da05f0e
+guid: 65118a8500d41da438b9d232a849a245
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
@@ -9,6 +9,21 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Mate
     second: {fileID: 2100000, guid: cd54696740c506c4db69da11827534d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 2146024528
+    second: {fileID: 2100000, guid: 825c7868e58631f4aa25714a38c78670, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 2146930107
+    second: {fileID: 2100000, guid: bce23a017c895084dbcf76c87d61a4ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 2146930473
+    second: {fileID: 2100000, guid: f9b7d223ca1c7674882bd46a11c6ebfa, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -39,21 +54,6 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: mat_13 - Defaultss
     second: {fileID: 2100000, guid: d0829d84829111a4cad30186d8169bfb, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat__002
-    second: {fileID: 2100000, guid: cfde2b36febfbc24aab44137b3855a7a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat__004
-    second: {fileID: 2100000, guid: bd240ec5c90a9ce4cb651f9746b895c8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat__010
-    second: {fileID: 2100000, guid: eb5c7f93af537b44698e06873b425d08, type: 2}
   materials:
     materialImportMode: 2
     materialName: 1
@@ -85,7 +85,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.125
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -139,7 +139,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.00125
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

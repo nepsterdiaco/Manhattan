@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 21331ecccf3b8d745b61fbddf2277dc8
+guid: 52619d5c00524fc4a9894fca3e03247a
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
@@ -7,8 +7,28 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Mat3d66-392616-3-824
-    second: {fileID: 2100000, guid: ad743bf2245008342b7252d3d1ffeb0a, type: 2}
+      name: AM134_07_black_plastic
+    second: {fileID: 2100000, guid: ff7f68ceafdcb0746beaa885c1963f66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AM134_07_black_shiny
+    second: {fileID: 2100000, guid: eaff26a6f47612448a4a61214d933822, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AM134_07_brush01
+    second: {fileID: 2100000, guid: 9a5cc4596cac2b44b8cf5e1feecd5fc8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AM134_07_chrome
+    second: {fileID: 2100000, guid: 260aaf4f79140e248b8df10e2758f2c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AM134_07_glass_jar
+    second: {fileID: 2100000, guid: 01e19b5a9f485364c87ddbd81d33efaa, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -17,13 +37,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material 2146930366
-    second: {fileID: 2100000, guid: f66ad24cf152a304ba3a3ee40a13482d, type: 2}
+      name: Material 152
+    second: {fileID: 2100000, guid: 733f36b6b37aeb44fb1c158dab7422f2, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Materialsdzf fwesfwedf0zd
-    second: {fileID: 2100000, guid: c8150c8fc17c2ef41b00b06f22839683, type: 2}
+      name: Material 2146024312
+    second: {fileID: 2100000, guid: ec7af72cff6fdcc45a9fc0ef0bad1e40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 2_001
+    second: {fileID: 2100000, guid: 334540d3d499b5f4bb720d65b370b1b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material 76234
+    second: {fileID: 2100000, guid: de563cf81bca9e948b6bcded4ead4bd2, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -42,18 +72,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: mat_02 - fqwerDefawerqqufwelt
-    second: {fileID: 2100000, guid: e3ae5c6073def3f4ea937a541fba6bda, type: 2}
+      name: mat_02 - Default24324
+    second: {fileID: 2100000, guid: 94ff96b206d0203449fe2b93e72653a5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: mat_02 - fqwerDefawerqqufwelt_001
-    second: {fileID: 2100000, guid: 82cec2933ff6f584d85f155170476034, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_03 - Default
-    second: {fileID: 2100000, guid: b3d880c72a0e1484e9e135544e5b59f3, type: 2}
+      name: mat_03 - Default_001
+    second: {fileID: 2100000, guid: cf7a4f21f91f8154d8cff9e8b3db6172, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -62,43 +87,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: mat_05 - Default
+    second: {fileID: 2100000, guid: c698111393e93e4489d2ae602e58b294, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: mat_08 - Defaulteee
     second: {fileID: 2100000, guid: 64da93b481fbf8b47988f7a7be09d7e0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_08 - DefawexfgauasdflsdftAfweFfweWEZSZfewwefwer
-    second: {fileID: 2100000, guid: a6bcf80853cb83e4a9cb99ed11fa0020, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_08 - DefawexfgauasdflsdftAfweFfweWEZfewSZwefwer
-    second: {fileID: 2100000, guid: 8f84ff977c0c64644852597c1b3f6760, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_08 - DefawexfgauasdflsdftAfweFfweWfewEZSZfewwefwer
-    second: {fileID: 2100000, guid: cacde1f87607efb41a7423b2e8ee18ee, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_08 - Defawexfgauasdflsdftzzzwefwer
-    second: {fileID: 2100000, guid: 342f6a6c931076f45b16cfec6bf73a5b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_08 - Defawexfgauasdfsdweflsfwewefwedftwefwer
-    second: {fileID: 2100000, guid: 7537b62cfbb9b86458cf4a2a9734b365, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_08 - Defawexfgauasdfsdweflsfwewefwefwedftwefwer
-    second: {fileID: 2100000, guid: 1d15c2958ff576d42a59c6748f032e56, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_08 - dd
-    second: {fileID: 2100000, guid: 9318034895f81b0458bd6b9607889ae6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -107,13 +102,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: mat_1tre - Defaultsdf
-    second: {fileID: 2100000, guid: 1b2cde508355df346a6595946b0777fc, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: reey
-    second: {fileID: 2100000, guid: 256f6c2692f840144a68be906974f285, type: 2}
+      name: mat_234lt123234
+    second: {fileID: 2100000, guid: 0b566daad9eb6774cb03895a31872f4a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 1
@@ -145,7 +135,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.125
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -199,7 +189,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.00125
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

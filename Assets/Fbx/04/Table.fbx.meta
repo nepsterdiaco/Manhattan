@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d0336039ab0d6c247b4ff0683ca87e42
+guid: 8271ee468dc5f2c408ffa19823f46db0
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
@@ -7,8 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: M23023402123
-    second: {fileID: 2100000, guid: abc4c2f953496b14990aa2d73d9f7bc7, type: 2}
+      name: AA--
+    second: {fileID: 2100000, guid: 8e13359314137c44a9b860c5d6a30a40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AA--EA_002
+    second: {fileID: 2100000, guid: 2278a8ee1612c4a40b72498fa3882ed7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -17,63 +22,33 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material 110
-    second: {fileID: 2100000, guid: 4f7d277d53510ef40b1311a035fc1b91, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material 2146023699
-    second: {fileID: 2100000, guid: 46f9dee970c8646409c0a4b1d74b024e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material 2146024662
-    second: {fileID: 2100000, guid: c469efb2a9faf244ca82b026dd0a3c07, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material 2146930266
-    second: {fileID: 2100000, guid: 07020431bca641b44ab426b40990fd0e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material 24999_001
-    second: {fileID: 2100000, guid: 5889790ddf8d8a848b3bb192831a53c4, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: Material 32
     second: {fileID: 2100000, guid: 2057b066010991547b7fb280200ad1d6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material 733
-    second: {fileID: 2100000, guid: 9e286798da63e7c48a86ac5cca6a0883, type: 2}
+      name: Material 54983
+    second: {fileID: 2100000, guid: 397f61c27dc71bd409d309a053213917, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Standardmaterial_4
-    second: {fileID: 2100000, guid: 609a521b7536daa41aefb7855c10a443, type: 2}
+      name: VRayMtl_2
+    second: {fileID: 2100000, guid: 1eba86a20750c1f4d87d4b7668e9d3a2, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: das3s23
-    second: {fileID: 2100000, guid: 716d2ae619dd4cd459b4a43ccacc7b43, type: 2}
+      name: VRayfsdaMtl_13
+    second: {fileID: 2100000, guid: 31f05a26b1889954f9fc0ac3dbb7e918, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: da33
+    second: {fileID: 2100000, guid: 9b5d509a95f292d4caaa6a4d3bb8a427, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: dd
     second: {fileID: 2100000, guid: d1743740e0ea00842a0b17eedf983ebb, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: dsa34
-    second: {fileID: 2100000, guid: 262808e218d614a46942515702c70f7c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: dsa43
-    second: {fileID: 2100000, guid: 226e49bb8b1a19d4a932b3ce12b0cb9b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -92,23 +67,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: iFlowers-Trunk_001
-    second: {fileID: 2100000, guid: a853f9b3dc6aabd4a8d53d306fc2ffc8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: kk
-    second: {fileID: 2100000, guid: e184d06698ea1c14a88f1d8ab0f59ccf, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_01 - Default
-    second: {fileID: 2100000, guid: e7a0368a01b966045a649bc530dd87a7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_04 - Default
-    second: {fileID: 2100000, guid: 31b962d11cd19b54483947d9c11b8866, type: 2}
+      name: iFlowers-Trunk
+    second: {fileID: 2100000, guid: d1d2c2523025e15489190b35dbc9dba8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -117,13 +77,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: mat_08 - Default321321
-    second: {fileID: 2100000, guid: ae4aa72162e2b9342b2dacb961188ca3, type: 2}
+      name: mat_08 - Defaulteee
+    second: {fileID: 2100000, guid: 64da93b481fbf8b47988f7a7be09d7e0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: mat_08 - Defaulteee
-    second: {fileID: 2100000, guid: 64da93b481fbf8b47988f7a7be09d7e0, type: 2}
+      name: mat_10 - Defaultds
+    second: {fileID: 2100000, guid: bc03e05cab7475c4ba99d28c2d3b9824, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_11 - Default
+    second: {fileID: 2100000, guid: eb2b9ff25f501774d8037e4b9a64a947, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -132,18 +97,48 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: mat_3
-    second: {fileID: 2100000, guid: d794d028a886a6c4b9e4397d85d84ef0, type: 2}
+      name: mat_16 - Default2
+    second: {fileID: 2100000, guid: bd106b2699c18a34692961b173b92092, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: mat_4
-    second: {fileID: 2100000, guid: fa18241ceba08f24888d0875144a003b, type: 2}
+      name: mat_16 - Default2_001
+    second: {fileID: 2100000, guid: e27ffc9a08fe820449d7766222530020, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: mat__003
-    second: {fileID: 2100000, guid: c8ea583a27ed4dc40869a121d597eeb2, type: 2}
+      name: mat_16 - Default33
+    second: {fileID: 2100000, guid: e7c2b5544aed82e4f8332dc2ea4c97e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_22 - Default_001
+    second: {fileID: 2100000, guid: d16ea2ee670c0674992dd178cb18304b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat__011
+    second: {fileID: 2100000, guid: d5a10c9c4487300498172da204fea842, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mm-a
+    second: {fileID: 2100000, guid: 7842bc1499ed7174e9cde095ef5ba30b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mm-b
+    second: {fileID: 2100000, guid: 555709c7511898d4b9a75b1a1092b606, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: qww33
+    second: {fileID: 2100000, guid: dab9e36f55f6252448ae0291c765d2d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wwe_001
+    second: {fileID: 2100000, guid: 3dae65f483dc98a4598911ac8a7dad8a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 1
@@ -175,7 +170,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.125
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -229,7 +224,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.00125
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
