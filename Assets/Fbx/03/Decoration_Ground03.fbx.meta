@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 4cc4b54557c00064ba90e34514881120
+guid: 581dba735db2bc04baa85ac4b222759a
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
   externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat2146023137123123213
+    second: {fileID: 2100000, guid: 64174465ef913a744997bbb37e292b86, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -12,18 +17,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material 1050
-    second: {fileID: 2100000, guid: afc0eee67aeb2c74396694e1c5bebd74, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material 1745
-    second: {fileID: 2100000, guid: d3e40fdab50ae5d439d63be97c535df7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material 19s
-    second: {fileID: 2100000, guid: a66f5fe035efd3449bc698e3d08736eb, type: 2}
+      name: Material 75
+    second: {fileID: 2100000, guid: 4fa877f1ad180aa49bcbb6d4f6108e92, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -42,6 +37,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: mat_
+    second: {fileID: 2100000, guid: 02b09cb2dff309846be96f568873434e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: mat_04 - Default_002
     second: {fileID: 2100000, guid: db1969bfc5874dc45a7425b8ca5ec2ee, type: 2}
   - first:
@@ -54,6 +54,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: mat_13 - Defaultss
     second: {fileID: 2100000, guid: d0829d84829111a4cad30186d8169bfb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tai
+    second: {fileID: 2100000, guid: c458f7ce6c0908d44a71f35232ffbfa2, type: 2}
   materials:
     materialImportMode: 2
     materialName: 1
@@ -85,7 +90,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.135
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -139,7 +144,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.00135
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

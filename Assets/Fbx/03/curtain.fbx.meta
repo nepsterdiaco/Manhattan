@@ -1,24 +1,9 @@
 fileFormatVersion: 2
-guid: bd39b339187e2cb4ea57a6b0a2ecaa8a
+guid: e3a72b8df128ef54a93faec7c8d8e0c7
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
   externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: DEN234
-    second: {fileID: 2100000, guid: cf86893a6b18ec34f920ea727d1e1a75, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Flower Vase 01
-    second: {fileID: 2100000, guid: 3cfd4a978ff94024d979735a8cdc605d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Mat2146023137123123213
-    second: {fileID: 2100000, guid: 64174465ef913a744997bbb37e292b86, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -27,13 +12,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material 16
-    second: {fileID: 2100000, guid: 3b06f6c6fc0ca0a4e99d3838b74ab1c4, type: 2}
+      name: Material 2146932547
+    second: {fileID: 2100000, guid: 2875d812309ed804c9c41bab421703aa, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material 19s
-    second: {fileID: 2100000, guid: a66f5fe035efd3449bc698e3d08736eb, type: 2}
+      name: TULLE_01
+    second: {fileID: 2100000, guid: 2f8528b0e085f9549aba66a54d413f26, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -52,16 +37,6 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: lamp head black
-    second: {fileID: 2100000, guid: 36ae8f6cbf6ce3946a8bf61e378aba76, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_02 - Defaultss
-    second: {fileID: 2100000, guid: 13f8cb1249358c14a81572f50f4dd141, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: mat_04 - Default_002
     second: {fileID: 2100000, guid: db1969bfc5874dc45a7425b8ca5ec2ee, type: 2}
   - first:
@@ -77,33 +52,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: mat_20 - Default
-    second: {fileID: 2100000, guid: 194b3257f63812d46a8497ba1ce1e606, type: 2}
+      name: qwcz15_001
+    second: {fileID: 2100000, guid: d42b8bcf6d7f0554b93c05d76ff19e2c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: mat_21 - Default
-    second: {fileID: 2100000, guid: 3c36458cc6887d34cb2e66cf5b7e0e71, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_2354135
-    second: {fileID: 2100000, guid: a2dfba1df543df444a5479739422862e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_247245274
-    second: {fileID: 2100000, guid: e14ec7f2f152af54ea38785bed51222b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: new black lamp
-    second: {fileID: 2100000, guid: 6bcd144cdfdbe274dbf29ba172f63fe4, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: vase 02
-    second: {fileID: 2100000, guid: 8ac7f63fdc0f0774887d410ac9ace2bc, type: 2}
+      name: qwcz23
+    second: {fileID: 2100000, guid: 31e8d9017415d1041929a0be992c13f3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 1
@@ -135,7 +90,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.135
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -189,7 +144,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.00135
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

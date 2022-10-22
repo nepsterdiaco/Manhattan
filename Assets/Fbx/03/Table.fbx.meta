@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 93eeafe9901eebc4e87d0a4b97a9ed35
+guid: 2f025773566a51348b60e83f1d01b59f
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
@@ -7,13 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: DEN234
-    second: {fileID: 2100000, guid: cf86893a6b18ec34f920ea727d1e1a75, type: 2}
+      name: ASAS14
+    second: {fileID: 2100000, guid: 88cdb079972022b4682d3e2e003dfbb1, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Flower Vase 01
-    second: {fileID: 2100000, guid: 3cfd4a978ff94024d979735a8cdc605d, type: 2}
+      name: Forsythia_Bark
+    second: {fileID: 2100000, guid: bbe16568730673946b7aed47c267e49e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Forsythia_Leaves
+    second: {fileID: 2100000, guid: 108e443be38f8ff458e9a5fe31b56e0d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -22,33 +27,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material 16
-    second: {fileID: 2100000, guid: 3b06f6c6fc0ca0a4e99d3838b74ab1c4, type: 2}
+      name: Material 333
+    second: {fileID: 2100000, guid: 1b2511cc772b14844aba795014195805, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material 19s
-    second: {fileID: 2100000, guid: a66f5fe035efd3449bc698e3d08736eb, type: 2}
+      name: Material 76123231
+    second: {fileID: 2100000, guid: f493d6e26a8dcd64998c4033eecf48f6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Yellow Gold_bump
-    second: {fileID: 2100000, guid: f8db647c0079d00489901c5fcbb09414, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: chrome
-    second: {fileID: 2100000, guid: fc290c5882a0ed446aa05394d57523eb, type: 2}
+      name: ascz31
+    second: {fileID: 2100000, guid: 8fa836bb787dba849872b9969aa8325a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: dd
     second: {fileID: 2100000, guid: d1743740e0ea00842a0b17eedf983ebb, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: decor
-    second: {fileID: 2100000, guid: f3463a270ae53794b9b6909c35d46eaa, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -62,28 +57,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: lamp head black
-    second: {fileID: 2100000, guid: 36ae8f6cbf6ce3946a8bf61e378aba76, type: 2}
+      name: mat_02 - Default
+    second: {fileID: 2100000, guid: eee98ea51dd6c2242a42f41718bb5f25, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: mat_01 - Defaufglt
-    second: {fileID: 2100000, guid: 93a5ff056ee826342a68bd840a03d6f3, type: 2}
+      name: mat_02 - Defaultwqweweww
+    second: {fileID: 2100000, guid: 1a5cff35477ff0a4bb749d654ba12241, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_03 - Default
+    second: {fileID: 2100000, guid: b3d880c72a0e1484e9e135544e5b59f3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_04 - Default_002
     second: {fileID: 2100000, guid: db1969bfc5874dc45a7425b8ca5ec2ee, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_06 - Defauhlt2
-    second: {fileID: 2100000, guid: a95fd78aa3338d94c9041db881480a56, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_06 - Default2
-    second: {fileID: 2100000, guid: 842da0cae02a74d43bc8fa995d33e72c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -97,33 +87,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: mat_20 - Default
-    second: {fileID: 2100000, guid: 194b3257f63812d46a8497ba1ce1e606, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_21 - Default
-    second: {fileID: 2100000, guid: 3c36458cc6887d34cb2e66cf5b7e0e71, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_2354135
-    second: {fileID: 2100000, guid: a2dfba1df543df444a5479739422862e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat_247245274
-    second: {fileID: 2100000, guid: e14ec7f2f152af54ea38785bed51222b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: new black lamp
-    second: {fileID: 2100000, guid: 6bcd144cdfdbe274dbf29ba172f63fe4, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: vase 02
-    second: {fileID: 2100000, guid: 8ac7f63fdc0f0774887d410ac9ace2bc, type: 2}
+      name: mat_Adra_Vase
+    second: {fileID: 2100000, guid: 92ed31d97651bba4f9c29192b8fca1dc, type: 2}
   materials:
     materialImportMode: 2
     materialName: 1
@@ -155,7 +120,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.135
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -209,7 +174,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.00135
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
