@@ -7,7 +7,7 @@ class SelectionOffseter : EditorWindow
 
     class SelectionActiveTransform : ScriptableObject
     {
-        [MenuItem("Example/Offset Selection _d")]
+        [MenuItem("Example/Offset Selection")]
         static void OffsetSelected()
         {
             transformOffset = 0;
@@ -33,7 +33,7 @@ class SelectionOffseter : EditorWindow
     }
 
     //The menu item will be disabled if nothing, is selected.
-    [MenuItem("Example/Duplicate at Origin _d", true)]
+    [MenuItem("Example/Duplicate at Origin", true)]
     static bool ValidateSelection()
     {
         return Selection.activeTransform != null;

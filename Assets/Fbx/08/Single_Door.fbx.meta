@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f75aaa4a2298bea4ab5a5314a15c9c1d
+guid: e8ef2842450f4d04b83bf9aa66bdaad9
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
@@ -7,32 +7,52 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Ceiling
-    second: {fileID: 239378781582670930, guid: 1057f44acebab634e98c2c47a3e2ee11, type: 3}
+      name: Mate
+    second: {fileID: 2100000, guid: cd54696740c506c4db69da11827534d8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Floor
-    second: {fileID: 239378781582670930, guid: 0022d704213c65542bffccf128e0899e, type: 3}
+      name: Material 76234
+    second: {fileID: 2100000, guid: de563cf81bca9e948b6bcded4ead4bd2, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Glass
-    second: {fileID: 2100000, guid: 4c89becedc5d05846bd8458219579255, type: 2}
+      name: dd
+    second: {fileID: 2100000, guid: d1743740e0ea00842a0b17eedf983ebb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Walls
-    second: {fileID: 2100000, guid: 8803ecc3c0ada6f48bbd21e716f8522b, type: 2}
+      name: feuldfr
+    second: {fileID: 2100000, guid: f02a6933292261a45ab1569b29a0a6f7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: WindowFrame
-    second: {fileID: 2100000, guid: 239f87e37c3f2be489f35fd03475df59, type: 2}
+      name: feultfe
+    second: {fileID: 2100000, guid: e01f2fe338b64474dac5dc2475723e31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_02 - Default
+    second: {fileID: 2100000, guid: 42bd0d5f76c47ef458cac197dc3573ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_04 - Default_002
+    second: {fileID: 2100000, guid: db1969bfc5874dc45a7425b8ca5ec2ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_08 - Defaulteee
+    second: {fileID: 2100000, guid: 64da93b481fbf8b47988f7a7be09d7e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_13 - Defaultss
+    second: {fileID: 2100000, guid: d0829d84829111a4cad30186d8169bfb, type: 2}
   materials:
     materialImportMode: 2
-    materialName: 0
-    materialSearch: 1
+    materialName: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
@@ -60,7 +80,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.085
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -114,7 +134,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.00085
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

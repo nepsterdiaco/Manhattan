@@ -27,7 +27,7 @@ MonoBehaviour:
     m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   tint:
     m_OverrideState: 1
-    m_Value: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
+    m_Value: {r: 0.9607843, g: 0.8385562, b: 0.8243529, a: 1}
   maxFogDistance:
     m_OverrideState: 1
     m_Value: 5000
@@ -48,7 +48,7 @@ MonoBehaviour:
     m_Value: 50
   meanFreePath:
     m_OverrideState: 1
-    m_Value: 400
+    m_Value: 192
   enableVolumetricFog:
     m_OverrideState: 1
     m_Value: 1
@@ -168,7 +168,7 @@ MonoBehaviour:
     m_Value: {fileID: 0}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.042
+    m_Value: 0.077
   m_MaxSamples:
     m_OverrideState: 0
     m_Value: 6
@@ -196,10 +196,10 @@ MonoBehaviour:
     m_Value: {r: 1, g: 1, b: 1, a: 1}
   hueShift:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 0
   saturation:
     m_OverrideState: 1
-    m_Value: 40.7
+    m_Value: 35
 --- !u!114 &-821218230556722010
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -512,7 +512,7 @@ MonoBehaviour:
   active: 1
   rotation:
     m_OverrideState: 1
-    m_Value: 225
+    m_Value: 111
   skyIntensityMode:
     m_OverrideState: 1
     m_Value: 0
