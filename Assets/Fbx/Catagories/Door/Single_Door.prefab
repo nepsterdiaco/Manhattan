@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Single_Door
       objectReference: {fileID: 0}
+    - target: {fileID: 6475471583640508913, guid: e8ef2842450f4d04b83bf9aa66bdaad9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0a262272ea679624ba8523b11ae8f6c0, type: 2}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: e8ef2842450f4d04b83bf9aa66bdaad9, type: 3}

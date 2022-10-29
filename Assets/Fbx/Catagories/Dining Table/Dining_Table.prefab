@@ -756,6 +756,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dining_Table
       objectReference: {fileID: 0}
+    - target: {fileID: 5942837510972170569, guid: 1177160befefa304cb76518dea35269b, type: 3}
+      propertyPath: Data.name
+      value: Dining_Table_Blue_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942837510972170569, guid: 1177160befefa304cb76518dea35269b, type: 3}
+      propertyPath: Data.group
+      value: Dining_Table_0
+      objectReference: {fileID: 0}
     - target: {fileID: 6141843734730449577, guid: 1177160befefa304cb76518dea35269b, type: 3}
       propertyPath: m_RootOrder
       value: 0

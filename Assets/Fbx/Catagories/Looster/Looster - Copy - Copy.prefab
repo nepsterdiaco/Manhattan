@@ -12,6 +12,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Looster - Copy - Copy
       objectReference: {fileID: 0}
+    - target: {fileID: 5942837510972170569, guid: 1177160befefa304cb76518dea35269b, type: 3}
+      propertyPath: Data.name
+      value: Looster_Simple_Blue_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942837510972170569, guid: 1177160befefa304cb76518dea35269b, type: 3}
+      propertyPath: Data.group
+      value: Looster_0_Blue
+      objectReference: {fileID: 0}
     - target: {fileID: 6141843734730449577, guid: 1177160befefa304cb76518dea35269b, type: 3}
       propertyPath: m_RootOrder
       value: 0

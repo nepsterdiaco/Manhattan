@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5942837510972170569, guid: 1177160befefa304cb76518dea35269b, type: 3}
       propertyPath: Data.group
-      value: Sofa_0
+      value: Sofa_0_Blue
       objectReference: {fileID: 0}
     - target: {fileID: 5942837510972170569, guid: 1177160befefa304cb76518dea35269b, type: 3}
       propertyPath: StringToOmit
