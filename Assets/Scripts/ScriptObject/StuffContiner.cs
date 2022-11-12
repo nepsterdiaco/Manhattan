@@ -24,7 +24,7 @@ public class StuffContiner : ScriptableObject
         looster.Clear();
         smallSofa.Clear();
         kitchen.Clear();
-        walls.Clear();
+        // walls.Clear();
     }
 
     private List<GameObject> Prefabs;
@@ -62,7 +62,7 @@ public class StuffContiner : ScriptableObject
     public List<GameObject> tvDesk;
     public List<GameObject> looster;
     public List<GameObject> kitchen;
-    public List<GameObject> walls;
+    // public List<GameObject> walls;
     
     
     public void AddToStuffs()
@@ -79,7 +79,7 @@ public class StuffContiner : ScriptableObject
         Prefabs.AddRange(looster);
         Prefabs.AddRange(smallSofa);
         Prefabs.AddRange(kitchen);
-        Prefabs.AddRange(walls);
+        // Prefabs.AddRange(walls);
     }
 
 

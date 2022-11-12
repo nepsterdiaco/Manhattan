@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Article_Sven_Sectional_Sofa '
       objectReference: {fileID: 0}
+    - target: {fileID: 1700375393991300719, guid: 1177160befefa304cb76518dea35269b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5942837510972170569, guid: 1177160befefa304cb76518dea35269b, type: 3}
       propertyPath: Data.name
       value: Sofa_Blue_02
@@ -26,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6141843734730449577, guid: 1177160befefa304cb76518dea35269b, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6141843734730449577, guid: 1177160befefa304cb76518dea35269b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -93,15 +97,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 566c2bfdef5b2274880ecc91b2549a18, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 566c2bfdef5b2274880ecc91b2549a18, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 566c2bfdef5b2274880ecc91b2549a18, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: -1.38
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 566c2bfdef5b2274880ecc91b2549a18, type: 3}
       propertyPath: m_LocalRotation.w
