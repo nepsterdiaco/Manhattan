@@ -66,7 +66,7 @@ public class RoomGenerator : MonoBehaviour
 
 
     [Button("RandomChangeStuff", ButtonSizes.Medium)]
-    public void RandomChangeStuff()
+    private void RandomChangeStuff()
     {
         StartCoroutine(RandomChangeStuff_coroutine());
     }
@@ -104,8 +104,42 @@ public class RoomGenerator : MonoBehaviour
         }
         File.WriteAllText(Application.dataPath + "//Containers//Rooms//" + roomData.name + ".json", json);
     }
+   
+    private IEnumerator ArrangeStuffInRoom(List<Diaco.Manhatan.Structs.StuffInRoom> stuffs, Transform parent)
+    {
+       //Debug.Log("1");
+        for (int i = 0; i < stuffs.Count; i++)
+        {
+           // Debug.Log("2");
+            var stuff_group = stuffs[i].group;
+            var stuff_name = stuffs[i].name;
+            var stuff_pos = stuffs[i].position;
+            var stuff_rot = stuffs[i].rotation;
+            var list_filter_by_group = StuffsContainerData.stuffs.Where(s => s.group == stuff_group).ToList();
+            
+            yield return new WaitForSecondsRealtime(0.01f);
+            for (int j = 0; j < list_filter_by_group.Count; j++)
+            {
+             //   Debug.Log("3");
+                if (list_filter_by_group[j].name == stuff_name)
+                {
+
+                    Instantiate(list_filter_by_group[j].prefab, stuff_pos, stuff_rot, parent);
+                  //  Debug.Log("4");
+                }
+                
+
+            }
+            yield return new WaitForSecondsRealtime(0.01f);
+        }
+
+        yield return new WaitForSecondsRealtime(0.01f);
+        TryToSpawnRoom = false;
+        //Debug.Log("Room Arranged");
+        Handler_OnSpawnedRoom();
+    }
     [Button("TestLoadRoom", ButtonSizes.Medium)]
-    private void LoadRoom(string group, string RoomName)
+    public  void LoadRoom(string group, string RoomName)
     {
         var list_filter_by_group = RoomsContainerData.Rooms.Where(r => r.group == group).ToList();
         for (int i = 0; i < list_filter_by_group.Count; i++)
@@ -114,37 +148,46 @@ public class RoomGenerator : MonoBehaviour
             {
                 var R_D = JsonUtility.FromJson<Diaco.Manhatan.Structs.RoomData>(list_filter_by_group[i].roomData.text);
                 var room = Instantiate(list_filter_by_group[i].RoomPrefab);
+                Debug.Log("Room Spawned And Wait For Arrange");
                 StartCoroutine(ArrangeStuffInRoom(R_D.stuffs, room.transform));
-                
+
             }
         }
     }
-    private IEnumerator ArrangeStuffInRoom(List<Diaco.Manhatan.Structs.StuffInRoom> stuffs, Transform parent)
+    private bool TryToSpawnRoom = false;
+    public GameObject room2;
+    public void  LoadRoom(string group, string RoomName , Transform placeSpawn)
     {
-       // Debug.Log("1");
-        for (int i = 0; i < stuffs.Count; i++)
+        if (TryToSpawnRoom == false)
         {
-            
-            var stuff_group = stuffs[i].group;
-            var stuff_name = stuffs[i].name;
-            var stuff_pos = stuffs[i].position;
-            var stuff_rot = stuffs[i].rotation;
-            var list_filter_by_group = StuffsContainerData.stuffs.Where(s => s.group == stuff_group).ToList();
-           // Debug.Log("2");
-            yield return new WaitForSecondsRealtime(0.01f);
-            for (int j = 0; j < list_filter_by_group.Count; j++)
+            TryToSpawnRoom = true;
+            var list_filter_by_group = RoomsContainerData.Rooms.Where(r => r.group == group).ToList();
+            for (int i = 0; i < list_filter_by_group.Count; i++)
             {
-                if(list_filter_by_group[j].name == stuff_name)
+
+                if (list_filter_by_group[i].name == RoomName)
                 {
+                    var R_D = JsonUtility.FromJson<Diaco.Manhatan.Structs.RoomData>(list_filter_by_group[i].roomData.text);
+                    room2 = Instantiate(list_filter_by_group[i].RoomPrefab);
+                    StartCoroutine(ArrangeStuffInRoom(R_D.stuffs, room2.transform));
 
-                    Instantiate(list_filter_by_group[j].prefab, stuff_pos, stuff_rot, parent);
                 }
-             //   Debug.Log("3");
-
             }
-            yield return new WaitForSecondsRealtime(0.01f);
         }
-        yield return new WaitForSecondsRealtime(0.01f);
     }
-    
+
+
+    private Action spawnedroom;
+    public event Action OnSpawnedRoom
+    {
+        add { spawnedroom += value; }
+        remove { spawnedroom -= value; }
+    }
+    protected void Handler_OnSpawnedRoom()
+    {
+        if(spawnedroom !=null)
+        {
+            spawnedroom();
+        }
+    }
 }

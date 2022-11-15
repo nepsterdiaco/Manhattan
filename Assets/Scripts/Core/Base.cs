@@ -8,6 +8,7 @@ using Sirenix.OdinInspector;
 
 public enum _RoomGroup { Royal_0 = 0 , Royal_1 = 1, Royal_2 = 2 }
 public enum _StuffGroup { TV_0 = 0, Sofa_0 = 2, Refrigerator_0 = 3, Bed_0 = 4 }
+public enum _Phase { Login = 0, WorldMap = 1, Lobby = 2, Elevator = 3, Hall = 4, Room = 5 }
 namespace Diaco.Manhatan.Structs
 {
     
@@ -64,9 +65,49 @@ namespace Diaco.Manhatan.Structs
         public GameObject RoomPrefab;
         public TextAsset roomData;
     }
+    [Serializable]
+    public struct BuildingData
+    {
+        public string Name;
+        [MultiLineProperty]
+        public string Information;
+        //public Transform BulidingTransform;
+
+    }
+
+    [Serializable]
+    public struct UserAppartementData
+    {
+        public int floor;
+        public int unit;
+        public string roomGroup;
+        public string roomName;
+    }
+
+        [Serializable]
+    public struct UserBuildingData
+    {
+        public string buildingName;
+        public List<UserAppartementData> appartements;
+
+    }
+
+
+    [Serializable]
+    public struct UserInfo
+    {
+        public string userName;
+        public List<UserBuildingData> userBuildings;
+    }
+
+    [Serializable]
+    public struct TOKEN
+    {
+        public string token;
+    }
     public struct Login
     {
-        
+       
     }
 
 }

@@ -9767,6 +9767,7 @@ MonoBehaviour:
   m_Script: {fileID: 1261584867}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Entries: []
 --- !u!4 &212934797
 Transform:
   m_ObjectHideFlags: 19
@@ -61774,6 +61775,7 @@ MonoBehaviour:
     group: Blue_0
     name: R_1
     stuffs: []
+  room2: {fileID: 0}
 --- !u!4 &1466891446
 Transform:
   m_ObjectHideFlags: 0
@@ -73644,7 +73646,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 065f4e23b140e5840a7b0dc027391435, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4133739934169898326, guid: 065f4e23b140e5840a7b0dc027391435, type: 3}
       propertyPath: m_IsActive

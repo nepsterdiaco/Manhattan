@@ -8,25 +8,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "StuffContiner", menuName = "Diaco/StuffContiner", order = 1)]
 public class StuffContiner : ScriptableObject
 {
-    [PropertyOrder(-1)]
-    [Button]
-    public void ClearAllCollection()
-    {
-        beds.Clear();
-        carpets.Clear();
-        sofas.Clear();
-        signs.Clear();
-        tv.Clear();
-        wallDecor.Clear();
-        diningTable.Clear();
-        hallTable.Clear();
-        tvDesk.Clear();
-        looster.Clear();
-        smallSofa.Clear();
-        kitchen.Clear();
-        // walls.Clear();
-    }
-
+    
     private List<GameObject> Prefabs;
 
     [PropertyOrder(0)]
@@ -62,7 +44,6 @@ public class StuffContiner : ScriptableObject
     public List<GameObject> tvDesk;
     public List<GameObject> looster;
     public List<GameObject> kitchen;
-    // public List<GameObject> walls;
     
     
     public void AddToStuffs()
@@ -79,7 +60,6 @@ public class StuffContiner : ScriptableObject
         Prefabs.AddRange(looster);
         Prefabs.AddRange(smallSofa);
         Prefabs.AddRange(kitchen);
-        // Prefabs.AddRange(walls);
     }
 
 

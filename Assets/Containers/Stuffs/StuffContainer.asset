@@ -12,557 +12,85 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3157b32582a186d40a3228e2fcd3bc28, type: 3}
   m_Name: StuffContainer
   m_EditorClassIdentifier: 
+  Group: 2
+  Name: 
+  Prefab: {fileID: 0}
   stuffs:
-  - group: Bed_0
-    name: Bed_Simple_Blue_0
-    prefab: {fileID: 6030051321890081251, guid: 9593cce2013e475458abd285671ff984, type: 3}
+  - group: TV_0
+    name: SamsungCurve2036
+    prefab: {fileID: 1937687812641396914, guid: a138b64dbbebef24f8670e86cabbae6a,
+      type: 3}
+    materials: []
+  - group: TV_0
+    name: Samsungflame1020
+    prefab: {fileID: 3031883049553971151, guid: 7e163e7f4dac997458c29af42f034aa2,
+      type: 3}
+    materials: []
+  - group: TV_0
+    name: SamsungG730
+    prefab: {fileID: 3275164510312036827, guid: 0f4884d0d6586144aa92c1231c98ac37,
+      type: 3}
+    materials: []
+  - group: TV_0
+    name: SamsungV890
+    prefab: {fileID: 5512613748230350017, guid: 9e785f2bc5dd0224bb1df5029f7576dc,
+      type: 3}
+    materials: []
+  - group: TV_0
+    name: SamsungX50
+    prefab: {fileID: 3362873232745998949, guid: 6fe6b837a0293d141841c30391a37cef,
+      type: 3}
+    materials: []
+  - group: Sofa_0
+    name: Sofa_R120
+    prefab: {fileID: 1298523637678142246, guid: 5158c16bb6fb47047acca6e535ac20ab,
+      type: 3}
+    materials: []
+  - group: Sofa_0
+    name: Sofa_R130
+    prefab: {fileID: 3574464194476438775, guid: 99a9270a6c5efbc4f96b5b3aef311ec2,
+      type: 3}
+    materials: []
+  - group: Sofa_0
+    name: Sofa_R140
+    prefab: {fileID: 2231292268968707539, guid: 6bb0218a32c91e340ac73c344ce05c1b,
+      type: 3}
+    materials: []
+  - group: Sofa_0
+    name: Sofa_R150
+    prefab: {fileID: 726655013228396083, guid: 7f45494b327939647ada7b4314cd95e6, type: 3}
+    materials: []
+  - group: Sofa_0
+    name: Sofa_R160
+    prefab: {fileID: 5738940798581273795, guid: f0382af9aca4bc549a94267c11ec86f8,
+      type: 3}
+    materials: []
+  - group: Refrigerator_0
+    name: Refrigerator_ER7
+    prefab: {fileID: 6001085680133277773, guid: 8217a2531ee7b8d48bef1f54490cb022,
+      type: 3}
+    materials: []
+  - group: Refrigerator_0
+    name: Refrigerator_G0025
+    prefab: {fileID: 4035631584947340691, guid: 0b62f38762cce364aa1d96ef09e7d1c9,
+      type: 3}
+    materials: []
+  - group: Refrigerator_0
+    name: Refrigerator_G532
+    prefab: {fileID: 8380602354559666855, guid: d557543e21a721e48944027dd84c3dbc,
+      type: 3}
+    materials: []
+  - group: Refrigerator_0
+    name: Refrigerator_G9880
+    prefab: {fileID: 5600429284219047441, guid: 2f0f15ee97c811b4e8245db6d8e895e6,
+      type: 3}
+    materials: []
+  - group: Refrigerator_0
+    name: Refrigerator_X021
+    prefab: {fileID: 95191460750124092, guid: 5151dbaa84500664381b7064fcadd68f, type: 3}
+    materials: []
+  - group: Sofa_0
+    name: OMID007
+    prefab: {fileID: 3031883049553971151, guid: 7e163e7f4dac997458c29af42f034aa2,
+      type: 3}
     materials: []
-  - group: Bed_0
-    name: Bed_Simple_Blue_1
-    prefab: {fileID: 6030051321890081251, guid: 8cac5422d089a4a7496205cc3f73592f, type: 3}
-    materials: []
-  - group: Bed_0
-    name: Bed_Simple_Blue_2
-    prefab: {fileID: 6030051321890081251, guid: 2281332bfb84041eb89fc550f7d7c2a7, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_0
-    prefab: {fileID: 4731716754793165809, guid: be1b26c9cc2556043aa1a42e246ab669, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_1
-    prefab: {fileID: 4731716754793165809, guid: 09af7864ce75a27489393296a6596497, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_2
-    prefab: {fileID: 4731716754793165809, guid: 131c7c86d608a454795ce58149896211, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_3
-    prefab: {fileID: 4731716754793165809, guid: 0087c8767d8d2a649a5ec2982c566066, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_4
-    prefab: {fileID: 4731716754793165809, guid: 7eddf15e42b437f4e874fdf1a1f6ce5e, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_5
-    prefab: {fileID: 4731716754793165809, guid: 6a22711a08f2e1942a75cccabce967bd, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_6
-    prefab: {fileID: 4731716754793165809, guid: a8c3b114c023ecd45852e1e851862203, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_7
-    prefab: {fileID: 4731716754793165809, guid: 4454789ec5bf4174c857412a0ad23c7b, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_8
-    prefab: {fileID: 4731716754793165809, guid: 716f426a97397f34fa6261b067b970a1, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_9
-    prefab: {fileID: 4731716754793165809, guid: 1913dd261484ab746b82a2f727903f15, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_10
-    prefab: {fileID: 4731716754793165809, guid: f83fa23c7ba5477449b66dfaa70a33f9, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_11
-    prefab: {fileID: 4731716754793165809, guid: 5a50b1f862961fe47ae1309bfadd3f9b, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_12
-    prefab: {fileID: 4731716754793165809, guid: 9637dd86971ea3e489500ed4ce076e01, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_13
-    prefab: {fileID: 4731716754793165809, guid: 5ff972a146c8ae346aa25df9bc0c30cd, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_14
-    prefab: {fileID: 4731716754793165809, guid: 69d1242ccd506eb4dbc68428bbc6a561, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_15
-    prefab: {fileID: 4731716754793165809, guid: 6113b1a9a6fb72c459e78ed2a4d961df, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_16
-    prefab: {fileID: 4731716754793165809, guid: eb1c9cb2655161a4dbaeafa521897f4e, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_17
-    prefab: {fileID: 4731716754793165809, guid: f22105a5d1ca96241978a982b70f3ee5, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_18
-    prefab: {fileID: 4731716754793165809, guid: 9d04969da7d02164e96349007ff54190, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_19
-    prefab: {fileID: 4731716754793165809, guid: 44f6f6d1772edce49afa603da23af6b4, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_20
-    prefab: {fileID: 4731716754793165809, guid: 2342667c13c955249a7c3b5042fe1a22, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_21
-    prefab: {fileID: 4731716754793165809, guid: e8a02bca8f854f840baaa413e1e341bd, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_22
-    prefab: {fileID: 4731716754793165809, guid: f6713375e7a6175498dc8459673890c4, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_23
-    prefab: {fileID: 4731716754793165809, guid: 3fe78b41591c21449a6551d95465378b, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_24
-    prefab: {fileID: 4731716754793165809, guid: 62523009c94ec44408111bc22a8c8575, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_25
-    prefab: {fileID: 4731716754793165809, guid: 843221a75e90c344fa87078a8446d941, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_26
-    prefab: {fileID: 4731716754793165809, guid: 225493a3c60b202448a9826309714268, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_27
-    prefab: {fileID: 4731716754793165809, guid: cc61d6cb00b09eb43a074f14888268d1, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_28
-    prefab: {fileID: 4731716754793165809, guid: 25334418e85b5d54fa0368613ea13530, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_29
-    prefab: {fileID: 4731716754793165809, guid: 20aefcd2865009e40834903610a38e9b, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_30
-    prefab: {fileID: 4731716754793165809, guid: c01e5248b6321c44c944a52dc3bf4ef6, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_31
-    prefab: {fileID: 4731716754793165809, guid: 4866921749604fc4c9370fb7dd4660eb, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_32
-    prefab: {fileID: 4731716754793165809, guid: 3d2575bf8e8e49e48bdbf332be2b8690, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_33
-    prefab: {fileID: 4731716754793165809, guid: b5069ac2288bd0e47a8764120860a929, type: 3}
-    materials: []
-  - group: Carpet
-    name: Carpet_34
-    prefab: {fileID: 4731716754793165809, guid: 1db0d578b1c69da479954d647b1051e4, type: 3}
-    materials: []
-  - group: Sofa_0_Blue
-    name: Sofa_Blue_01
-    prefab: {fileID: 4574570524308406647, guid: 361bdbbc8c9955140b8fc91ec13948f3, type: 3}
-    materials: []
-  - group: Sofa_0_Blue
-    name: Sofa_Blue_02
-    prefab: {fileID: 4574570524308406647, guid: 2c8a91d4f02f7ff419b98575704863ca, type: 3}
-    materials: []
-  - group: Sofa_0_Blue
-    name: Sofa_Blue_03
-    prefab: {fileID: 4574570524308406647, guid: a1aeb9af0ceb07a488ec97d4bde49114, type: 3}
-    materials: []
-  - group: Sofa_0_Blue
-    name: Sofa_Blue_0
-    prefab: {fileID: 6030051321890081251, guid: 983016d87c805aa478469a613139ed4f, type: 3}
-    materials: []
-  - group: Sofa_0_Blue
-    name: Sofa_Blue_05
-    prefab: {fileID: 6854806465774420049, guid: dd62401eec1bb574b991f341f6f60b60, type: 3}
-    materials: []
-  - group: Sofa_0_Blue
-    name: Sofa_Blue_04
-    prefab: {fileID: 5073013717321444133, guid: d1b4e0171374a7b4b81c2c0bd03391a5, type: 3}
-    materials: []
-  - group: Sign_Blue_0
-    name: Sign_Blue_0
-    prefab: {fileID: 7957791420264176718, guid: 2a09bda1b80a06e4087cb47a9d0c5104, type: 3}
-    materials: []
-  - group: Sign_Blue_0
-    name: Sign_Blue_1
-    prefab: {fileID: 6854806465774420049, guid: 7317b376d8ac9ba40a191a8dc7397729, type: 3}
-    materials: []
-  - group: Sign_Blue_0
-    name: Sign_Blue_1
-    prefab: {fileID: 6854806465774420049, guid: 0b8bac439f654472ba2b57f43a49145f, type: 3}
-    materials: []
-  - group: Sign_Blue_0
-    name: Sign_Blue_0
-    prefab: {fileID: 7957791420264176718, guid: 16d56bc3645384bf68bc8f8a85aeea1e, type: 3}
-    materials: []
-  - group: Sign_Blue_0
-    name: Sign_Blue_2
-    prefab: {fileID: 2586680629673610781, guid: dec5ffdd7d81a9043aafca111c8fcc21, type: 3}
-    materials: []
-  - group: Sign_Blue_0
-    name: Sign_Blue_2
-    prefab: {fileID: 2586680629673610781, guid: 71134e8b4c75e4d18b571ed69b499680, type: 3}
-    materials: []
-  - group: Sign_Blue_0
-    name: Sign_Blue_3
-    prefab: {fileID: 2586680629673610781, guid: 4f733346c5e5d1647b42d270e5962065, type: 3}
-    materials: []
-  - group: Sign_Blue_0
-    name: Sign_Blue_3
-    prefab: {fileID: 2586680629673610781, guid: 90f842f618b1b47d68899b98404f0c26, type: 3}
-    materials: []
-  - group: Sign_Blue_0
-    name: Sign_Blue_4
-    prefab: {fileID: 2586680629673610781, guid: 98db3d1efccc47a40862d9892d75e5e0, type: 3}
-    materials: []
-  - group: Sign_Blue_0
-    name: Sign_Blue_5
-    prefab: {fileID: 6030051321890081251, guid: 299c5f40666fd3e4b9ce57d48436be5a, type: 3}
-    materials: []
-  - group: Sign_Blue_0
-    name: Sign_Blue_6
-    prefab: {fileID: 6030051321890081251, guid: 7e52eb0d1853e0f4c8c558a1f7490ce8, type: 3}
-    materials: []
-  - group: Sign_Blue_0
-    name: Sign_Blue_7
-    prefab: {fileID: 6030051321890081251, guid: f4ba822324bd8654a8a8c6a2e6eb04b3, type: 3}
-    materials: []
-  - group: TV_0_Blue
-    name: TV_Simple_Blue_01
-    prefab: {fileID: 6030051321890081251, guid: a73db06a82cda404c934e30368ceeb3a, type: 3}
-    materials: []
-  - group: TV_0_Blue
-    name: TV_Simple_Blue_02
-    prefab: {fileID: 7957791420264176718, guid: 5792846e5e701cb488c92822a814aa49, type: 3}
-    materials: []
-  - group: TV_0_Blue
-    name: TV_Simple_Blue_03
-    prefab: {fileID: 6854806465774420049, guid: bbcc92a663a88c748aa33178aeb8ad26, type: 3}
-    materials: []
-  - group: TV_0_Blue
-    name: TV_Simple_Blue_04
-    prefab: {fileID: 5073013717321444133, guid: 14640c6766126d744a31ded0528cc500, type: 3}
-    materials: []
-  - group: Decoration_0
-    name: Mirror_Stand_0
-    prefab: {fileID: 5231722274003779018, guid: 526ec175082afa44987b4bd1aee0d5b0, type: 3}
-    materials: []
-  - group: Decoration_0
-    name: Mirror_Stand_0
-    prefab: {fileID: 6030051321890081251, guid: 88511fa68d08d2048806dd9777e6fcfc, type: 3}
-    materials: []
-  - group: Decoration_0
-    name: Mirror_Stand_0
-    prefab: {fileID: 5073013717321444133, guid: 372bba69b03e1bb4b848f2e69c51038c, type: 3}
-    materials: []
-  - group: Decoration_0
-    name: Mirror_Stand_0
-    prefab: {fileID: 7957791420264176718, guid: fa9d7d85bca071c4e9ed6eea55918cd2, type: 3}
-    materials: []
-  - group: Decoration_0
-    name: Mirror_Stand_0
-    prefab: {fileID: 2586680629673610781, guid: f05ac860693fd674eaa02406d56e8ff5, type: 3}
-    materials: []
-  - group: Decoration_0
-    name: Mirror_Stand_0
-    prefab: {fileID: 5073013717321444133, guid: 612ee0862dc462c43bfc3095e55c4c90, type: 3}
-    materials: []
-  - group: Decoration_0
-    name: Mirror_Stand_0
-    prefab: {fileID: 6854806465774420049, guid: 76cca6a43d8664d4c97db8bfb6d7b3e8, type: 3}
-    materials: []
-  - group: Decoration_0
-    name: Mirror_Stand_0
-    prefab: {fileID: 2586680629673610781, guid: 5cd075984608453439b535bdbf781c5b, type: 3}
-    materials: []
-  - group: Decoration_0
-    name: Mirror_Stand_0
-    prefab: {fileID: 5073013717321444133, guid: 36de33fb968b67f4fa158dbc89ad4a81, type: 3}
-    materials: []
-  - group: Decoration_0
-    name: Mirror_Stand_0
-    prefab: {fileID: 7957791420264176718, guid: 2623b52b28d288e47a168de76c8dda4c, type: 3}
-    materials: []
-  - group: Decoration_0
-    name: Mirror_Stand_0
-    prefab: {fileID: 5073013717321444133, guid: 53b98eb24019d3149ae7447d89fa50b4, type: 3}
-    materials: []
-  - group: Decoration_0
-    name: Mirror_Stand_0
-    prefab: {fileID: 2586680629673610781, guid: d48036cf141801f4eb7a611985a9ed7c, type: 3}
-    materials: []
-  - group: Decoration_0
-    name: Mirror_Stand_0
-    prefab: {fileID: 7957791420264176718, guid: 83c2d9985ac1a3b428cc71aeba3ce074, type: 3}
-    materials: []
-  - group: Decoration_0
-    name: Mirror_Stand_0
-    prefab: {fileID: 7957791420264176718, guid: 01047b84360d04e4eb7365d88f25e055, type: 3}
-    materials: []
-  - group: Decoration_0
-    name: Mirror_Stand_0
-    prefab: {fileID: 7957791420264176718, guid: 5fa0955a336359b498a974b059400802, type: 3}
-    materials: []
-  - group: Decoration_0
-    name: Wall_Decoration_0
-    prefab: {fileID: 6030051321890081251, guid: fd99fe90be481e7449a12342ba1d9702, type: 3}
-    materials: []
-  - group: Decoration_0
-    name: Wall_Decoration_1
-    prefab: {fileID: 6030051321890081251, guid: 5ed6a6c5c48b64f48b952b8ad003b3e8, type: 3}
-    materials: []
-  - group: Decoration_0
-    name: Wall_Decoration_2
-    prefab: {fileID: 6030051321890081251, guid: a1f27f66cc4bee14aa660097b125835b, type: 3}
-    materials: []
-  - group: Decoration_0
-    name: Wall_Decoration_3
-    prefab: {fileID: 6030051321890081251, guid: 6bc956df06f43094c927c818fd7caf2c, type: 3}
-    materials: []
-  - group: Decoration_0
-    name: Mirror_Stand_0
-    prefab: {fileID: 5073013717321444133, guid: a52d5d5ca77a7474ea914f6a914093eb, type: 3}
-    materials: []
-  - group: Dining_Table_0
-    name: Dining_Table_Blue_0
-    prefab: {fileID: 5073013717321444133, guid: bd573e6eb0cab014c82f15df3b775e20, type: 3}
-    materials: []
-  - group: Dining_Table_0
-    name: Dining_Table_Blue_01
-    prefab: {fileID: 7957791420264176718, guid: 4a782944ff5f9374b9c4f1a463d2546b, type: 3}
-    materials: []
-  - group: Dining_Table_0
-    name: Dining_Table_Blue_02
-    prefab: {fileID: 6854806465774420049, guid: 493cbaac8320b574e8faefe016a10a0f, type: 3}
-    materials: []
-  - group: Dining_Table_0
-    name: Dining_Table_Blue_03
-    prefab: {fileID: 2586680629673610781, guid: 821b50ac80cb18546b26b9904d6b5ab8, type: 3}
-    materials: []
-  - group: Dining_Table_0
-    name: Dining_Table_Blue_04
-    prefab: {fileID: 7957791420264176718, guid: b358865365e574844a7369188264d39c, type: 3}
-    materials: []
-  - group: Dining_Table_0
-    name: Dining_Table_Blue_05
-    prefab: {fileID: 6030051321890081251, guid: da905d8c83b068b4d9b82e80d23436b4, type: 3}
-    materials: []
-  - group: Living_Room_Table_0
-    name: Table_Simple_Blue_0
-    prefab: {fileID: 6030051321890081251, guid: ba50cc8e3c129a74ab2d3af74f82ae67, type: 3}
-    materials: []
-  - group: Living_Room_Table_0
-    name: Table_Simple_Blue_01
-    prefab: {fileID: 5231722274003779018, guid: f543ce16a0dbb004c87f10bd0e715335, type: 3}
-    materials: []
-  - group: Living_Room_Table_0
-    name: Table_Simple_Blue_02
-    prefab: {fileID: 5073013717321444133, guid: bd616bc6edb37cc44ad6ffd37f077e6c, type: 3}
-    materials: []
-  - group: Living_Room_Table_0
-    name: Table_Simple_Blue_03
-    prefab: {fileID: 7957791420264176718, guid: fc7ebf2a312af7b4a92577fac335d8ea, type: 3}
-    materials: []
-  - group: Living_Room_Table_0
-    name: Table_Simple_Blue_04
-    prefab: {fileID: 6854806465774420049, guid: 52b3051e087187d4b9528e23459d9831, type: 3}
-    materials: []
-  - group: Decoration_0
-    name: Mirror_Stand_0
-    prefab: {fileID: 7957791420264176718, guid: ea9becdead58fcb4d99f916e140cd2b0, type: 3}
-    materials: []
-  - group: TV_Stand_0
-    name: TV_Stand_Blue_0
-    prefab: {fileID: 6030051321890081251, guid: f20a39e7649860249928814d69a529e1, type: 3}
-    materials: []
-  - group: TV_Stand_0
-    name: TV_Stand_Blue_0_V1
-    prefab: {fileID: 6030051321890081251, guid: e2f8d4ba974bf4198aa485ac80a24ef8, type: 3}
-    materials: []
-  - group: Decoration_0
-    name: Mirror_Stand_0
-    prefab: {fileID: 7957791420264176718, guid: 21803b48dff45e84f853dcb3f6476e71, type: 3}
-    materials: []
-  - group: Looster_0_Blue
-    name: Looster_Simple_Blue_0
-    prefab: {fileID: 6030051321890081251, guid: 15fdea02ce3edc8449ac0c17e25dcc02, type: 3}
-    materials: []
-  - group: Looster_0_Blue
-    name: Looster_Simple_Blue_01
-    prefab: {fileID: 7957791420264176718, guid: cd03a01ae3b1a0b4b9fe7e6cf583bfb7, type: 3}
-    materials: []
-  - group: Looster_0_Blue
-    name: Looster_Simple_Blue_02
-    prefab: {fileID: 2586680629673610781, guid: 491e552433799ab48b750558c96fc738, type: 3}
-    materials: []
-  - group: Looster_0_Blue
-    name: Looster_Simple_Blue_03
-    prefab: {fileID: 6030051321890081251, guid: f08095c1eda1556408e2bbf0a053a9b4, type: 3}
-    materials: []
-  - group: Looster_0_Blue
-    name: Looster_Simple_Blue_04
-    prefab: {fileID: 5073013717321444133, guid: 176b469ec2837ac4db1063826d6d72bd, type: 3}
-    materials: []
-  - group: Looster_0_Blue
-    name: Looster_Simple_Blue_05
-    prefab: {fileID: 5073013717321444133, guid: 2b752d4161d1c5643affdab1ecb0e74a, type: 3}
-    materials: []
-  - group: Looster_0_Blue
-    name: Looster_Simple_Blue_06
-    prefab: {fileID: 5073013717321444133, guid: 1510cd72aec10aa4f95401170c0c8c7b, type: 3}
-    materials: []
-  - group: Small_Sofa_Blue_0
-    name: Small_Sofa_0
-    prefab: {fileID: 5231722274003779018, guid: a061ae26dadd0534c82185d1ce422228, type: 3}
-    materials: []
-  - group: Small_Sofa_Blue_0
-    name: Small_Sofa_1
-    prefab: {fileID: 6030051321890081251, guid: 555727ae81e7883498afddd15796e118, type: 3}
-    materials: []
-  - group: Kitchen_0
-    name: Kitchen_Simple_Blue_0
-    prefab: {fileID: 6030051321890081251, guid: 4a224e4759b6d6e4a96e3e6f56db7e2b, type: 3}
-    materials: []
-  - group: Kitchen_0
-    name: Kitchen_Simple_Blue_01
-    prefab: {fileID: 2586680629673610781, guid: 078ab0bdca10cee4ba1fbb6f213e29bb, type: 3}
-    materials: []
-  - group: Wall_0
-    name: Wall_Simple
-    prefab: {fileID: 5073013717321444133, guid: 7a263dafe0c1048a0983056c3ac19106, type: 3}
-    materials: []
-  - group: Wall_0
-    name: Wall_Simple
-    prefab: {fileID: 5073013717321444133, guid: 0e60158811db54f78ab7712a0000b332, type: 3}
-    materials: []
-  beds:
-  - {fileID: 6030051321890081251, guid: 9593cce2013e475458abd285671ff984, type: 3}
-  - {fileID: 6030051321890081251, guid: 8cac5422d089a4a7496205cc3f73592f, type: 3}
-  - {fileID: 6030051321890081251, guid: 2281332bfb84041eb89fc550f7d7c2a7, type: 3}
-  carpets:
-  - {fileID: 4731716754793165809, guid: be1b26c9cc2556043aa1a42e246ab669, type: 3}
-  - {fileID: 4731716754793165809, guid: 09af7864ce75a27489393296a6596497, type: 3}
-  - {fileID: 4731716754793165809, guid: 131c7c86d608a454795ce58149896211, type: 3}
-  - {fileID: 4731716754793165809, guid: 0087c8767d8d2a649a5ec2982c566066, type: 3}
-  - {fileID: 4731716754793165809, guid: 7eddf15e42b437f4e874fdf1a1f6ce5e, type: 3}
-  - {fileID: 4731716754793165809, guid: 6a22711a08f2e1942a75cccabce967bd, type: 3}
-  - {fileID: 4731716754793165809, guid: a8c3b114c023ecd45852e1e851862203, type: 3}
-  - {fileID: 4731716754793165809, guid: 4454789ec5bf4174c857412a0ad23c7b, type: 3}
-  - {fileID: 4731716754793165809, guid: 716f426a97397f34fa6261b067b970a1, type: 3}
-  - {fileID: 4731716754793165809, guid: 1913dd261484ab746b82a2f727903f15, type: 3}
-  - {fileID: 4731716754793165809, guid: f83fa23c7ba5477449b66dfaa70a33f9, type: 3}
-  - {fileID: 4731716754793165809, guid: 5a50b1f862961fe47ae1309bfadd3f9b, type: 3}
-  - {fileID: 4731716754793165809, guid: 9637dd86971ea3e489500ed4ce076e01, type: 3}
-  - {fileID: 4731716754793165809, guid: 5ff972a146c8ae346aa25df9bc0c30cd, type: 3}
-  - {fileID: 4731716754793165809, guid: 69d1242ccd506eb4dbc68428bbc6a561, type: 3}
-  - {fileID: 4731716754793165809, guid: 6113b1a9a6fb72c459e78ed2a4d961df, type: 3}
-  - {fileID: 4731716754793165809, guid: eb1c9cb2655161a4dbaeafa521897f4e, type: 3}
-  - {fileID: 4731716754793165809, guid: f22105a5d1ca96241978a982b70f3ee5, type: 3}
-  - {fileID: 4731716754793165809, guid: 9d04969da7d02164e96349007ff54190, type: 3}
-  - {fileID: 4731716754793165809, guid: 44f6f6d1772edce49afa603da23af6b4, type: 3}
-  - {fileID: 4731716754793165809, guid: 2342667c13c955249a7c3b5042fe1a22, type: 3}
-  - {fileID: 4731716754793165809, guid: e8a02bca8f854f840baaa413e1e341bd, type: 3}
-  - {fileID: 4731716754793165809, guid: f6713375e7a6175498dc8459673890c4, type: 3}
-  - {fileID: 4731716754793165809, guid: 3fe78b41591c21449a6551d95465378b, type: 3}
-  - {fileID: 4731716754793165809, guid: 62523009c94ec44408111bc22a8c8575, type: 3}
-  - {fileID: 4731716754793165809, guid: 843221a75e90c344fa87078a8446d941, type: 3}
-  - {fileID: 4731716754793165809, guid: 225493a3c60b202448a9826309714268, type: 3}
-  - {fileID: 4731716754793165809, guid: cc61d6cb00b09eb43a074f14888268d1, type: 3}
-  - {fileID: 4731716754793165809, guid: 25334418e85b5d54fa0368613ea13530, type: 3}
-  - {fileID: 4731716754793165809, guid: 20aefcd2865009e40834903610a38e9b, type: 3}
-  - {fileID: 4731716754793165809, guid: c01e5248b6321c44c944a52dc3bf4ef6, type: 3}
-  - {fileID: 4731716754793165809, guid: 4866921749604fc4c9370fb7dd4660eb, type: 3}
-  - {fileID: 4731716754793165809, guid: 3d2575bf8e8e49e48bdbf332be2b8690, type: 3}
-  - {fileID: 4731716754793165809, guid: b5069ac2288bd0e47a8764120860a929, type: 3}
-  - {fileID: 4731716754793165809, guid: 1db0d578b1c69da479954d647b1051e4, type: 3}
-  sofas:
-  - {fileID: 4574570524308406647, guid: 361bdbbc8c9955140b8fc91ec13948f3, type: 3}
-  - {fileID: 4574570524308406647, guid: 2c8a91d4f02f7ff419b98575704863ca, type: 3}
-  - {fileID: 4574570524308406647, guid: a1aeb9af0ceb07a488ec97d4bde49114, type: 3}
-  - {fileID: 6030051321890081251, guid: 983016d87c805aa478469a613139ed4f, type: 3}
-  - {fileID: 6854806465774420049, guid: dd62401eec1bb574b991f341f6f60b60, type: 3}
-  - {fileID: 5073013717321444133, guid: d1b4e0171374a7b4b81c2c0bd03391a5, type: 3}
-  smallSofa:
-  - {fileID: 5231722274003779018, guid: a061ae26dadd0534c82185d1ce422228, type: 3}
-  - {fileID: 6030051321890081251, guid: 555727ae81e7883498afddd15796e118, type: 3}
-  signs:
-  - {fileID: 7957791420264176718, guid: 2a09bda1b80a06e4087cb47a9d0c5104, type: 3}
-  - {fileID: 6854806465774420049, guid: 7317b376d8ac9ba40a191a8dc7397729, type: 3}
-  - {fileID: 6854806465774420049, guid: 0b8bac439f654472ba2b57f43a49145f, type: 3}
-  - {fileID: 7957791420264176718, guid: 16d56bc3645384bf68bc8f8a85aeea1e, type: 3}
-  - {fileID: 2586680629673610781, guid: dec5ffdd7d81a9043aafca111c8fcc21, type: 3}
-  - {fileID: 2586680629673610781, guid: 71134e8b4c75e4d18b571ed69b499680, type: 3}
-  - {fileID: 2586680629673610781, guid: 4f733346c5e5d1647b42d270e5962065, type: 3}
-  - {fileID: 2586680629673610781, guid: 90f842f618b1b47d68899b98404f0c26, type: 3}
-  - {fileID: 2586680629673610781, guid: 98db3d1efccc47a40862d9892d75e5e0, type: 3}
-  - {fileID: 6030051321890081251, guid: 299c5f40666fd3e4b9ce57d48436be5a, type: 3}
-  - {fileID: 6030051321890081251, guid: 7e52eb0d1853e0f4c8c558a1f7490ce8, type: 3}
-  - {fileID: 6030051321890081251, guid: f4ba822324bd8654a8a8c6a2e6eb04b3, type: 3}
-  tv:
-  - {fileID: 6030051321890081251, guid: a73db06a82cda404c934e30368ceeb3a, type: 3}
-  - {fileID: 7957791420264176718, guid: 5792846e5e701cb488c92822a814aa49, type: 3}
-  - {fileID: 6854806465774420049, guid: bbcc92a663a88c748aa33178aeb8ad26, type: 3}
-  - {fileID: 5073013717321444133, guid: 14640c6766126d744a31ded0528cc500, type: 3}
-  wallDecor:
-  - {fileID: 5231722274003779018, guid: 526ec175082afa44987b4bd1aee0d5b0, type: 3}
-  - {fileID: 6030051321890081251, guid: 88511fa68d08d2048806dd9777e6fcfc, type: 3}
-  - {fileID: 5073013717321444133, guid: 372bba69b03e1bb4b848f2e69c51038c, type: 3}
-  - {fileID: 7957791420264176718, guid: fa9d7d85bca071c4e9ed6eea55918cd2, type: 3}
-  - {fileID: 2586680629673610781, guid: f05ac860693fd674eaa02406d56e8ff5, type: 3}
-  - {fileID: 5073013717321444133, guid: 612ee0862dc462c43bfc3095e55c4c90, type: 3}
-  - {fileID: 6854806465774420049, guid: 76cca6a43d8664d4c97db8bfb6d7b3e8, type: 3}
-  - {fileID: 2586680629673610781, guid: 5cd075984608453439b535bdbf781c5b, type: 3}
-  - {fileID: 5073013717321444133, guid: 36de33fb968b67f4fa158dbc89ad4a81, type: 3}
-  - {fileID: 7957791420264176718, guid: 2623b52b28d288e47a168de76c8dda4c, type: 3}
-  - {fileID: 5073013717321444133, guid: 53b98eb24019d3149ae7447d89fa50b4, type: 3}
-  - {fileID: 2586680629673610781, guid: d48036cf141801f4eb7a611985a9ed7c, type: 3}
-  - {fileID: 7957791420264176718, guid: 83c2d9985ac1a3b428cc71aeba3ce074, type: 3}
-  - {fileID: 7957791420264176718, guid: 01047b84360d04e4eb7365d88f25e055, type: 3}
-  - {fileID: 7957791420264176718, guid: 5fa0955a336359b498a974b059400802, type: 3}
-  - {fileID: 6030051321890081251, guid: fd99fe90be481e7449a12342ba1d9702, type: 3}
-  - {fileID: 6030051321890081251, guid: 5ed6a6c5c48b64f48b952b8ad003b3e8, type: 3}
-  - {fileID: 6030051321890081251, guid: a1f27f66cc4bee14aa660097b125835b, type: 3}
-  - {fileID: 6030051321890081251, guid: 6bc956df06f43094c927c818fd7caf2c, type: 3}
-  - {fileID: 5073013717321444133, guid: a52d5d5ca77a7474ea914f6a914093eb, type: 3}
-  diningTable:
-  - {fileID: 5073013717321444133, guid: bd573e6eb0cab014c82f15df3b775e20, type: 3}
-  - {fileID: 7957791420264176718, guid: 4a782944ff5f9374b9c4f1a463d2546b, type: 3}
-  - {fileID: 6854806465774420049, guid: 493cbaac8320b574e8faefe016a10a0f, type: 3}
-  - {fileID: 2586680629673610781, guid: 821b50ac80cb18546b26b9904d6b5ab8, type: 3}
-  - {fileID: 7957791420264176718, guid: b358865365e574844a7369188264d39c, type: 3}
-  - {fileID: 6030051321890081251, guid: da905d8c83b068b4d9b82e80d23436b4, type: 3}
-  hallTable:
-  - {fileID: 6030051321890081251, guid: ba50cc8e3c129a74ab2d3af74f82ae67, type: 3}
-  - {fileID: 5231722274003779018, guid: f543ce16a0dbb004c87f10bd0e715335, type: 3}
-  - {fileID: 5073013717321444133, guid: bd616bc6edb37cc44ad6ffd37f077e6c, type: 3}
-  - {fileID: 7957791420264176718, guid: fc7ebf2a312af7b4a92577fac335d8ea, type: 3}
-  - {fileID: 6854806465774420049, guid: 52b3051e087187d4b9528e23459d9831, type: 3}
-  tvDesk:
-  - {fileID: 7957791420264176718, guid: ea9becdead58fcb4d99f916e140cd2b0, type: 3}
-  - {fileID: 6030051321890081251, guid: f20a39e7649860249928814d69a529e1, type: 3}
-  - {fileID: 6030051321890081251, guid: e2f8d4ba974bf4198aa485ac80a24ef8, type: 3}
-  - {fileID: 7957791420264176718, guid: 21803b48dff45e84f853dcb3f6476e71, type: 3}
-  looster:
-  - {fileID: 6030051321890081251, guid: 15fdea02ce3edc8449ac0c17e25dcc02, type: 3}
-  - {fileID: 7957791420264176718, guid: cd03a01ae3b1a0b4b9fe7e6cf583bfb7, type: 3}
-  - {fileID: 2586680629673610781, guid: 491e552433799ab48b750558c96fc738, type: 3}
-  - {fileID: 6030051321890081251, guid: f08095c1eda1556408e2bbf0a053a9b4, type: 3}
-  - {fileID: 5073013717321444133, guid: 176b469ec2837ac4db1063826d6d72bd, type: 3}
-  - {fileID: 5073013717321444133, guid: 2b752d4161d1c5643affdab1ecb0e74a, type: 3}
-  - {fileID: 5073013717321444133, guid: 1510cd72aec10aa4f95401170c0c8c7b, type: 3}
-  kitchen:
-  - {fileID: 6030051321890081251, guid: 4a224e4759b6d6e4a96e3e6f56db7e2b, type: 3}
-  - {fileID: 2586680629673610781, guid: 078ab0bdca10cee4ba1fbb6f213e29bb, type: 3}
-  walls:
-  - {fileID: 5073013717321444133, guid: 7a263dafe0c1048a0983056c3ac19106, type: 3}
-  - {fileID: 5073013717321444133, guid: 0e60158811db54f78ab7712a0000b332, type: 3}

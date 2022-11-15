@@ -9,9 +9,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using Sirenix.OdinInspector;
 
-using Sirenix.Utilities.Editor;
-using Sirenix.OdinInspector.Editor;
-
 [ExecuteInEditMode]
 public class RoomObject : MonoBehaviour
 {
