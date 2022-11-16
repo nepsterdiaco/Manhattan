@@ -13,14 +13,11 @@ namespace Diaco.Manhatan
         public Button Login_Button;
 
        
-        private void Awake()
-        {
-            
-        }
+
         void Start()
         {
 
-            Manager.singleton.FadeEffect_UI.FadeOut(1);
+            Manager.singleton.FadeOut();
             Login_Button.onClick.AddListener(() =>
             {
 
@@ -53,7 +50,7 @@ namespace Diaco.Manhatan
                     //// Set Data
                     Manager.singleton.SetUserInfo();
 
-                    this.gameObject.SetActive(false);
+                    Manager.singleton.LoadScene(1);
 
 
                 }

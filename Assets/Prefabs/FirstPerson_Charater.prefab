@@ -83,7 +83,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8627362659451889122}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!1 &8627362661376886107
 GameObject:
   m_ObjectHideFlags: 0
@@ -118,7 +118,7 @@ Transform:
   m_Children:
   - {fileID: 8627362659451889123}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &8627362661376886096
 MeshFilter:
@@ -148,7 +148,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 239378781582670930, guid: 2aeaa848b5d047d46b1a0daa0bf6b1fe, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -182,14 +182,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0defc1f8059f5b2429314bd6cf15a095, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 5
+  Speed: 0.1
   SpeedRotate: 3
   InvertY: 1
-  rigidbody: {fileID: 0}
-  MoveInPlace: 0
-  pos: {x: 0, y: 0, z: 0}
-  rot: {x: 0, y: 0, z: 0, w: 0}
-  RayActive: 0
+  IsLookSomething: 0
 --- !u!143 &-903134380778462467
 CharacterController:
   m_ObjectHideFlags: 0

@@ -32,9 +32,11 @@ namespace Diaco.Manhatan
         
         private void Start()
         {
-           
+           // var buildingmanager = FindObjectOfType<BuildingManager>();
+
             renderer = GetComponent<MeshRenderer>();
             material = renderer.material;
+            BuildingManager.AddBuilding(this);
         }
         private void LateUpdate()
         {

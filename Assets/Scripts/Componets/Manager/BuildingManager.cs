@@ -7,7 +7,15 @@ namespace Diaco.Manhatan
 {
     public class BuildingManager : MonoBehaviour
     {
-        public List<Building> buildings;
+        public static List<Building> buildings = new List<Building>();
+
+        public static void  AddBuilding( Building building)
+        {
+            if(!buildings.Contains(building))
+            {
+                buildings.Add(building);
+            }
+        }
     }
 
 

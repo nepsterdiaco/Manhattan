@@ -1,25 +1,22 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Shapes;
 using TMPro;
 using DG.Tweening;
+using Sirenix.OdinInspector;
 using Diaco.Manhatan.Structs;
 namespace Diaco.Manhatan
 {
     public class Manager : MonoBehaviour
     {
-
         public _Phase GamePhase;
         public UserInfo UserInformation;
+        public  static Manager singleton;
 
         [SerializeField] private Camera WorldMap_Cam;
-        [SerializeField] private GameObject FirstPersonPlayer;
-
-        [SerializeField] private Transform PlaceSpawnRoom;
-        [SerializeField] private Transform[] SpawnPlacePerson;
-
-        public FadeEffect FadeEffect_UI;
+        [SerializeField] private FadeEffect FadeEffect_UI;
         [SerializeField] private Canvas WorldMap_UI;
         [SerializeField] private HUD HUD_UI;
         [SerializeField] private BuildingInfo_UI InfoElementPrefab;
@@ -29,23 +26,23 @@ namespace Diaco.Manhatan
         [SerializeField] private Line Line_shape;
 
         #region Property
-        public Transform TransformBuildingSelected { set; get; }
-        public string NameBuildingSelected { set; get; }
-        public int NumberFloorSelected { set; get; }
+        [SerializeField] Transform buildingTransformSelected;
+        public Transform TransformBuildingSelected { set { buildingTransformSelected = value; } get { return buildingTransformSelected; } }
 
-        private int unitselected;
+        [SerializeField] private string buildingname;
+        public string NameBuildingSelected { set { buildingname = value; } get { return buildingname; } }
+
+        [SerializeField]private int numfloor;
+        public int NumberFloorSelected { set { numfloor = value; } get { return numfloor; } }
+
+        [SerializeField]private int unitselected;
         public int NumberUnitSelected
         {
 
             set
             {
                 unitselected = value;
-                if (unitselected != -1)
-                {
-                   // Debug.Log("Unit Selected Unit:" + unitselected);
-                    LoadRoom();
 
-                }
 
             }
             get { return unitselected; }
@@ -53,47 +50,35 @@ namespace Diaco.Manhatan
         public List<UserAppartementData> AppartementsSelectedInFloor { set; get; } = new List<UserAppartementData>();
 
         #endregion
-
-        private BuildingManager buildingManager;
         private RoomGenerator roomGenerator;
         private List<BuildingInfo_UI> temp_ui = new List<BuildingInfo_UI>(10);
-        public  static Manager singleton;
-
-
-
+        
         private void Awake()
         {
-            GameObject.DontDestroyOnLoad(this);
             if (singleton == null)
-                singleton = this;
+            {
+            
+                singleton = this;                
+            }
+
         }
         private void Start()
         {
-           // Cursor.lockState = CursorLockMode.Locked;
-            buildingManager = GetComponent<BuildingManager>();
             roomGenerator = GetComponent<RoomGenerator>();
             roomGenerator.OnSpawnedRoom += RoomGenerator_OnSpawnedRoom;
+            
+          
         }
-        private void Update()
-        {
-
-            if (Input.GetKey(KeyCode.Escape))
-            {
-              //  ResetWorld();
-            }
-        }
-
-      
         public void HightlightBuilding(string name)
         {
-            for (int i = 0; i < buildingManager.buildings.Count; i++)
+            for (int i = 0; i < BuildingManager.buildings.Count; i++)
             {
                 for (int j = 0; j < UserInformation.userBuildings.Count; j++)
                 {
                     var buildingName = UserInformation.userBuildings[j].buildingName;
-                    if (buildingManager.buildings[i].info.Name == buildingName)
+                    if (BuildingManager.buildings[i].info.Name == buildingName)
                     {
-                        buildingManager.buildings[i].DOFlicker();
+                        BuildingManager.buildings[i].DOFlicker();
                         // Debug.Log("HHHHH");
                     }
                 }
@@ -113,7 +98,6 @@ namespace Diaco.Manhatan
             }
             return owner;
         }
-
         public void SelectBuilding(string name, Transform buildingTransform)
         {
             ClearBuildingInfoInUI();
@@ -124,11 +108,8 @@ namespace Diaco.Manhatan
                 {
                     NameBuildingSelected = name;
                     TransformBuildingSelected = buildingTransform;
-
-
-
                     SpawnBuildingInfoInUI(building_name);
-                    Point_Line_SetPositions(buildingManager.buildings[i].transform.position);
+                    Point_Line_SetPositions(buildingTransform.position);
                     Point_Line_Show(true);
                    
                 }
@@ -136,20 +117,17 @@ namespace Diaco.Manhatan
         }
         public void SpawnBuildingInfoInUI(string buildingname)
         {
-            for (int i = 0; i < buildingManager.buildings.Count; i++)
+            for (int i = 0; i < BuildingManager.buildings.Count; i++)
             {
-                var name = buildingManager.buildings[i].info.Name;
-                var info = buildingManager.buildings[i].info.Information;
+                var name = BuildingManager.buildings[i].info.Name;
+                var info = BuildingManager.buildings[i].info.Information;
                 if (name == buildingname)
                 {
                     var element = Instantiate(InfoElementPrefab, Content_info);
                     element.SetElement(name, info);
-
                     temp_ui.Add(element);
                 }
             }
-
-
         }
         public void ClearBuildingInfoInUI()
         {
@@ -160,25 +138,21 @@ namespace Diaco.Manhatan
             }
             temp_ui.Clear();
         }
-
         public void Point_Line_SetPositions(Vector3 start)
         {
             Point_shape.transform.position = start;
             Line_shape.Start = start;
-
             Line_shape.End = point2_shape.transform.position;
         }
         public void Point_Line_Show(bool show)
         {
-            Point_shape.gameObject.SetActive(show);
-            point2_shape.gameObject.SetActive(show);
-            Line_shape.gameObject.SetActive(show);
+            this.Point_shape.enabled = show;
+            this.point2_shape.enabled = show;
+            this.Line_shape.enabled = show;
         }
         public void SetUserInfo()
         {
             UserInfo_text.text = $" UserName : {UserInformation.userName}\r\n";
-
-
             for (int i = 0; i < UserInformation.userBuildings.Count; i++)
             {
                 UserInfo_text.text += $"Building:{UserInformation.userBuildings[i].buildingName}\r\n";
@@ -187,17 +161,11 @@ namespace Diaco.Manhatan
                     var appartemntname = UserInformation.userBuildings[i].appartements[j].roomName;
                     var appartemntfloor = UserInformation.userBuildings[i].appartements[j].floor;
                     var appartemntunit = UserInformation.userBuildings[i].appartements[j].unit;
-
                     UserInfo_text.text += $"Appartements:\r\n Name :{appartemntname} Floor:{appartemntfloor} Unit:{appartemntunit}\r\n";
                 }
-
-
                 HightlightBuilding(UserInformation.userBuildings[i].buildingName);
             }
-
         }
-
-
         public bool CheckFloorInElavator(int floor)
         {
             bool right = false;
@@ -216,70 +184,43 @@ namespace Diaco.Manhatan
                             right = true;
                         }
                     }
-
                 }
             }
-
             return right;
-
+        }
+        
+        public void LoadScene(int id)
+        {
+            FadeIn();
+            SceneManager.sceneLoaded -= SceneManager_sceneLoaded;
+            SceneManager.LoadSceneAsync(id, LoadSceneMode.Single);
+            SceneManager.sceneLoaded += SceneManager_sceneLoaded;
+        }
+        private void SceneManager_sceneLoaded(Scene scene, LoadSceneMode loadsceneMode)
+        {
+            if (scene.buildIndex != 1)
+            {
+                this.WorldMap_UI.GetComponent<CanvasGroup>().alpha = 0;
+                this.WorldMap_Cam.gameObject.SetActive(false);
+                this.HUD_UI.GetComponent<CanvasGroup>().alpha = 1;
+                Point_Line_Show(false);
+            }
+            else
+            {
+                this.WorldMap_Cam.transform.position = new Vector3(3.6f, 58f, -73f);
+                this.WorldMap_UI.GetComponent<CanvasGroup>().alpha = 1;
+                this.WorldMap_Cam.gameObject.SetActive(true);
+                this.HUD_UI.GetComponent<CanvasGroup>().alpha = 0;
+            }
+            ChangePhase(scene.buildIndex);
+            FadeOut();
+            Debug.Log($"Scenes{scene.name}");
         }
 
-        public void ChangePlacePlayer(string place)
+        public void LoadRoom( )
+
         {
-            Handler_OnChangePlace(place);
-            //Debug.Log("Change Position");
-            FadeEffect_UI.FadeOut(1);
-            if (place == "map")
-            {
-
-            }
-            else if (place == "lobby")
-            {
-
-                 WorldMap_UI.gameObject.SetActive(false);
-                WorldMap_Cam.gameObject.SetActive(false);
-                HUD_UI.gameObject.SetActive(true);
-                Point_Line_Show(false);
-                FirstPersonPlayer.transform.position = SpawnPlacePerson[1].position;
-                FirstPersonPlayer.transform.rotation = SpawnPlacePerson[1].rotation;
-                FirstPersonPlayer.SetActive(true);
-                GamePhase = _Phase.Lobby;
-            }
-
-            else if (place == "hall")
-            {
-     
-
-                FirstPersonPlayer.SetActive(false);
-                FadeEffect_UI.FadeIn(1).OnComplete(() => {
-                    FirstPersonPlayer.transform.position = SpawnPlacePerson[2].position;
-                    FirstPersonPlayer.transform.rotation = SpawnPlacePerson[2].rotation;
-                    FadeEffect_UI.FadeOut(1).OnComplete(() => {
-                        FirstPersonPlayer.SetActive(true);
-
-                    });
-                });
-                GamePhase = _Phase.Hall;
-            }
-            else if (place == "room")
-            {
-                FirstPersonPlayer.SetActive(false);
-                FadeEffect_UI.FadeIn(1).OnComplete(() => {
-                    FirstPersonPlayer.transform.position = SpawnPlacePerson[3].position;
-                    FirstPersonPlayer.transform.rotation = SpawnPlacePerson[3].rotation;
-                    FadeEffect_UI.FadeOut(1).OnComplete(() => {
-                        FirstPersonPlayer.SetActive(true);
-                    });
-                });
-                Point_Line_Show(false);
-                GamePhase = _Phase.Room;
-            }
-
-
-            
-        }
-        public void LoadRoom()
-        {
+            //this.unitselected = unit;
             //Debug.Log($"Begin Load Room:Building{NameBuildingSelected}.... Floor:{NumberFloorSelected}....Unit:{unitselected}");
 
             for (int i = 0; i < UserInformation.userBuildings.Count; i++)
@@ -301,46 +242,64 @@ namespace Diaco.Manhatan
                             var group = appartemets[j].roomGroup;
                             var room = appartemets[j].roomName;
                            // Debug.Log("Find Room");
-                            roomGenerator.LoadRoom(group, room, PlaceSpawnRoom);
+                            roomGenerator.LoadRoom(group, room);
                         }
                     }
                 }
             }
         }
-
-
         public void WorldMapCameraMoveEffect()
         {
             Point_Line_Show(false);
             WorldMap_Cam.transform.DOMove(TransformBuildingSelected.position, 1).OnComplete(() => {
-                ChangePlacePlayer("lobby");
+                LoadScene(2);
             });
             FadeEffect_UI.FadeIn(1);
         }
-
         public void ResetWorld()
         {
-            if (GamePhase == _Phase.Room)
+            LoadScene(1);
+        }
+        public void ExitApp()
+        {
+            Application.Quit();
+        }
+        public void FadeIn()
+        {
+            FadeEffect_UI.FadeIn(1);
+        }
+        public void FadeOut()
+        {
+            FadeEffect_UI.FadeOut(1);
+        }
+        public void ChangePhase(int index)
+        {
+            if (index == 0)
             {
-                Handler_OnChangePlace("");
-                FirstPersonPlayer.SetActive(false);
-                WorldMap_Cam.transform.position = new Vector3(3.6f, 58f, -73f);
-                HUD_UI.gameObject.SetActive(false);
-                var room_g = GetComponent<RoomGenerator>();
-                if (room_g.room2 != null)
-                    Destroy(room_g.room2.gameObject, 0.1f);
-
-                WorldMap_UI.gameObject.SetActive(true);
-                WorldMap_Cam.gameObject.SetActive(true);
+                GamePhase = _Phase.Login;
             }
-           /* if (Person != null)
-                Destroy(Person.gameObject);*/
+            else if (index == 1)
+            {
+                GamePhase = _Phase.WorldMap;
+            }
+            else if (index == 2)
+            {
+                GamePhase = _Phase.Lobby;
+            }
+            else if (index == 3)
+            {
+                GamePhase = _Phase.Hall;
+            }
+            else if (index == 4)
+            {
+                GamePhase = _Phase.Room;
+            }
         }
         #region Trigger
         private void RoomGenerator_OnSpawnedRoom()
         {
-            FindObjectOfType<RoomObject>().transform.position = PlaceSpawnRoom.position;
-            ChangePlacePlayer("room");
+            /////////////FindObjectOfType<RoomObject>().transform.position = PlaceSpawnRoom.position;****************************
+            /////ChangePlacePlayer("room");*******************
 
         }
         #endregion
@@ -358,6 +317,7 @@ namespace Diaco.Manhatan
                 onchageplace(nameplace);
             }
         }
+
         #endregion
 
     }

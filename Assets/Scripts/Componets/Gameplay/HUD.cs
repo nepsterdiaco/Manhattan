@@ -9,9 +9,10 @@ public class HUD : MonoBehaviour
 
 
     public Button Reset_button;
+    public Button Exit_button;
     public TextMeshProUGUI LOG_text;
-    
-    void Start()
+
+  /*  void Start()
     {
         if (Manager.singleton == null)
         {
@@ -23,7 +24,7 @@ public class HUD : MonoBehaviour
 
             });
         }
-    }
+    }*/
 
     private void OnEnable()
     {
@@ -36,8 +37,15 @@ public class HUD : MonoBehaviour
                 Manager.singleton.ResetWorld();
 
             });
+            Exit_button.onClick.AddListener(() =>
+            {
+
+                Manager.singleton.ExitApp();
+
+            });
         }
     }
+
     public void HUD_LOG(string log)
     {
         LOG_text.text = log;

@@ -19,7 +19,8 @@ public class RoomGenerator : MonoBehaviour
 
     private RoomObject room_gameobject;
 
-
+    private bool TryToSpawnRoom = false;
+    private GameObject RoomSpawnedInWorld;
     [Button("InitializeRoom", ButtonSizes.Medium)]
  
     public void InitializeRoom()
@@ -135,28 +136,31 @@ public class RoomGenerator : MonoBehaviour
 
         yield return new WaitForSecondsRealtime(0.01f);
         TryToSpawnRoom = false;
-        //Debug.Log("Room Arranged");
-        Handler_OnSpawnedRoom();
+        Debug.Log("Room Arranged");
+      //  Handler_OnSpawnedRoom();
     }
-    [Button("TestLoadRoom", ButtonSizes.Medium)]
-    public  void LoadRoom(string group, string RoomName)
-    {
-        var list_filter_by_group = RoomsContainerData.Rooms.Where(r => r.group == group).ToList();
-        for (int i = 0; i < list_filter_by_group.Count; i++)
-        {
-            if (list_filter_by_group[i].name == RoomName)
-            {
-                var R_D = JsonUtility.FromJson<Diaco.Manhatan.Structs.RoomData>(list_filter_by_group[i].roomData.text);
-                var room = Instantiate(list_filter_by_group[i].RoomPrefab);
-                Debug.Log("Room Spawned And Wait For Arrange");
-                StartCoroutine(ArrangeStuffInRoom(R_D.stuffs, room.transform));
 
+    [Button("TestLoadRoom", ButtonSizes.Medium)]
+    public void LoadRoom(string group, string RoomName)
+    {
+        if (TryToSpawnRoom == false)
+        {
+            TryToSpawnRoom = true;
+            var list_filter_by_group = RoomsContainerData.Rooms.Where(r => r.group == group).ToList();
+            for (int i = 0; i < list_filter_by_group.Count; i++)
+            {
+                if (list_filter_by_group[i].name == RoomName)
+                {
+                    var R_D = JsonUtility.FromJson<Diaco.Manhatan.Structs.RoomData>(list_filter_by_group[i].roomData.text);
+                    var room = Instantiate(list_filter_by_group[i].RoomPrefab);
+                    Debug.Log("Room Spawned And Wait For Arrange");
+                    StartCoroutine(ArrangeStuffInRoom(R_D.stuffs, room.transform));
+                }
             }
         }
     }
-    private bool TryToSpawnRoom = false;
-    public GameObject room2;
-    public void  LoadRoom(string group, string RoomName , Transform placeSpawn)
+
+    /*public void  LoadRoom(string group, string RoomName , Transform placeSpawn)
     {
         if (TryToSpawnRoom == false)
         {
@@ -174,7 +178,7 @@ public class RoomGenerator : MonoBehaviour
                 }
             }
         }
-    }
+    }*/
 
 
     private Action spawnedroom;

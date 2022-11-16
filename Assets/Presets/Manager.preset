@@ -42,34 +42,6 @@ Preset:
     value: 
     objectReference: {fileID: 0}
   - target: {fileID: 0}
-    propertyPath: FirstPersonPlayer
-    value: 
-    objectReference: {fileID: 0}
-  - target: {fileID: 0}
-    propertyPath: PlaceSpawnRoom
-    value: 
-    objectReference: {fileID: 0}
-  - target: {fileID: 0}
-    propertyPath: SpawnPlacePerson.Array.size
-    value: 4
-    objectReference: {fileID: 0}
-  - target: {fileID: 0}
-    propertyPath: SpawnPlacePerson.Array.data[0]
-    value: 
-    objectReference: {fileID: 0}
-  - target: {fileID: 0}
-    propertyPath: SpawnPlacePerson.Array.data[1]
-    value: 
-    objectReference: {fileID: 0}
-  - target: {fileID: 0}
-    propertyPath: SpawnPlacePerson.Array.data[2]
-    value: 
-    objectReference: {fileID: 0}
-  - target: {fileID: 0}
-    propertyPath: SpawnPlacePerson.Array.data[3]
-    value: 
-    objectReference: {fileID: 0}
-  - target: {fileID: 0}
     propertyPath: FadeEffect_UI
     value: 
     objectReference: {fileID: 0}
@@ -105,5 +77,21 @@ Preset:
   - target: {fileID: 0}
     propertyPath: Line_shape
     value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: buildingTransformSelected
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: buildingname
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: numfloor
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: unitselected
+    value: 0
     objectReference: {fileID: 0}
   m_ExcludedProperties: []

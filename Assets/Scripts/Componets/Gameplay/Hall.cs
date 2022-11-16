@@ -13,14 +13,11 @@ namespace Diaco.Manhatan
         public void Start()
         {
            
-            Manager.singleton.OnChangePlace += Manager_OnChangePlace;
+           
+            ActiveRoom();
         }
 
-        private void Manager_OnChangePlace(string nameplace)
-        {
-            if (nameplace == "hall")
-                ActiveRoom();
-        }
+
 
 
         private void ActiveRoom()

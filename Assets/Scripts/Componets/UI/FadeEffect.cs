@@ -12,7 +12,8 @@ public class FadeEffect : MonoBehaviour
     private  bool IsFadeIn = false;
 
     private  bool IsFadeOut = false;
- 
+
+
     public Tween FadeIn(float FadeInDuration)
     {
         FadeOutFadeInGroup.blocksRaycasts = true;

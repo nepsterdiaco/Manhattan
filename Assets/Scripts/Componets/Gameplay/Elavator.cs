@@ -47,27 +47,23 @@ namespace Diaco.Manhatan
         private void PressOK()
         {
             int num = Convert.ToInt32(DisplayPanel_text.text);
-
             if (Manager.singleton.CheckFloorInElavator(num))
             {
                 CloseDoor();
                 DisableViwePersonToNumPad();
                 DisplayPanel_text.text = "OK";
-
                 Arrow.gameObject.SetActive(true);
                 DOVirtual.Float(0, num, num, (x) =>
                 {
                     DisplayPanel_text.text = "Floor:" + x.ToString("0");
                 }).OnComplete(() =>
                 {
-
-                    Manager.singleton.ChangePlacePlayer("hall");
+                    Manager.singleton.LoadScene(3);
                     
                     DOVirtual.DelayedCall(3, () =>
                     {
                         
                         DisplayPanel_text.text = "";
-
                         Arrow.gameObject.SetActive(false);
                     });
                 }).SetEase(Ease.Linear);
