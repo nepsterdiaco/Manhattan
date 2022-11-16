@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6141843734730449577, guid: 1177160befefa304cb76518dea35269b, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6141843734730449577, guid: 1177160befefa304cb76518dea35269b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -97,11 +97,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 70d53ad1644a3a14183ef6dd9cbe57b6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 70d53ad1644a3a14183ef6dd9cbe57b6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1.499
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 70d53ad1644a3a14183ef6dd9cbe57b6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: sofa_001_CORONA Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5450385501813026452, guid: 70d53ad1644a3a14183ef6dd9cbe57b6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8eda78c1101be144b9f0463ab821bb60, type: 2}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 70d53ad1644a3a14183ef6dd9cbe57b6, type: 3}
