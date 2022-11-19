@@ -20,7 +20,12 @@ public class PersonController : MonoBehaviour
     void Start()
     {
         characterController = GetComponent<CharacterController>();
-        
+        var player_place = GameObject.FindGameObjectWithTag("Player");
+        if(player_place)
+        {
+            this.transform.position = player_place.transform.position;
+            this.transform.rotation = player_place.transform.rotation;
+        }
     }
 
     private void FixedUpdate()
