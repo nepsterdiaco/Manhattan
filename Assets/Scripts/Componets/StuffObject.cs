@@ -5,7 +5,7 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 
 
-
+[SelectionBase]
 public class StuffObject : MonoBehaviour
 {
     public Diaco.Manhatan.Structs.Stuff Data;
