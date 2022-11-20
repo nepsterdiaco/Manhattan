@@ -8,8 +8,9 @@ namespace Diaco.Manhatan
 {
     public class Elavator : MonoBehaviour
     {
-        public Transform PositionForLock;
-        public Transform PositionForLook;
+        // public Transform PositionForLock;
+        // public Transform PositionForLook;
+        public GameObject UI_ElavatorPanel;
         public TextMeshProUGUI DisplayPanel_text;
         public Image Arrow;
 
@@ -19,13 +20,13 @@ namespace Diaco.Manhatan
         // Manager manager;
         private Animation DoorAniamtion;
         private bool Isopened = false;
-        private bool IsLookToPad = false;
-        private PersonController personController;
+       /// private bool IsLookToPad = false;
+      //  private PersonController personController;
         public void Start()
         {
             DoorAniamtion = GetComponent<Animation>();
             //manager = FindObjectOfType<Manager>();
-            personController = FindObjectOfType<PersonController>();
+         //   personController = FindObjectOfType<PersonController>();
             OkFloor_button.onClick.AddListener(PressOK);
          
             Close_button.onClick.AddListener(() =>
@@ -46,11 +47,12 @@ namespace Diaco.Manhatan
         }
         private void PressOK()
         {
+            ShowElavatorPanel(false);
             int num = Convert.ToInt32(DisplayPanel_text.text);
             if (Manager.singleton.CheckFloorInElavator(num))
             {
                 CloseDoor();
-                DisableViwePersonToNumPad();
+                //DisableViwePersonToNumPad();
                 DisplayPanel_text.text = "OK";
                 Arrow.gameObject.SetActive(true);
                 DOVirtual.Float(0, num, num, (x) =>
@@ -92,7 +94,7 @@ namespace Diaco.Manhatan
             }
 
         }
-        public void ViwePersonLockToNumPad()
+       /* public void ViwePersonLockToNumPad()
         {
             if (personController == null)
                 personController = FindObjectOfType<PersonController>();
@@ -115,8 +117,12 @@ namespace Diaco.Manhatan
             {
                 DisableViwePersonToNumPad();
             }
+        }*/
+        public void ShowElavatorPanel(bool show)
+        {
+            UI_ElavatorPanel.SetActive(show);
         }
-        public void DisableViwePersonToNumPad()
+       /* public void DisableViwePersonToNumPad()
         {
             IsLookToPad = false;
             
@@ -125,6 +131,6 @@ namespace Diaco.Manhatan
                 personController.IsLookSomething = false;
             
 
-        }
+        }*/
     }
 }

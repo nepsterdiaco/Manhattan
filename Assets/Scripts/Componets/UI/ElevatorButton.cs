@@ -8,9 +8,9 @@ namespace Diaco.Manhatan
 {
     public class ElevatorButton : MonoBehaviour
     {
-       [SerializeField] private Elavator elavator;
+        private Elavator elavator;
 
-        public Button btn;
+        private Button btn;
         private void Start()
         {
             if (elavator == null)
@@ -23,15 +23,6 @@ namespace Diaco.Manhatan
                 elavator.SetDisplay(context);
             });
         }
-        private void OnEnable()
-        {
-           
-            
-           
-        }
-        private void OnDisable()
-        {
-           // btn.onClick.RemoveAllListeners();
-        }
+
     }
 }
