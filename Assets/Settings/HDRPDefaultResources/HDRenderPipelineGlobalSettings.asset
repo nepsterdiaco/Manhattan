@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 781cc897cf8675041a751163b51f97dd, type: 3}
   m_Name: HDRenderPipelineGlobalSettings
   m_EditorClassIdentifier: 
-  m_DefaultVolumeProfile: {fileID: 0}
+  m_DefaultVolumeProfile: {fileID: 11400000, guid: f940a8037e6cda542891dc1aac1fa4e8, type: 2}
   m_LookDevVolumeProfile: {fileID: 0}
   m_RenderingPathDefaultCameraFrameSettings:
     bitDatas:
@@ -59,7 +59,7 @@ MonoBehaviour:
     sssCustomSampleBudget: 20
     msaaMode: 1
     materialQuality: 0
-  m_RenderPipelineResources: {fileID: 0}
+  m_RenderPipelineResources: {fileID: 11400000, guid: 3ce144cff5783da45aa5d4fdc2da14b7, type: 2}
   m_RenderPipelineRayTracingResources: {fileID: 0}
   beforeTransparentCustomPostProcesses: []
   beforePostProcessCustomPostProcesses: []
@@ -85,16 +85,87 @@ MonoBehaviour:
   shaderVariantLogLevel: 0
   lensAttenuationMode: 0
   colorGradingSpace: 0
-  diffusionProfileSettingsList: []
+  diffusionProfileSettingsList:
+  - {fileID: 11400000, guid: a0546f7a9b1977341a42bb3e1284e050, type: 2}
+  - {fileID: 11400000, guid: 8abcabc393e5cb846bc569c4a2d48bf8, type: 2}
   rendererListCulling: 0
   DLSSProjectId: 000000
   useDLSSCustomProjectId: 0
   supportProbeVolumes: 0
   supportRuntimeDebugDisplay: 0
   apvScenesData:
-    serializedBounds: []
-    serializedHasVolumes: []
-    serializedProfiles: []
-    serializedBakeSettings: []
-    serializedBakingSets: []
+    serializedBounds:
+    - sceneGUID: 44b21a6d4126b9047a0aa021beda6fe8
+      bounds:
+        m_Center: {x: -202.5, y: 0, z: 0}
+        m_Extent: {x: 40.5, y: 81, z: 81}
+    serializedHasVolumes:
+    - sceneGUID: 44b21a6d4126b9047a0aa021beda6fe8
+      hasProbeVolumes: 0
+    - sceneGUID: 3fe1948df2d15ae4da986bb885d46200
+      hasProbeVolumes: 0
+    - sceneGUID: c067e433df9dc6b4887bdff9ad038eb1
+      hasProbeVolumes: 0
+    serializedProfiles:
+    - sceneGUID: 44b21a6d4126b9047a0aa021beda6fe8
+      profile: {fileID: 11400000, guid: 01fabc6ceaf994140981cf978cc69d04, type: 2}
+    - sceneGUID: 3fe1948df2d15ae4da986bb885d46200
+      profile: {fileID: 11400000, guid: 01fabc6ceaf994140981cf978cc69d04, type: 2}
+    - sceneGUID: c067e433df9dc6b4887bdff9ad038eb1
+      profile: {fileID: 11400000, guid: 01fabc6ceaf994140981cf978cc69d04, type: 2}
+    serializedBakeSettings:
+    - sceneGUID: 44b21a6d4126b9047a0aa021beda6fe8
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    - sceneGUID: 3fe1948df2d15ae4da986bb885d46200
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    - sceneGUID: c067e433df9dc6b4887bdff9ad038eb1
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    serializedBakingSets:
+    - name: Default
+      sceneGUIDs:
+      - 44b21a6d4126b9047a0aa021beda6fe8
+      - 3fe1948df2d15ae4da986bb885d46200
+      - c067e433df9dc6b4887bdff9ad038eb1
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+      profile: {fileID: 11400000, guid: 01fabc6ceaf994140981cf978cc69d04, type: 2}
   m_Version: 3
