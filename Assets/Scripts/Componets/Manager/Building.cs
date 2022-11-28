@@ -11,18 +11,18 @@ namespace Diaco.Manhatan
     {
         public BuildingData info;
 
-        [MinValue(0), MaxValue(7)]
-        public float MaxEmissivePower = 3;
-        public float SpeedAnimateEmission = 0.5f;
+        [MinValue(0), MaxValue(50)]
+        public float EmissivePower = 50;
+        public float SpeedAnimateEmission = 1f;
         public Ease ease;
         public LoopType loop;
-        public bool Flicker = false;
+       /* public bool Flicker = false;
         [SerializeField]
         [ColorUsage(true,true)]
         private Color emissiveColorStart;
         [SerializeField]
         [ColorUsage(true, true)]
-        private Color emissiveColorEnd;
+        private Color emissiveColorEnd;*/
         private new MeshRenderer renderer;
         private Material material;
         //private Manager manager;
@@ -51,25 +51,38 @@ namespace Diaco.Manhatan
         }
         private void OnMouseOver()
         {
-            if (Manager.singleton.BuildingOwner(info.Name))
+           // if (Manager.singleton.BuildingOwner(info.Name))
                 DOFlicker();
+        }
+        private void OnMouseExit()
+        {
+            IsFlickering = false;
         }
         public void ActiveFlicker()
         {
-            Flicker = true;
+           // Flicker = true;
           //  Debug.Log("AAAA");
         }
+
+        [Button("aaa")]
         public void DOFlicker()
         {
+            
             if (IsFlickering == false)
             {
                 IsFlickering = true;
-
-               material.DOColor(emissiveColorEnd, SpeedAnimateEmission).OnComplete(() => {
-
-                    material.DOColor(emissiveColorStart, SpeedAnimateEmission).OnComplete(() => { IsFlickering = false; });
-
-                });
+                DOVirtual.Float(0, EmissivePower, SpeedAnimateEmission, (x) =>
+                {
+                    material.SetFloat("_PowerEmissive", x);
+                }).OnComplete(() =>
+                {
+                    DOVirtual.Float(EmissivePower, 0, SpeedAnimateEmission, (x) =>
+                    {
+                        material.SetFloat("_PowerEmissive", x);
+                       
+                    });
+                }
+                ).SetEase(ease);
 
             }
            
