@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 02a6c9519157c324b91b0bfa355d089a
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: 5b345a1b16616f744b8ee6710d337e39, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Art/Materials/Ceramic/honeycomb_tile.sbsar

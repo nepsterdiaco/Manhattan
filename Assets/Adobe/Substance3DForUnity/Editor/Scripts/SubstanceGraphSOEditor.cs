@@ -21,9 +21,11 @@ namespace Adobe.SubstanceEditor
 
         private bool _showExportPresentationHandler = false;
 
+        private bool _showPhysicalSize = false;
+
         private SubstanceGraphSO _target = null;
 
-        private SubstanceNativeHandler _handler = null;
+        private SubstanceNativeGraph _nativeGraph = null;
 
         // Scrollview handling:
         private Rect lastRect;
@@ -40,6 +42,9 @@ namespace Adobe.SubstanceEditor
         private SerializedProperty _outputRemapedProperty;
         private SerializedProperty _graphOutputs;
         private SerializedProperty _presetProperty;
+        private SerializedProperty _physicalSizelProperty;
+        private SerializedProperty _hasPhysicalSizeProperty;
+        private SerializedProperty _enablePhysicalSizeProperty;
 
         public void OnEnable()
         {
@@ -68,16 +73,19 @@ namespace Adobe.SubstanceEditor
             _outputRemapedProperty = serializedObject.FindProperty("OutputRemaped");
             _graphOutputs = serializedObject.FindProperty("Output");
             _presetProperty = serializedObject.FindProperty("CurrentStatePreset");
+            _physicalSizelProperty = serializedObject.FindProperty("PhysicalSize");
+            _hasPhysicalSizeProperty = serializedObject.FindProperty("HasPhysicalSize");
+            _enablePhysicalSizeProperty = serializedObject.FindProperty("EnablePhysicalSize");
 
-            if (!SubstanceEditorEngine.instance.TryGetHandlerFromInstance(_target, out _handler))
+            if (!SubstanceEditorEngine.instance.TryGetHandlerFromInstance(_target, out _nativeGraph))
             {
                 if (!SubstanceEditorEngine.instance.IsInitialized)
                     return;
 
                 SubstanceEditorEngine.instance.InitializeInstance(_target, null);
 
-                if (SubstanceEditorEngine.instance.TryGetHandlerFromInstance(_target, out _handler))
-                    _target.RuntimeInitialize(_handler, _target.IsRuntimeOnly);
+                if (SubstanceEditorEngine.instance.TryGetHandlerFromInstance(_target, out _nativeGraph))
+                    _target.RuntimeInitialize(_nativeGraph, _target.IsRuntimeOnly);
             }
         }
 
@@ -107,8 +115,8 @@ namespace Adobe.SubstanceEditor
 
         public override void OnInspectorGUI()
         {
-            if (_handler == null)
-                if (!SubstanceEditorEngine.instance.TryGetHandlerFromInstance(_target, out _handler))
+            if (_nativeGraph == null)
+                if (!SubstanceEditorEngine.instance.TryGetHandlerFromInstance(_target, out _nativeGraph))
                     return;
 
             if (_materialPreviewEditor == null)
@@ -194,9 +202,9 @@ namespace Adobe.SubstanceEditor
 
             if (renderGraph)
             {
-                var newPreset = _handler.CreatePresetFromCurrentState(_target.Index);
+                var newPreset = _nativeGraph.CreatePresetFromCurrentState();
                 _presetProperty.stringValue = newPreset;
-                SubstanceEditorEngine.instance.SubmitAsyncRenderWork(_handler, _target);
+                SubstanceEditorEngine.instance.SubmitAsyncRenderWork(_nativeGraph, _target);
                 valuesChanged = true;
             }
 
@@ -274,6 +282,73 @@ namespace Adobe.SubstanceEditor
 
         #endregion Texture Generation Settings
 
+        #region Physical size
+
+        private bool DrawPhysicalSize()
+        {
+            if (!_hasPhysicalSizeProperty.boolValue)
+                return false;
+
+            _showPhysicalSize = EditorGUILayout.Foldout(_showPhysicalSize, "Physical Size");
+            bool valueChanged = false;
+
+            if (_showPhysicalSize)
+            {
+                var currentValue = _physicalSizelProperty.vector3Value;
+                var enablePhysicaSize = _enablePhysicalSizeProperty.boolValue;
+
+                if (EditorGUILayout.Toggle("Use Physical Size", enablePhysicaSize) != enablePhysicaSize)
+                {
+                    _enablePhysicalSizeProperty.boolValue = !enablePhysicaSize;
+                    valueChanged = true;
+                }
+
+                var newValue = new Vector3();
+
+                newValue.x = EditorGUILayout.FloatField("X:", currentValue.x);
+                newValue.y = EditorGUILayout.FloatField("Y:", currentValue.y);
+                newValue.z = EditorGUILayout.FloatField("Z:", currentValue.z);
+
+                if (newValue != currentValue)
+                {
+                    _physicalSizelProperty.vector3Value = newValue;
+                    valueChanged = true;
+                }
+
+                if (_target.OutputMaterial != null)
+                {
+                    DrawPhysicalSizeOffsets(_target.OutputMaterial);
+                }
+            }
+            return valueChanged;
+        }
+
+        private static bool _showPhysicalSizePositionOffset = false;
+
+        private void DrawPhysicalSizeOffsets(Material material)
+        {
+            EditorGUI.indentLevel++;
+
+            _showPhysicalSizePositionOffset = EditorGUILayout.Foldout(_showPhysicalSizePositionOffset, "Position Offset");
+            
+            if (_showPhysicalSizePositionOffset)
+            {
+                Vector2 offset = MaterialUtils.GetPhysicalSizePositionOffset(material);
+                Vector2 newOffset = offset;
+                newOffset.x = EditorGUILayout.FloatField("X:", offset.x);
+                newOffset.y = EditorGUILayout.FloatField("Y:", offset.y);
+
+                if (newOffset != offset)
+                {
+                    MaterialUtils.SetPhysicalSizePositionOffset(material, newOffset);
+                }
+            }
+
+            EditorGUI.indentLevel--;
+        }
+
+        #endregion Physical size
+
         #region Input draw
 
         /// <summary>
@@ -292,6 +367,19 @@ namespace Adobe.SubstanceEditor
             {
                 renderGraph = true;
                 serializeObject = true;
+            }
+
+            EditorGUILayout.Space();
+
+            if (PhysicalSizeExtension.IsSupported())
+            {
+                if (DrawPhysicalSize())
+                {
+                    renderGraph = true;
+                    serializeObject = true;
+                    MaterialUtils.ApplyPhysicalSize(_target.OutputMaterial, _physicalSizelProperty.vector3Value, _enablePhysicalSizeProperty.boolValue);
+                    UpdateGraphMaterialLabel();
+                }
             }
 
             EditorGUILayout.Space();
@@ -325,9 +413,9 @@ namespace Adobe.SubstanceEditor
                 var guiContent = indexArray[i].GUIContent;
                 var index = indexArray[i].Index;
 
-                if (_handler.IsInputVisible(_target.Index, index))
+                if (_nativeGraph.IsInputVisible(index))
                 {
-                    if (SubstanceInputDrawer.DrawInput(property, guiContent, _handler, _target.Index, index))
+                    if (SubstanceInputDrawer.DrawInput(property, guiContent, _nativeGraph, index))
                         changed = true;
                 }
             }
@@ -360,9 +448,9 @@ namespace Adobe.SubstanceEditor
                 var guiContent = indexArray[i].GUIContent;
                 var index = indexArray[i].Index;
 
-                if (_handler.IsInputVisible(_target.Index, index))
+                if (_nativeGraph.IsInputVisible(index))
                 {
-                    if (SubstanceInputDrawer.DrawInput(property, guiContent, _handler, _target.Index, index))
+                    if (SubstanceInputDrawer.DrawInput(property, guiContent, _nativeGraph, index))
                         changed = true;
                 }
 
@@ -560,7 +648,7 @@ namespace Adobe.SubstanceEditor
             if (savePath != "")
             {
                 string savePreset = "<sbspresets count=\"1\" formatversion=\"1.1\">\n "; //formatting line needed by other integrations
-                savePreset += SubstanceEditorEngine.instance.ExportGraphPresetXML(_target, graph.Index);
+                savePreset += SubstanceEditorEngine.instance.ExportGraphPresetXML(_target);
                 savePreset += "</sbspresets>";
                 File.WriteAllText(savePath, savePreset);
             }

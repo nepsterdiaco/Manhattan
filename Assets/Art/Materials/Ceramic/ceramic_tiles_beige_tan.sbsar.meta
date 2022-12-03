@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e56be077c4ab99645a1cc3e13607bf79
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: 15d09f48ccc0d62419a513e0684ef3ea, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Art/Materials/Ceramic/ceramic_tiles_beige_tan.sbsar

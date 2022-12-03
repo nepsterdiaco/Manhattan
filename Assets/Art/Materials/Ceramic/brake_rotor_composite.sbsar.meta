@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: dff27a381a9580d498a7280d98d59e74
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: c0d8cada212cf904185999dc8bd415f0, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Art/Materials/Ceramic/brake_rotor_composite.sbsar

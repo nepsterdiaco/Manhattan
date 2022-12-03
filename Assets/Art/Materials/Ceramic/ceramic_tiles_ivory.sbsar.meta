@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: df5ff5338de198342a8641ce4b43a3e7
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: 6adfd3af3010b1047a5774c4acca701e, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Art/Materials/Ceramic/ceramic_tiles_ivory.sbsar

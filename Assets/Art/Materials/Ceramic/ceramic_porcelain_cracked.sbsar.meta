@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f09d28c2260b2264db59c32d7734d858
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: e5fce11c19176ec489b9cfe18fcc8b0b, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Art/Materials/Ceramic/ceramic_porcelain_cracked.sbsar

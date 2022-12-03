@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a4fc90fef6ecd2c478457c4ad486f1f0
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: a0d89bb73c41d434fb3c024e68a44efe, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Art/Materials/Ceramic/ceramic_tiles_wall.sbsar

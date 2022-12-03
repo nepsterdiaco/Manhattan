@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2711cf427b759934894b5b88f28b0390
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: 3079678ec67c6b44b87dd30afceff27d, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Art/Materials/Ceramic/ceramic_small_diamond.sbsar

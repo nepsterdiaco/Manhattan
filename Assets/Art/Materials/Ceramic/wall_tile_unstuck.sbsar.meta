@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3a769e561c3bd2a45883c2799df83080
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: bb1a5a7aeba6f2c4d97921282f9d78b5, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Art/Materials/Ceramic/wall_tile_unstuck.sbsar

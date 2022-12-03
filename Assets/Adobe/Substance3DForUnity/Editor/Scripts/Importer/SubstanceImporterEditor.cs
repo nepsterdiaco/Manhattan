@@ -457,7 +457,7 @@ namespace Adobe.SubstanceEditor.Importer
             var newInstanceName = GenerateNewInstanceName(rootInstance);
 
             var instanceAsset = EditorTools.CreateSubstanceInstance(_importer.assetPath, rootInstance.RawData, newInstanceName, rootInstance.Index, System.Guid.NewGuid().ToString(), copy: rootInstance);
-            _ = SubstanceEditorEngine.instance.RenderInstanceAsync(instanceAsset);
+            SubstanceEditorEngine.instance.RenderInstanceAsync(instanceAsset);
 
             _importer._instancesCopy.Add(instanceAsset);
             EditorUtility.SetDirty(_importer);

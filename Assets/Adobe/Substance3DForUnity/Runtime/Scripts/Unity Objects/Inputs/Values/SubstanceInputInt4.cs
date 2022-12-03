@@ -24,19 +24,18 @@ namespace Adobe.Substance.Input
         public override SubstanceValueType ValueType => SubstanceValueType.Int4;
         public override bool IsNumeric => true;
 
-        internal SubstanceInputInt4(int index, int graphID, DataInternalNumeric data)
+        internal SubstanceInputInt4(int index, DataInternalNumeric data)
         {
             Index = index;
-            GraphID = graphID;
             Data0 = data.mIntData0;
             Data1 = data.mIntData1;
             Data2 = data.mIntData2;
             Data3 = data.mIntData3;
         }
 
-        public override void UpdateNativeHandle(SubstanceNativeHandler handler)
+        public override void UpdateNativeHandle(SubstanceNativeGraph handler)
         {
-            handler.SetInputInt4(Data0, Data1, Data2, Data3, Index, GraphID);
+            handler.SetInputInt4(Index, Data0, Data1, Data2, Data3);
         }
 
         internal override void SetNumericDescription(NativeNumericInputDesc desc)

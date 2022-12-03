@@ -11,13 +11,12 @@ namespace Adobe.Substance.Input
         public override SubstanceValueType ValueType => Description.Type;
         public override bool IsNumeric => false;
 
-        public SubstanceInvalidInput(int index, int graphID)
+        public SubstanceInvalidInput(int index)
         {
             Index = index;
-            GraphID = graphID;
         }
 
-        public override void UpdateNativeHandle(SubstanceNativeHandler handler)
+        public override void UpdateNativeHandle(SubstanceNativeGraph handler)
         {
             return;
         }

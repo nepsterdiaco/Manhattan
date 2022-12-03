@@ -48,9 +48,6 @@ namespace Adobe.Substance
             {
                 if (IsWindows())
                 {
-                    var oldDir = Directory.GetCurrentDirectory();
-                    Directory.SetCurrentDirectory(Path.GetDirectoryName(dllPath));
-
                     DllHandle = LoadLibraryW(dllPath);
 
                     if (DllHandle == IntPtr.Zero)
@@ -58,8 +55,6 @@ namespace Adobe.Substance
                         var error = Marshal.GetLastWin32Error();
                         Debug.LogError($"LoadLibraryW error: {error}");
                     }
-
-                    Directory.SetCurrentDirectory(oldDir);
                 }
                 else if (IsMac() || IsLinux())
                 {

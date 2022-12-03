@@ -15,14 +15,13 @@ namespace Adobe.Substance.Input
         public override SubstanceValueType ValueType => SubstanceValueType.Image;
         public override bool IsNumeric => false;
 
-        internal SubstanceInputTexture(int index, int graphID, DataInternalNumeric data)
+        internal SubstanceInputTexture(int index, DataInternalNumeric data)
         {
             Index = index;
-            GraphID = graphID;
             Data = null;
         }
 
-        public override void UpdateNativeHandle(SubstanceNativeHandler handler)
+        public override void UpdateNativeHandle(SubstanceNativeGraph handler)
         {
             if (Data == null)
                 return;
@@ -34,7 +33,7 @@ namespace Adobe.Substance.Input
             }
 
             var pixels = Data.GetPixels32();
-            handler.SetInputTexture2D(pixels, Data.width, Data.height, Index, GraphID);
+            handler.SetInputTexture2D(Index, pixels, Data.width, Data.height);
         }
 
         internal override void SetNumericDescription(NativeNumericInputDesc desc)

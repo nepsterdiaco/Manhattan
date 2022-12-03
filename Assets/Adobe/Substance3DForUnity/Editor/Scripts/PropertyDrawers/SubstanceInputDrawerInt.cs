@@ -16,7 +16,7 @@ namespace Adobe.SubstanceEditor
         /// <param name="valueProperty"></param>
         /// <param name="content"></param>
         /// <returns>True if value changed.</returns>
-        public static bool DrawInput(SerializedProperty valueProperty, SubstanceInputGUIContent content, SubstanceNativeHandler handler, int graphID, int inputID)
+        public static bool DrawInput(SerializedProperty valueProperty, SubstanceInputGUIContent content, SubstanceNativeGraph handler, int inputID)
         {
             int value;
             bool changed;
@@ -48,7 +48,7 @@ namespace Adobe.SubstanceEditor
             }
 
             if (changed)
-                handler.SetInputInt(value, inputID, graphID);
+                handler.SetInputInt(inputID, value);
 
             return changed;
         }

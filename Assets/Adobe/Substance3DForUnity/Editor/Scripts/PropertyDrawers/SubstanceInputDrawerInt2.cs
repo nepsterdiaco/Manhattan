@@ -8,7 +8,7 @@ namespace Adobe.SubstanceEditor
     {
         private static readonly string[] _resulutions = { "256", "512", "1024", "2048", "4096" };
 
-        public static bool DrawInput(SerializedProperty valueProperty, SubstanceInputGUIContent content, SubstanceNativeHandler handler, int graphID, int inputID)
+        public static bool DrawInput(SerializedProperty valueProperty, SubstanceInputGUIContent content, SubstanceNativeGraph handler, int inputID)
         {
             Vector2Int newValue;
             bool changed;
@@ -23,7 +23,7 @@ namespace Adobe.SubstanceEditor
             }
 
             if (changed)
-                handler.SetInputInt2(newValue, inputID, graphID);
+                handler.SetInputInt2(inputID, newValue);
 
             return changed;
         }

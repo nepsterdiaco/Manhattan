@@ -4,8 +4,11 @@
 //! @date 20210608
 //! @copyright Adobe. All rights reserved.
 
+//For some reason we can not dynamically load the library on windows.
+#if (UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN)
+#define ALG_SBSARIO_STATIC_LOAD
 //Do not dynamically load on Android.
-#if (!UNITY_EDITOR && UNITY_ANDROID)
+#elif (!UNITY_EDITOR && UNITY_ANDROID)
 #define ALG_SBSARIO_STATIC_LOAD
 //Do not dynamically load on IOS.
 #elif (!UNITY_EDITOR && UNITY_IOS)
@@ -991,6 +994,7 @@ namespace Adobe.Substance
             }
 
 #else
+
             [DllImport(NativeAssembly)]
             internal static extern uint sbsario_sbsar_get_graph_thumbnail(IntPtr sbsar_handle, IntPtr graph, out NativeThumbnail thumbnail);
 

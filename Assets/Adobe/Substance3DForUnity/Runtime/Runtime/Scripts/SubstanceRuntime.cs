@@ -53,7 +53,6 @@ namespace Adobe.Substance.Runtime
             if (_isInitialized)
                 return;
 
-            PluginPipelines.GetCurrentPipelineInUse();
             var enginePath = PlatformUtils.GetEnginePath();
             var pluginPath = PlatformUtils.GetPluginPath();
             Engine.Initialize(pluginPath, enginePath);
@@ -65,12 +64,12 @@ namespace Adobe.Substance.Runtime
         /// </summary>
         /// <param name="substanceInstance">Target SubstanceGraphSO</param>
         /// <returns>Handle that comunicates with the Substance SDK.</returns>
-        public SubstanceNativeHandler InitializeInstance(SubstanceGraphSO substanceInstance)
+        public SubstanceNativeGraph InitializeInstance(SubstanceGraphSO substanceInstance)
         {
             if (substanceInstance == null)
                 return null;
 
-            return Engine.OpenFile(substanceInstance.RawData.FileContent);
+            return Engine.OpenFile(substanceInstance.RawData.FileContent, substanceInstance.Index);
         }
     }
 }

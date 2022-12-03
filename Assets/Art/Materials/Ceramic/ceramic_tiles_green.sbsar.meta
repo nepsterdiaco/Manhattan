@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: fbcc7500bc83faf47b3a0b96aab7c205
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: f5346a6e0f00e0a4c84d6975e0a7809e, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Art/Materials/Ceramic/ceramic_tiles_green.sbsar

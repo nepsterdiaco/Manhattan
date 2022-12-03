@@ -7,6 +7,11 @@ using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using UnityEngine;
 
+#if UNITY_EDITOR
+
+using Unity.Collections.LowLevel.Unsafe;
+
+#endif
 
 namespace Adobe.Substance
 {
@@ -74,6 +79,24 @@ namespace Adobe.Substance
         /// </summary>
         [SerializeField]
         public List<SubstanceOutputTexture> Output = default;
+
+        /// <summary>
+        /// True if this graph has physical size.
+        /// </summary>
+        [SerializeField]
+        public bool HasPhysicalSize;
+
+        /// <summary>
+        /// Graph physical size. If HasPhysicalSize is false this will be Vector3.zero.
+        /// </summary>
+        [SerializeField]
+        public Vector3 PhysicalSize;
+
+        /// <summary>
+        /// If se to true physical size will be applyed to the material.
+        /// </summary>
+        [SerializeField]
+        public bool EnablePhysicalSize;
 
         /// <summary>
         /// Sbsar file thumbnail data.
@@ -146,7 +169,7 @@ namespace Adobe.Substance
         /// This must be called if the substance graph was flagged as Runtime only and will require its assets be generated at runtime.
         /// </summary>
         /// <param name="handler">Handle to a native substance object.</param>
-        public void RuntimeInitialize(SubstanceNativeHandler handler, bool isRuntime = false)
+        public void RuntimeInitialize(SubstanceNativeGraph handler, bool isRuntime = false)
         {
             foreach (var input in Input)
                 input.UpdateNativeHandle(handler);
@@ -155,7 +178,7 @@ namespace Adobe.Substance
 
             if (isRuntime)
             {
-                var result = handler.Render(Index);
+                var result = handler.Render();
                 CreateAndUpdateOutputTextures(result, handler, isRuntime);
                 MaterialUtils.AssignOutputTexturesToMaterial(this);
             }
@@ -171,7 +194,7 @@ namespace Adobe.Substance
             return thumbnailTexture;
         }
 
-        public void CreateAndUpdateOutputTextures(IntPtr resultPtr, SubstanceNativeHandler handler, bool runtimeUsage = false)
+        public void CreateAndUpdateOutputTextures(IntPtr resultPtr, SubstanceNativeGraph handler, bool runtimeUsage = false)
         {
             unsafe
             {

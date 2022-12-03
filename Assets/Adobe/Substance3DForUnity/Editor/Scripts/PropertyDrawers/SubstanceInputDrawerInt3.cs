@@ -6,7 +6,7 @@ namespace Adobe.SubstanceEditor
 {
     internal static class SubstanceInputDrawerInt3
     {
-        public static bool DrawInput(SerializedProperty valueProperty, SubstanceInputGUIContent content, SubstanceNativeHandler handler, int graphID, int inputID)
+        public static bool DrawInput(SerializedProperty valueProperty, SubstanceInputGUIContent content, SubstanceNativeGraph handler, int inputID)
         {
             Vector3Int newValue;
             bool changed;
@@ -19,7 +19,7 @@ namespace Adobe.SubstanceEditor
             }
 
             if (changed)
-                handler.SetInputInt3(newValue, inputID, graphID);
+                handler.SetInputInt3(inputID, newValue);
 
             return changed;
         }

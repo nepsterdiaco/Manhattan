@@ -8,32 +8,30 @@ namespace Adobe.Substance
 {
     public static class RenderingUtils
     {
-        public static void ConfigureOutputTextures(SubstanceNativeHandler fileHandler, SubstanceGraphSO graph, bool runtimeUsage = false)
+        public static void ConfigureOutputTextures(SubstanceNativeGraph nativeGraph, SubstanceGraphSO graph, bool runtimeUsage = false)
         {
             if (PluginPipelines.IsDEFAULT() || PluginPipelines.IsURP())
             {
-                AssignSmoothnessToAlpha(fileHandler, graph);
+                AssignSmoothnessToAlpha(nativeGraph, graph);
             }
             if (PluginPipelines.IsHDRP())
             {
-                CreateHDRPMaskMap(fileHandler, graph);
+                CreateHDRPMaskMap(nativeGraph, graph);
             }
 
-            AssignOpacityToAlpha(fileHandler, graph);
-            CreateOutputVirtualCopies(fileHandler, graph);
+            AssignOpacityToAlpha(nativeGraph, graph);
+            CreateOutputVirtualCopies(nativeGraph, graph);
 
             if (!runtimeUsage)
-                ChangeRBChannel(fileHandler, graph);
+                ChangeRBChannel(nativeGraph, graph);
 
             //For some reason we have to call it twice. (Bug in the substance engine?)
-            UpdateAlphaChannelsAssignment(fileHandler, graph);
-            UpdateAlphaChannelsAssignment(fileHandler, graph);
+            UpdateAlphaChannelsAssignment(nativeGraph, graph);
+            UpdateAlphaChannelsAssignment(nativeGraph, graph);
         }
 
-        public static void UpdateAlphaChannelsAssignment(SubstanceNativeHandler fileHandler, SubstanceGraphSO graph)
+        public static void UpdateAlphaChannelsAssignment(SubstanceNativeGraph nativeGraph, SubstanceGraphSO graph)
         {
-            var graphID = graph.Index;
-
             foreach (var output in graph.Output)
             {
                 var outputID = output.Index;
@@ -43,7 +41,7 @@ namespace Adobe.Substance
 
                 if (output.IsAlphaAssignable && string.IsNullOrEmpty(output.AlphaChannel))
                 {
-                    fileHandler.ResetAlphaChannelAssignment(graphID, outputCopy);
+                    nativeGraph.ResetAlphaChannelAssignment(outputCopy);
                     continue;
                 }
 
@@ -52,12 +50,12 @@ namespace Adobe.Substance
                 if (alphaTarget != null)
                 {
                     var alphaSourceIndex = alphaTarget.Description.Index;
-                    fileHandler.AssignOutputToAlphaChannel(graphID, outputCopy, alphaSourceIndex, invert);
+                    nativeGraph.AssignOutputToAlphaChannel(outputCopy, alphaSourceIndex, invert);
                 }
             }
         }
 
-        private static void AssignOpacityToAlpha(SubstanceNativeHandler fileHandler, SubstanceGraphSO graph)
+        private static void AssignOpacityToAlpha(SubstanceNativeGraph nativeGraph, SubstanceGraphSO graph)
         {
             var opacityOutput = graph.Output.FirstOrDefault(a => a.IsOpacity());
 
@@ -86,7 +84,7 @@ namespace Adobe.Substance
             }
         }
 
-        private static void AssignSmoothnessToAlpha(SubstanceNativeHandler fileHandler, SubstanceGraphSO graph)
+        private static void AssignSmoothnessToAlpha(SubstanceNativeGraph nativeGraph, SubstanceGraphSO graph)
         {
             var roughtnessOutput = graph.Output.FirstOrDefault(a => a.IsRoughness());
             var metallicOutput = graph.Output.FirstOrDefault(a => a.IsMetallicness());
@@ -132,25 +130,21 @@ namespace Adobe.Substance
             }
         }
 
-        private static void CreateOutputVirtualCopies(SubstanceNativeHandler fileHandler, SubstanceGraphSO graph)
+        private static void CreateOutputVirtualCopies(SubstanceNativeGraph nativeGraph, SubstanceGraphSO graph)
         {
-            var graphIndex = graph.Index;
-
             foreach (var output in graph.Output)
             {
                 if (output.IsVirtual)
                     continue;
 
                 var outputIndex = output.Index;
-                var newIndex = fileHandler.CreateOutputCopy(graphIndex, outputIndex);
+                var newIndex = nativeGraph.CreateOutputCopy(outputIndex);
                 output.VirtualOutputIndex = newIndex;
             }
         }
 
-        private static void CreateHDRPMaskMap(SubstanceNativeHandler fileHandler, SubstanceGraphSO graph)
+        private static void CreateHDRPMaskMap(SubstanceNativeGraph nativeGraph, SubstanceGraphSO graph)
         {
-            var graphIndex = graph.Index;
-
             uint flags = 0;
 
             //Red = Metallic
@@ -163,7 +157,7 @@ namespace Adobe.Substance
 
             if (metallicnessOutput != null)
             {
-                var mettalicnessOutputUID = fileHandler.GetOutputUID(graphIndex, metallicnessOutput.Index);
+                var mettalicnessOutputUID = nativeGraph.GetOutputUID(metallicnessOutput.Index);
                 outputChannel0Info = new SubstanceVirtualOutputChannelInfo(mettalicnessOutputUID);
             }
 
@@ -172,7 +166,7 @@ namespace Adobe.Substance
 
             if (occlusionOutput != null)
             {
-                var occlusionOutputUID = fileHandler.GetOutputUID(graphIndex, occlusionOutput.Index);
+                var occlusionOutputUID = nativeGraph.GetOutputUID(occlusionOutput.Index);
                 outputChannel1Info = new SubstanceVirtualOutputChannelInfo(occlusionOutputUID);
             }
             else
@@ -185,7 +179,7 @@ namespace Adobe.Substance
 
             if (detailOutput != null)
             {
-                var detailOutputUID = fileHandler.GetOutputUID(graphIndex, detailOutput.Index);
+                var detailOutputUID = nativeGraph.GetOutputUID(detailOutput.Index);
                 outputChannel2Info = new SubstanceVirtualOutputChannelInfo(detailOutputUID);
             }
             else
@@ -198,7 +192,7 @@ namespace Adobe.Substance
 
             if (roughnessOutput != null)
             {
-                var roughnessOutputUID = fileHandler.GetOutputUID(graphIndex, roughnessOutput.Index);
+                var roughnessOutputUID = nativeGraph.GetOutputUID(roughnessOutput.Index);
                 outputChannel3Info = new SubstanceVirtualOutputChannelInfo(roughnessOutputUID, ShuffleIndex.Red, true);
             }
 
@@ -210,13 +204,13 @@ namespace Adobe.Substance
                                                                   outputChannel2Info,
                                                                   outputChannel3Info);
 
-            var hdrpMaskOutputDescription = fileHandler.CreateVirtualOutput(graphIndex, outputCreateInfo);
+            var hdrpMaskOutputDescription = nativeGraph.CreateVirtualOutput(outputCreateInfo);
 
             var hdrpMaskOutput = graph.Output.FirstOrDefault(a => a.IsHDRPMask());
 
             if (hdrpMaskOutput == null)
             {
-                hdrpMaskOutput = new SubstanceOutputTexture(hdrpMaskOutputDescription, graphIndex, true)
+                hdrpMaskOutput = new SubstanceOutputTexture(hdrpMaskOutputDescription, true)
                 {
                     IsVirtual = true,
                     IsAlphaAssignable = false,
@@ -234,12 +228,12 @@ namespace Adobe.Substance
             hdrpMaskOutput.Flags = flags;
         }
 
-        private static void ChangeRBChannel(SubstanceNativeHandler fileHandler, SubstanceGraphSO graph)
+        private static void ChangeRBChannel(SubstanceNativeGraph fileHandler, SubstanceGraphSO graph)
         {
             foreach (var output in graph.Output)
             {
                 if (MaterialUtils.CheckIfBGRA(output.Description))
-                    fileHandler.ChangeOutputRBChannels(graph.Index, output.VirtualOutputIndex);
+                    fileHandler.ChangeOutputRBChannels(output.VirtualOutputIndex);
             }
         }
     }

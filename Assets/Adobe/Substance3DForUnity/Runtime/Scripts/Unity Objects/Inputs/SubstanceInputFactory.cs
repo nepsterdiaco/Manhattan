@@ -14,7 +14,7 @@ namespace Adobe.Substance.Input
         /// </summary>
         /// <param name="nativeData">Native data.</param>
         /// <returns>Instance of a substance input interface object.</returns>
-        internal static SubstanceInputBase CreateInput(NativeData nativeData, int graphID)
+        internal static SubstanceInputBase CreateInput(NativeData nativeData)
         {
             int index = (int)nativeData.Index;
             DataInternalNumeric data = nativeData.Data;
@@ -22,46 +22,46 @@ namespace Adobe.Substance.Input
             switch (nativeData.ValueType)
             {
                 case ValueType.SBSARIO_VALUE_FLOAT:
-                    return new SubstanceInputFloat(index, graphID, data);
+                    return new SubstanceInputFloat(index, data);
 
                 case ValueType.SBSARIO_VALUE_FLOAT2:
-                    return new SubstanceInputFloat2(index, graphID, data);
+                    return new SubstanceInputFloat2(index, data);
 
                 case ValueType.SBSARIO_VALUE_FLOAT3:
-                    return new SubstanceInputFloat3(index, graphID, data);
+                    return new SubstanceInputFloat3(index, data);
 
                 case ValueType.SBSARIO_VALUE_FLOAT4:
-                    return new SubstanceInputFloat4(index, graphID, data);
+                    return new SubstanceInputFloat4(index, data);
 
                 case ValueType.SBSARIO_VALUE_INT:
-                    return new SubstanceInputInt(index, graphID, data);
+                    return new SubstanceInputInt(index, data);
 
                 case ValueType.SBSARIO_VALUE_INT2:
-                    return new SubstanceInputInt2(index, graphID, data);
+                    return new SubstanceInputInt2(index, data);
 
                 case ValueType.SBSARIO_VALUE_INT3:
-                    return new SubstanceInputInt3(index, graphID, data);
+                    return new SubstanceInputInt3(index, data);
 
                 case ValueType.SBSARIO_VALUE_INT4:
-                    return new SubstanceInputInt4(index, graphID, data);
+                    return new SubstanceInputInt4(index, data);
 
                 case ValueType.SBSARIO_VALUE_IMAGE:
-                    return new SubstanceInputTexture(index, graphID, data);
+                    return new SubstanceInputTexture(index, data);
 
                 case ValueType.SBSARIO_VALUE_STRING:
-                    return new SubstanceInputString(index, graphID, data);
+                    return new SubstanceInputString(index, data);
 
                 case ValueType.SBSARIO_VALUE_FONT:
-                    return new SubstanceInputFont(index, graphID, data);
+                    return new SubstanceInputFont(index, data);
 
                 default:
                     throw new System.InvalidOperationException($"Can not create unity type from native data for type {nativeData.ValueType}.");
             }
         }
 
-        internal static SubstanceInputBase CreateInvalidInput(int inputID, int graphID)
+        internal static SubstanceInputBase CreateInvalidInput(int inputID)
         {
-            return new SubstanceInvalidInput(inputID, graphID);
+            return new SubstanceInvalidInput(inputID);
         }
     }
 }

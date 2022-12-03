@@ -7,7 +7,7 @@ namespace Adobe.SubstanceEditor
 {
     internal static class SubstanceInputDrawerFloat
     {
-        public static bool DrawInput(SerializedProperty valueProperty, SubstanceInputGUIContent content, SubstanceNativeHandler handler, int graphID, int inputID)
+        public static bool DrawInput(SerializedProperty valueProperty, SubstanceInputGUIContent content, SubstanceNativeGraph handler, int inputID)
         {
             float newValue;
             bool changed = false;
@@ -24,7 +24,7 @@ namespace Adobe.SubstanceEditor
             }
 
             if (changed)
-                handler.SetInputFloat(newValue, inputID, graphID);
+                handler.SetInputFloat(inputID, newValue);
 
             return changed;
         }

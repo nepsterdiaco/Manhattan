@@ -6,7 +6,7 @@ namespace Adobe.SubstanceEditor
 {
     internal static class SubstanceInputDrawerTexture
     {
-        public static bool DrawInput(SerializedProperty valueProperty, SubstanceInputGUIContent content, SubstanceNativeHandler handler, int graphID, int inputID)
+        public static bool DrawInput(SerializedProperty valueProperty, SubstanceInputGUIContent content, SubstanceNativeGraph handler, int inputID)
         {
             Texture2D newValue;
             bool changed;
@@ -20,14 +20,14 @@ namespace Adobe.SubstanceEditor
 
             if (changed)
             {
-                if(newValue != null)
+                if (newValue != null)
                 {
                     var pixels = newValue.GetPixels32();
-                    handler.SetInputTexture2D(pixels, newValue.width, newValue.height, inputID, graphID);
+                    handler.SetInputTexture2D(inputID, pixels, newValue.width, newValue.height);
                 }
                 else
                 {
-                    handler.SetInputTexture2DNull(inputID, graphID);
+                    handler.SetInputTexture2DNull(inputID);
                 }
             }
 
@@ -43,7 +43,7 @@ namespace Adobe.SubstanceEditor
 
             if (changed)
             {
-                if(valueProperty.objectReferenceValue != null)
+                if (valueProperty.objectReferenceValue != null)
                 {
                     newValue = valueProperty.objectReferenceValue as Texture2D;
 
@@ -52,7 +52,7 @@ namespace Adobe.SubstanceEditor
                         if (!newValue.isReadable)
                             TextureUtils.SetReadableFlag(newValue, true);
                     }
-                }                
+                }
             }
 
             return changed;
