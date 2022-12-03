@@ -47,6 +47,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Ints: []
-    m_Floats: []
+    m_Floats:
+    - Vector1_BD53BAF8: 0.218
     m_Colors: []
   m_BuildTextureStacks: []
