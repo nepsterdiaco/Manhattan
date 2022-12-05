@@ -13,14 +13,13 @@ namespace Adobe.Substance.Input
         public override bool IsNumeric => false;
         public ISubstanceInputDescNumerical NumericalDescription => null;
 
-        internal SubstanceInputFont(int index, int graphID, DataInternalNumeric data)
+        internal SubstanceInputFont(int index, DataInternalNumeric data)
         {
             Index = index;
             Data = null;
-            GraphID = graphID;
         }
 
-        public override void UpdateNativeHandle(SubstanceNativeHandler handler)
+        public override void UpdateNativeHandle(SubstanceNativeGraph handler)
         {
             return;
         }

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7c735431ce1e0a348aa0b6ea9de011c0
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: 72bc08297ab0b494c82e1737ea07edbc, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Art/Materials/Ceramic/japanese_porcelain.sbsar

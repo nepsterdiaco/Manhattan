@@ -15,16 +15,15 @@ namespace Adobe.Substance.Input
         public override SubstanceValueType ValueType => SubstanceValueType.String;
         public override bool IsNumeric => false;
 
-        internal SubstanceInputString(int index, int graphID, DataInternalNumeric data)
+        internal SubstanceInputString(int index, DataInternalNumeric data)
         {
             Index = index;
-            GraphID = graphID;
             Data = Marshal.PtrToStringAnsi(data.mPtr);
         }
 
-        public override void UpdateNativeHandle(SubstanceNativeHandler handler)
+        public override void UpdateNativeHandle(SubstanceNativeGraph handler)
         {
-            handler.SetInputString(Data, Index, GraphID);
+            handler.SetInputString(Index, Data);
         }
 
         internal override void SetNumericDescription(NativeNumericInputDesc desc)

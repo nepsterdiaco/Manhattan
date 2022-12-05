@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 17b9682c6f8ffd94f95e3eb1f92a3aca
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: c751c4bb28b1c194594f85e9ff94e4f3, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Art/Materials/Ceramic/ceramic_tiles_wheat_roughness.sbsar

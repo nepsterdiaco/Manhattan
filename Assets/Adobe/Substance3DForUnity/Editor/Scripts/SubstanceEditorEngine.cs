@@ -22,7 +22,7 @@ namespace Adobe.SubstanceEditor
         /// <summary>
         /// Substance files currently loaded in the engine.
         /// </summary>
-        private readonly Dictionary<string, SubstanceNativeHandler> _activeSubstanceDictionary = new Dictionary<string, SubstanceNativeHandler>();
+        private readonly Dictionary<string, SubstanceNativeGraph> _activeSubstanceDictionary = new Dictionary<string, SubstanceNativeGraph>();
 
         /// <summary>
         /// Currently active instances.
@@ -206,7 +206,7 @@ namespace Adobe.SubstanceEditor
                     AssetDatabase.Refresh();
                 }
 
-                if (!TryGetHandlerFromInstance(graph, out SubstanceNativeHandler substanceHandler))
+                if (!TryGetHandlerFromInstance(graph, out SubstanceNativeGraph substanceHandler))
                     continue;
 
                 if (substanceHandler.InRenderWork)
@@ -266,12 +266,12 @@ namespace Adobe.SubstanceEditor
         {
             if (_renderResultsQueue.TryDequeue(out RenderResult renderResult))
             {
-                SubstanceGraphSO graph = _managedInstances.FirstOrDefault(a => a.GUID == renderResult.GUID && a.Index == renderResult.GraphID);
+                SubstanceGraphSO graph = _managedInstances.FirstOrDefault(a => a.GUID == renderResult.GUID);
 
                 if (graph == null)
                     return;
 
-                if (!TryGetHandlerFromInstance(graph, out SubstanceNativeHandler handler))
+                if (!TryGetHandlerFromInstance(graph, out SubstanceNativeGraph handler))
                     return;
 
                 var textureReassigned = UpdateTextureFromGraphRender(renderResult, graph, handler);
@@ -326,14 +326,6 @@ namespace Adobe.SubstanceEditor
 
         #region Instance Management
 
-        internal void InitializeSubstanceFile(string assetPath, out int graphCount, out string guid)
-        {
-            var substanceArchive = Engine.OpenFile(assetPath);
-            graphCount = substanceArchive.GetGraphCount();
-            guid = System.Guid.NewGuid().ToString();
-            _activeSubstanceDictionary.Add(guid, substanceArchive);
-        }
-
         /// <summary>
         /// Loads a sbsar file into the engine. The engine will keep track of this file internally.
         /// </summary>
@@ -346,9 +338,9 @@ namespace Adobe.SubstanceEditor
             if (string.IsNullOrEmpty(substanceInstance.AssetPath))
                 Debug.LogError("Unable to instantiate substance material with null assetPath.");
 
-            if (!_activeSubstanceDictionary.TryGetValue(substanceInstance.GUID, out SubstanceNativeHandler _))
+            if (!_activeSubstanceDictionary.TryGetValue(substanceInstance.GUID, out SubstanceNativeGraph _))
             {
-                var substanceArchive = Engine.OpenFile(substanceInstance.AssetPath);
+                var substanceArchive = Engine.OpenFile(substanceInstance.RawData.FileContent, substanceInstance.Index);
                 _activeSubstanceDictionary.Add(substanceInstance.GUID, substanceArchive);
             }
 
@@ -366,7 +358,7 @@ namespace Adobe.SubstanceEditor
         /// <param name="assetPath">Path to a sbsar file.</param>
         public void ReleaseInstance(SubstanceGraphSO substanceInstance)
         {
-            if (TryGetHandlerFromInstance(substanceInstance, out SubstanceNativeHandler substanceArchive))
+            if (TryGetHandlerFromInstance(substanceInstance, out SubstanceNativeGraph substanceArchive))
             {
                 _activeSubstanceDictionary.Remove(substanceInstance.GUID);
                 substanceArchive.Dispose();
@@ -392,29 +384,31 @@ namespace Adobe.SubstanceEditor
         /// <returns>List of substance graph objects.</returns>
         public void CreateGraphObject(SubstanceGraphSO instance, SubstanceGraphSO copy = null)
         {
-            if (!TryGetHandlerFromInstance(instance, out SubstanceNativeHandler substanceHandle))
+            if (!TryGetHandlerFromInstance(instance, out SubstanceNativeGraph substanceHandle))
                 return;
 
             if (copy != null)
             {
-                if (TryGetHandlerFromInstance(copy, out SubstanceNativeHandler copyHandle))
+                if (TryGetHandlerFromInstance(copy, out SubstanceNativeGraph copyHandle))
                 {
-                    var copyPreset = copyHandle.CreatePresetFromCurrentState(copy.Index);
-                    substanceHandle.ApplyPreset(instance.Index, copyPreset); ;
+                    var copyPreset = copyHandle.CreatePresetFromCurrentState();
+                    substanceHandle.ApplyPreset(copyPreset); ;
                 }
             }
 
-            instance.Input = GetGraphInputs(substanceHandle, instance.Index);
-            instance.Output = GetGraphOutputs(substanceHandle, instance.Index);
+            instance.Input = GetGraphInputs(substanceHandle);
+            instance.Output = GetGraphOutputs(substanceHandle);
+            instance.PhysicalSize = substanceHandle.GetPhysicalSize();
+            instance.HasPhysicalSize = instance.PhysicalSize != Vector3.zero;
 
             RenderingUtils.ConfigureOutputTextures(substanceHandle, instance);
 
             instance.GenerateAllOutputs = SubstanceEditorSettingsSO.GenerateAllTextures();
             SetOutputTextureSize(instance, substanceHandle);
 
-            instance.DefaultPreset = substanceHandle.CreatePresetFromCurrentState(instance.Index);
+            instance.DefaultPreset = substanceHandle.CreatePresetFromCurrentState();
 
-            var thumbnailData = substanceHandle.GetThumbnail(instance.Index);
+            var thumbnailData = substanceHandle.GetThumbnail();
 
             if (thumbnailData != null)
             {
@@ -429,20 +423,16 @@ namespace Adobe.SubstanceEditor
         /// <param name="assetPath">Path to a sbsar file.</param>
         /// <param name="graphID">Target graph index.</param>
         /// <returns>Task that will be finished once the rendering is finished.</returns>
-        public Task RenderInstanceAsync(SubstanceGraphSO instances)
+        public void RenderInstanceAsync(SubstanceGraphSO instances)
         {
-            if (TryGetHandlerFromInstance(instances, out SubstanceNativeHandler substanceArchive))
-                return SubmitAsyncRenderWork(substanceArchive, instances);
-
-            return Task.CompletedTask;
+            if (TryGetHandlerFromInstance(instances, out SubstanceNativeGraph substanceArchive))
+                SubmitAsyncRenderWork(substanceArchive, instances);
         }
 
-        public Task RenderInstanceAsync(IReadOnlyList<SubstanceGraphSO> instances)
+        public void RenderInstanceAsync(IReadOnlyList<SubstanceGraphSO> instances)
         {
-            if (TryGetHandlerFromInstance(instances.First(), out SubstanceNativeHandler substanceArchive))
-                return SubmitAsyncRenderWork(substanceArchive, instances);
-
-            return Task.CompletedTask;
+            foreach (var graph in instances)
+                RenderInstanceAsync(graph);
         }
 
         /// <summary>
@@ -452,7 +442,7 @@ namespace Adobe.SubstanceEditor
         /// <param name="graphCopy">List of graph objects.</param>
         internal void SetSubstanceInput(SubstanceGraphSO instance)
         {
-            if (TryGetHandlerFromInstance(instance, out SubstanceNativeHandler substanceArchive))
+            if (TryGetHandlerFromInstance(instance, out SubstanceNativeGraph substanceArchive))
             {
                 foreach (var input in instance.Input)
                     input.UpdateNativeHandle(substanceArchive);
@@ -467,12 +457,12 @@ namespace Adobe.SubstanceEditor
         /// <param name="assetPath">Path to the target sbsar file.</param>
         /// <param name="graphID">Target graph id. </param>
         /// <returns>XML document with the current input states as a preset. </returns>
-        public string ExportGraphPresetXML(SubstanceGraphSO instance, int graphID)
+        public string ExportGraphPresetXML(SubstanceGraphSO instance)
         {
-            if (!TryGetHandlerFromInstance(instance, out SubstanceNativeHandler substanceArchive))
+            if (!TryGetHandlerFromInstance(instance, out SubstanceNativeGraph substanceArchive))
                 return null;
 
-            return substanceArchive.CreatePresetFromCurrentState(graphID);
+            return substanceArchive.CreatePresetFromCurrentState();
         }
 
         /// <summary>
@@ -483,11 +473,11 @@ namespace Adobe.SubstanceEditor
         /// <param name="presetXML">Preset XML document.</param>
         public void LoadPresetsToGraph(SubstanceGraphSO instance, string presetXML)
         {
-            if (TryGetHandlerFromInstance(instance, out SubstanceNativeHandler substanceHandler))
+            if (TryGetHandlerFromInstance(instance, out SubstanceNativeGraph substanceHandler))
             {
-                substanceHandler.ApplyPreset(instance.Index, presetXML);
+                substanceHandler.ApplyPreset(presetXML);
 
-                instance.Input = GetGraphInputs(substanceHandler, instance.Index);
+                instance.Input = GetGraphInputs(substanceHandler);
                 instance.RenderTextures = true;
                 EditorUtility.SetDirty(instance);
             }
@@ -497,7 +487,7 @@ namespace Adobe.SubstanceEditor
 
         #endregion Public methods
 
-        public bool TryGetHandlerFromInstance(SubstanceGraphSO substanceInstance, out SubstanceNativeHandler substanceHandler)
+        public bool TryGetHandlerFromInstance(SubstanceGraphSO substanceInstance, out SubstanceNativeGraph substanceHandler)
         {
             substanceHandler = null;
 
@@ -508,6 +498,14 @@ namespace Adobe.SubstanceEditor
             {
                 return false;
             }
+
+            return true;
+        }
+
+        public bool TryGetHandlerFromGUI(string guid, out SubstanceNativeGraph substanceHandler)
+        {
+            if (!_activeSubstanceDictionary.TryGetValue(guid, out substanceHandler))
+                return false;
 
             return true;
         }
@@ -541,7 +539,7 @@ namespace Adobe.SubstanceEditor
 
                         InitializeInstance(substanceInstance, AssetDatabase.GetAssetPath(substanceInstance));
 
-                        if (TryGetHandlerFromInstance(substanceInstance, out SubstanceNativeHandler fileHandler))
+                        if (TryGetHandlerFromInstance(substanceInstance, out SubstanceNativeGraph fileHandler))
                         {
                             if (substanceInstance == null)
                                 continue;
@@ -561,32 +559,32 @@ namespace Adobe.SubstanceEditor
             }
         }
 
-        private List<ISubstanceInput> GetGraphInputs(SubstanceNativeHandler substanceFileHandler, int graphID)
+        private List<ISubstanceInput> GetGraphInputs(SubstanceNativeGraph substanceFileHandler)
         {
             var inputs = new List<ISubstanceInput>();
 
-            var graphInputCount = substanceFileHandler.GetInputCount(graphID);
+            var graphInputCount = substanceFileHandler.GetInputCount();
 
             for (int j = 0; j < graphInputCount; j++)
             {
-                SubstanceInputBase graphInput = substanceFileHandler.GetInputObject(graphID, j);
+                SubstanceInputBase graphInput = substanceFileHandler.GetInputObject(j);
                 inputs.Add(graphInput);
             }
 
             return inputs;
         }
 
-        private List<SubstanceOutputTexture> GetGraphOutputs(SubstanceNativeHandler substanceFileHandler, int graphID)
+        private List<SubstanceOutputTexture> GetGraphOutputs(SubstanceNativeGraph substanceFileHandler)
         {
             var outputs = new List<SubstanceOutputTexture>();
 
-            var graphOutputCount = substanceFileHandler.GetGraphOutputCount(graphID);
+            var graphOutputCount = substanceFileHandler.GetOutputCount();
 
             for (int j = 0; j < graphOutputCount; j++)
             {
-                var outputDescription = substanceFileHandler.GetOutputDescription(graphID, j);
+                var outputDescription = substanceFileHandler.GetOutputDescription(j);
                 bool isStandard = MaterialUtils.CheckIfStandardOutput(outputDescription);
-                SubstanceOutputTexture graphData = new SubstanceOutputTexture(outputDescription, graphID, isStandard);
+                SubstanceOutputTexture graphData = new SubstanceOutputTexture(outputDescription, isStandard);
 
                 if (graphData.IsBaseColor() ||
                     graphData.IsDiffuse() ||
@@ -613,7 +611,7 @@ namespace Adobe.SubstanceEditor
             return outputs;
         }
 
-        private void SetOutputTextureSize(SubstanceGraphSO graph, SubstanceNativeHandler substanceFileHandler)
+        private void SetOutputTextureSize(SubstanceGraphSO graph, SubstanceNativeGraph substanceFileHandler)
         {
             var outputSize = graph.Input.FirstOrDefault(a => a.Description.Label == "$outputsize");
 
@@ -629,10 +627,10 @@ namespace Adobe.SubstanceEditor
 
         #region Rendering
 
-        public Task SubmitAsyncRenderWork(SubstanceNativeHandler substanceArchive, SubstanceGraphSO instanceKey, bool forceRebuild = false)
+        public void SubmitAsyncRenderWork(SubstanceNativeGraph substanceArchive, SubstanceGraphSO instanceKey, bool forceRebuild = false)
         {
             if (substanceArchive.InRenderWork)
-                return Task.CompletedTask;
+                return;
 
             substanceArchive.InRenderWork = true;
 
@@ -640,15 +638,14 @@ namespace Adobe.SubstanceEditor
             {
                 SubstanceArchive = substanceArchive,
                 ForceRebuild = forceRebuild,
-                GUID = instanceKey.GUID,
-                GraphID = instanceKey.Index
+                GUID = instanceKey.GUID
             };
 
-            return Task.Run(() =>
+            Task.Run(() =>
             {
                 try
                 {
-                    renderResut.Result = substanceArchive.Render(instanceKey.Index);
+                    renderResut.Result = substanceArchive.Render();
                     _renderResultsQueue.Enqueue(renderResut);
                 }
                 catch (Exception e)
@@ -659,41 +656,39 @@ namespace Adobe.SubstanceEditor
             });
         }
 
-        private Task SubmitAsyncRenderWork(SubstanceNativeHandler substanceArchive, IReadOnlyList<SubstanceGraphSO> graphs, bool forceRebuild = false)
+        public void SubmitAsyncRenderWorkBatch(IReadOnlyList<SubstanceGraphSO> instanceKey)
         {
-            if (substanceArchive.InRenderWork)
-                return Task.CompletedTask;
+            var guildList = instanceKey.Select(a => a.GUID).ToArray();
 
-            substanceArchive.InRenderWork = true;
-
-            foreach (var graph in graphs)
+            Task.Run(() =>
             {
-                graph.CurrentStatePreset = substanceArchive.CreatePresetFromCurrentState(graph.Index);
-                EditorUtility.SetDirty(graph);
-            }
-
-            return Task.Run(() =>
-            {
-                try
+                foreach (var guid in guildList)
                 {
-                    foreach (var graph in graphs)
-                    {
-                        var renderResut = new RenderResult()
-                        {
-                            SubstanceArchive = substanceArchive,
-                            ForceRebuild = forceRebuild,
-                            GUID = graph.GUID,
-                            GraphID = graph.Index
-                        };
+                    if (!TryGetHandlerFromGUI(guid, out SubstanceNativeGraph substanceArchive))
+                        continue;
 
-                        renderResut.Result = substanceArchive.Render(graph.Index);
+                    if (substanceArchive.InRenderWork)
+                        continue;
+
+                    substanceArchive.InRenderWork = true;
+
+                    var renderResut = new RenderResult()
+                    {
+                        SubstanceArchive = substanceArchive,
+                        ForceRebuild = false,
+                        GUID = guid
+                    };
+
+                    try
+                    {
+                        renderResut.Result = substanceArchive.Render();
                         _renderResultsQueue.Enqueue(renderResut);
                     }
-                }
-                catch (Exception e)
-                {
-                    substanceArchive.InRenderWork = false;
-                    Debug.LogException(e);
+                    catch (Exception e)
+                    {
+                        substanceArchive.InRenderWork = false;
+                        Debug.LogException(e);
+                    }
                 }
             });
         }
@@ -704,7 +699,7 @@ namespace Adobe.SubstanceEditor
         /// <param name="renderResult">Target render result.</param>
         /// <param name="substance">Owner substance.</param>
         /// <returns>Returns true if textures must be reassigned to the material.</returns>
-        private bool UpdateTextureFromGraphRender(RenderResult renderResult, SubstanceGraphSO graph, SubstanceNativeHandler handler)
+        private bool UpdateTextureFromGraphRender(RenderResult renderResult, SubstanceGraphSO graph, SubstanceNativeGraph handler)
         {
             if (!renderResult.ForceRebuild && CheckIfTextureAssetsExist(graph))
             {
@@ -865,11 +860,10 @@ namespace Adobe.SubstanceEditor
 
         private struct RenderResult
         {
-            public SubstanceNativeHandler SubstanceArchive;
+            public SubstanceNativeGraph SubstanceArchive;
             public IntPtr Result;
             public bool ForceRebuild;
             public string GUID;
-            public int GraphID;
         }
 
         #endregion Rendering

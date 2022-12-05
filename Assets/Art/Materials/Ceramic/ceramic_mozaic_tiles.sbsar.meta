@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 429a37e6a31a4d94ebc97078ef3ad1b1
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: 1fbd490675dacb2418a7b3ec6d14a0f6, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Art/Materials/Ceramic/ceramic_mozaic_tiles.sbsar

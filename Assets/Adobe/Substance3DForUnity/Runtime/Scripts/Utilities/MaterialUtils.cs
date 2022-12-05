@@ -457,10 +457,26 @@ namespace Adobe.Substance
             return Shader.Find(StandardShaderName);
         }
 
+        #region PhysicalSize
+
         public static void ApplyPhysicalSize(Material material, Vector3 physicalSize, bool enablePhysicalSize)
         {
             if (PluginPipelines.IsHDRP())
                 ApplyPhysicalSizeHDRP(material, physicalSize, enablePhysicalSize);
+        }
+
+        public static Vector3 GetPhysicalSizePositionOffset(Material material)
+        {
+            if (PluginPipelines.IsHDRP())
+                return GetPhysicalSizePositionOffsetHDRP(material);
+
+            return new Vector3(0, 0, 0);
+        }
+
+        public static void SetPhysicalSizePositionOffset(Material material, Vector3 offset)
+        {
+            if (PluginPipelines.IsHDRP())
+                SetPhysicalSizePositionOffsetHDRP(material, offset);
         }
 
         private static void ApplyPhysicalSizeHDRP(Material material, Vector3 physicalSize, bool enablePhysicalSize)
@@ -484,5 +500,18 @@ namespace Adobe.Substance
                 material.mainTextureScale = new Vector2(1, 1);
             }
         }
+
+        public static Vector3 GetPhysicalSizePositionOffsetHDRP(Material material)
+        {
+            return material.GetTextureOffset("_BaseColorMap");
+        }
+
+        public static void SetPhysicalSizePositionOffsetHDRP(Material material, Vector3 offset)
+        {
+            material.SetTextureOffset("_BaseColorMap", offset);
+            material.SetTextureOffset("_EmissiveColorMap", offset);
+        }
+
+        #endregion PhysicalSize
     }
 }

@@ -16,26 +16,32 @@ namespace Adobe.Substance
     {
         public static bool IsCPU()
         {
-            if (Application.platform == RuntimePlatform.LinuxEditor
-                    || Application.platform == RuntimePlatform.LinuxPlayer
-                    || Application.platform == RuntimePlatform.CloudRendering)
+            if (Application.platform == RuntimePlatform.OSXPlayer ||
+#if UNITY_2021_3_OR_NEWER
+                            Application.platform == RuntimePlatform.OSXServer ||
+#endif
+                            Application.platform == RuntimePlatform.OSXEditor)
             {
                 return false;
             }
-            else if (Application.platform == RuntimePlatform.OSXEditor
-                    || Application.platform == RuntimePlatform.OSXPlayer)
+            else if (Application.platform == RuntimePlatform.LinuxPlayer ||
+#if UNITY_2021_3_OR_NEWER
+                     Application.platform == RuntimePlatform.LinuxServer ||
+#endif
+                     Application.platform == RuntimePlatform.LinuxEditor)
             {
                 return false;
             }
-            else if (Application.platform == RuntimePlatform.WindowsEditor
-                    || Application.platform == RuntimePlatform.WindowsPlayer)
+            else if (Application.platform == RuntimePlatform.WindowsPlayer ||
+#if UNITY_2021_3_OR_NEWER
+                     Application.platform == RuntimePlatform.WindowsServer ||
+#endif
+                     Application.platform == RuntimePlatform.WindowsEditor)
             {
                 return false;
             }
-            else
-            {
-                return true;
-            }
+
+            return true;
         }
 
         /// <summary>

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3a889e2834c5e744098e0a34e37a3d93
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: e0799928730d3f74eb3ae416eb6cd068, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Art/Materials/Ceramic/tiles_spanish_diagonal.sbsar

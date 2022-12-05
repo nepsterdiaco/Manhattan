@@ -12,9 +12,6 @@ namespace Adobe.Substance
         public int VirtualOutputIndex;
 
         [SerializeField]
-        public int GraphIndex;
-
-        [SerializeField]
         public SubstanceOutputDescription Description;
 
         [SerializeField]
@@ -41,10 +38,9 @@ namespace Adobe.Substance
         [SerializeField]
         public uint Flags = 0;
 
-        public SubstanceOutputTexture(SubstanceOutputDescription description, int graphIndex, bool isStandard)
+        public SubstanceOutputTexture(SubstanceOutputDescription description, bool isStandard)
         {
             Index = description.Index;
-            GraphIndex = graphIndex;
             Description = description;
             IsStandardOutput = isStandard;
 

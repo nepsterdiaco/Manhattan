@@ -28,7 +28,6 @@ namespace Adobe.Substance
         private const int MEMORY_BUGET = 2048;
 #endif
 
-
         public static string Version()
         {
             var version_ptr = NativeMethods.sbsario_get_version();
@@ -98,16 +97,39 @@ namespace Adobe.Substance
                 throw new SubstanceException(code);
         }
 
-        public static SubstanceNativeHandler OpenFile(string path)
+        public static SubstanceNativeGraph OpenFile(byte[] data, int graphID)
         {
-            var substanceFile = new SubstanceNativeHandler(path);
+            if (sLoadState != LoadState.Engine_Loaded)
+                throw new ArgumentException("Engine must be loaded before creating Native Handler");
+
+            var substanceFile = new SubstanceNativeGraph(data, graphID);
             return substanceFile;
         }
 
-        public static SubstanceNativeHandler OpenFile(byte[] data)
+        /// <summary>
+        /// Get the total graph count for this substance object.
+        /// </summary>
+        /// <returns>Total graph count.</returns>
+        public static int GetFileGraphCount(byte[] fileContent)
         {
-            var substanceFile = new SubstanceNativeHandler(data);
-            return substanceFile;
+            int size = Marshal.SizeOf(fileContent[0]) * fileContent.Length;
+            var nativeMemory = Marshal.AllocHGlobal(size);
+            Marshal.Copy(fileContent, 0, nativeMemory, size);
+
+            try
+            {
+                var handler = NativeMethods.sbsario_sbsar_load_from_memory(nativeMemory, (IntPtr)size);
+
+                if (handler == default)
+                    throw new ArgumentException();
+
+                return (int)NativeMethods.sbsario_sbsar_get_graph_count(handler);
+            }
+            finally
+            {
+                if (nativeMemory != default)
+                    Marshal.FreeHGlobal(nativeMemory);
+            }
         }
 
         private static double InvPow(double pBase, double pResult)

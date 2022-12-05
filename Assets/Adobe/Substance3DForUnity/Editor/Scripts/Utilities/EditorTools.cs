@@ -16,11 +16,6 @@ namespace Adobe.SubstanceEditor
             unityObject.hideFlags &= ~HideFlags.NotEditable;
         }
 
-        internal static void InitializeSubstanceFile(string assetPath, out int graphCount, out string guid)
-        {
-            SubstanceEditorEngine.instance.InitializeSubstanceFile(assetPath, out graphCount, out guid);
-        }
-
         public static SubstanceGraphSO CreateSubstanceInstance(string assetPath, SubstanceFileRawData fileData, string name, int index, string guid, bool isRoot = false, SubstanceGraphSO copy = null)
         {
             var instanceAsset = ScriptableObject.CreateInstance<SubstanceGraphSO>();

@@ -10,8 +10,6 @@ namespace Adobe.Substance.Input
     {
         int Index { get; }
 
-        int GraphID { get; }
-
         SubstanceValueType ValueType { get; }
 
         bool IsNumeric { get; }
@@ -19,7 +17,7 @@ namespace Adobe.Substance.Input
         bool IsValid { get; }
         SubstanceInputDescription Description { get; }
 
-        void UpdateNativeHandle(SubstanceNativeHandler handler);
+        void UpdateNativeHandle(SubstanceNativeGraph handler);
 
         internal void SetNumericDescription(NativeNumericInputDesc desc);
 
@@ -41,11 +39,6 @@ namespace Adobe.Substance.Input
         /// Input index inside the Substance Graph.
         /// </summary>
         public int Index;
-
-        /// <summary>
-        /// Id of the owner substance Graph.
-        /// </summary>
-        public int GraphID;
 
         /// <summary>
         /// Input type.
@@ -71,7 +64,7 @@ namespace Adobe.Substance.Input
         /// Updates the native side of the substance engine with the current value for this input.
         /// </summary>
         /// <param name="handler"></param>
-        public virtual void UpdateNativeHandle(SubstanceNativeHandler handler)
+        public virtual void UpdateNativeHandle(SubstanceNativeGraph handler)
         {
         }
 
@@ -100,8 +93,6 @@ namespace Adobe.Substance.Input
         #region ISubstanceInput
 
         int ISubstanceInput.Index => Index;
-
-        int ISubstanceInput.GraphID => GraphID;
 
         SubstanceInputDescription ISubstanceInput.Description => Description;
 

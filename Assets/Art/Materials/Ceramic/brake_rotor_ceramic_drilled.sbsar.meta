@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2aadd0dc2c2fde544978cad1a8479790
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: d53891de43c9660498687e5c10e58d1d, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Art/Materials/Ceramic/brake_rotor_ceramic_drilled.sbsar

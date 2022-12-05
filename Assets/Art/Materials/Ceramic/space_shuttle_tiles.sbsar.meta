@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: efe1ca0456219ef46b67f2c1adb0f710
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: 9d84b61b68932424799fdad9487261e3, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Art/Materials/Ceramic/space_shuttle_tiles.sbsar

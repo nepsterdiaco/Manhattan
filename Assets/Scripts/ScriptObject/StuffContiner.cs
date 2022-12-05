@@ -5,10 +5,10 @@ using System.Collections.Generic;
 using System.Linq;
 using Diaco.Manhatan.Structs;
 using UnityEngine;
+
 [CreateAssetMenu(fileName = "StuffContiner", menuName = "Diaco/StuffContiner", order = 1)]
 public class StuffContiner : ScriptableObject
 {
-    
     private List<GameObject> Prefabs;
 
     [PropertyOrder(0)]
@@ -29,9 +29,7 @@ public class StuffContiner : ScriptableObject
         Prefabs = new List<GameObject>();
     }
 
-    [Searchable( )]
-    [PropertyOrder(1)]
-    public List<Diaco.Manhatan.Structs.StuffContinerData> stuffs;
+    [Searchable()] [PropertyOrder(1)] public List<Diaco.Manhatan.Structs.StuffContinerData> stuffs;
     public List<GameObject> beds;
     public List<GameObject> carpets;
     public List<GameObject> sofas;
@@ -44,26 +42,104 @@ public class StuffContiner : ScriptableObject
     public List<GameObject> tvDesk;
     public List<GameObject> looster;
     public List<GameObject> kitchen;
-    
-    
+    public List<GameObject> baths;
+    public List<GameObject> doors;
+    public List<GameObject> normalDecor;
+    public List<GameObject> toiletTable;
+    public List<GameObject> wallHanging;
+    public List<GameObject> walls;
+
+
     public void AddToStuffs()
     {
-        Prefabs.AddRange(beds);
-        Prefabs.AddRange(carpets);
-        Prefabs.AddRange(sofas);
-        Prefabs.AddRange(signs);
-        Prefabs.AddRange(tv);
-        Prefabs.AddRange(wallDecor);
-        Prefabs.AddRange(diningTable);
-        Prefabs.AddRange(hallTable);
-        Prefabs.AddRange(tvDesk);
-        Prefabs.AddRange(looster);
-        Prefabs.AddRange(smallSofa);
-        Prefabs.AddRange(kitchen);
+        if (beds.Count > 0)
+        {
+            Prefabs.AddRange(beds);
+        }
+
+        if (carpets.Count > 0)
+        {
+            Prefabs.AddRange(carpets);
+        }
+
+        if (sofas.Count > 0)
+        {
+            Prefabs.AddRange(sofas);
+        }
+
+        if (signs.Count > 0)
+        {
+            Prefabs.AddRange(signs);
+        }
+
+        if (tv.Count > 0)
+        {
+            Prefabs.AddRange(tv);
+        }
+
+        if (wallDecor.Count > 0)
+        {
+            Prefabs.AddRange(wallDecor);
+        }
+
+        if (diningTable.Count > 0)
+        {
+            Prefabs.AddRange(diningTable);
+        }
+
+        if (hallTable.Count > 0)
+        {
+            Prefabs.AddRange(hallTable);
+        }
+
+        if (tvDesk.Count > 0)
+        {
+            Prefabs.AddRange(tvDesk);
+        }
+
+        if (looster.Count > 0)
+        {
+            Prefabs.AddRange(looster);
+        }
+
+        if (smallSofa.Count > 0)
+        {
+            Prefabs.AddRange(smallSofa);
+        }
+
+        if (kitchen.Count > 0)  
+        {
+            Prefabs.AddRange(kitchen);
+        }
+        
+        if (baths.Count > 0)  
+        {
+            Prefabs.AddRange(baths);
+        }
+        
+        if (doors.Count > 0)  
+        {
+            Prefabs.AddRange(doors);
+        }
+        
+        if (normalDecor.Count > 0)  
+        {
+            Prefabs.AddRange(normalDecor);
+        }
+        
+        if (toiletTable.Count > 0)  
+        {
+            Prefabs.AddRange(toiletTable);
+        }
+        
+        if (wallHanging.Count > 0)  
+        {
+            Prefabs.AddRange(wallHanging);
+        }
+
+        if (walls.Count > 0)
+        {
+            Prefabs.AddRange(walls);
+        }
     }
-
-
 }
-
-
-

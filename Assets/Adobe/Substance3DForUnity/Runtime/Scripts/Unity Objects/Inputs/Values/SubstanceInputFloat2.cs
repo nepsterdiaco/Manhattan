@@ -18,16 +18,15 @@ namespace Adobe.Substance.Input
         public override bool IsNumeric => true;
         public override bool IsValid => true;
 
-        internal SubstanceInputFloat2(int index, int graphID, DataInternalNumeric data)
+        internal SubstanceInputFloat2(int index, DataInternalNumeric data)
         {
             Index = index;
-            GraphID = graphID;
             Data = new Vector2(data.mFloatData0, data.mFloatData1);
         }
 
-        public override void UpdateNativeHandle(SubstanceNativeHandler handler)
+        public override void UpdateNativeHandle(SubstanceNativeGraph handler)
         {
-            handler.SetInputFloat2(Data, Index, GraphID);
+            handler.SetInputFloat2(Index, Data);
         }
 
         internal override void SetNumericDescription(NativeNumericInputDesc desc)

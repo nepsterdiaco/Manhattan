@@ -166,27 +166,26 @@ namespace Adobe.SubstanceEditor.Importer
         {
             var rawData = AddRawFileData(ctx);
 
-            EditorTools.InitializeSubstanceFile(ctx.assetPath, out int graphCount, out string fileGuid);
+            var graphCount = Engine.GetFileGraphCount(rawData.FileContent);
 
             _fileAsset = ScriptableObject.CreateInstance<SubstanceFileSO>();
             _fileAsset.AssetPath = _assetPath;
-            _fileAsset.Instances = new List<SubstanceGraphSO>();
-
-            Task task = Task.CompletedTask;
+            _fileAsset.Instances = new List<SubstanceGraphSO>(graphCount);
 
             for (int i = 0; i < graphCount; i++)
             {
-                var graphSO = EditorTools.CreateSubstanceInstance(ctx.assetPath, rawData, $"graph_{i}", i, fileGuid, true);
+                var guid = System.Guid.NewGuid().ToString();
+                var graphSO = EditorTools.CreateSubstanceInstance(ctx.assetPath, rawData, $"graph_{i}", i, guid, true);
                 _fileAsset.Instances.Add(graphSO);
-
-                if (!string.Equals(_assetPath, ctx.assetPath))
-                {
-                    _assetPath = ctx.assetPath;
-                    EditorUtility.SetDirty(this);
-                }
             }
 
-            _ = RenderGraphsAsync(_fileAsset.Instances);
+            SubstanceEditorEngine.instance.SubmitAsyncRenderWorkBatch(_fileAsset.Instances);
+
+            if (!string.Equals(_assetPath, ctx.assetPath))
+            {
+                _assetPath = ctx.assetPath;
+                EditorUtility.SetDirty(this);
+            }
 
             ctx.AddObjectToAsset("Substance File", _fileAsset);
             ctx.SetMainObject(_fileAsset);
@@ -211,11 +210,6 @@ namespace Adobe.SubstanceEditor.Importer
             rawData.hideFlags = HideFlags.HideInHierarchy | HideFlags.HideInInspector;
             ctx.AddObjectToAsset("Substance Data", rawData);
             return rawData;
-        }
-
-        private Task RenderGraphsAsync(IReadOnlyList<SubstanceGraphSO> graph)
-        {
-            return SubstanceEditorEngine.instance.RenderInstanceAsync(graph);
         }
     }
 }
