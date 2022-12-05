@@ -803,7 +803,6 @@ MonoBehaviour:
   m_Script: {fileID: 1261584867}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Entries: []
 --- !u!4 &212934797
 Transform:
   m_ObjectHideFlags: 19
