@@ -1,0 +1,32 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.EventSystems;
+namespace Diaco.Manhatan.UI.Tab.Option
+{
+    public class OptionsPanel : MonoBehaviour,IPointerExitHandler
+    {
+        public List<OptionElement> Options;
+        public void CloseAllDescriptionsButThis(OptionElement option)
+        {
+            Options.ForEach(e => {
+                if (option != e)
+                    e.ShowDescription(false);
+            });
+        }
+        public void CloseAllDescriptions()
+        {
+            Options.ForEach(e =>
+            {
+                e.ShowDescription(false);
+            });
+        }
+        public void OnPointerExit(PointerEventData eventData)
+        {
+            CloseAllDescriptions();
+        }
+    }
+
+
+}
