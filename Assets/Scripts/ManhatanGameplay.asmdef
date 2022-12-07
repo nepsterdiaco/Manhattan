@@ -1,0 +1,22 @@
+{
+    "name": "ManhatanGameplay",
+    "rootNamespace": "",
+    "references": [
+        "Unity.TextMeshPro",
+        "ShapesEditor",
+        "ShapesRuntime",
+        "Unity.InputSystem",
+        "DOTweenPro.Scripts",
+        "DOTween.Modules",
+        "DOTweenPro.EditorScripts"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
