@@ -18,12 +18,12 @@ namespace Diaco.Manhatan
         [SerializeField] private Camera WorldMap_Cam;
         [SerializeField] private FadeEffect FadeEffect_UI;
         [SerializeField] private Canvas WorldMap_UI;
-        [SerializeField] private HUD HUD_UI;
-        [SerializeField] private BuildingInfo_UI InfoElementPrefab;
-        [SerializeField] private TextMeshProUGUI UserInfo_text;
-        [SerializeField] private RectTransform Content_info;
-        [SerializeField] private Disc Point_shape, point2_shape;
-        [SerializeField] private Line Line_shape;
+       // [SerializeField] private HUD HUD_UI;
+       // [SerializeField] private BuildingInfo_UI InfoElementPrefab;
+       // [SerializeField] private TextMeshProUGUI UserInfo_text;
+        //[SerializeField] private RectTransform Content_info;
+      //  [SerializeField] private Disc Point_shape, point2_shape;
+       // [SerializeField] private Line Line_shape;
 
         #region Property
         [SerializeField] Transform buildingTransformSelected;
@@ -100,7 +100,7 @@ namespace Diaco.Manhatan
         }
         public void SelectBuilding(string name, Transform buildingTransform)
         {
-            ClearBuildingInfoInUI();
+           // ClearBuildingInfoInUI();
             for (int i = 0; i < UserInformation.userBuildings.Count; i++)
             {
                 var building_name = UserInformation.userBuildings[i].buildingName;
@@ -108,13 +108,14 @@ namespace Diaco.Manhatan
                 {
                     NameBuildingSelected = name;
                     TransformBuildingSelected = buildingTransform;
-                    SpawnBuildingInfoInUI(building_name);
-                    Point_Line_SetPositions(buildingTransform.position);
-                    Point_Line_Show(true);
+                  //  SpawnBuildingInfoInUI(building_name);
+                   // Point_Line_SetPositions(buildingTransform.position);
+                   // Point_Line_Show(true);
                    
                 }
             }
         }
+       /* [Obsolete]
         public void SpawnBuildingInfoInUI(string buildingname)
         {
             for (int i = 0; i < BuildingManager.buildings.Count; i++)
@@ -129,6 +130,7 @@ namespace Diaco.Manhatan
                 }
             }
         }
+        [Obsolete]
         public void ClearBuildingInfoInUI()
         {
             for (int i = 0; i < temp_ui.Count; i++)
@@ -167,7 +169,7 @@ namespace Diaco.Manhatan
                 }
                 HightlightBuilding(UserInformation.userBuildings[i].buildingName);
             }
-        }
+        }*/
         public bool CheckFloorInElavator(int floor)
         {
             bool right = false;
@@ -193,7 +195,7 @@ namespace Diaco.Manhatan
         
         public void LoadScene(int id)
         {
-            FadeIn();
+           // FadeIn();
             SceneManager.sceneLoaded -= SceneManager_sceneLoaded;
             SceneManager.LoadSceneAsync(id, LoadSceneMode.Single);
             SceneManager.sceneLoaded += SceneManager_sceneLoaded;
@@ -204,18 +206,18 @@ namespace Diaco.Manhatan
             {
                 this.WorldMap_UI.GetComponent<CanvasGroup>().alpha = 0;
                 this.WorldMap_Cam.gameObject.SetActive(false);
-                this.HUD_UI.GetComponent<CanvasGroup>().alpha = 1;
-                Point_Line_Show(false);
+               // this.HUD_UI.GetComponent<CanvasGroup>().alpha = 1;
+               // Point_Line_Show(false);
             }
             else
             {
                 this.WorldMap_Cam.transform.position = new Vector3(3.6f, 58f, -73f);
                 this.WorldMap_UI.GetComponent<CanvasGroup>().alpha = 1;
                 this.WorldMap_Cam.gameObject.SetActive(true);
-                this.HUD_UI.GetComponent<CanvasGroup>().alpha = 0;
+              ///  this.HUD_UI.GetComponent<CanvasGroup>().alpha = 0;
             }
             ChangePhase(scene.buildIndex);
-            FadeOut();
+           //FadeOut();
             Debug.Log($"Scenes{scene.name}");
         }
 
@@ -252,7 +254,7 @@ namespace Diaco.Manhatan
         }
         public void WorldMapCameraMoveEffect()
         {
-            Point_Line_Show(false);
+            //Point_Line_Show(false);
             WorldMap_Cam.transform.DOMove(TransformBuildingSelected.position, 1).OnComplete(() => {
                 LoadScene(2);
             });
@@ -266,7 +268,7 @@ namespace Diaco.Manhatan
         {
             Application.Quit();
         }
-        [Obsolete]
+        /*[Obsolete]
         public void FadeIn()
         {
             FadeEffect_UI.FadeIn(1);
@@ -275,7 +277,7 @@ namespace Diaco.Manhatan
         public void FadeOut()
         {
             FadeEffect_UI.FadeOut(1);
-        }
+        }*/
         public void ChangePhase(int index)
         {
             if (index == 0)

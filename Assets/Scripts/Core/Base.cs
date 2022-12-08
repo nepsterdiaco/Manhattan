@@ -68,9 +68,12 @@ namespace Diaco.Manhatan.Structs
     [Serializable]
     public struct BuildingData
     {
+        public Sprite ImageBuilding;
         public string Name;
         [MultiLineProperty]
         public string Information;
+        public int Floor;
+        public int Uint;
         //public Transform BulidingTransform;
 
     }

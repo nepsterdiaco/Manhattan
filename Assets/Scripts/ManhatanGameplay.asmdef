@@ -1,6 +1,6 @@
 {
     "name": "ManhatanGameplay",
-    "rootNamespace": "",
+    "rootNamespace": "Diaco",
     "references": [
         "Unity.TextMeshPro",
         "ShapesEditor",
