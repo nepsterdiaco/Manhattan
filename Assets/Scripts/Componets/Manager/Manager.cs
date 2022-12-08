@@ -8,6 +8,7 @@ using DG.Tweening;
 using Sirenix.OdinInspector;
 using Diaco.Manhatan.Structs;
 using Diaco.Manhatan.UI.WorldMap;
+using Diaco.Manhatan.UI.Loading;
 namespace Diaco.Manhatan
 {
     public class Manager : MonoBehaviour
@@ -17,8 +18,10 @@ namespace Diaco.Manhatan
         public  static Manager singleton;
 
         [SerializeField] private Camera WorldMap_Cam;
-        [SerializeField] private FadeEffect FadeEffect_UI;
+        
         [SerializeField] private WorldMapUI WorldMap_UI;
+        [SerializeField] private Loading Loading_UI;
+        [SerializeField] private FadeEffect FadeEffect_UI;
        // [SerializeField] private HUD HUD_UI;
        // [SerializeField] private BuildingInfo_UI InfoElementPrefab;
        // [SerializeField] private TextMeshProUGUI UserInfo_text;
@@ -196,10 +199,12 @@ namespace Diaco.Manhatan
         
         public void LoadScene(int id)
         {
-           // FadeIn();
+            // FadeIn();
+            Loading_UI.Show(true);
             SceneManager.sceneLoaded -= SceneManager_sceneLoaded;
             SceneManager.LoadSceneAsync(id, LoadSceneMode.Single);
             SceneManager.sceneLoaded += SceneManager_sceneLoaded;
+            
         }
         private void SceneManager_sceneLoaded(Scene scene, LoadSceneMode loadsceneMode)
         {
@@ -213,7 +218,7 @@ namespace Diaco.Manhatan
                 WorldMap_UI = FindObjectOfType<WorldMapUI>();
             }
             ChangePhase(scene.buildIndex);
-           //FadeOut();
+            Loading_UI.Show(false);
             Debug.Log($"Scenes{scene.name}");
         }
 
