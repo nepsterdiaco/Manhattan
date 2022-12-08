@@ -138,12 +138,14 @@ namespace Diaco.Manhatan
             }
             temp_ui.Clear();
         }
+        [Obsolete]
         public void Point_Line_SetPositions(Vector3 start)
         {
             Point_shape.transform.position = start;
             Line_shape.Start = start;
             Line_shape.End = point2_shape.transform.position;
         }
+        [Obsolete]
         public void Point_Line_Show(bool show)
         {
             this.Point_shape.enabled = show;
@@ -264,10 +266,12 @@ namespace Diaco.Manhatan
         {
             Application.Quit();
         }
+        [Obsolete]
         public void FadeIn()
         {
             FadeEffect_UI.FadeIn(1);
         }
+        [Obsolete]
         public void FadeOut()
         {
             FadeEffect_UI.FadeOut(1);
