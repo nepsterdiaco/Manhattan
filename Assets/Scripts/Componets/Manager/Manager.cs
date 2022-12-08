@@ -7,6 +7,7 @@ using TMPro;
 using DG.Tweening;
 using Sirenix.OdinInspector;
 using Diaco.Manhatan.Structs;
+using Diaco.Manhatan.UI.WorldMap;
 namespace Diaco.Manhatan
 {
     public class Manager : MonoBehaviour
@@ -17,7 +18,7 @@ namespace Diaco.Manhatan
 
         [SerializeField] private Camera WorldMap_Cam;
         [SerializeField] private FadeEffect FadeEffect_UI;
-        [SerializeField] private Canvas WorldMap_UI;
+        [SerializeField] private WorldMapUI WorldMap_UI;
        // [SerializeField] private HUD HUD_UI;
        // [SerializeField] private BuildingInfo_UI InfoElementPrefab;
        // [SerializeField] private TextMeshProUGUI UserInfo_text;
@@ -204,17 +205,12 @@ namespace Diaco.Manhatan
         {
             if (scene.buildIndex != 1)
             {
-                this.WorldMap_UI.GetComponent<CanvasGroup>().alpha = 0;
-                this.WorldMap_Cam.gameObject.SetActive(false);
-               // this.HUD_UI.GetComponent<CanvasGroup>().alpha = 1;
-               // Point_Line_Show(false);
+
             }
             else
             {
-                this.WorldMap_Cam.transform.position = new Vector3(3.6f, 58f, -73f);
-                this.WorldMap_UI.GetComponent<CanvasGroup>().alpha = 1;
-                this.WorldMap_Cam.gameObject.SetActive(true);
-              ///  this.HUD_UI.GetComponent<CanvasGroup>().alpha = 0;
+                WorldMap_Cam = FindObjectOfType<Camera>();
+                WorldMap_UI = FindObjectOfType<WorldMapUI>();
             }
             ChangePhase(scene.buildIndex);
            //FadeOut();

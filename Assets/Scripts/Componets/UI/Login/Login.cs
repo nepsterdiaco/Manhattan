@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
-//using Diaco.Manhatan.Structs;
+using Diaco.Manhatan.Structs;
 namespace Diaco.Manhatan.UI
 {
     public class Login : MonoBehaviour
@@ -35,34 +35,33 @@ namespace Diaco.Manhatan.UI
         {
             if (Username_input.text == "user" && Password_input.text == "pass")
             {
-                /*
-                                    ///// Create Unit 
-                                    UserAppartementData appartement_a = new UserAppartementData { roomGroup = "Royal_0", roomName = "R_2", floor = 5, unit = 1 };
-                                    UserAppartementData appartement_b = new UserAppartementData { roomGroup = "Royal_0", roomName = "R_2", floor = 10, unit = 2 };
-                                    UserAppartementData appartement_c = new UserAppartementData { roomGroup = "Royal_0", roomName = "R_2", floor = 10, unit = 3 };
 
-                                    //// Add To list Appartements
-                                    List<UserAppartementData> userAppartementData_temp = new List<UserAppartementData>();
+                ///// Create Unit 
+                UserAppartementData appartement_a = new UserAppartementData { roomGroup = "Royal_0", roomName = "R_2", floor = 5, unit = 1 };
+                UserAppartementData appartement_b = new UserAppartementData { roomGroup = "Royal_0", roomName = "R_2", floor = 10, unit = 2 };
+                UserAppartementData appartement_c = new UserAppartementData { roomGroup = "Royal_0", roomName = "R_2", floor = 10, unit = 3 };
 
-                                    userAppartementData_temp.Add(appartement_a);
-                                    userAppartementData_temp.Add(appartement_b);
-                                    userAppartementData_temp.Add(appartement_c);
+                //// Add To list Appartements
+                List<UserAppartementData> userAppartementData_temp = new List<UserAppartementData>();
 
-                                    //// Create Building
-                                    List<UserBuildingData> userBuilding_temp = new List<UserBuildingData>();
+                userAppartementData_temp.Add(appartement_a);
+                userAppartementData_temp.Add(appartement_b);
+                userAppartementData_temp.Add(appartement_c);
 
-                                    //// Add To list Buildings
-                                    userBuilding_temp.Add(new UserBuildingData() { buildingName = "A", appartements = userAppartementData_temp });
-                                    userBuilding_temp.Add(new UserBuildingData() { buildingName = "B", appartements = userAppartementData_temp });
+                //// Create Building
+                List<UserBuildingData> userBuilding_temp = new List<UserBuildingData>();
 
-                                    //// Create Data
-                                    Manager.singleton.UserInformation = new UserInfo { userName = "OmidPirhadi", userBuildings = userBuilding_temp };
+                //// Add To list Buildings
+                userBuilding_temp.Add(new UserBuildingData() { buildingName = "A", appartements = userAppartementData_temp });
+                userBuilding_temp.Add(new UserBuildingData() { buildingName = "B", appartements = userAppartementData_temp });
 
-                                    //// Set Data
-                                    Manager.singleton.SetUserInfo();
+                //// Create Data
+                Manager.singleton.UserInformation = new UserInfo { userName = "OmidPirhadi", userBuildings = userBuilding_temp };
 
-                                    Manager.singleton.LoadScene(1);
-                                    */
+
+
+                Manager.singleton.LoadScene(1);
+
                 Debug.Log("Login");
             }
             else
