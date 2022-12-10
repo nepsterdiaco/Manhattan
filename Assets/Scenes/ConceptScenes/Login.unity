@@ -140,10 +140,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Loading
       objectReference: {fileID: 0}
-    - target: {fileID: 587425746288849795, guid: ac979bc52cbd2a142a2ccf0b5b802590, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 587425746288849796, guid: ac979bc52cbd2a142a2ccf0b5b802590, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -228,10 +224,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3465535961352236358, guid: ac979bc52cbd2a142a2ccf0b5b802590, type: 3}
-      propertyPath: canvasGroup
-      value: 
-      objectReference: {fileID: 417091275}
     - target: {fileID: 6123859443708214031, guid: ac979bc52cbd2a142a2ccf0b5b802590, type: 3}
       propertyPath: m_Alpha
       value: 0
@@ -462,11 +454,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e4f3d9a011ff424685a6afbcfb20496, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!225 &417091275 stripped
-CanvasGroup:
-  m_CorrespondingSourceObject: {fileID: 6123859443708214031, guid: ac979bc52cbd2a142a2ccf0b5b802590, type: 3}
-  m_PrefabInstance: {fileID: 187207207}
-  m_PrefabAsset: {fileID: 0}
 --- !u!850595691 &700909121
 LightingSettings:
   m_ObjectHideFlags: 0

@@ -1,10 +1,9 @@
-using System;
-using System.Collections;
+
 using System.Collections.Generic;
-using System.Linq;
+
 using UnityEngine;
-using UnityEngine.UI;
-namespace Diaco.Manhatan.UI.Tab
+
+namespace Diaco.Manhatan.UI
 {
     public class TabController : MonoBehaviour
     {

@@ -1,9 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine.EventSystems;
 using UnityEngine;
 
-namespace Diaco.Manhatan.UI.Tab.Option
+namespace Diaco.Manhatan.UI
 {
     public class OptionElement : MonoBehaviour,IPointerEnterHandler,IPointerExitHandler
     {

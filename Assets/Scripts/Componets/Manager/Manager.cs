@@ -1,14 +1,12 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Shapes;
-using TMPro;
 using DG.Tweening;
-using Sirenix.OdinInspector;
 using Diaco.Manhatan.Structs;
-using Diaco.Manhatan.UI.WorldMap;
-using Diaco.Manhatan.UI.Loading;
+using Diaco.Manhatan.UI;
+
 namespace Diaco.Manhatan
 {
     public class Manager : MonoBehaviour
@@ -20,7 +18,9 @@ namespace Diaco.Manhatan
         [SerializeField] private Camera WorldMap_Cam;
         
         [SerializeField] private WorldMapUI WorldMap_UI;
+        
         [SerializeField] private Loading Loading_UI;
+
         [SerializeField] private FadeEffect FadeEffect_UI;
        // [SerializeField] private HUD HUD_UI;
        // [SerializeField] private BuildingInfo_UI InfoElementPrefab;
@@ -102,7 +102,7 @@ namespace Diaco.Manhatan
             }
             return owner;
         }
-        public void SelectBuilding(string name, Transform buildingTransform)
+        public void SelectBuilding(string name, Transform buildingTransform, BuildingData buildingdata)
         {
            // ClearBuildingInfoInUI();
             for (int i = 0; i < UserInformation.userBuildings.Count; i++)
@@ -112,6 +112,7 @@ namespace Diaco.Manhatan
                 {
                     NameBuildingSelected = name;
                     TransformBuildingSelected = buildingTransform;
+                    WorldMap_UI.SetBuildingInfo(buildingdata);
                   //  SpawnBuildingInfoInUI(building_name);
                    // Point_Line_SetPositions(buildingTransform.position);
                    // Point_Line_Show(true);
@@ -196,15 +197,26 @@ namespace Diaco.Manhatan
             }
             return right;
         }
-        
-        public void LoadScene(int id)
+
+        public  void LoadScene(int id)
         {
             // FadeIn();
-            Loading_UI.Show(true);
-            SceneManager.sceneLoaded -= SceneManager_sceneLoaded;
-            SceneManager.LoadSceneAsync(id, LoadSceneMode.Single);
-            SceneManager.sceneLoaded += SceneManager_sceneLoaded;
+            StartCoroutine(loadscene(id)); 
             
+        }
+         private IEnumerator loadscene(int id)
+         {
+             Loading_UI.Show(true);
+            SceneManager.sceneLoaded -= SceneManager_sceneLoaded;
+             var c = SceneManager.LoadSceneAsync(id);
+          //  c.allowSceneActivation = false;
+            SceneManager.sceneLoaded += SceneManager_sceneLoaded;
+            while (c.progress < 1)
+            {
+                /// _progressBar.fillAmount = gameLevel.progress;
+                Debug.Log("OMID" + c.progress);
+                yield return null;
+            }
         }
         private void SceneManager_sceneLoaded(Scene scene, LoadSceneMode loadsceneMode)
         {

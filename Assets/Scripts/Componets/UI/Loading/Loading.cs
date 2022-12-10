@@ -1,12 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
-using UnityEngine.UI;
-namespace Diaco.Manhatan.UI.Loading
+
+namespace Diaco.Manhatan.UI
 {
     public class Loading : MonoBehaviour
     {
-       [SerializeField] private CanvasGroup canvasGroup;
+        private CanvasGroup canvasGroup;
+        public void Start()
+        {
+            canvasGroup = GetComponent<CanvasGroup>();
+        }
         public void Show(bool show)
         {
             if (show)

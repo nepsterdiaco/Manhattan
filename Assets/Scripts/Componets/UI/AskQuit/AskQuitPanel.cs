@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.UI;
-namespace Diaco.Manhatan.UI.AskPanel
+namespace Diaco.Manhatan.UI
 {
     public class AskQuitPanel : MonoBehaviour
     {

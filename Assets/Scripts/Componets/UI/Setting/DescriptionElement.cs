@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
-namespace Diaco.Manhatan.UI.Tab
+namespace Diaco.Manhatan.UI
 {
     public class DescriptionElement : MonoBehaviour
     {

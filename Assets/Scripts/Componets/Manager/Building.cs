@@ -38,31 +38,21 @@ namespace Diaco.Manhatan
             material = renderer.material;
             BuildingManager.AddBuilding(this);
         }
-        private void LateUpdate()
-        {
-            /*if(Flicker)
-            {
-                DOFlicker();
-            }*/
-        }
+
         private void OnMouseDown()
         {
-            Manager.singleton.SelectBuilding(info.Name, this.transform);
+            Manager.singleton.SelectBuilding(info.Name, this.transform, info);
         }
         private void OnMouseOver()
         {
-           // if (Manager.singleton.BuildingOwner(info.Name))
+           if (Manager.singleton.BuildingOwner(info.Name))
                 DOFlicker();
         }
         private void OnMouseExit()
         {
             IsFlickering = false;
         }
-        public void ActiveFlicker()
-        {
-           // Flicker = true;
-          //  Debug.Log("AAAA");
-        }
+
 
         [Button("aaa")]
         public void DOFlicker()

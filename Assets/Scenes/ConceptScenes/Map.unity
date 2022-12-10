@@ -5379,10 +5379,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info:
     ImageBuilding: {fileID: 0}
-    Name: 
-    Information: 
-    Floor: 0
-    Uint: 0
+    Name: A
+    Information: OmiD
+    Floor: 100
+    Uint: 500
   EmissivePower: 50
   SpeedAnimateEmission: 1
   ease: 1
@@ -49429,7 +49429,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!33 &6410590239165732468
 MeshFilter:
   m_ObjectHideFlags: 0

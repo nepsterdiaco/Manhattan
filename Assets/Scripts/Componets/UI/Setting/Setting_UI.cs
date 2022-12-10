@@ -1,9 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-namespace Diaco.Manhatan.UI.Setting
+namespace Diaco.Manhatan.UI
 {
     public class Setting_UI : MonoBehaviour
     {
