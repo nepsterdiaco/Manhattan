@@ -13,6 +13,10 @@ PrefabInstance:
       value: Sofa01 - Copy
       objectReference: {fileID: 0}
     - target: {fileID: 5942837510972170569, guid: 1177160befefa304cb76518dea35269b, type: 3}
+      propertyPath: Data.name
+      value: Sofa_Blue_034
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942837510972170569, guid: 1177160befefa304cb76518dea35269b, type: 3}
       propertyPath: Data.group
       value: Sofa_Blue_0
       objectReference: {fileID: 0}
