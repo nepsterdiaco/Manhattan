@@ -799,6 +799,7 @@ MonoBehaviour:
   m_Script: {fileID: 1261584867}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Entries: []
 --- !u!4 &212934797
 Transform:
   m_ObjectHideFlags: 19
@@ -1920,7 +1921,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-301266
+  m_Name: pb_Mesh-3518
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -2114,6 +2115,7 @@ MonoBehaviour:
     group: Blue_0
     name: R_1
     stuffs: []
+  InfoBoxMessage: Box message
 --- !u!4 &1466891446
 Transform:
   m_ObjectHideFlags: 0

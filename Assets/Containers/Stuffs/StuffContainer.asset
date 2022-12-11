@@ -851,3 +851,6 @@ MonoBehaviour:
   walls:
   - {fileID: 5073013717321444133, guid: 7a263dafe0c1048a0983056c3ac19106, type: 3}
   - {fileID: 5073013717321444133, guid: 65dbb7d2e1e40b94e990822480a8dcc2, type: 3}
+  backwall:
+  - {fileID: 6030051321890081251, guid: 6bc956df06f43094c927c818fd7caf2c, type: 3}
+  - {fileID: 6030051321890081251, guid: 04b5c55484f2d0a409221d4bd1b567f0, type: 3}
