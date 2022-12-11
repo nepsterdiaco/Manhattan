@@ -76,6 +76,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TV-Table02
       objectReference: {fileID: 0}
+    - target: {fileID: 5942837510972170569, guid: 1177160befefa304cb76518dea35269b, type: 3}
+      propertyPath: Data.group
+      value: TV_Stand_0
+      objectReference: {fileID: 0}
     - target: {fileID: 6141843734730449577, guid: 1177160befefa304cb76518dea35269b, type: 3}
       propertyPath: m_RootOrder
       value: -1
