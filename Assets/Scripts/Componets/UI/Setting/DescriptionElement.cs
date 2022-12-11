@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Diaco.Manhatan.UI
 {
-    public class DescriptionElement : MonoBehaviour
+    public class DescriptionElement : BaseUIPanel
     {
         private void Update()
         {

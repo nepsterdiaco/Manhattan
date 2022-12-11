@@ -751,7 +751,7 @@ GameObject:
   - component: {fileID: 1250085833696355290}
   - component: {fileID: 1250085833696355293}
   m_Layer: 5
-  m_Name: Button_video
+  m_Name: Button_Settings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -995,7 +995,7 @@ GameObject:
   - component: {fileID: 1250085834216696019}
   - component: {fileID: 1250085834216696018}
   m_Layer: 5
-  m_Name: Button_Builfings
+  m_Name: Button_Buildings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1895,7 +1895,7 @@ RectTransform:
   - {fileID: 7567558701057443846}
   - {fileID: 6559235356879812385}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1922,7 +1922,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &7567558701585249166
 MonoBehaviour:
@@ -1976,6 +1976,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97993a164849420469afae21736e9dc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Settings_Button: {fileID: 0}
+  Buildings_Button: {fileID: 0}
+  OpenSea_Button: {fileID: 0}
+  Creadits_Button: {fileID: 0}
+  NextMenu: []
+  BackMenu: {fileID: 0}
 --- !u!1 &7567558702000612534
 GameObject:
   m_ObjectHideFlags: 0

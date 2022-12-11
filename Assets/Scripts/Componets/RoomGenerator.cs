@@ -15,12 +15,35 @@ public class RoomGenerator : MonoBehaviour
 
     public RoomsContiner RoomsContainerData;
     public StuffContiner StuffsContainerData;
+
+
+    [PropertyOrder(0.4f)]
+    [Button("AllLock")]
+    private void LockAll()
+    {
+        roomData.ALLLock();
+    }
+    [PropertyOrder(0.5f)]
+    [Button("AllUnLock")]
+    private void UnLockAll()
+    {
+        roomData.ALLUnlock();
+    }
+    [PropertyOrder(0.55f)]
     public Diaco.Manhatan.Structs.RoomData roomData;
+
+
 
     private RoomObject room_gameobject;
 
     private bool TryToSpawnRoom = false;
     private GameObject RoomSpawnedInWorld;
+
+
+
+
+
+
     [PropertyOrder(0.6f)]
     [Button("InitializeRoom", ButtonSizes.Medium)]
  

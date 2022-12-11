@@ -21,7 +21,7 @@ namespace Diaco.Manhatan
         
         [SerializeField] private Loading Loading_UI;
 
-        [SerializeField] private FadeEffect FadeEffect_UI;
+      //  [SerializeField] private FadeEffect FadeEffect_UI;
        // [SerializeField] private HUD HUD_UI;
        // [SerializeField] private BuildingInfo_UI InfoElementPrefab;
        // [SerializeField] private TextMeshProUGUI UserInfo_text;
@@ -55,7 +55,7 @@ namespace Diaco.Manhatan
 
         #endregion
         private RoomGenerator roomGenerator;
-        private List<BuildingInfo_UI> temp_ui = new List<BuildingInfo_UI>(10);
+       // private List<BuildingInfo_UI> temp_ui = new List<BuildingInfo_UI>(10);
         
         private void Awake()
         {
@@ -102,17 +102,20 @@ namespace Diaco.Manhatan
             }
             return owner;
         }
-        public void SelectBuilding(string name, Transform buildingTransform, BuildingData buildingdata)
+        public void UserSelectedBuilding(string name, Transform buildingTransform, BuildingData buildingdata)
         {
            // ClearBuildingInfoInUI();
             for (int i = 0; i < UserInformation.userBuildings.Count; i++)
             {
                 var building_name = UserInformation.userBuildings[i].buildingName;
+                
                 if (building_name == name)
                 {
+                    var unit_count = UserInformation.userBuildings[i].appartements.Count;
                     NameBuildingSelected = name;
                     TransformBuildingSelected = buildingTransform;
                     WorldMap_UI.SetBuildingInfo(buildingdata);
+                    WorldMap_UI.SetUnitPlayerInThisBuilding(unit_count);
                   //  SpawnBuildingInfoInUI(building_name);
                    // Point_Line_SetPositions(buildingTransform.position);
                    // Point_Line_Show(true);
@@ -265,13 +268,13 @@ namespace Diaco.Manhatan
                 }
             }
         }
-        public void WorldMapCameraMoveEffect()
+        public void GotoLobbyBuildingWithCameraEffectAndSceneLoad(int sceneIndex)
         {
             //Point_Line_Show(false);
             WorldMap_Cam.transform.DOMove(TransformBuildingSelected.position, 1).OnComplete(() => {
-                LoadScene(2);
+                LoadScene(sceneIndex);
             });
-            FadeEffect_UI.FadeIn(1);
+           // FadeEffect_UI.FadeIn(1);
         }
         public void ResetWorld()
         {

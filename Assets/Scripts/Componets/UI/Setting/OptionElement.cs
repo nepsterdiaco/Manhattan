@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Diaco.Manhatan.UI
 {
-    public class OptionElement : MonoBehaviour,IPointerEnterHandler,IPointerExitHandler
+    public class OptionElement : BaseUIPanel,IPointerEnterHandler,IPointerExitHandler
     {
         public GameObject Description;
         

@@ -1,11 +1,13 @@
 
 using UnityEngine;
+
+
 using UnityEngine.UI;
 using TMPro;
 
 namespace Diaco.Manhatan.UI
 {
-    public class WorldMapUI : MonoBehaviour
+    public class WorldMapUI : BaseUIPanel
     {
         [SerializeField] private Image imageBuilding_Image;
         [SerializeField] private TextMeshProUGUI buildingName_Text;
@@ -15,18 +17,22 @@ namespace Diaco.Manhatan.UI
 
         [SerializeField] private TextMeshProUGUI userOwneruint_Text;
 
+        [SerializeField] private BaseUIPanel NextMenu;
+        [SerializeField] private BaseUIPanel BackMenu;
+      
 
+      
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
                 SelectBuildin();
             }
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (Input.GetKeyDown(KeyCode.Tab))
             {
-                Setting();
+                Menu();
             }
-            if (Input.GetKeyDown(KeyCode.F1))
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
                 Quit();
             }
@@ -41,18 +47,32 @@ namespace Diaco.Manhatan.UI
             this.buildingUint_Text.text = (data.Uint).ToString();
 
         }
-
+        public void SetUnitPlayerInThisBuilding(int Count)
+        {
+            userOwneruint_Text.text = $"YOU HAVE{Count} UNIT IN THIS BUILDING";
+        }
         private void SelectBuildin()
         {
+            Manager.singleton.GotoLobbyBuildingWithCameraEffectAndSceneLoad(2);
             Debug.Log("Select This Building And Go To Lobby");
         }
-        private void Setting()
+        private void Menu()
         {
-            Debug.Log("Open Setting Panel");
+            if (!NextMenu.gameObject.activeSelf)
+            {
+                this.gameObject.SetActive(false);
+                NextMenu.gameObject.SetActive(true);
+
+            }
+ 
         }
         private void Quit()
         {
-            Debug.Log("Quit App");
+            if (!BackMenu.gameObject.activeSelf)
+            {
+                this.gameObject.SetActive(false);
+                BackMenu.gameObject.SetActive(true);
+            }
         }
     }
 

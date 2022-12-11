@@ -4,22 +4,27 @@ using UnityEngine.UI;
 using TMPro;
 namespace Diaco.Manhatan.UI
 {
-    public class Setting_UI : MonoBehaviour
+    public class Setting_UI : BaseUIPanel
     {
-        private Button Controllers_button;
-        private Button Video_button;
-        private Button Audio_button;
-        private Button Q_button;
-        private Button E_button;
-        void Start()
+        
+        [SerializeField] private BaseUIPanel BackMenu;
+        private void Update()
         {
+
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                Back();
+            }
 
         }
-
-        // Update is called once per frame
-        void Update()
+        private void Back()
         {
-
+            if (!BackMenu.gameObject.activeSelf)
+            {
+                this.gameObject.SetActive(false);
+                BackMenu.gameObject.SetActive(true);
+            }
         }
     }
 }

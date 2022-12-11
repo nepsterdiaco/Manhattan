@@ -41,7 +41,7 @@ namespace Diaco.Manhatan
 
         private void OnMouseDown()
         {
-            Manager.singleton.SelectBuilding(info.Name, this.transform, info);
+            Manager.singleton.UserSelectedBuilding(info.Name, this.transform, info);
         }
         private void OnMouseOver()
         {

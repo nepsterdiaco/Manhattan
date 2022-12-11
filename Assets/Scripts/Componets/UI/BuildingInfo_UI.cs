@@ -7,6 +7,7 @@ using TMPro;
 
 namespace Diaco.Manhatan
 {
+    [Obsolete]
     public class BuildingInfo_UI : MonoBehaviour
     {
         public TextMeshProUGUI BuildingName;
@@ -20,7 +21,8 @@ namespace Diaco.Manhatan
             
             Lobby_button.onClick.AddListener(() =>
             {
-                Manager.singleton.WorldMapCameraMoveEffect();
+
+               // Manager.singleton.WorldMapCameraMoveEffect();
 
             });
         }

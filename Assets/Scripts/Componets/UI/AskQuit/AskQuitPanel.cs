@@ -3,29 +3,37 @@ using UnityEngine;
 using UnityEngine.UI;
 namespace Diaco.Manhatan.UI
 {
-    public class AskQuitPanel : MonoBehaviour
+    public class AskQuitPanel : BaseUIPanel
     {
-        [SerializeField] private Button Yes_Button;
-        [SerializeField] private Button Quit_Button;
+       
+        [SerializeField] private BaseUIPanel BackMenu;
 
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                Yes();
+            }
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                Cancel();
+            }
+ 
 
-        private void OnEnable()
-        {
-            Yes_Button.onClick.AddListener(Yes);
-            Quit_Button.onClick.AddListener(Quit);
-        }
-        private void OnDisable()
-        {
-            Yes_Button.onClick.RemoveAllListeners();
-            Quit_Button.onClick.RemoveAllListeners();
         }
         private void Yes()
         {
-
+            Manager.singleton.ExitApp();
         }
-        private void Quit()
+        private void Cancel()
         {
-
+            if (!BackMenu.gameObject.activeSelf)
+            {
+                this.gameObject.SetActive(false);
+                BackMenu.gameObject.SetActive(true);
+            }
         }
+
+
     }
 }
