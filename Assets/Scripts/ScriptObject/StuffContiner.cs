@@ -48,6 +48,7 @@ public class StuffContiner : ScriptableObject
     public List<GameObject> toiletTable;
     public List<GameObject> wallHanging;
     public List<GameObject> walls;
+    public List<GameObject> backwall;
 
 
     public void AddToStuffs()
@@ -138,6 +139,10 @@ public class StuffContiner : ScriptableObject
         }
 
         if (walls.Count > 0)
+        {
+            Prefabs.AddRange(walls);
+        }        
+        if (backwall.Count > 0)
         {
             Prefabs.AddRange(walls);
         }
