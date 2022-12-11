@@ -21,6 +21,7 @@ public class RoomGenerator : MonoBehaviour
 
     private bool TryToSpawnRoom = false;
     private GameObject RoomSpawnedInWorld;
+    [PropertyOrder(0.6f)]
     [Button("InitializeRoom", ButtonSizes.Medium)]
  
     public void InitializeRoom()
@@ -65,7 +66,7 @@ public class RoomGenerator : MonoBehaviour
 
 
 
-
+    [PropertyOrder(0.7f)]
     [Button("RandomChangeStuff", ButtonSizes.Medium)]
     private void RandomChangeStuff()
     {
@@ -73,27 +74,42 @@ public class RoomGenerator : MonoBehaviour
     }
     private IEnumerator RandomChangeStuff_coroutine()
     {
+        InfoBoxMessage = "NO ERROR";
         for (int i = 0; i < roomData.stuffs.Count; i++)
         {
             if (!roomData.stuffs[i].Lock)
             {
-                var id_stuff = roomData.stuffs[i].group;
+                var group_stuff = roomData.stuffs[i].group;
                 var stuff_position = roomData.stuffs[i].position;
                 var stuff_rotation = roomData.stuffs[i].rotation;
-                Destroy(roomData.stuffs[i].stuffGameObject);
-                var stuff_list_by_id = StuffsContainerData.stuffs.Where(s => s.group == id_stuff).ToList();
-                var random_stuff_Select_index = UnityEngine.Random.Range(0, stuff_list_by_id.Count);
-                var prefab_stuff = stuff_list_by_id[random_stuff_Select_index].prefab;
-                yield return new WaitForSecondsRealtime(0.01f);
-                Instantiate(prefab_stuff, stuff_position, stuff_rotation, room_gameobject.transform);
-                yield return new WaitForSecondsRealtime(0.01f);
+               
+               
+                var stuff_list_by_group = StuffsContainerData.stuffs.Where(s => s.group == group_stuff ).ToList();
+                if (stuff_list_by_group.Count != 0)
+                {
+                    Destroy(roomData.stuffs[i].stuffGameObject);
+                    var random_stuff_Select_index = UnityEngine.Random.Range(0, stuff_list_by_group.Count);
+                    var prefab_stuff = stuff_list_by_group[random_stuff_Select_index].prefab;
+                    yield return new WaitForSecondsRealtime(0.01f);
+                    Instantiate(prefab_stuff, stuff_position, stuff_rotation, room_gameobject.transform);
+                    yield return new WaitForSecondsRealtime(0.01f);
+                }
+                else
+                {
+                   // Debug.Log($"Not Found Group ID:{group_stuff}{stuff_list_by_group.Count}");
+                    InfoBoxMessage = $"For This Stuff:{roomData.stuffs[i].stuffGameObject.name}....\r\n Not Found Group ID:{group_stuff} result:{stuff_list_by_group.Count}";
+                }
+
+
+
             }
+            yield return null;
         }
         yield return StartCoroutine(FindStuff());
         yield return new WaitForSecondsRealtime(0.01f);
         Debug.Log("RandomChanged");
     }
-
+    [PropertyOrder(0.8f)]
     [Button("SaveRoom", ButtonSizes.Medium)]
     private void SaveRoom()
     {
@@ -139,7 +155,7 @@ public class RoomGenerator : MonoBehaviour
         Debug.Log("Room Arranged");
       //  Handler_OnSpawnedRoom();
     }
-
+    [PropertyOrder(0.9f)]
     [Button("TestLoadRoom", ButtonSizes.Medium)]
     public void LoadRoom(string group, string RoomName)
     {
@@ -179,6 +195,15 @@ public class RoomGenerator : MonoBehaviour
             }
         }
     }*/
+    [PropertyOrder(1f)]
+    [InfoBox("$InfoBoxMessage",InfoMessageType = InfoMessageType.Error)]
+    
+    public string InfoBoxMessage = "Box message";
+
+    private static bool IsInEditMode()
+    {
+        return Application.isPlaying;
+    }
 
 
     private Action spawnedroom;
