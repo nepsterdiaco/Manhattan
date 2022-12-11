@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 74e4a1e69b6092b4b8274472f24487d6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.4275
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 74e4a1e69b6092b4b8274472f24487d6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4461867041595163784, guid: 74e4a1e69b6092b4b8274472f24487d6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 74e4a1e69b6092b4b8274472f24487d6, type: 3}
       propertyPath: m_Name
       value: Door02
@@ -86,7 +90,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6141843734730449577, guid: 1177160befefa304cb76518dea35269b, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6141843734730449577, guid: 1177160befefa304cb76518dea35269b, type: 3}
       propertyPath: m_LocalScale.x
