@@ -8,7 +8,7 @@ namespace Diaco.Manhatan.UI
 {
 
 
-    public class TabButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
+    public class TabButton :BaseUIPanel, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
     {
 
         [SerializeField] GameObject OptionsPanel;

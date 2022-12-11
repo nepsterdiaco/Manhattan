@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Diaco.Manhatan.UI
 {
-    public class TabController : MonoBehaviour
+    public class TabController : BaseUIPanel
     {
        // [SerializeField] private Button Left_Button;
        // [SerializeField] private Button Right_Button;

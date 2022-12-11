@@ -423,8 +423,9 @@ GameObject:
   - component: {fileID: 3560415965736814199}
   - component: {fileID: 3560415965736814192}
   - component: {fileID: 3560415965736814193}
+  - component: {fileID: 6043669159983981264}
   m_Layer: 5
-  m_Name: Panel_Ask_Quit
+  m_Name: Panel_Ask_Quit 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -516,6 +517,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 823
+--- !u!114 &6043669159983981264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3560415965736814194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 102aa5096f8791146bb1c5076c7db7bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Yes_Button: {fileID: 2581650550363069670}
+  Quit_Button: {fileID: 5857956028813132224}
 --- !u!1 &4296220723843124479
 GameObject:
   m_ObjectHideFlags: 0
@@ -1156,7 +1171,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000047683716, y: 0.000015259}
+  m_AnchoredPosition: {x: 0.000047683716, y: 0.000015258789}
   m_SizeDelta: {x: 0, y: 0.000061035}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4486635959485592640

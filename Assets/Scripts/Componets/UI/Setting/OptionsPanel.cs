@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 namespace Diaco.Manhatan.UI
 {
-    public class OptionsPanel : MonoBehaviour,IPointerExitHandler
+    public class OptionsPanel : BaseUIPanel,IPointerExitHandler
     {
         public List<OptionElement> Options;
         public void CloseAllDescriptionsButThis(OptionElement option)
