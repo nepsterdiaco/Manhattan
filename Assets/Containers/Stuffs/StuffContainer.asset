@@ -542,24 +542,24 @@ MonoBehaviour:
     prefab: {fileID: 6030051321890081251, guid: 7428d4ad3b5a34740b5f6ff78f6b9fcd, type: 3}
     materials: []
   - group: Door_0
-    name: Door_Simple_Blue_0
-    prefab: {fileID: 6030051321890081251, guid: 1d23697ba62f67a479cc7ddf03149cf2, type: 3}
-    materials: []
-  - group: Door_0
     name: Door_Simple_Blue_01
-    prefab: {fileID: 7957791420264176718, guid: 0515ee01604353d459eecab91d00a399, type: 3}
-    materials: []
-  - group: Door_0
-    name: Door_Simple_Blue_02
     prefab: {fileID: 2586680629673610781, guid: ba105ebebe3af104d908cbab13a2da79, type: 3}
     materials: []
   - group: Door_0
-    name: Door_Simple_Blue_03
+    name: Door_Simple_Blue_02
     prefab: {fileID: 7957791420264176718, guid: 3fe5061dc3d13894c88299934945ac48, type: 3}
     materials: []
   - group: Door_0
-    name: Door_Simple_Blue_04
+    name: Door_Simple_Blue_03
     prefab: {fileID: 5394761658844196475, guid: 376f05b7b86aa9547bafd8196d4785ed, type: 3}
+    materials: []
+  - group: Entrance_Door_0
+    name: Entrance_Door_Simple_Blue_01
+    prefab: {fileID: 6030051321890081251, guid: 1d23697ba62f67a479cc7ddf03149cf2, type: 3}
+    materials: []
+  - group: Entrance_Door_0
+    name: Entrance_Door_Simple_Blue_02
+    prefab: {fileID: 7957791420264176718, guid: 0515ee01604353d459eecab91d00a399, type: 3}
     materials: []
   - group: Decoration_0
     name: Mirror_Stand_0
@@ -823,11 +823,12 @@ MonoBehaviour:
   baths:
   - {fileID: 6030051321890081251, guid: 7428d4ad3b5a34740b5f6ff78f6b9fcd, type: 3}
   doors:
-  - {fileID: 6030051321890081251, guid: 1d23697ba62f67a479cc7ddf03149cf2, type: 3}
-  - {fileID: 7957791420264176718, guid: 0515ee01604353d459eecab91d00a399, type: 3}
   - {fileID: 2586680629673610781, guid: ba105ebebe3af104d908cbab13a2da79, type: 3}
   - {fileID: 7957791420264176718, guid: 3fe5061dc3d13894c88299934945ac48, type: 3}
   - {fileID: 5394761658844196475, guid: 376f05b7b86aa9547bafd8196d4785ed, type: 3}
+  entrancedoors:
+  - {fileID: 6030051321890081251, guid: 1d23697ba62f67a479cc7ddf03149cf2, type: 3}
+  - {fileID: 7957791420264176718, guid: 0515ee01604353d459eecab91d00a399, type: 3}
   normalDecor:
   - {fileID: 5231722274003779018, guid: c26e4f6ba679cc149a77e80e64d9a4cb, type: 3}
   - {fileID: 7957791420264176718, guid: 183a10f3ee326cd40af8b087eb91fc72, type: 3}

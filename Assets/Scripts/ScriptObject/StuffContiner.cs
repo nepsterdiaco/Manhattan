@@ -44,6 +44,7 @@ public class StuffContiner : ScriptableObject
     public List<GameObject> kitchen;
     public List<GameObject> baths;
     public List<GameObject> doors;
+    public List<GameObject> entrancedoors;
     public List<GameObject> normalDecor;
     public List<GameObject> toiletTable;
     public List<GameObject> wallHanging;
@@ -121,6 +122,11 @@ public class StuffContiner : ScriptableObject
         if (doors.Count > 0)  
         {
             Prefabs.AddRange(doors);
+        }        
+        
+        if (entrancedoors.Count > 0)  
+        {
+            Prefabs.AddRange(entrancedoors);
         }
         
         if (normalDecor.Count > 0)  
