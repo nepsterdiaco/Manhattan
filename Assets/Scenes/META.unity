@@ -221,6 +221,7 @@ MonoBehaviour:
     group: 
     name: 0
     stuffs: []
+  InfoBoxMessage: Box message
 --- !u!4 &733516063
 Transform:
   m_ObjectHideFlags: 0
@@ -313,8 +314,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1612369172}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.4575796, y: 2.2666872, z: -4.162821}
+  m_LocalRotation: {x: 0.07070507, y: 0.9164819, z: -0.18703385, w: 0.34652582}
+  m_LocalPosition: {x: -5.470272, y: 3.8208635, z: 4.5798454}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -19,25 +19,13 @@ MonoBehaviour:
   Rooms:
   - group: Royal_0
     name: R_1
-    RoomPrefab: {fileID: 2445628168831838403, guid: d40cfd84cb4ab4b4ebba4d5daee95190, type: 3}
-    roomData: {fileID: 4900000, guid: d39bfc9d74fc6b34491da1de5077f806, type: 3}
+    RoomPrefab: {fileID: 1242382165635332492, guid: 25ebbcdfbfcc4724aa14a657fd4e540b, type: 3}
+    roomData: {fileID: 4900000, guid: 115e5b548f8d1444f94c101e29f50898, type: 3}
   - group: Royal_0
     name: R_2
-    RoomPrefab: {fileID: 85245282058468458, guid: 29de2fe8af8e00c42a5bb55a74bbced2, type: 3}
-    roomData: {fileID: 4900000, guid: 999e269a7cb15e14397370a3ff67992a, type: 3}
+    RoomPrefab: {fileID: 1242382165635332492, guid: 25ebbcdfbfcc4724aa14a657fd4e540b, type: 3}
+    roomData: {fileID: 4900000, guid: 79b0393ec1e0f594bafb4f3274e0eb40, type: 3}
   - group: Royal_0
     name: R_3
-    RoomPrefab: {fileID: 904215332353685261, guid: 33eb25337796b034487fb48844dd0b81, type: 3}
-    roomData: {fileID: 4900000, guid: fbb02bca6095f54498818a4612d2fb9f, type: 3}
-  - group: Royal_0
-    name: R_4
-    RoomPrefab: {fileID: 7210338919231740644, guid: a4f4f41557f554a47b2539e0de80c07b, type: 3}
-    roomData: {fileID: 4900000, guid: a92b217f004634b409e7295a87d45622, type: 3}
-  - group: Royal_0
-    name: omid_0
-    RoomPrefab: {fileID: 7210338919231740644, guid: a4f4f41557f554a47b2539e0de80c07b, type: 3}
-    roomData: {fileID: 4900000, guid: d39bfc9d74fc6b34491da1de5077f806, type: 3}
-  - group: Royal_0
-    name: MainRoom
     RoomPrefab: {fileID: 1242382165635332492, guid: 25ebbcdfbfcc4724aa14a657fd4e540b, type: 3}
-    roomData: {fileID: 4900000, guid: d39bfc9d74fc6b34491da1de5077f806, type: 3}
+    roomData: {fileID: 4900000, guid: 173f953916bfeb24fbaf02bead9e1706, type: 3}

@@ -186,6 +186,7 @@ public class RoomGenerator : MonoBehaviour
         {
             TryToSpawnRoom = true;
             var list_filter_by_group = RoomsContainerData.Rooms.Where(r => r.group == group).ToList();
+            Debug.Log("............" + list_filter_by_group.Count);
             for (int i = 0; i < list_filter_by_group.Count; i++)
             {
                 if (list_filter_by_group[i].name == RoomName)
@@ -194,6 +195,7 @@ public class RoomGenerator : MonoBehaviour
                     var room = Instantiate(list_filter_by_group[i].RoomPrefab);
                     Debug.Log("Room Spawned And Wait For Arrange");
                     StartCoroutine(ArrangeStuffInRoom(R_D.stuffs, room.transform));
+
                 }
             }
         }
