@@ -13,7 +13,7 @@ namespace Diaco.Manhatan
         public string MakerContext;
         public string MarkerContextIdel;
         public TextMeshProUGUI DisplayContext_text;
-        
+        public CanvasGroup canvasRotator;
         public bool InvokeWithKey = false;   
         public bool Inside
         {
@@ -27,25 +27,13 @@ namespace Diaco.Manhatan
         public UnityEvent ActionOnEnter;
         [BoxGroup("Action")]
         public UnityEvent ActionOnExit;
-        private CanvasGroup canvasGroup;
-        private Image markerlogo_billboard;
-        private Image markerline_billboard;
+        
+
 
         private void Start()
         {
-            canvasGroup = GetComponentInChildren<CanvasGroup>();
-            var billboards = GetComponentsInChildren<Image>();
-            for (int i = 0; i < billboards.Length; i++)
-            {
-                if(billboards[i].name == "marker_image")
-                {
-                    markerlogo_billboard = billboards[i];
-                }
-                else if(billboards[i].name == "Line")
-                {
-                   markerline_billboard = billboards[i];
-                }
-            }
+            
+
             
             Manager.singleton.OnChangePlace += Manager_OnChangePlace;
         }
@@ -112,28 +100,28 @@ namespace Diaco.Manhatan
 
         private void UILookToCamera()
         {
-           
-            
-            var person = FindObjectOfType<PersonController>();
+
+
+            var person = GameObject.FindGameObjectWithTag("Player");
             if (person)
             {
                 
                 var dis = Vector3.Distance(DisplayContext_text.transform.position, person.transform.position);
+                //Debug.Log($"dis:{dis}");
                 if (dis < 10)
                 {
-                    if (canvasGroup.alpha < 1)
-                        canvasGroup.DOFade(1, 0.1f);
+                    if (canvasRotator.alpha < 1)
+                        canvasRotator.DOFade(1, 0.1f);
 
                     var dir = DisplayContext_text.transform.position - person.transform.position;
                     var angel = Mathf.Atan2(dir.z, dir.x) * Mathf.Rad2Deg;
-                    DisplayContext_text.transform.DORotate(new Vector3(0, -angel + 90, 0), 0.001f).SetEase(Ease.Linear);
-                    markerlogo_billboard.transform.DORotate(new Vector3(0, -angel + 90, 0), 0.001f).SetEase(Ease.Linear);
-                    markerline_billboard.transform.DORotate(new Vector3(0, -angel + 90, 0), 0.001f).SetEase(Ease.Linear);
+                    canvasRotator.transform.DORotate(new Vector3(0, -angel + 90, 0), 0.001f).SetEase(Ease.Linear);
+ 
                 }
                 else
                 {
-                    if (canvasGroup.alpha > 0)
-                        canvasGroup.DOFade(0, 0.1f);
+                    if (canvasRotator.alpha > 0)
+                        canvasRotator.DOFade(0, 0.1f);
                     
                 }
             }

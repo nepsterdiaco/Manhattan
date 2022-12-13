@@ -26,13 +26,14 @@ Material:
   m_Name: MetalBumpy Variant
   m_Shader: {fileID: -6465566751694194690, guid: 68cfc0ed4fd80d746a0b9a666370516a, type: 3}
   m_Parent: {fileID: 2100000, guid: deed194a3f193d44c87388b65bb9bca5, type: 2}
-  m_ModifiedSerializedProperties: 0
+  m_ModifiedSerializedProperties: 8
   m_ValidKeywords:
   - _DISABLE_SSR_TRANSPARENT
+  - _DOUBLESIDED_ON
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
+  m_DoubleSidedGI: 1
   m_CustomRenderQueue: -1
   stringTagMap:
     MotionVector: User
@@ -49,5 +50,8 @@ Material:
     m_Ints: []
     m_Floats:
     - Vector1_BD53BAF8: 0.218
+    - _CullMode: 0
+    - _CullModeForward: 0
+    - _DoubleSidedEnable: 1
     m_Colors: []
   m_BuildTextureStacks: []

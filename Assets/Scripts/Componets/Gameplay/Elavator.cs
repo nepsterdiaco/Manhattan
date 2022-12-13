@@ -39,8 +39,11 @@ namespace Diaco.Manhatan
 
             if (Isopened == false)
             {
-                DoorAniamtion.Play("OpenElavator", PlayMode.StopAll);
-                Isopened = true;
+                //if (!DoorAniamtion.IsPlaying("CloseElavator") && !DoorAniamtion.IsPlaying("OpenElavator"))
+                //{
+                    DoorAniamtion.CrossFade("OpenElavator");
+                    Isopened = true;
+               // }
             }
 
         }
@@ -49,8 +52,11 @@ namespace Diaco.Manhatan
 
             if (Isopened == true)
             {
-                DoorAniamtion.Play("CloseElavator", PlayMode.StopAll);
-                Isopened = false;
+               // if (!DoorAniamtion.IsPlaying("CloseElavator") && !DoorAniamtion.IsPlaying("OpenElavator"))
+                //{
+                    DoorAniamtion.CrossFade("CloseElavator");
+                    Isopened = false;
+              //  }
              
             }
 
