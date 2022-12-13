@@ -14,35 +14,23 @@ namespace Diaco.Manhatan
         public string MarkerContextIdel;
         public TextMeshProUGUI DisplayContext_text;
         
-        public bool InvokeWithKey = false;
-
-        private bool inside;
+        public bool InvokeWithKey = false;   
         public bool Inside
         {
-            set { inside = value; }
-            get { return inside; }
+            set; 
+            get ; 
         }
-
-
         [ShowIfGroup("InvokeWithKey")]
         [BoxGroup("InvokeWithKey/Select Input Key")]
         public KeyCode keyCode;
-
-
         [BoxGroup("Action")]
         public UnityEvent ActionOnEnter;
-
-
         [BoxGroup("Action")]
         public UnityEvent ActionOnExit;
-
-
-       
-
-
         private CanvasGroup canvasGroup;
         private Image markerlogo_billboard;
         private Image markerline_billboard;
+
         private void Start()
         {
             canvasGroup = GetComponentInChildren<CanvasGroup>();
@@ -86,6 +74,18 @@ namespace Diaco.Manhatan
                 DisplayContext_text.text = MarkerContextIdel;
             }
         }
+
+        private void OnTriggerEnter(Collider other)
+        {
+
+            InActionBox();
+        }
+        private void OnTriggerExit(Collider other)
+        {
+            OutActionBox();
+        }
+
+
         public void InActionBox()
         {
             Inside = true;

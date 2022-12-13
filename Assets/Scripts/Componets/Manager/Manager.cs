@@ -209,15 +209,18 @@ namespace Diaco.Manhatan
         }
          private IEnumerator loadscene(int id)
          {
-             Loading_UI.Show(true);
+            Loading_UI.Show(true);
             SceneManager.sceneLoaded -= SceneManager_sceneLoaded;
              var c = SceneManager.LoadSceneAsync(id);
           //  c.allowSceneActivation = false;
             SceneManager.sceneLoaded += SceneManager_sceneLoaded;
-            while (c.progress < 1)
+            int i = 0;
+            while (c.progress < 1.0f)
             {
-                /// _progressBar.fillAmount = gameLevel.progress;
-                Debug.Log("OMID" + c.progress);
+                Loading_UI.SetRadialPrograssbar(i);              
+                i++;
+                if (i == Loading_UI.SheetCount - 1)
+                    i = 0;
                 yield return null;
             }
         }
