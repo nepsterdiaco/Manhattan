@@ -25,23 +25,25 @@ namespace Diaco.Manhatan
 
             for (int i = 0; i < roomPanelInHall.Count; i++)
             {
-                roomPanelInHall[i].Number_text.text = (i + 1).ToString();
+                roomPanelInHall[i].SetNumber((i + 1).ToString());
 
             }
             for (int i = 0; i < roomPanelInHall.Count; i++)
             {
-                var numberroom = System.Convert.ToInt32(roomPanelInHall[i].Number_text.text);
+                var numberroom = roomPanelInHall[i].Getnumber();
                 for (int j = 0; j < Manager.singleton.AppartementsSelectedInFloor.Count; j++)
                 {
                     var unit = Manager.singleton.AppartementsSelectedInFloor[j].unit;
                     if (unit == numberroom)
                     {
                         roomPanelInHall[i].SetRoomActive(true);
-                    //    Debug.Log("ON:" + unit);
+                       Debug.Log("ON:" + unit);
                     }
-                  /*  else
+                    
+                   /* else
                     {
                         roomPanelInHall[i].SetRoomActive(false);
+                        Debug.Log("OFF:" + unit);
                     }*/
                 }
               
