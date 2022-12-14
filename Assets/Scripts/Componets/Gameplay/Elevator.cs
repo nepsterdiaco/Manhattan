@@ -4,11 +4,12 @@ using DG.Tweening;
 using Diaco.Manhatan.UI;
 namespace Diaco.Manhatan
 {
-    public class Elavator : MonoBehaviour
+    public class Elevator : MonoBehaviour
     {
-        public static Elavator instanc;
+        public static Elevator instanc;
         private Animation DoorAniamtion;
         private bool Isopened = false;
+        private bool ElevatorMoving = false;
         public void Start()
         {
             if (instanc == null)
@@ -17,20 +18,24 @@ namespace Diaco.Manhatan
         }
         public void PressOK(int num)
         {
-            if (num != 0)
+            if (ElevatorMoving == false)
             {
-                if (Manager.singleton.CheckFloorInElavator(num))
+                ElevatorMoving = true;
+                if (num != 0)
                 {
-                    CloseDoor();
-                    RemoteElavator.instance.EnableArrowFlicker(true);
-                    DOVirtual.Float(0, num, num, (floor) =>
+                    if (Manager.singleton.CheckFloorInElavator(num))
                     {
-                        RemoteElavator.instance.DisplayCurrentFloor(floor);
-                    }).OnComplete(() =>
-                    {
-                        RemoteElavator.instance.EnableArrowFlicker(false);
-                        Manager.singleton.LoadScene(3);
-                    }).SetEase(Ease.Linear);
+                        CloseDoor();
+                        RemoteElavator.instance.EnableArrowFlicker(true);
+                        DOVirtual.Float(0, num, num, (floor) =>
+                        {
+                            RemoteElavator.instance.DisplayCurrentFloor(floor);
+                        }).OnComplete(() =>
+                        {
+                            RemoteElavator.instance.EnableArrowFlicker(false);
+                            Manager.singleton.LoadScene(3);
+                        }).SetEase(Ease.Linear);
+                    }
                 }
             }
         }

@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 27334849}
   - component: {fileID: 27334848}
   - component: {fileID: 27334847}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -487,14 +487,6 @@ PrefabInstance:
     - target: {fileID: 4416926081852918481, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_Name
       value: PlayerArmature
-      objectReference: {fileID: 0}
-    - target: {fileID: 4416926081852918481, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
-      propertyPath: GroundLayers.m_Bits
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -4465,7 +4457,6 @@ MonoBehaviour:
   m_Script: {fileID: 1269195862}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Entries: []
 --- !u!4 &447172833
 Transform:
   m_ObjectHideFlags: 19
@@ -8361,7 +8352,6 @@ MonoBehaviour:
   m_Script: {fileID: 1390263617}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Entries: []
 --- !u!4 &768281523
 Transform:
   m_ObjectHideFlags: 19
@@ -15277,7 +15267,7 @@ GameObject:
   - component: {fileID: 1477003830}
   - component: {fileID: 1477003829}
   - component: {fileID: 1477003831}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

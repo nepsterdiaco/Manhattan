@@ -37,9 +37,9 @@ namespace Diaco.Manhatan.UI
             {
 
                 ///// Create Unit 
-                UserAppartementData appartement_a = new UserAppartementData { roomGroup = "Royal_0", roomName = "R_2", floor = 5, unit = 1 };
+                UserAppartementData appartement_a = new UserAppartementData { roomGroup = "Royal_0", roomName = "R_1", floor = 5, unit = 1 };
                 UserAppartementData appartement_b = new UserAppartementData { roomGroup = "Royal_0", roomName = "R_2", floor = 10, unit = 2 };
-                UserAppartementData appartement_c = new UserAppartementData { roomGroup = "Royal_0", roomName = "R_2", floor = 10, unit = 3 };
+                UserAppartementData appartement_c = new UserAppartementData { roomGroup = "Royal_0", roomName = "R_3", floor = 10, unit = 3 };
 
                 //// Add To list Appartements
                 List<UserAppartementData> userAppartementData_temp = new List<UserAppartementData>();

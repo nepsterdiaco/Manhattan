@@ -8090,7 +8090,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: F
+  m_text: E
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f8a1559c9eb8e043b8fcb15a37c0c9c, type: 2}
   m_sharedMaterial: {fileID: -4233249545242047518, guid: 8f8a1559c9eb8e043b8fcb15a37c0c9c, type: 2}
@@ -9859,7 +9859,7 @@ GameObject:
   - component: {fileID: 1640983567}
   - component: {fileID: 1640983566}
   - component: {fileID: 1640983565}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11782,6 +11782,10 @@ PrefabInstance:
     - target: {fileID: 2178352872915232514, guid: 1165785b94da1604990ab45ace275dbd, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -239.19992
+      objectReference: {fileID: 0}
+    - target: {fileID: 2178352872996204903, guid: 1165785b94da1604990ab45ace275dbd, type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2178352873069818549, guid: 1165785b94da1604990ab45ace275dbd, type: 3}
       propertyPath: m_AnchorMax.y
@@ -20199,7 +20203,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: F
+  m_text: E
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f8a1559c9eb8e043b8fcb15a37c0c9c, type: 2}
   m_sharedMaterial: {fileID: -4233249545242047518, guid: 8f8a1559c9eb8e043b8fcb15a37c0c9c, type: 2}

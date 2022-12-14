@@ -176,7 +176,7 @@ public class RoomGenerator : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.01f);
         TryToSpawnRoom = false;
         Debug.Log("Room Arranged");
-      //  Handler_OnSpawnedRoom();
+        Handler_OnSpawnedRoom();
     }
     [PropertyOrder(0.9f)]
     [Button("TestLoadRoom", ButtonSizes.Medium)]

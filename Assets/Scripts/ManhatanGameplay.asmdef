@@ -8,7 +8,9 @@
         "Unity.InputSystem",
         "DOTweenPro.Scripts",
         "DOTween.Modules",
-        "DOTweenPro.EditorScripts"
+        "DOTweenPro.EditorScripts",
+        "StarterAssets",
+        "Cinemachine"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

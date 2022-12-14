@@ -1037,7 +1037,7 @@ GameObject:
   - component: {fileID: 5885216827943657505}
   - component: {fileID: 135756642000475821}
   - component: {fileID: 4416926081852918493}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: PlayerArmature
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1060,7 +1060,7 @@ Transform:
   - {fileID: 8002264680419333305}
   - {fileID: 272993188807782130}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &6982812146204527121
 Animator:
@@ -1138,7 +1138,7 @@ MonoBehaviour:
   GroundedRadius: 0.28
   GroundLayers:
     serializedVersion: 2
-    m_Bits: 65
+    m_Bits: 64
   CinemachineCameraTarget: {fileID: 8338988566280778634}
   TopClamp: 70
   BottomClamp: -30
@@ -1158,7 +1158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pushLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   canPush: 0
   strength: 1.1
 --- !u!114 &135756642000475821

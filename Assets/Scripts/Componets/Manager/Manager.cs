@@ -21,14 +21,6 @@ namespace Diaco.Manhatan
         
         [SerializeField] private Loading Loading_UI;
 
-      //  [SerializeField] private FadeEffect FadeEffect_UI;
-       // [SerializeField] private HUD HUD_UI;
-       // [SerializeField] private BuildingInfo_UI InfoElementPrefab;
-       // [SerializeField] private TextMeshProUGUI UserInfo_text;
-        //[SerializeField] private RectTransform Content_info;
-      //  [SerializeField] private Disc Point_shape, point2_shape;
-       // [SerializeField] private Line Line_shape;
-
         #region Property
         [SerializeField] Transform buildingTransformSelected;
         public Transform TransformBuildingSelected { set { buildingTransformSelected = value; } get { return buildingTransformSelected; } }
@@ -73,7 +65,7 @@ namespace Diaco.Manhatan
             
           
         }
-        public void HightlightBuilding(string name)
+        public void HightlightPlayerBuildings()
         {
             for (int i = 0; i < BuildingManager.buildings.Count; i++)
             {
@@ -83,6 +75,7 @@ namespace Diaco.Manhatan
                     if (BuildingManager.buildings[i].info.Name == buildingName)
                     {
                         BuildingManager.buildings[i].DOFlicker();
+                        BuildingManager.buildings[i].EnableBuildingMarker();
                         // Debug.Log("HHHHH");
                     }
                 }
@@ -234,6 +227,7 @@ namespace Diaco.Manhatan
             {
                 WorldMap_Cam = FindObjectOfType<Camera>();
                 WorldMap_UI = FindObjectOfType<WorldMapUI>();
+                DOVirtual.DelayedCall(1, () => { HightlightPlayerBuildings(); });
             }
             ChangePhase(scene.buildIndex);
             Loading_UI.Show(false);
@@ -323,8 +317,10 @@ namespace Diaco.Manhatan
         #region Trigger
         private void RoomGenerator_OnSpawnedRoom()
         {
-            /////////////FindObjectOfType<RoomObject>().transform.position = PlaceSpawnRoom.position;****************************
-            /////ChangePlacePlayer("room");*******************
+
+            var roomspwaner = FindObjectOfType<RoomSpawner>();
+            if (roomspwaner)
+                roomspwaner.ActivePlayer();
 
         }
         #endregion

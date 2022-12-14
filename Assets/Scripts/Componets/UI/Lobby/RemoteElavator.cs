@@ -35,7 +35,7 @@ namespace Diaco.Manhatan.UI
         {
             if (value == 'O')
             {
-                Elavator.instanc.PressOK(CurrentFloor);
+                Elevator.instanc.PressOK(CurrentFloor);
             }
             else if (value == 'C')
             {
