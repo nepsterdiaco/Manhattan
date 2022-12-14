@@ -1,6 +1,8 @@
 using System;
 using UnityEditor;
 using UnityEngine;
+ #if UNITY_EDITOR
+
 public class EditorInputDialog : EditorWindow
     {
     string  description, inputText;
@@ -108,3 +110,4 @@ public class EditorInputDialog : EditorWindow
     }
     #endregion Show()
 }
+#endif

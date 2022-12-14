@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEditor;
-
+#if UNITY_EDITOR
 class SelectionOffseter : EditorWindow
 {
     static float transformOffset = 0;
@@ -42,7 +42,7 @@ class SelectionOffseter : EditorWindow
     public static int ConvertToInt(string inputString)
     {
         int result;
-        string input;
+        //string input;
         if (int.TryParse(inputString, out result))
         {
             return result;
@@ -54,3 +54,4 @@ class SelectionOffseter : EditorWindow
         }
     }
 }
+#endif
