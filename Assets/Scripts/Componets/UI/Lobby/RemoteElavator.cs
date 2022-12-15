@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -78,6 +79,19 @@ namespace Diaco.Manhatan.UI
                 if (tweenArrow != null)
                     tweenArrow.Kill(false);
             }
+        }
+
+
+        private Action<bool> onChangeStatus;
+        public event Action<bool> OnChangeStutus
+        {
+            add { onChangeStatus += value; }
+            remove { onChangeStatus -= value; }
+        }
+        protected void Handler_OnChangeStutus(bool active)
+        {
+            if (onChangeStatus != null)
+                onChangeStatus(active);
         }
     }
 

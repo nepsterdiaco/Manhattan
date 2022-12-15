@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using Sirenix.OdinInspector;
-[Obsolete]
+
 public class CameraMapControll : MonoBehaviour
 {
     public Transform Building;

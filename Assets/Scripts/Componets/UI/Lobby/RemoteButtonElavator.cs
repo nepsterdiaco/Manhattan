@@ -12,6 +12,7 @@ namespace Diaco.Manhatan.UI
 
         private void OnEnable()
         {
+            RemoteElavator.instance.OnChangeStutus += Instance_OnChangeStutus;
             Num_button = GetComponent<Button>();
             Num_button.onClick.AddListener(() => {
                 RemoteElavator.instance.SetDisplay(value);
@@ -19,7 +20,14 @@ namespace Diaco.Manhatan.UI
         }
         private void OnDisable()
         {
+            RemoteElavator.instance.OnChangeStutus -= Instance_OnChangeStutus;
             Num_button.onClick.RemoveAllListeners();
         }
+        private void Instance_OnChangeStutus(bool active)
+        {
+            Num_button.interactable = active;
+        }
+
+
     }
 }

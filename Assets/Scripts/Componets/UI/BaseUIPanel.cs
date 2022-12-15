@@ -6,6 +6,7 @@ using UnityEngine;
 
 namespace Diaco.Manhatan.UI
 {
+    public enum Ask { BackToCity , AppQuit}
     public abstract class BaseUIPanel : MonoBehaviour
     {
       
