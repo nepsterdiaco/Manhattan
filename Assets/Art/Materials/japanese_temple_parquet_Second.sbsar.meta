@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 07261dd6fef5c2842beb508185fae426
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: 28c2131abf8482a45b0f3adc729516d6, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Art/Materials/japanese_temple_parquet_Second.sbsar
