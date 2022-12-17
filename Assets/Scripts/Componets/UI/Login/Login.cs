@@ -19,7 +19,7 @@ namespace Diaco.Manhatan.UI
         [SerializeField] private Button SignUp_Button;
         [SerializeField] private Button ForgetPass_Button;
 
-        [SerializeField] private Button Close_Button;
+       // [SerializeField] private Button Close_Button;
         void Start()
         {
 
@@ -27,7 +27,7 @@ namespace Diaco.Manhatan.UI
             SignIn_Button.onClick.AddListener(Signin);
             SignUp_Button.onClick.AddListener(Signup);
             ForgetPass_Button.onClick.AddListener(Forgetpassword);
-            Close_Button.onClick.AddListener(Close);
+           // Close_Button.onClick.AddListener(Close);
 
         }
 
