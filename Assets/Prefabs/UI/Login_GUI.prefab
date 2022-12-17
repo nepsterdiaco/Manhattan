@@ -1907,7 +1907,7 @@ RectTransform:
   m_Children:
   - {fileID: 2887112460767874233}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1988,15 +1988,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed41e733bd80b6540b4ec933078eaeab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MessageBoxRect_CanvasGroup: {fileID: 0}
-  ContextMessage_text: {fileID: 0}
+  MessageBoxRect_CanvasGroup: {fileID: 5517731889420999195}
+  ContextMessage_text: {fileID: 2887112461126799194}
   Username_input: {fileID: 2887112460779624886}
   Password_input: {fileID: 2887112462326329373}
   DurationShowMessageBox: 0.5
   SignIn_Button: {fileID: 2887112461464489490}
   SignUp_Button: {fileID: 2887112462378433470}
   ForgetPass_Button: {fileID: 4357807409835175356}
-  Close_Button: {fileID: 0}
 --- !u!1 &2887112461571178272
 GameObject:
   m_ObjectHideFlags: 0
@@ -2160,7 +2159,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2887112461736603858}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0

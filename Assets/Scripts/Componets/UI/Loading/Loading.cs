@@ -64,6 +64,8 @@ namespace Diaco.Manhatan.UI
 
         public void Show(bool show)
         {
+            if (canvasGroup == null)
+                canvasGroup = GetComponent<CanvasGroup>();
             if (show)
                 canvasGroup.alpha = 1;
             else

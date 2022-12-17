@@ -80,7 +80,7 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 2.82
+    m_Value: 0.06
   directLightingStrength:
     m_OverrideState: 1
     m_Value: 0
@@ -429,7 +429,7 @@ MonoBehaviour:
     m_Value: 1
   fixedExposure:
     m_OverrideState: 1
-    m_Value: 12.129839
+    m_Value: 15
   compensation:
     m_OverrideState: 1
     m_Value: 0.18

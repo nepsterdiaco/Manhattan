@@ -9,6 +9,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Sirenix.OdinInspector;
 
+[ExecuteInEditMode]
 public class RoomGenerator : MonoBehaviour
 {
 
@@ -157,7 +158,7 @@ public class RoomGenerator : MonoBehaviour
             var stuff_rot = stuffs[i].rotation;
             var list_filter_by_group = StuffsContainerData.stuffs.Where(s => s.group == stuff_group).ToList();
             
-            yield return new WaitForSecondsRealtime(0.01f);
+            
             for (int j = 0; j < list_filter_by_group.Count; j++)
             {
              //   Debug.Log("3");
@@ -168,9 +169,9 @@ public class RoomGenerator : MonoBehaviour
                   //  Debug.Log("4");
                 }
                 
-
+                yield return null;
             }
-            yield return new WaitForSecondsRealtime(0.01f);
+            yield return null;
         }
 
         yield return new WaitForSecondsRealtime(0.01f);

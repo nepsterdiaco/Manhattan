@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!225 &55260621 stripped
-CanvasGroup:
-  m_CorrespondingSourceObject: {fileID: 5517731889420999195, guid: b3687512e5a335a45bbacf81a9c3410b, type: 3}
-  m_PrefabInstance: {fileID: 254357767}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &187207207
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -139,10 +134,6 @@ PrefabInstance:
     - target: {fileID: 587425746288849792, guid: ac979bc52cbd2a142a2ccf0b5b802590, type: 3}
       propertyPath: m_Name
       value: Loading
-      objectReference: {fileID: 0}
-    - target: {fileID: 587425746288849795, guid: ac979bc52cbd2a142a2ccf0b5b802590, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 587425746288849796, guid: ac979bc52cbd2a142a2ccf0b5b802590, type: 3}
       propertyPath: m_Pivot.x
@@ -228,10 +219,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6123859443708214031, guid: ac979bc52cbd2a142a2ccf0b5b802590, type: 3}
-      propertyPath: m_Alpha
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 3465535961352236358, guid: ac979bc52cbd2a142a2ccf0b5b802590, type: 3}
+      propertyPath: canvasGroup
+      value: 
+      objectReference: {fileID: 1453760629}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ac979bc52cbd2a142a2ccf0b5b802590, type: 3}
@@ -329,18 +320,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2887112461570161901, guid: b3687512e5a335a45bbacf81a9c3410b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4461619028120682064, guid: b3687512e5a335a45bbacf81a9c3410b, type: 3}
-      propertyPath: ContextMessage_text
-      value: 
-      objectReference: {fileID: 1434253895}
-    - target: {fileID: 4461619028120682064, guid: b3687512e5a335a45bbacf81a9c3410b, type: 3}
-      propertyPath: MessageBoxRect_CanvasGroup
-      value: 
-      objectReference: {fileID: 55260621}
-    - target: {fileID: 5517731889420999195, guid: b3687512e5a335a45bbacf81a9c3410b, type: 3}
-      propertyPath: m_Alpha
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -818,17 +797,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f924915fa734634449b3c11b7a58596a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1434253895 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2887112461126799194, guid: b3687512e5a335a45bbacf81a9c3410b, type: 3}
-  m_PrefabInstance: {fileID: 254357767}
+--- !u!225 &1453760629 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 6123859443708214031, guid: ac979bc52cbd2a142a2ccf0b5b802590, type: 3}
+  m_PrefabInstance: {fileID: 187207207}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1932194443
 GameObject:
   m_ObjectHideFlags: 0
