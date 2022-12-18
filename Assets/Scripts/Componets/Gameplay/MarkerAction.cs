@@ -27,7 +27,7 @@ namespace Diaco.Manhatan
         public UnityEvent ActionOnEnter;
         [BoxGroup("Action")]
         public UnityEvent ActionOnExit;
-        
+
 
 
         private void Start()
