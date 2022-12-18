@@ -219,6 +219,8 @@ namespace Diaco.Manhatan
         }
         private void SceneManager_sceneLoaded(Scene scene, LoadSceneMode loadsceneMode)
         {
+            Loading_UI = FindObjectOfType<Loading>();
+
             if (scene.buildIndex != 1)
             {
 

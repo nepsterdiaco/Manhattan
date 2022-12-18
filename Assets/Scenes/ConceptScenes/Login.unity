@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 4
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
@@ -219,10 +219,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3465535961352236358, guid: ac979bc52cbd2a142a2ccf0b5b802590, type: 3}
-      propertyPath: canvasGroup
-      value: 
-      objectReference: {fileID: 1453760629}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ac979bc52cbd2a142a2ccf0b5b802590, type: 3}
@@ -321,6 +317,10 @@ PrefabInstance:
     - target: {fileID: 2887112461570161901, guid: b3687512e5a335a45bbacf81a9c3410b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887112462378433471, guid: b3687512e5a335a45bbacf81a9c3410b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -8.654541
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -797,11 +797,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f924915fa734634449b3c11b7a58596a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!225 &1453760629 stripped
-CanvasGroup:
-  m_CorrespondingSourceObject: {fileID: 6123859443708214031, guid: ac979bc52cbd2a142a2ccf0b5b802590, type: 3}
-  m_PrefabInstance: {fileID: 187207207}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1932194443
 GameObject:
   m_ObjectHideFlags: 0
