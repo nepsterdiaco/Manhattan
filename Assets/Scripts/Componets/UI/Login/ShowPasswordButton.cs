@@ -11,6 +11,7 @@ namespace Diaco.Manhatan.UI
         [SerializeField] private TMP_InputField inputField;
         [SerializeField] private Image ImageRenderer;
         [SerializeField] private Sprite EyeShow_Sprite;
+        [SerializeField] private Image RayEye_image;
         [SerializeField] private Sprite EyeDontShow_Sprite;
 
         public void OnPointerEnter(PointerEventData eventData)
@@ -27,11 +28,13 @@ namespace Diaco.Manhatan.UI
             if (show)
             {
                 inputField.contentType = TMP_InputField.ContentType.Standard;
+                RayEye_image.enabled = true;
                 ImageRenderer.sprite = EyeShow_Sprite;
             }
             else
             {
                 inputField.contentType = TMP_InputField.ContentType.Password;
+                RayEye_image.enabled = false;
                 ImageRenderer.sprite = EyeDontShow_Sprite;
             }
             inputField.ForceLabelUpdate();

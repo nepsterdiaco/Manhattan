@@ -19,7 +19,7 @@ namespace Diaco.Manhatan
         {
             MainCamera.gameObject.SetActive(true);
             virtualCamera.gameObject.SetActive(true);
-            Person.gameObject.SetActive(true);
+            Person.transform.parent.gameObject.SetActive(true);
             
         }
     }
