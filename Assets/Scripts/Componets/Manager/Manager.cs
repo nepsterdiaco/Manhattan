@@ -21,6 +21,7 @@ namespace Diaco.Manhatan
         
         [SerializeField] private Loading Loading_UI;
 
+        [SerializeField] private FadeEffect FadeEffect;
         #region Property
         [SerializeField] Transform buildingTransformSelected;
         public Transform TransformBuildingSelected { set { buildingTransformSelected = value; } get { return buildingTransformSelected; } }
@@ -229,6 +230,7 @@ namespace Diaco.Manhatan
             {
                 WorldMap_Cam = FindObjectOfType<Camera>();
                 WorldMap_UI = FindObjectOfType<WorldMapUI>();
+                FadeEffect = FindObjectOfType<FadeEffect>();
                 DOVirtual.DelayedCall(1, () => { HightlightPlayerBuildings(); });
             }
             ChangePhase(scene.buildIndex);
@@ -273,7 +275,7 @@ namespace Diaco.Manhatan
             WorldMap_Cam.transform.DOMove(TransformBuildingSelected.position, 1).OnComplete(() => {
                 LoadScene(sceneIndex);
             });
-           // FadeEffect_UI.FadeIn(1);
+            FadeEffect.FadeIn();
         }
         public void ResetWorld()
         {
@@ -340,7 +342,19 @@ namespace Diaco.Manhatan
                 onchageplace(nameplace);
             }
         }
-
+        private Action<Building> onselectbuilding;
+        public event Action<Building> OnSelectBuilding
+        {
+            add { onselectbuilding += value; }
+            remove { onselectbuilding -= value; }
+        }
+        public void Handler_OnSelectBuilding(Building building)
+        {
+            if (onselectbuilding != null)
+            {
+                onselectbuilding(building);
+            }
+        }
         #endregion
 
     }

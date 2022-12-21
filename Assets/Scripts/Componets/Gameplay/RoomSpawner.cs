@@ -8,6 +8,7 @@ namespace Diaco.Manhatan
     {
         [SerializeField] private StarterAssets.ThirdPersonController Person;
         [SerializeField] private Cinemachine.CinemachineVirtualCamera virtualCamera;
+
         [SerializeField] private Camera MainCamera;
         public void Start()
         {

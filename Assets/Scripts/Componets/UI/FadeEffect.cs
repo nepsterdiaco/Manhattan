@@ -4,36 +4,33 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 
-
-public class FadeEffect : MonoBehaviour
+namespace Diaco.Manhatan.UI
 {
-
-
-    public CanvasGroup FadeOutFadeInGroup;
-
-    private  bool IsFadeIn = false;
-
-    private bool IsFadeOut = false;
-
-
-    public Tween FadeIn(float FadeInDuration)
+    public class FadeEffect : MonoBehaviour
     {
-        FadeOutFadeInGroup.blocksRaycasts = true;
-       var t =  FadeOutFadeInGroup.DOFade(1.0f, FadeInDuration).OnComplete(() =>
+        [SerializeField] private CanvasGroup FadeOutFadeInGroup;
+        [SerializeField] private float Duration = 1.0f;
+        private bool IsFadeIn = false;
+        private bool IsFadeOut = false;
+        public Tween FadeIn()
         {
-            IsFadeIn = true;
-            IsFadeOut = false;
-        });
-        return t;
-    }
-    public Tween FadeOut( float FadeOutDuration)
-    {
-       var t =  FadeOutFadeInGroup.DOFade(0.0f, FadeOutDuration).OnComplete(() =>
+            FadeOutFadeInGroup.blocksRaycasts = true;
+            var t = FadeOutFadeInGroup.DOFade(1.0f, Duration).OnComplete(() =>
+            {
+                IsFadeIn = true;
+                IsFadeOut = false;
+            });
+            return t;
+        }
+        public Tween FadeOut()
         {
-            IsFadeIn = false;
-            IsFadeOut = true;
-            FadeOutFadeInGroup.blocksRaycasts = false;
-        });
-        return t;
+            var t = FadeOutFadeInGroup.DOFade(0.0f, Duration).OnComplete(() =>
+            {
+                IsFadeIn = false;
+                IsFadeOut = true;
+                FadeOutFadeInGroup.blocksRaycasts = false;
+            });
+            return t;
+        }
     }
 }

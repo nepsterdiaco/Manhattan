@@ -11,6 +11,7 @@ namespace Diaco.Manhatan
     {
         public BuildingData info;
         [SerializeField] private CanvasGroup BuildingMarker;
+        [SerializeField] private GameObject BuildingHoverRing;
         [MinValue(0), MaxValue(50)]
         [SerializeField] private float EmissivePower = 50;
         [SerializeField] private float SpeedAnimateEmission = 1f;
@@ -19,6 +20,7 @@ namespace Diaco.Manhatan
         [SerializeField] private bool IsFlickering = false;
         [SerializeField] private bool IsEnabledBuildigMarker = false;
         private new MeshRenderer renderer;
+        private Manager manager;
         private Material material;
         
       
@@ -32,19 +34,29 @@ namespace Diaco.Manhatan
             renderer = GetComponent<MeshRenderer>();
             material = renderer.material;
             BuildingManager.AddBuilding(this);
+           
+         
+                Manager.singleton.OnSelectBuilding += Building_OnSelectBuilding;
+          
         }
+     
         private void LateUpdate()
         {
             UILookToCamera();
         }
         private void OnMouseDown()
         {
+            Manager.singleton.Handler_OnSelectBuilding(this);
             Manager.singleton.UserSelectedBuilding(info.Name, this.transform, info);
+            SetActiveBuildingHoverRing(true);
         }
         private void OnMouseOver()
         {
-           if (Manager.singleton.BuildingOwner(info.Name))
-                DOFlicker();
+            if (Manager.singleton.BuildingOwner(info.Name))
+            {
+
+            }
+                //DOFlicker();
         }
         private void OnMouseExit()
         {
@@ -102,5 +114,20 @@ namespace Diaco.Manhatan
                 BuildingMarker.transform.DORotate(new Vector3(0, -angel + 90, 0), 0.001f).SetEase(Ease.Linear);
             }
         }
+
+        public void SetActiveBuildingHoverRing(bool active)
+        {
+            
+                BuildingHoverRing.SetActive(active);
+  
+        }
+
+        #region Trrigger
+        private void Building_OnSelectBuilding( Building b)
+        {
+            if (b != this)
+                SetActiveBuildingHoverRing(false);
+        }
+        #endregion
     }
 }

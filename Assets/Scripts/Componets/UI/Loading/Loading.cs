@@ -6,7 +6,7 @@ namespace Diaco.Manhatan.UI
 {
     public class Loading : MonoBehaviour
     {
-
+        
         [SerializeField] private CanvasGroup canvasGroup;
         [SerializeField] private List<Sprite> SpriteData;
         [SerializeField] private Image Renderer;
