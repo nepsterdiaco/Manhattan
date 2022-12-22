@@ -62,6 +62,10 @@ namespace Diaco.Manhatan
         {
             IsFlickering = false;
         }
+        private void OnDestroy()
+        {
+            Manager.singleton.OnSelectBuilding -= Building_OnSelectBuilding;
+        }
         private void OnDrawGizmos()
         {
             Gizmos.color = Color.cyan;
