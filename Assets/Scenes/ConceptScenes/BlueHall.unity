@@ -2553,7 +2553,7 @@ MonoBehaviour:
   objectLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  lowestSubdivLevelOverride: 2
+  lowestSubdivLevelOverride: 1
   highestSubdivLevelOverride: 3
   overridesSubdivLevels: 1
   mightNeedRebaking: 0
@@ -2574,7 +2574,7 @@ MonoBehaviour:
     e31: 0
     e32: 0
     e33: 1
-  cachedHashCode: 958439752
+  cachedHashCode: 1221427575
 --- !u!4 &324982216
 Transform:
   m_ObjectHideFlags: 0
@@ -5063,9 +5063,9 @@ MonoBehaviour:
       rangeCompressionFactor: 1
     influence:
       m_Shape: 0
-      m_BoxSize: {x: 15.738556, y: 5.926191, z: 15.846603}
-      m_BoxBlendDistancePositive: {x: 2.9630954, y: 2.9630954, z: 2.9630954}
-      m_BoxBlendDistanceNegative: {x: 2.9630954, y: 2.9630954, z: 2.9630954}
+      m_BoxSize: {x: 13.252335, y: 5.926191, z: 15.846603}
+      m_BoxBlendDistancePositive: {x: 1.51, y: 1.51, z: 1.51}
+      m_BoxBlendDistanceNegative: {x: 1.51, y: 1.51, z: 1.51}
       m_BoxBlendNormalDistancePositive: {x: 0, y: 0, z: 0}
       m_BoxBlendNormalDistanceNegative: {x: 0, y: 0, z: 0}
       m_BoxSideFadePositive: {x: 1, y: 1, z: 1}
@@ -5075,7 +5075,7 @@ MonoBehaviour:
       m_SphereBlendNormalDistance: 0
       m_EditorAdvancedModeBlendDistancePositive: {x: 1, y: 1, z: 1}
       m_EditorAdvancedModeBlendDistanceNegative: {x: 1, y: 1, z: 1}
-      m_EditorSimplifiedModeBlendDistance: 2.9630954
+      m_EditorSimplifiedModeBlendDistance: 1.51
       m_EditorAdvancedModeBlendNormalDistancePositive: {x: 0, y: 0, z: 0}
       m_EditorAdvancedModeBlendNormalDistanceNegative: {x: 0, y: 0, z: 0}
       m_EditorSimplifiedModeBlendNormalDistance: 0
@@ -5221,7 +5221,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: a14d062e5051c244eb9d2c83a5efb3c8, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: 4bc46d11567f72e479e6d69dc7401895, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -5303,35 +5303,35 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    sh[ 0]: 2.6987128
-    sh[ 1]: 0.900576
-    sh[ 2]: -1.1891105
-    sh[ 3]: 0.7976315
-    sh[ 4]: 0.4338958
-    sh[ 5]: -0.30224174
-    sh[ 6]: 0.3898561
-    sh[ 7]: -0.5204202
-    sh[ 8]: 0.0032505055
-    sh[ 9]: 2.3032527
-    sh[10]: 0.8515602
-    sh[11]: -1.0457801
-    sh[12]: 0.70522016
-    sh[13]: 0.3848296
-    sh[14]: -0.27774426
-    sh[15]: 0.34755737
-    sh[16]: -0.45892134
-    sh[17]: 0.017664798
-    sh[18]: 2.014896
-    sh[19]: 0.7917258
-    sh[20]: -0.9249908
-    sh[21]: 0.63763297
-    sh[22]: 0.3480202
-    sh[23]: -0.25479266
-    sh[24]: 0.31450096
-    sh[25]: -0.39982557
-    sh[26]: 0.021166252
-  m_SHValidForCapturePosition: {x: -207.86156, y: 2.395652, z: -45.121758}
-  m_SHValidForSourcePosition: {x: -207.86156, y: 2.395652, z: -45.121758}
+    sh[ 0]: 0.9095052
+    sh[ 1]: 0.26327738
+    sh[ 2]: -0.37097663
+    sh[ 3]: 0.46227193
+    sh[ 4]: 0.21367356
+    sh[ 5]: -0.12677588
+    sh[ 6]: -0.018595956
+    sh[ 7]: -0.18209375
+    sh[ 8]: -0.0015518038
+    sh[ 9]: 0.77000546
+    sh[10]: 0.2618514
+    sh[11]: -0.32133323
+    sh[12]: 0.3938241
+    sh[13]: 0.2055399
+    sh[14]: -0.11973002
+    sh[15]: -0.014627772
+    sh[16]: -0.16172425
+    sh[17]: 0.0016141641
+    sh[18]: 0.6705404
+    sh[19]: 0.25117627
+    sh[20]: -0.2804655
+    sh[21]: 0.35013798
+    sh[22]: 0.1942437
+    sh[23]: -0.11304568
+    sh[24]: -0.013233389
+    sh[25]: -0.14756562
+    sh[26]: 0.003335704
+  m_SHValidForCapturePosition: {x: -209.10468, y: 2.395652, z: -45.121758}
+  m_SHValidForSourcePosition: {x: -209.10468, y: 2.395652, z: -45.121758}
   m_HDProbeVersion: 3
   m_ObsoleteInfiniteProjection: 1
   m_ObsoleteInfluenceVolume:
@@ -5451,7 +5451,7 @@ ReflectionProbe:
   m_TimeSlicingMode: 0
   m_Resolution: 128
   m_UpdateFrequency: 0
-  m_BoxSize: {x: 15.738556, y: 5.926191, z: 15.846603}
+  m_BoxSize: {x: 13.252335, y: 5.926191, z: 15.846603}
   m_BoxOffset: {x: 0, y: 0, z: 0}
   m_NearClip: 0.3
   m_FarClip: 1000
@@ -5477,7 +5477,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 475367912}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -207.86156, y: 2.395652, z: -45.121758}
+  m_LocalPosition: {x: -209.10468, y: 2.395652, z: -45.121758}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6915,9 +6915,9 @@ MonoBehaviour:
       rangeCompressionFactor: 1
     influence:
       m_Shape: 0
-      m_BoxSize: {x: 17.253876, y: 5.926191, z: 15.7656975}
-      m_BoxBlendDistancePositive: {x: 2.9630954, y: 2.9630954, z: 2.9630954}
-      m_BoxBlendDistanceNegative: {x: 2.9630954, y: 2.9630954, z: 2.9630954}
+      m_BoxSize: {x: 14.788269, y: 5.926191, z: 16.496157}
+      m_BoxBlendDistancePositive: {x: 1.51, y: 1.51, z: 1.51}
+      m_BoxBlendDistanceNegative: {x: 1.51, y: 1.51, z: 1.51}
       m_BoxBlendNormalDistancePositive: {x: 0, y: 0, z: 0}
       m_BoxBlendNormalDistanceNegative: {x: 0, y: 0, z: 0}
       m_BoxSideFadePositive: {x: 1, y: 1, z: 1}
@@ -6927,7 +6927,7 @@ MonoBehaviour:
       m_SphereBlendNormalDistance: 0
       m_EditorAdvancedModeBlendDistancePositive: {x: 1, y: 1, z: 1}
       m_EditorAdvancedModeBlendDistanceNegative: {x: 1, y: 1, z: 1}
-      m_EditorSimplifiedModeBlendDistance: 2.9630954
+      m_EditorSimplifiedModeBlendDistance: 1.51
       m_EditorAdvancedModeBlendNormalDistancePositive: {x: 0, y: 0, z: 0}
       m_EditorAdvancedModeBlendNormalDistanceNegative: {x: 0, y: 0, z: 0}
       m_EditorSimplifiedModeBlendNormalDistance: 0
@@ -7155,35 +7155,35 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    sh[ 0]: 1.8433263
-    sh[ 1]: 0.07060268
-    sh[ 2]: -1.0062237
-    sh[ 3]: -0.4430861
-    sh[ 4]: -0.07165625
-    sh[ 5]: 0.077597775
-    sh[ 6]: 0.051461652
-    sh[ 7]: 0.09870992
-    sh[ 8]: 0.0706799
-    sh[ 9]: 1.5139058
-    sh[10]: 0.102287285
-    sh[11]: -0.8120893
-    sh[12]: -0.39028558
-    sh[13]: -0.06598584
-    sh[14]: 0.051277976
-    sh[15]: 0.0388573
-    sh[16]: 0.08108877
-    sh[17]: 0.063631855
-    sh[18]: 1.2762203
-    sh[19]: 0.1183098
-    sh[20]: -0.66406673
-    sh[21]: -0.35456276
-    sh[22]: -0.0631905
-    sh[23]: 0.031208826
-    sh[24]: 0.028635772
-    sh[25]: 0.068927005
-    sh[26]: 0.059211675
-  m_SHValidForCapturePosition: {x: -183, y: 2.395652, z: -30.542715}
-  m_SHValidForSourcePosition: {x: -183, y: 2.395652, z: -30.542715}
+    sh[ 0]: 0.52572805
+    sh[ 1]: 0.16300125
+    sh[ 2]: -0.21990979
+    sh[ 3]: -0.30217066
+    sh[ 4]: -0.13555343
+    sh[ 5]: -0.10084207
+    sh[ 6]: -0.0052720704
+    sh[ 7]: 0.14543134
+    sh[ 8]: 0.05639472
+    sh[ 9]: 0.4477427
+    sh[10]: 0.15168379
+    sh[11]: -0.1904572
+    sh[12]: -0.26873425
+    sh[13]: -0.12298954
+    sh[14]: -0.0913484
+    sh[15]: -0.0044720764
+    sh[16]: 0.13069013
+    sh[17]: 0.05183185
+    sh[18]: 0.3938142
+    sh[19]: 0.14106548
+    sh[20]: -0.17311054
+    sh[21]: -0.24669984
+    sh[22]: -0.11363094
+    sh[23]: -0.08320857
+    sh[24]: -0.00403739
+    sh[25]: 0.12138839
+    sh[26]: 0.048583303
+  m_SHValidForCapturePosition: {x: -184.23282, y: 2.395652, z: -30.177486}
+  m_SHValidForSourcePosition: {x: -184.23282, y: 2.395652, z: -30.177486}
   m_HDProbeVersion: 3
   m_ObsoleteInfiniteProjection: 1
   m_ObsoleteInfluenceVolume:
@@ -7303,7 +7303,7 @@ ReflectionProbe:
   m_TimeSlicingMode: 0
   m_Resolution: 128
   m_UpdateFrequency: 0
-  m_BoxSize: {x: 17.253876, y: 5.926191, z: 15.7656975}
+  m_BoxSize: {x: 14.788269, y: 5.926191, z: 16.496157}
   m_BoxOffset: {x: 0, y: 0, z: 0}
   m_NearClip: 0.3
   m_FarClip: 1000
@@ -7329,7 +7329,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 655475469}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -183, y: 2.395652, z: -30.542715}
+  m_LocalPosition: {x: -184.23282, y: 2.395652, z: -30.177486}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9099,9 +9099,9 @@ MonoBehaviour:
       rangeCompressionFactor: 1
     influence:
       m_Shape: 0
-      m_BoxSize: {x: 16.493835, y: 5.926191, z: 15.7656975}
-      m_BoxBlendDistancePositive: {x: 2.9630954, y: 2.9630954, z: 2.9630954}
-      m_BoxBlendDistanceNegative: {x: 2.9630954, y: 2.9630954, z: 2.9630954}
+      m_BoxSize: {x: 16.402222, y: 5.926191, z: 16.431515}
+      m_BoxBlendDistancePositive: {x: 1.51, y: 1.51, z: 1.51}
+      m_BoxBlendDistanceNegative: {x: 1.51, y: 1.51, z: 1.51}
       m_BoxBlendNormalDistancePositive: {x: 0, y: 0, z: 0}
       m_BoxBlendNormalDistanceNegative: {x: 0, y: 0, z: 0}
       m_BoxSideFadePositive: {x: 1, y: 1, z: 1}
@@ -9111,7 +9111,7 @@ MonoBehaviour:
       m_SphereBlendNormalDistance: 0
       m_EditorAdvancedModeBlendDistancePositive: {x: 1, y: 1, z: 1}
       m_EditorAdvancedModeBlendDistanceNegative: {x: 1, y: 1, z: 1}
-      m_EditorSimplifiedModeBlendDistance: 2.9630954
+      m_EditorSimplifiedModeBlendDistance: 1.51
       m_EditorAdvancedModeBlendNormalDistancePositive: {x: 0, y: 0, z: 0}
       m_EditorAdvancedModeBlendNormalDistanceNegative: {x: 0, y: 0, z: 0}
       m_EditorSimplifiedModeBlendNormalDistance: 0
@@ -9257,7 +9257,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: bebb7bf9068e90d47aad921def88b311, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: 910035a987df7c544a5f2867b1b899be, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -9339,35 +9339,35 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    sh[ 0]: 3.303895
-    sh[ 1]: 1.6770812
-    sh[ 2]: -1.5781496
-    sh[ 3]: -1.4595628
-    sh[ 4]: -0.9907425
-    sh[ 5]: -1.136533
-    sh[ 6]: -0.048573446
-    sh[ 7]: 0.8240593
-    sh[ 8]: -0.23507395
-    sh[ 9]: 2.86365
-    sh[10]: 1.5497983
-    sh[11]: -1.403337
-    sh[12]: -1.290576
-    sh[13]: -0.8998365
-    sh[14]: -1.0082581
-    sh[15]: -0.041889362
-    sh[16]: 0.73129964
-    sh[17]: -0.20144206
-    sh[18]: 2.543001
-    sh[19]: 1.4519901
-    sh[20]: -1.2844168
-    sh[21]: -1.1764266
-    sh[22]: -0.83614993
-    sh[23]: -0.91384816
-    sh[24]: -0.03775114
-    sh[25]: 0.66369015
-    sh[26]: -0.17843823
-  m_SHValidForCapturePosition: {x: -169.29962, y: 2.395652, z: -30.542715}
-  m_SHValidForSourcePosition: {x: -169.29962, y: 2.395652, z: -30.542715}
+    sh[ 0]: 1.1304739
+    sh[ 1]: 0.48300445
+    sh[ 2]: -0.6145216
+    sh[ 3]: -0.35589266
+    sh[ 4]: -0.10579038
+    sh[ 5]: -0.14835727
+    sh[ 6]: 0.014731295
+    sh[ 7]: 0.10877461
+    sh[ 8]: -0.014207041
+    sh[ 9]: 0.97825664
+    sh[10]: 0.44024563
+    sh[11]: -0.54313767
+    sh[12]: -0.3130433
+    sh[13]: -0.095512874
+    sh[14]: -0.13358441
+    sh[15]: 0.013317085
+    sh[16]: 0.09679419
+    sh[17]: -0.012249647
+    sh[18]: 0.8711308
+    sh[19]: 0.4024577
+    sh[20]: -0.49129605
+    sh[21]: -0.2839966
+    sh[22]: -0.08718057
+    sh[23]: -0.121858
+    sh[24]: 0.0121586835
+    sh[25]: 0.08843367
+    sh[26]: -0.010915091
+  m_SHValidForCapturePosition: {x: -169.25381, y: 2.395652, z: -30.209806}
+  m_SHValidForSourcePosition: {x: -169.25381, y: 2.395652, z: -30.209806}
   m_HDProbeVersion: 3
   m_ObsoleteInfiniteProjection: 1
   m_ObsoleteInfluenceVolume:
@@ -9487,7 +9487,7 @@ ReflectionProbe:
   m_TimeSlicingMode: 0
   m_Resolution: 128
   m_UpdateFrequency: 0
-  m_BoxSize: {x: 16.493835, y: 5.926191, z: 15.7656975}
+  m_BoxSize: {x: 16.402222, y: 5.926191, z: 16.431515}
   m_BoxOffset: {x: 0, y: 0, z: 0}
   m_NearClip: 0.3
   m_FarClip: 1000
@@ -9513,7 +9513,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 839609914}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -169.29962, y: 2.395652, z: -30.542715}
+  m_LocalPosition: {x: -169.25381, y: 2.395652, z: -30.209806}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10156,19 +10156,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -214.15
+      value: -198.3467
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.327
+      value: 1.765
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.5199995
+      value: -35.76342
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.6967207
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.x
@@ -10176,7 +10176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: -0.7173425
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.z
@@ -10777,8 +10777,8 @@ MonoBehaviour:
     influence:
       m_Shape: 0
       m_BoxSize: {x: 16.115112, y: 5.926191, z: 15.846603}
-      m_BoxBlendDistancePositive: {x: 2.9630954, y: 2.9630954, z: 2.9630954}
-      m_BoxBlendDistanceNegative: {x: 2.9630954, y: 2.9630954, z: 2.9630954}
+      m_BoxBlendDistancePositive: {x: 1.51, y: 1.51, z: 1.51}
+      m_BoxBlendDistanceNegative: {x: 1.51, y: 1.51, z: 1.51}
       m_BoxBlendNormalDistancePositive: {x: 0, y: 0, z: 0}
       m_BoxBlendNormalDistanceNegative: {x: 0, y: 0, z: 0}
       m_BoxSideFadePositive: {x: 1, y: 1, z: 1}
@@ -10788,7 +10788,7 @@ MonoBehaviour:
       m_SphereBlendNormalDistance: 0
       m_EditorAdvancedModeBlendDistancePositive: {x: 1, y: 1, z: 1}
       m_EditorAdvancedModeBlendDistanceNegative: {x: 1, y: 1, z: 1}
-      m_EditorSimplifiedModeBlendDistance: 2.9630954
+      m_EditorSimplifiedModeBlendDistance: 1.51
       m_EditorAdvancedModeBlendNormalDistancePositive: {x: 0, y: 0, z: 0}
       m_EditorAdvancedModeBlendNormalDistanceNegative: {x: 0, y: 0, z: 0}
       m_EditorSimplifiedModeBlendNormalDistance: 0
@@ -10934,7 +10934,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: 672702fdfa4b43f4c9ec0f3a31d1ed24, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: bebb7bf9068e90d47aad921def88b311, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -11016,33 +11016,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    sh[ 0]: 3.1521466
-    sh[ 1]: 1.2955203
-    sh[ 2]: -1.0590008
-    sh[ 3]: -0.77465135
-    sh[ 4]: -0.3516285
-    sh[ 5]: -0.27899858
-    sh[ 6]: 0.3711255
-    sh[ 7]: 0.41196746
-    sh[ 8]: -0.04607468
-    sh[ 9]: 2.7187414
-    sh[10]: 1.1807603
-    sh[11]: -0.9348551
-    sh[12]: -0.6774978
-    sh[13]: -0.32300276
-    sh[14]: -0.24895887
-    sh[15]: 0.3292436
-    sh[16]: 0.36414942
-    sh[17]: -0.036511198
-    sh[18]: 2.3968077
-    sh[19]: 1.0714912
-    sh[20]: -0.83479834
-    sh[21]: -0.608494
-    sh[22]: -0.29867253
-    sh[23]: -0.22359622
-    sh[24]: 0.29683247
-    sh[25]: 0.32810038
-    sh[26]: -0.032219928
+    sh[ 0]: 1.1467581
+    sh[ 1]: 0.590778
+    sh[ 2]: -0.3326424
+    sh[ 3]: -0.33839214
+    sh[ 4]: -0.24815033
+    sh[ 5]: -0.18608092
+    sh[ 6]: 0.00033262675
+    sh[ 7]: 0.13320445
+    sh[ 8]: -0.031701166
+    sh[ 9]: 0.9887376
+    sh[10]: 0.54277676
+    sh[11]: -0.29662097
+    sh[12]: -0.30080006
+    sh[13]: -0.22359182
+    sh[14]: -0.16713548
+    sh[15]: 0.00097446766
+    sh[16]: 0.119792216
+    sh[17]: -0.026253307
+    sh[18]: 0.87613803
+    sh[19]: 0.49863183
+    sh[20]: -0.26731354
+    sh[21]: -0.27783382
+    sh[22]: -0.2046405
+    sh[23]: -0.15297939
+    sh[24]: 0.0013923134
+    sh[25]: 0.11072202
+    sh[26]: -0.02409677
   m_SHValidForCapturePosition: {x: -169.35744, y: 2.395652, z: -45.121758}
   m_SHValidForSourcePosition: {x: -169.35744, y: 2.395652, z: -45.121758}
   m_HDProbeVersion: 3
@@ -12142,9 +12142,9 @@ MonoBehaviour:
       rangeCompressionFactor: 1
     influence:
       m_Shape: 0
-      m_BoxSize: {x: 16.226776, y: 5.926191, z: 15.846603}
-      m_BoxBlendDistancePositive: {x: 2.9630954, y: 2.9630954, z: 2.9630954}
-      m_BoxBlendDistanceNegative: {x: 2.9630954, y: 2.9630954, z: 2.9630954}
+      m_BoxSize: {x: 14.70166, y: 5.926191, z: 15.846603}
+      m_BoxBlendDistancePositive: {x: 1.51, y: 1.51, z: 1.51}
+      m_BoxBlendDistanceNegative: {x: 1.51, y: 1.51, z: 1.51}
       m_BoxBlendNormalDistancePositive: {x: 0, y: 0, z: 0}
       m_BoxBlendNormalDistanceNegative: {x: 0, y: 0, z: 0}
       m_BoxSideFadePositive: {x: 1, y: 1, z: 1}
@@ -12154,7 +12154,7 @@ MonoBehaviour:
       m_SphereBlendNormalDistance: 0
       m_EditorAdvancedModeBlendDistancePositive: {x: 1, y: 1, z: 1}
       m_EditorAdvancedModeBlendDistanceNegative: {x: 1, y: 1, z: 1}
-      m_EditorSimplifiedModeBlendDistance: 2.9630954
+      m_EditorSimplifiedModeBlendDistance: 1.51
       m_EditorAdvancedModeBlendNormalDistancePositive: {x: 0, y: 0, z: 0}
       m_EditorAdvancedModeBlendNormalDistanceNegative: {x: 0, y: 0, z: 0}
       m_EditorSimplifiedModeBlendNormalDistance: 0
@@ -12300,7 +12300,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: 4bc46d11567f72e479e6d69dc7401895, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: 672702fdfa4b43f4c9ec0f3a31d1ed24, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -12382,35 +12382,35 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    sh[ 0]: 1.6261628
-    sh[ 1]: 0.4189989
-    sh[ 2]: -0.5553652
-    sh[ 3]: -0.70173025
-    sh[ 4]: -0.26863995
-    sh[ 5]: -0.0580304
-    sh[ 6]: 0.08039482
-    sh[ 7]: 0.24417733
-    sh[ 8]: 0.2826803
-    sh[ 9]: 1.3885225
-    sh[10]: 0.3856524
-    sh[11]: -0.5000396
-    sh[12]: -0.6177196
-    sh[13]: -0.24642453
-    sh[14]: -0.05028527
-    sh[15]: 0.07068021
-    sh[16]: 0.21691151
-    sh[17]: 0.25314853
-    sh[18]: 1.2248558
-    sh[19]: 0.34956688
-    sh[20]: -0.4457296
-    sh[21]: -0.5648749
-    sh[22]: -0.22595966
-    sh[23]: -0.045468327
-    sh[24]: 0.062103402
-    sh[25]: 0.19000721
-    sh[26]: 0.23242207
-  m_SHValidForCapturePosition: {x: -183, y: 2.395652, z: -45.121758}
-  m_SHValidForSourcePosition: {x: -183, y: 2.395652, z: -45.121758}
+    sh[ 0]: 0.61401033
+    sh[ 1]: 0.16431752
+    sh[ 2]: -0.05331861
+    sh[ 3]: -0.35142344
+    sh[ 4]: -0.12606665
+    sh[ 5]: -0.030207885
+    sh[ 6]: -0.0033226523
+    sh[ 7]: 0.062011912
+    sh[ 8]: 0.059751015
+    sh[ 9]: 0.5206843
+    sh[10]: 0.15885034
+    sh[11]: -0.047887813
+    sh[12]: -0.3144765
+    sh[13]: -0.11208929
+    sh[14]: -0.023558175
+    sh[15]: -0.0020607763
+    sh[16]: 0.04872045
+    sh[17]: 0.054429334
+    sh[18]: 0.45335463
+    sh[19]: 0.15182275
+    sh[20]: -0.04057323
+    sh[21]: -0.28229564
+    sh[22]: -0.104267664
+    sh[23]: -0.019130753
+    sh[24]: -0.0010763723
+    sh[25]: 0.040090214
+    sh[26]: 0.049472526
+  m_SHValidForCapturePosition: {x: -184.18893, y: 2.395652, z: -45.121758}
+  m_SHValidForSourcePosition: {x: -184.18893, y: 2.395652, z: -45.121758}
   m_HDProbeVersion: 3
   m_ObsoleteInfiniteProjection: 1
   m_ObsoleteInfluenceVolume:
@@ -12530,7 +12530,7 @@ ReflectionProbe:
   m_TimeSlicingMode: 0
   m_Resolution: 128
   m_UpdateFrequency: 0
-  m_BoxSize: {x: 16.226776, y: 5.926191, z: 15.846603}
+  m_BoxSize: {x: 14.70166, y: 5.926191, z: 15.846603}
   m_BoxOffset: {x: 0, y: 0, z: 0}
   m_NearClip: 0.3
   m_FarClip: 1000
@@ -12556,7 +12556,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068978770}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -183, y: 2.395652, z: -45.121758}
+  m_LocalPosition: {x: -184.18893, y: 2.395652, z: -45.121758}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14605,6 +14605,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425726113}
   m_CullTransparentMesh: 1
+--- !u!1 &1441971037
+GameObject:
+  m_ObjectHideFlags: 19
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1441971039}
+  - component: {fileID: 1441971038}
+  m_Layer: 0
+  m_Name: SceneIDMap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1441971038
+MonoBehaviour:
+  m_ObjectHideFlags: 19
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441971037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1914874963}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Entries:
+  - id: 0
+    category: 0
+    gameObject: {fileID: 1568653624}
+  - id: 1
+    category: 0
+    gameObject: {fileID: 655475469}
+  - id: 2
+    category: 0
+    gameObject: {fileID: 950230878}
+  - id: 3
+    category: 0
+    gameObject: {fileID: 1068978770}
+  - id: 4
+    category: 0
+    gameObject: {fileID: 475367912}
+  - id: 5
+    category: 0
+    gameObject: {fileID: 1453625632}
+  - id: 6
+    category: 0
+    gameObject: {fileID: 1960799493}
+  - id: 7
+    category: 0
+    gameObject: {fileID: 839609914}
+--- !u!4 &1441971039
+Transform:
+  m_ObjectHideFlags: 19
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441971037}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 36
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1442611347
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14819,9 +14888,9 @@ MonoBehaviour:
       rangeCompressionFactor: 1
     influence:
       m_Shape: 0
-      m_BoxSize: {x: 16.475433, y: 5.926191, z: 15.7656975}
-      m_BoxBlendDistancePositive: {x: 2.9630954, y: 2.9630954, z: 2.9630954}
-      m_BoxBlendDistanceNegative: {x: 2.9630954, y: 2.9630954, z: 2.9630954}
+      m_BoxSize: {x: 12.778931, y: 6.021779, z: 16.389824}
+      m_BoxBlendDistancePositive: {x: 1.51, y: 1.51, z: 1.51}
+      m_BoxBlendDistanceNegative: {x: 1.51, y: 1.51, z: 1.51}
       m_BoxBlendNormalDistancePositive: {x: 0, y: 0, z: 0}
       m_BoxBlendNormalDistanceNegative: {x: 0, y: 0, z: 0}
       m_BoxSideFadePositive: {x: 1, y: 1, z: 1}
@@ -14831,7 +14900,7 @@ MonoBehaviour:
       m_SphereBlendNormalDistance: 0
       m_EditorAdvancedModeBlendDistancePositive: {x: 1, y: 1, z: 1}
       m_EditorAdvancedModeBlendDistanceNegative: {x: 1, y: 1, z: 1}
-      m_EditorSimplifiedModeBlendDistance: 2.9630954
+      m_EditorSimplifiedModeBlendDistance: 1.51
       m_EditorAdvancedModeBlendNormalDistancePositive: {x: 0, y: 0, z: 0}
       m_EditorAdvancedModeBlendNormalDistanceNegative: {x: 0, y: 0, z: 0}
       m_EditorSimplifiedModeBlendNormalDistance: 0
@@ -15059,35 +15128,35 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    sh[ 0]: 1.0067638
-    sh[ 1]: 0.15234606
-    sh[ 2]: -0.36984318
-    sh[ 3]: 0.12769385
-    sh[ 4]: 0.0118009485
-    sh[ 5]: -0.05402203
-    sh[ 6]: -0.015842475
-    sh[ 7]: 0.13971515
-    sh[ 8]: 0.2161768
-    sh[ 9]: 0.85869366
-    sh[10]: 0.14305535
-    sh[11]: -0.33211905
-    sh[12]: 0.108358815
-    sh[13]: 0.013945564
-    sh[14]: -0.04800586
-    sh[15]: -0.011848322
-    sh[16]: 0.12503842
-    sh[17]: 0.189411
-    sh[18]: 0.75496733
-    sh[19]: 0.13449502
-    sh[20]: -0.30623433
-    sh[21]: 0.09310916
-    sh[22]: 0.018705089
-    sh[23]: -0.043700032
-    sh[24]: -0.008935795
-    sh[25]: 0.11462284
-    sh[26]: 0.16981658
-  m_SHValidForCapturePosition: {x: -195.6, y: 2.395652, z: -30.542715}
-  m_SHValidForSourcePosition: {x: -195.6, y: 2.395652, z: -30.542715}
+    sh[ 0]: 0.2695505
+    sh[ 1]: 0.04356958
+    sh[ 2]: -0.054307032
+    sh[ 3]: -0.024935419
+    sh[ 4]: -0.00029234143
+    sh[ 5]: -0.0134213045
+    sh[ 6]: -0.00070150313
+    sh[ 7]: 0.04550608
+    sh[ 8]: 0.06406977
+    sh[ 9]: 0.22795404
+    sh[10]: 0.039899517
+    sh[11]: -0.049501237
+    sh[12]: -0.021244973
+    sh[13]: 0.0018436748
+    sh[14]: -0.011058833
+    sh[15]: 0.00041526806
+    sh[16]: 0.037789825
+    sh[17]: 0.05628161
+    sh[18]: 0.19906569
+    sh[19]: 0.03536148
+    sh[20]: -0.048663266
+    sh[21]: -0.018293623
+    sh[22]: 0.0033327856
+    sh[23]: -0.009325512
+    sh[24]: 0.00079615077
+    sh[25]: 0.031886715
+    sh[26]: 0.050695416
+  m_SHValidForCapturePosition: {x: -197.05731, y: 2.347858, z: -30.230652}
+  m_SHValidForSourcePosition: {x: -197.05731, y: 2.347858, z: -30.230652}
   m_HDProbeVersion: 3
   m_ObsoleteInfiniteProjection: 1
   m_ObsoleteInfluenceVolume:
@@ -15207,7 +15276,7 @@ ReflectionProbe:
   m_TimeSlicingMode: 0
   m_Resolution: 128
   m_UpdateFrequency: 0
-  m_BoxSize: {x: 16.475433, y: 5.926191, z: 15.7656975}
+  m_BoxSize: {x: 12.778931, y: 6.021779, z: 16.389824}
   m_BoxOffset: {x: 0, y: 0, z: 0}
   m_NearClip: 0.3
   m_FarClip: 1000
@@ -15233,7 +15302,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453625632}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -195.6, y: 2.395652, z: -30.542715}
+  m_LocalPosition: {x: -197.05731, y: 2.347858, z: -30.230652}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16385,9 +16454,9 @@ MonoBehaviour:
       rangeCompressionFactor: 1
     influence:
       m_Shape: 0
-      m_BoxSize: {x: 16.481873, y: 5.926191, z: 15.7656975}
-      m_BoxBlendDistancePositive: {x: 2.9630954, y: 2.9630954, z: 2.9630954}
-      m_BoxBlendDistanceNegative: {x: 2.9630954, y: 2.9630954, z: 2.9630954}
+      m_BoxSize: {x: 13.132629, y: 5.926191, z: 16.51063}
+      m_BoxBlendDistancePositive: {x: 1.51, y: 1.51, z: 1.51}
+      m_BoxBlendDistanceNegative: {x: 1.51, y: 1.51, z: 1.51}
       m_BoxBlendNormalDistancePositive: {x: 0, y: 0, z: 0}
       m_BoxBlendNormalDistanceNegative: {x: 0, y: 0, z: 0}
       m_BoxSideFadePositive: {x: 1, y: 1, z: 1}
@@ -16397,7 +16466,7 @@ MonoBehaviour:
       m_SphereBlendNormalDistance: 0
       m_EditorAdvancedModeBlendDistancePositive: {x: 1, y: 1, z: 1}
       m_EditorAdvancedModeBlendDistanceNegative: {x: 1, y: 1, z: 1}
-      m_EditorSimplifiedModeBlendDistance: 2.9630954
+      m_EditorSimplifiedModeBlendDistance: 1.51
       m_EditorAdvancedModeBlendNormalDistancePositive: {x: 0, y: 0, z: 0}
       m_EditorAdvancedModeBlendNormalDistanceNegative: {x: 0, y: 0, z: 0}
       m_EditorSimplifiedModeBlendNormalDistance: 0
@@ -16543,7 +16612,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: b618f5ae7abfda54d978cead32613d4e, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: a14d062e5051c244eb9d2c83a5efb3c8, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -16625,35 +16694,35 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    sh[ 0]: 3.4914787
-    sh[ 1]: 1.8602844
-    sh[ 2]: -1.305304
-    sh[ 3]: 0.8310126
-    sh[ 4]: 0.46722326
-    sh[ 5]: -0.5873226
-    sh[ 6]: -0.013650317
-    sh[ 7]: -0.39640003
-    sh[ 8]: -0.150766
-    sh[ 9]: 2.9867556
-    sh[10]: 1.7278299
-    sh[11]: -1.1642381
-    sh[12]: 0.7383426
-    sh[13]: 0.42657933
-    sh[14]: -0.52488077
-    sh[15]: -0.013938555
-    sh[16]: -0.35053045
-    sh[17]: -0.12946032
-    sh[18]: 2.6240332
-    sh[19]: 1.6084784
-    sh[20]: -1.0720893
-    sh[21]: 0.6872688
-    sh[22]: 0.39571533
-    sh[23]: -0.4764739
-    sh[24]: -0.014321056
-    sh[25]: -0.31251526
-    sh[26]: -0.11687247
-  m_SHValidForCapturePosition: {x: -207.4899, y: 2.395652, z: -30.542715}
-  m_SHValidForSourcePosition: {x: -207.4899, y: 2.395652, z: -30.542715}
+    sh[ 0]: 0.96972924
+    sh[ 1]: 0.35216972
+    sh[ 2]: -0.4273575
+    sh[ 3]: 0.5105156
+    sh[ 4]: 0.2341133
+    sh[ 5]: -0.18541873
+    sh[ 6]: -0.012143467
+    sh[ 7]: -0.19924757
+    sh[ 8]: 0.016399788
+    sh[ 9]: 0.8206046
+    sh[10]: 0.34718513
+    sh[11]: -0.3832759
+    sh[12]: 0.45645663
+    sh[13]: 0.20845883
+    sh[14]: -0.15935035
+    sh[15]: -0.010711598
+    sh[16]: -0.17514783
+    sh[17]: 0.02001087
+    sh[18]: 0.7146891
+    sh[19]: 0.3390056
+    sh[20]: -0.3539871
+    sh[21]: 0.42078564
+    sh[22]: 0.18876585
+    sh[23]: -0.13904497
+    sh[24]: -0.009824018
+    sh[25]: -0.15868324
+    sh[26]: 0.022082785
+  m_SHValidForCapturePosition: {x: -209.16452, y: 2.395652, z: -30.17025}
+  m_SHValidForSourcePosition: {x: -209.16452, y: 2.395652, z: -30.17025}
   m_HDProbeVersion: 3
   m_ObsoleteInfiniteProjection: 1
   m_ObsoleteInfluenceVolume:
@@ -16773,7 +16842,7 @@ ReflectionProbe:
   m_TimeSlicingMode: 0
   m_Resolution: 128
   m_UpdateFrequency: 0
-  m_BoxSize: {x: 16.481873, y: 5.926191, z: 15.7656975}
+  m_BoxSize: {x: 13.132629, y: 5.926191, z: 16.51063}
   m_BoxOffset: {x: 0, y: 0, z: 0}
   m_NearClip: 0.3
   m_FarClip: 1000
@@ -16799,7 +16868,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1568653624}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -207.4899, y: 2.395652, z: -30.542715}
+  m_LocalPosition: {x: -209.16452, y: 2.395652, z: -30.17025}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19466,6 +19535,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6335603196830952119, guid: 8ea7927e077dac141bab1dfcbcf14f2e, type: 3}
   m_PrefabInstance: {fileID: 1878922328}
   m_PrefabAsset: {fileID: 0}
+--- !u!115 &1914874963
+MonoScript:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 5
+  m_Script: 
+  m_DefaultReferences: {}
+  m_Icon: {fileID: 0}
+  m_ExecutionOrder: 0
+  m_ClassName: SceneObjectIDMapSceneAsset
+  m_Namespace: UnityEngine.Rendering.HighDefinition
 --- !u!1 &1958035060
 GameObject:
   m_ObjectHideFlags: 0
@@ -19753,32 +19836,32 @@ MonoBehaviour:
   m_HasValidSHForNormalization: 0
   m_SHForNormalization:
     sh[ 0]: 0.002498041
-    sh[ 1]: 0.00042817357
+    sh[ 1]: 0.00042817352
     sh[ 2]: 0.00046023267
-    sh[ 3]: -0.0016046222
+    sh[ 3]: -0.0016046221
     sh[ 4]: -0.0002853485
-    sh[ 5]: 0.00003187898
-    sh[ 6]: -0.00010760806
-    sh[ 7]: -0.000047803314
+    sh[ 5]: 0.000031878986
+    sh[ 6]: -0.00010760805
+    sh[ 7]: -0.000047803336
     sh[ 8]: 0.00058001874
     sh[ 9]: 0.0023371526
     sh[10]: 0.00040496467
     sh[11]: 0.00041861803
     sh[12]: -0.0015600896
-    sh[13]: -0.00027261424
-    sh[14]: 0.000029378603
+    sh[13]: -0.00027261427
+    sh[14]: 0.000029378605
     sh[15]: -0.00010298403
     sh[16]: -0.000045547793
     sh[17]: 0.0005445853
-    sh[18]: 0.0023549956
+    sh[18]: 0.0023549953
     sh[19]: 0.0004186911
     sh[20]: 0.00039040888
     sh[21]: -0.0017147014
-    sh[22]: -0.00028842993
-    sh[23]: 0.000028414848
+    sh[22]: -0.00028842996
+    sh[23]: 0.00002841485
     sh[24]: -0.000109489025
-    sh[25]: -0.000048585363
-    sh[26]: 0.0005535274
+    sh[25]: -0.000048585338
+    sh[26]: 0.0005535273
   m_SHValidForCapturePosition: {x: -188.10175, y: -0.7699999, z: -37.476665}
   m_SHValidForSourcePosition: {x: -188.59583, y: 0.03, z: -37.476665}
   m_HDProbeVersion: 3
@@ -19944,9 +20027,9 @@ MonoBehaviour:
       rangeCompressionFactor: 1
     influence:
       m_Shape: 0
-      m_BoxSize: {x: 15.454742, y: 5.926191, z: 15.846603}
-      m_BoxBlendDistancePositive: {x: 2.9630954, y: 2.9630954, z: 2.9630954}
-      m_BoxBlendDistanceNegative: {x: 2.9630954, y: 2.9630954, z: 2.9630954}
+      m_BoxSize: {x: 12.587296, y: 5.926191, z: 15.846603}
+      m_BoxBlendDistancePositive: {x: 1.51, y: 1.51, z: 1.51}
+      m_BoxBlendDistanceNegative: {x: 1.51, y: 1.51, z: 1.51}
       m_BoxBlendNormalDistancePositive: {x: 0, y: 0, z: 0}
       m_BoxBlendNormalDistanceNegative: {x: 0, y: 0, z: 0}
       m_BoxSideFadePositive: {x: 1, y: 1, z: 1}
@@ -19956,7 +20039,7 @@ MonoBehaviour:
       m_SphereBlendNormalDistance: 0
       m_EditorAdvancedModeBlendDistancePositive: {x: 1, y: 1, z: 1}
       m_EditorAdvancedModeBlendDistanceNegative: {x: 1, y: 1, z: 1}
-      m_EditorSimplifiedModeBlendDistance: 2.9630954
+      m_EditorSimplifiedModeBlendDistance: 1.51
       m_EditorAdvancedModeBlendNormalDistancePositive: {x: 0, y: 0, z: 0}
       m_EditorAdvancedModeBlendNormalDistanceNegative: {x: 0, y: 0, z: 0}
       m_EditorSimplifiedModeBlendNormalDistance: 0
@@ -20102,7 +20185,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: 910035a987df7c544a5f2867b1b899be, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: b618f5ae7abfda54d978cead32613d4e, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -20184,35 +20267,35 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    sh[ 0]: 1.1926814
-    sh[ 1]: 0.2261937
-    sh[ 2]: -0.28804466
-    sh[ 3]: 0.08935108
-    sh[ 4]: 0.027480865
-    sh[ 5]: -0.009888228
-    sh[ 6]: 0.018756516
-    sh[ 7]: -0.20184276
-    sh[ 8]: 0.25777388
-    sh[ 9]: 1.0233295
-    sh[10]: 0.20518257
-    sh[11]: -0.23844025
-    sh[12]: 0.08963023
-    sh[13]: 0.02518225
-    sh[14]: -0.008215415
-    sh[15]: 0.020057837
-    sh[16]: -0.1764534
-    sh[17]: 0.22667392
-    sh[18]: 0.90685916
-    sh[19]: 0.17968862
-    sh[20]: -0.19130355
-    sh[21]: 0.08863791
-    sh[22]: 0.022668416
-    sh[23]: -0.005294538
-    sh[24]: 0.021267816
-    sh[25]: -0.15723553
-    sh[26]: 0.20289677
-  m_SHValidForCapturePosition: {x: -195.6, y: 2.395652, z: -45.121758}
-  m_SHValidForSourcePosition: {x: -195.6, y: 2.395652, z: -45.121758}
+    sh[ 0]: 0.670081
+    sh[ 1]: 0.08691681
+    sh[ 2]: -0.4115534
+    sh[ 3]: 0.21691692
+    sh[ 4]: 0.014004454
+    sh[ 5]: -0.0022661556
+    sh[ 6]: 0.02850243
+    sh[ 7]: -0.1786988
+    sh[ 8]: 0.09413486
+    sh[ 9]: 0.5741469
+    sh[10]: 0.08018438
+    sh[11]: -0.34833544
+    sh[12]: 0.18701471
+    sh[13]: 0.012847493
+    sh[14]: -0.003143533
+    sh[15]: 0.023614248
+    sh[16]: -0.150553
+    sh[17]: 0.08281329
+    sh[18]: 0.49248937
+    sh[19]: 0.07413329
+    sh[20]: -0.2805722
+    sh[21]: 0.15687813
+    sh[22]: 0.0125198895
+    sh[23]: -0.004020794
+    sh[24]: 0.017506687
+    sh[25]: -0.12145355
+    sh[26]: 0.073328555
+  m_SHValidForCapturePosition: {x: -196.94037, y: 2.395652, z: -45.121758}
+  m_SHValidForSourcePosition: {x: -196.94037, y: 2.395652, z: -45.121758}
   m_HDProbeVersion: 3
   m_ObsoleteInfiniteProjection: 1
   m_ObsoleteInfluenceVolume:
@@ -20332,7 +20415,7 @@ ReflectionProbe:
   m_TimeSlicingMode: 0
   m_Resolution: 128
   m_UpdateFrequency: 0
-  m_BoxSize: {x: 15.454742, y: 5.926191, z: 15.846603}
+  m_BoxSize: {x: 12.587296, y: 5.926191, z: 15.846603}
   m_BoxOffset: {x: 0, y: 0, z: 0}
   m_NearClip: 0.3
   m_FarClip: 1000
@@ -20358,7 +20441,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1960799493}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -195.6, y: 2.395652, z: -45.121758}
+  m_LocalPosition: {x: -196.94037, y: 2.395652, z: -45.121758}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
