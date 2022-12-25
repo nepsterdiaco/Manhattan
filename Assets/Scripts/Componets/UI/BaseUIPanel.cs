@@ -10,6 +10,6 @@ namespace Diaco.Manhatan.UI
     public abstract class BaseUIPanel : MonoBehaviour
     {
       
-
+       
     }
 }

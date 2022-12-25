@@ -11,7 +11,7 @@ namespace Diaco.misc
 
     public class SlideTextValue : MonoBehaviour
     {
-
+        public float omid ;
         [SerializeField] private Button Left_button;
         [SerializeField] private Button Right_button;
         [SerializeField] private TextMeshProUGUI Contextviwer_text;

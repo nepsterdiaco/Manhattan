@@ -7,7 +7,7 @@ using TMPro;
 
 namespace Diaco.Manhatan.UI
 {
-    public class WorldMapUI : BaseUIPanel
+    public class WorldMapUI :BaseUIPanel
     {
         [SerializeField] private Image imageBuilding_Image;
         [SerializeField] private TextMeshProUGUI buildingName_Text;

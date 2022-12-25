@@ -4008,6 +4008,7 @@ GameObject:
   - component: {fileID: 628763391}
   - component: {fileID: 628763390}
   - component: {fileID: 628763389}
+  - component: {fileID: 628763393}
   m_Layer: 5
   m_Name: Icon_location03Panel_White
   m_TagString: Untagged
@@ -4087,6 +4088,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 361.6}
   m_SizeDelta: {x: 318, y: 118}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &628763393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628763388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb85e26cb7e19a842b192e5915c1ee72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MinRotate: -45
+  MaxRotate: 45
 --- !u!1 &656449053
 GameObject:
   m_ObjectHideFlags: 0
@@ -19899,6 +19914,7 @@ GameObject:
   - component: {fileID: 4575205856665418570}
   - component: {fileID: 4575205856665418573}
   - component: {fileID: 8678009419261481247}
+  - component: {fileID: 8678009419261481248}
   m_Layer: 5
   m_Name: Icon_location03Panel_White
   m_TagString: Untagged
@@ -24557,6 +24573,20 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!114 &8678009419261481248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4575205856665418575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb85e26cb7e19a842b192e5915c1ee72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MinRotate: -45
+  MaxRotate: 45
 --- !u!33 &8688238598093339714
 MeshFilter:
   m_ObjectHideFlags: 0
