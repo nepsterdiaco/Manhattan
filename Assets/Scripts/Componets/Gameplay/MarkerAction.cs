@@ -10,11 +10,13 @@ namespace Diaco.Manhatan
 {
     public class MarkerAction : MonoBehaviour
     {
-        public string MakerContext;
-        public string MarkerContextIdel;
-        public TextMeshProUGUI DisplayContext_text;
-        public CanvasGroup canvasRotator;
-        public bool InvokeWithKey = false;   
+        [SerializeField] private string MakerContext;
+        [SerializeField] private string MarkerContextIdel;
+        [SerializeField] private TextMeshProUGUI DisplayContext_text;
+        [SerializeField] private CanvasGroup canvasRotator;
+        [SerializeField] private float DurationRotate = 0.01f;
+        [SerializeField] private int DelayRotate = 1;
+        [SerializeField] private bool InvokeWithKey = false;   
         public bool Inside
         {
             set; 
@@ -22,19 +24,19 @@ namespace Diaco.Manhatan
         }
         [ShowIfGroup("InvokeWithKey")]
         [BoxGroup("InvokeWithKey/Select Input Key")]
-        public KeyCode keyCode;
+        [SerializeField] private KeyCode keyCode;
         [BoxGroup("Action")]
-        public UnityEvent ActionOnEnter;
+        [SerializeField] private UnityEvent ActionOnEnter;
         [BoxGroup("Action")]
-        public UnityEvent ActionOnExit;
+        [SerializeField] private UnityEvent ActionOnExit;
 
-
-
+        private Sequence sequence_rotate;
+        private int temp_delay = 0;
         private void Start()
         {
-            
 
-            
+
+            sequence_rotate = DOTween.Sequence();
             Manager.singleton.OnChangePlace += Manager_OnChangePlace;
         }
 
@@ -45,7 +47,14 @@ namespace Diaco.Manhatan
 
         private void LateUpdate()
         {
-            UILookToCamera();
+            if (temp_delay >= DelayRotate)
+            {
+                UILookToCamera();
+                temp_delay = 0;
+            }
+   
+            temp_delay++;
+
         }
         public void Update()
         {
@@ -111,17 +120,17 @@ namespace Diaco.Manhatan
                 if (dis < 10)
                 {
                     if (canvasRotator.alpha < 1)
-                        canvasRotator.DOFade(1, 0.1f);
+                        sequence_rotate.Append(canvasRotator.DOFade(1, 0.1f));
 
                     var dir = DisplayContext_text.transform.position - person.transform.position;
                     var angel = Mathf.Atan2(dir.z, dir.x) * Mathf.Rad2Deg;
-                    canvasRotator.transform.DORotate(new Vector3(0, -angel + 90, 0), 0.001f).SetEase(Ease.Linear);
+                  sequence_rotate.Append(  canvasRotator.transform.DORotate(new Vector3(0, -angel + 90, 0), DurationRotate)).SetEase(Ease.Linear);
  
                 }
                 else
                 {
                     if (canvasRotator.alpha > 0)
-                        canvasRotator.DOFade(0, 0.1f);
+                        sequence_rotate.Append(canvasRotator.DOFade(0, 0.1f));
                     
                 }
             }
