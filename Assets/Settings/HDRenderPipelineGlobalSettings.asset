@@ -103,8 +103,8 @@ MonoBehaviour:
         m_Extent: {x: 40.5, y: 81, z: 81}
     - sceneGUID: c067e433df9dc6b4887bdff9ad038eb1
       bounds:
-        m_Center: {x: -192, y: 1.5, z: -36}
-        m_Extent: {x: 33, y: 4.5, z: 18}
+        m_Center: {x: -189, y: 0, z: -40.5}
+        m_Extent: {x: 54, y: 27, z: 40.5}
     serializedHasVolumes:
     - sceneGUID: 88df272fb9d3b064993afb85082ae7d1
       hasProbeVolumes: 1
