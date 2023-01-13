@@ -8,6 +8,7 @@ using UnityEngine;
 
 using UnityEngine.UI;
 using Sirenix.OdinInspector;
+using System.Threading.Tasks;
 
 [ExecuteInEditMode]
 public class RoomGenerator : MonoBehaviour
@@ -98,54 +99,140 @@ public class RoomGenerator : MonoBehaviour
     }
     private IEnumerator RandomChangeStuff_coroutine()
     {
-        InfoBoxMessage = "NO ERROR";
-        for (int i = 0; i < roomData.stuffs.Count; i++)
-        {
-            if (!roomData.stuffs[i].Lock)
+       
+
+
+            InfoBoxMessage = "NO ERROR";
+            for (int i = 0; i < roomData.stuffs.Count; i++)
             {
-                var group_stuff = roomData.stuffs[i].group;
-                var stuff_position = roomData.stuffs[i].position;
-                var stuff_rotation = roomData.stuffs[i].rotation;
-               
-               
-                var stuff_list_by_group = StuffsContainerData.stuffs.Where(s => s.group == group_stuff ).ToList();
-                if (stuff_list_by_group.Count != 0)
+                if (!roomData.stuffs[i].Lock)
                 {
-                    Destroy(roomData.stuffs[i].stuffGameObject);
-                    var random_stuff_Select_index = UnityEngine.Random.Range(0, stuff_list_by_group.Count);
-                    var prefab_stuff = stuff_list_by_group[random_stuff_Select_index].prefab;
-                    yield return new WaitForSecondsRealtime(0.01f);
-                    Instantiate(prefab_stuff, stuff_position, stuff_rotation, room_gameobject.transform);
-                    yield return new WaitForSecondsRealtime(0.01f);
+                    var group_stuff = roomData.stuffs[i].group;
+                    var stuff_position = roomData.stuffs[i].position;
+                    var stuff_rotation = roomData.stuffs[i].rotation;
+
+
+                    var stuff_list_by_group = StuffsContainerData.stuffs.Where(s => s.group == group_stuff).ToList();
+                    if (stuff_list_by_group.Count != 0)
+                    {
+                        Destroy(roomData.stuffs[i].stuffGameObject);
+                        var random_stuff_Select_index = UnityEngine.Random.Range(0, stuff_list_by_group.Count);
+                        var prefab_stuff = stuff_list_by_group[random_stuff_Select_index].prefab;
+                        yield return new WaitForSecondsRealtime(0.01f);
+                        Instantiate(prefab_stuff, stuff_position, stuff_rotation, room_gameobject.transform);
+                        yield return new WaitForSecondsRealtime(0.01f);
+                    }
+                    else
+                    {
+                        // Debug.Log($"Not Found Group ID:{group_stuff}{stuff_list_by_group.Count}");
+                        InfoBoxMessage = $"For This Stuff:{roomData.stuffs[i].stuffGameObject.name}....\r\n Not Found Group ID:{group_stuff} result:{stuff_list_by_group.Count}";
+                    }
+
+
+
                 }
-                else
-                {
-                   // Debug.Log($"Not Found Group ID:{group_stuff}{stuff_list_by_group.Count}");
-                    InfoBoxMessage = $"For This Stuff:{roomData.stuffs[i].stuffGameObject.name}....\r\n Not Found Group ID:{group_stuff} result:{stuff_list_by_group.Count}";
-                }
-
-
-
+                yield return null;
             }
-            yield return null;
-        }
-        yield return StartCoroutine(FindStuff());
-        yield return new WaitForSecondsRealtime(0.01f);
-        Debug.Log("RandomChanged");
+            yield return StartCoroutine(FindStuff());
+            yield return new WaitForSecondsRealtime(0.01f);
+            Debug.Log("RandomChanged");
+        
     }
     [PropertyOrder(0.8f)]
     [Button("SaveRoom", ButtonSizes.Medium)]
-    private void SaveRoom()
+    private  void SaveRoom()
     {
 
         var json = JsonUtility.ToJson(roomData);
+        
+
+ 
         if (File.Exists(Application.dataPath + "//Containers//Rooms//" + roomData.name + ".json"))
         {
             File.Delete(Application.dataPath + "//Containers//Rooms//" + roomData.name + ".json");
         }
         File.WriteAllText(Application.dataPath + "//Containers//Rooms//" + roomData.name + ".json", json);
+       
+
     }
-   
+
+
+
+
+
+ /// <summary>
+ /// ///////////////////////////////
+ /// </summary>
+ /// <returns></returns>
+
+
+    private IEnumerator Create100RandomRoom_coroutine()
+    {
+
+        string temp_roomname = roomData.name;
+        for (int x = 0; x <= 100; x++)
+        {
+
+            roomData.name = temp_roomname + x;
+            InfoBoxMessage = "NO ERROR";
+            for (int i = 0; i < roomData.stuffs.Count; i++)
+            {
+                
+                if (!roomData.stuffs[i].Lock)
+                {
+                    
+                    var group_stuff = roomData.stuffs[i].group;
+                    var stuff_position = roomData.stuffs[i].position;
+                    var stuff_rotation = roomData.stuffs[i].rotation;
+
+
+                    var stuff_list_by_group = StuffsContainerData.stuffs.Where(s => s.group == group_stuff).ToList();
+                    if (stuff_list_by_group.Count != 0)
+                    {
+                        Destroy(roomData.stuffs[i].stuffGameObject);
+                        var random_stuff_Select_index = UnityEngine.Random.Range(0, stuff_list_by_group.Count);
+                        var prefab_stuff = stuff_list_by_group[random_stuff_Select_index].prefab;
+                        yield return new WaitForSecondsRealtime(0.01f);
+                        Instantiate(prefab_stuff, stuff_position, stuff_rotation, room_gameobject.transform);
+                        yield return new WaitForSecondsRealtime(0.01f);
+                    }
+                    else
+                    {
+                        // Debug.Log($"Not Found Group ID:{group_stuff}{stuff_list_by_group.Count}");
+                        InfoBoxMessage = $"For This Stuff:{roomData.stuffs[i].stuffGameObject.name}....\r\n Not Found Group ID:{group_stuff} result:{stuff_list_by_group.Count}";
+                    }
+
+
+
+                }
+                yield return null;
+            }
+            yield return StartCoroutine(FindStuff());
+            yield return new WaitForSecondsRealtime(0.2f);
+            SaveRoom();
+            
+            yield return new WaitForSecondsRealtime(0.2f);
+            Debug.Log("RoomSaved" + x);
+        }
+        Debug.Log("Generation Room Compeleted");
+    }
+    [PropertyOrder(0.8f)]
+    [Button("AutoCreateRandomRoom : 100", ButtonSizes.Medium)]
+    private void CreatePackRoom()
+    {
+        StartCoroutine(Create100RandomRoom_coroutine());
+    }
+
+
+    /// <summary>
+    /// /////////////
+    /// </summary>
+    /// <param name="stuffs"></param>
+    /// <param name="parent"></param>
+    /// <returns></returns>
+
+
+
     private IEnumerator ArrangeStuffInRoom(List<Diaco.Manhatan.Structs.StuffInRoom> stuffs, Transform parent)
     {
        //Debug.Log("1");
