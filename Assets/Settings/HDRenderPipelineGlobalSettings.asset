@@ -168,7 +168,7 @@ MonoBehaviour:
             m_Bits: 0
     - sceneGUID: 44b21a6d4126b9047a0aa021beda6fe8
       settings:
-        m_Version: 0
+        m_Version: 1
         dilationSettings:
           enableDilation: 1
           dilationDistance: 1
@@ -179,14 +179,14 @@ MonoBehaviour:
           useVirtualOffset: 1
           outOfGeoOffset: 0.01
           searchMultiplier: 0.2
-          rayOriginBias: 0
-          maxHitsPerRay: 0
+          rayOriginBias: -0.001
+          maxHitsPerRay: 10
           collisionMask:
             serializedVersion: 2
-            m_Bits: 0
+            m_Bits: 4294967291
     - sceneGUID: c067e433df9dc6b4887bdff9ad038eb1
       settings:
-        m_Version: 0
+        m_Version: 1
         dilationSettings:
           enableDilation: 1
           dilationDistance: 1
@@ -197,14 +197,14 @@ MonoBehaviour:
           useVirtualOffset: 1
           outOfGeoOffset: 0.01
           searchMultiplier: 0.2
-          rayOriginBias: 0
-          maxHitsPerRay: 0
+          rayOriginBias: -0.001
+          maxHitsPerRay: 10
           collisionMask:
             serializedVersion: 2
-            m_Bits: 0
+            m_Bits: 4294967291
     - sceneGUID: f5256f6634ce1ad44b7f3f5bb2dbbda4
       settings:
-        m_Version: 0
+        m_Version: 1
         dilationSettings:
           enableDilation: 1
           dilationDistance: 1
@@ -215,14 +215,14 @@ MonoBehaviour:
           useVirtualOffset: 1
           outOfGeoOffset: 0.01
           searchMultiplier: 0.2
-          rayOriginBias: 0
-          maxHitsPerRay: 0
+          rayOriginBias: -0.001
+          maxHitsPerRay: 10
           collisionMask:
             serializedVersion: 2
-            m_Bits: 0
+            m_Bits: 4294967291
     - sceneGUID: fcef2d7ffad2e444c8205c656af5b9d8
       settings:
-        m_Version: 0
+        m_Version: 1
         dilationSettings:
           enableDilation: 1
           dilationDistance: 1
@@ -233,14 +233,14 @@ MonoBehaviour:
           useVirtualOffset: 1
           outOfGeoOffset: 0.01
           searchMultiplier: 0.2
-          rayOriginBias: 0
-          maxHitsPerRay: 0
+          rayOriginBias: -0.001
+          maxHitsPerRay: 10
           collisionMask:
             serializedVersion: 2
-            m_Bits: 0
+            m_Bits: 4294967291
     - sceneGUID: 3cd200fa2748c0746a22659f822efe84
       settings:
-        m_Version: 0
+        m_Version: 1
         dilationSettings:
           enableDilation: 1
           dilationDistance: 1
@@ -251,14 +251,14 @@ MonoBehaviour:
           useVirtualOffset: 1
           outOfGeoOffset: 0.01
           searchMultiplier: 0.2
-          rayOriginBias: 0
-          maxHitsPerRay: 0
+          rayOriginBias: -0.001
+          maxHitsPerRay: 10
           collisionMask:
             serializedVersion: 2
-            m_Bits: 0
+            m_Bits: 4294967291
     - sceneGUID: 24ab96e883e0f40438de6e508043e074
       settings:
-        m_Version: 0
+        m_Version: 1
         dilationSettings:
           enableDilation: 1
           dilationDistance: 1
@@ -269,14 +269,14 @@ MonoBehaviour:
           useVirtualOffset: 1
           outOfGeoOffset: 0.01
           searchMultiplier: 0.2
-          rayOriginBias: 0
-          maxHitsPerRay: 0
+          rayOriginBias: -0.001
+          maxHitsPerRay: 10
           collisionMask:
             serializedVersion: 2
-            m_Bits: 0
+            m_Bits: 4294967291
     - sceneGUID: 0c9e4d4e097bbb9458f9bef4d74f0f50
       settings:
-        m_Version: 0
+        m_Version: 1
         dilationSettings:
           enableDilation: 1
           dilationDistance: 1
@@ -287,14 +287,14 @@ MonoBehaviour:
           useVirtualOffset: 1
           outOfGeoOffset: 0.01
           searchMultiplier: 0.2
-          rayOriginBias: 0
-          maxHitsPerRay: 0
+          rayOriginBias: -0.001
+          maxHitsPerRay: 10
           collisionMask:
             serializedVersion: 2
-            m_Bits: 0
+            m_Bits: 4294967291
     - sceneGUID: bfdd74edf26ff6c4e904219b9e6c22a8
       settings:
-        m_Version: 0
+        m_Version: 1
         dilationSettings:
           enableDilation: 1
           dilationDistance: 1
@@ -305,14 +305,14 @@ MonoBehaviour:
           useVirtualOffset: 1
           outOfGeoOffset: 0.01
           searchMultiplier: 0.2
-          rayOriginBias: 0
-          maxHitsPerRay: 0
+          rayOriginBias: -0.001
+          maxHitsPerRay: 10
           collisionMask:
             serializedVersion: 2
-            m_Bits: 0
+            m_Bits: 4294967291
     - sceneGUID: 365f9c57aebc20140996335577de5d16
       settings:
-        m_Version: 0
+        m_Version: 1
         dilationSettings:
           enableDilation: 1
           dilationDistance: 1
@@ -323,11 +323,11 @@ MonoBehaviour:
           useVirtualOffset: 1
           outOfGeoOffset: 0.01
           searchMultiplier: 0.2
-          rayOriginBias: 0
-          maxHitsPerRay: 0
+          rayOriginBias: -0.001
+          maxHitsPerRay: 10
           collisionMask:
             serializedVersion: 2
-            m_Bits: 0
+            m_Bits: 4294967291
     serializedBakingSets:
     - name: Default
       sceneGUIDs:
@@ -358,7 +358,8 @@ MonoBehaviour:
             serializedVersion: 2
             m_Bits: 4294967291
       profile: {fileID: 11400000, guid: 69884060aebb7784ab53cf3a9dcc7673, type: 2}
-      lightingScenarios: []
+      lightingScenarios:
+      - Default
     m_LightingScenario: Default
   m_Version: 5
   m_ShaderVariantLogLevel: 0
