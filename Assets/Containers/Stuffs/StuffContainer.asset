@@ -22,8 +22,12 @@ MonoBehaviour:
     prefab: {fileID: 6030051321890081251, guid: 8cac5422d089a4a7496205cc3f73592f, type: 3}
     materials: []
   - group: Bed_0
-    name: Bed_Simple_Blue_2
+    name: Bed_Simple_Blue_Small_0
     prefab: {fileID: 6030051321890081251, guid: 2281332bfb84041eb89fc550f7d7c2a7, type: 3}
+    materials: []
+  - group: Bed_0
+    name: Bed_Simple_Blue_Small_1
+    prefab: {fileID: 6030051321890081251, guid: 391f8f1adef404247869e63e2fc55a62, type: 3}
     materials: []
   - group: Carpet
     name: Carpet_0
@@ -541,6 +545,10 @@ MonoBehaviour:
     name: Toilet_Simple_Blue_0
     prefab: {fileID: 6030051321890081251, guid: 7428d4ad3b5a34740b5f6ff78f6b9fcd, type: 3}
     materials: []
+  - group: Toilet_0
+    name: Toilet_Simple_Blue_1
+    prefab: {fileID: 6030051321890081251, guid: c93c50a9d85d66f4ba6aff14cc71dd4b, type: 3}
+    materials: []
   - group: Door_0
     name: Door_Simple_Blue_01
     prefab: {fileID: 2586680629673610781, guid: ba105ebebe3af104d908cbab13a2da79, type: 3}
@@ -681,6 +689,7 @@ MonoBehaviour:
   - {fileID: 6030051321890081251, guid: 9593cce2013e475458abd285671ff984, type: 3}
   - {fileID: 6030051321890081251, guid: 8cac5422d089a4a7496205cc3f73592f, type: 3}
   - {fileID: 6030051321890081251, guid: 2281332bfb84041eb89fc550f7d7c2a7, type: 3}
+  - {fileID: 6030051321890081251, guid: 391f8f1adef404247869e63e2fc55a62, type: 3}
   carpets:
   - {fileID: 4731716754793165809, guid: be1b26c9cc2556043aa1a42e246ab669, type: 3}
   - {fileID: 4731716754793165809, guid: 09af7864ce75a27489393296a6596497, type: 3}
@@ -822,6 +831,7 @@ MonoBehaviour:
   - {fileID: 2586680629673610781, guid: d9d494ae891071e47932519a406e3281, type: 3}
   baths:
   - {fileID: 6030051321890081251, guid: 7428d4ad3b5a34740b5f6ff78f6b9fcd, type: 3}
+  - {fileID: 6030051321890081251, guid: c93c50a9d85d66f4ba6aff14cc71dd4b, type: 3}
   doors:
   - {fileID: 2586680629673610781, guid: ba105ebebe3af104d908cbab13a2da79, type: 3}
   - {fileID: 7957791420264176718, guid: 3fe5061dc3d13894c88299934945ac48, type: 3}

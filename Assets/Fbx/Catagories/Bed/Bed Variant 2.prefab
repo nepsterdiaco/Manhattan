@@ -155,7 +155,7 @@ PrefabInstance:
     - target: {fileID: 816586071145866366, guid: a961f48bb59be4b7ba0e9fdf280d7603, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 8284ad052fc62421fbb720114aa4457b, type: 2}
+      objectReference: {fileID: 2100000, guid: 0e2cf3a1191943446b3664c82d86690f, type: 2}
     - target: {fileID: 919132149155446097, guid: a961f48bb59be4b7ba0e9fdf280d7603, type: 3}
       propertyPath: m_Name
       value: Bed02
@@ -208,11 +208,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1700375393991300719, guid: 1177160befefa304cb76518dea35269b, type: 3}
       propertyPath: m_Name
-      value: Bed Variant 1
+      value: Bed Variant 2
       objectReference: {fileID: 0}
     - target: {fileID: 5942837510972170569, guid: 1177160befefa304cb76518dea35269b, type: 3}
       propertyPath: Data.name
-      value: Bed_Simple_Blue_Small_0
+      value: Bed_Simple_Blue_Small_1
       objectReference: {fileID: 0}
     - target: {fileID: 5942837510972170569, guid: 1177160befefa304cb76518dea35269b, type: 3}
       propertyPath: Data.group
@@ -220,11 +220,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6141843734730449577, guid: 1177160befefa304cb76518dea35269b, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6141843734730449577, guid: 1177160befefa304cb76518dea35269b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.75
       objectReference: {fileID: 0}
     - target: {fileID: 6141843734730449577, guid: 1177160befefa304cb76518dea35269b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -240,15 +240,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6141843734730449577, guid: 1177160befefa304cb76518dea35269b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6141843734730449577, guid: 1177160befefa304cb76518dea35269b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6141843734730449577, guid: 1177160befefa304cb76518dea35269b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6141843734730449577, guid: 1177160befefa304cb76518dea35269b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

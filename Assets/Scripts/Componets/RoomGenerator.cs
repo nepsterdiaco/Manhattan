@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 public class RoomGenerator : MonoBehaviour
 {
 
-
+    [SerializeField] private AudioSource audioSource;
     public RoomsContiner RoomsContainerData;
     public StuffContiner StuffsContainerData;
 
@@ -215,6 +215,7 @@ public class RoomGenerator : MonoBehaviour
             Debug.Log("RoomSaved" + x);
         }
         Debug.Log("Generation Room Compeleted");
+        audioSource.Play();
     }
     [PropertyOrder(0.8f)]
     [Button("AutoCreateRandomRoom : 100", ButtonSizes.Medium)]
@@ -223,6 +224,11 @@ public class RoomGenerator : MonoBehaviour
         StartCoroutine(Create100RandomRoom_coroutine());
     }
 
+    [Button]
+    private void PlayAudio()
+    {
+        audioSource.Play();
+    }
 
     /// <summary>
     /// /////////////
